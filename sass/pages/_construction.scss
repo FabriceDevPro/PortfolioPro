@@ -1,0 +1,47 @@
+.profile-photo {
+  width: 100px; /* Ajustez la taille selon vos préférences */
+  height: 100px; /* Ajustez la taille selon vos préférences */
+  border-radius: 50%; /* Pour arrondir les coins et créer un effet de cercle */
+  margin: 10px; /* Ajustez la marge selon vos préférences */
+}
+.construction {
+  margin: 10px auto 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  max-width: 1440px;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  color: #1e3758;
+}
+
+p {
+  color: #606061;
+}
+
+.construction-image {
+  margin-top: 20px;
+}
+
+.logo-langage {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+}
+@media (max-width: 768px) {
+  .construction {
+    max-width: 90%;
+    margin: 10px;
+    padding-bottom: 30px; /* Augmentez la marge en bas pour augmenter la hauteur */
+  }
+
+  .construction-image img {
+    width: 100%;
+    height: auto;
+  }
+}

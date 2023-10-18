@@ -1,0 +1,28 @@
+/* Styles pour l'en-tête */
+.header {
+  width: auto;
+  height: 100%; /* Hauteur de l'en-tête en pourcentage de la hauteur de la fenêtre */
+  display: flex;
+  justify-content: center; /* Centre l'image horizontalement */
+  align-items: center; /* Centre l'image verticalement */
+  overflow: hidden;
+  .header img {
+    /* width: 40%; Couvre la largeur de l'en-tête */
+    height: auto; /* Couvre la hauteur de l'en-tête */
+  }
+}
+@media (max-width: 768px) {
+  .header {
+    width: 100%;
+    height: auto; /* Hauteur de l'en-tête en pourcentage de la hauteur de la fenêtre */
+    display: flex;
+    justify-content: center; /* Centre l'image horizontalement */
+    align-items: center; /* Centre l'image verticalement */
+    overflow: hidden;
+
+    .header img {
+      width: 100%; /* Couvre la largeur de l'en-tête */
+      height: auto; /* Couvre la hauteur de l'en-tête */
+    }
+  }
+}

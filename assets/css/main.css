@@ -1,16 +1,20 @@
-/* Styles CSS */
-/* $background-principal: #1e3758; */
-/* $background-secondaire: #e0e0e0; */
-/* #606061 */
-body {
-  font-family: "Open Sans", Arial, sans-serif;
-  background-color: #e0e0e0;
-  margin: 0;
-  padding: 0;
-  /* background-image: url("../img/test.png");
-  background-size: cover; /* Ajuste l'image pour remplir la fenêtre du navigateur */
-  /*background-repeat: no-repeat; /* Empêche la répétition de l'image */
-  /*background-attachment: fixed; Fixe l'image en place pendant le défilement */
+@charset "UTF-8";
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
 }
 /* Loader styles */
 .loader {
@@ -26,7 +30,6 @@ body {
   z-index: 9999;
   animation: fadeOut 3s ease forwards;
 }
-
 .loader:after {
   content: "";
   height: 7.5rem;
@@ -37,24 +40,6 @@ body {
   animation: spin 2s linear infinite, fadeOut 1s ease-in-out 3s forwards; /* Animation de rotation et de disparition */
 }
 
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes fadeOut {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    display: none;
-  }
-}
 /* Styles pour l'en-tête */
 .header {
   width: auto;
@@ -64,34 +49,140 @@ body {
   align-items: center; /* Centre l'image verticalement */
   overflow: hidden;
 }
-
-.header img {
+.header .header img {
   /* width: 40%; Couvre la largeur de l'en-tête */
   height: auto; /* Couvre la hauteur de l'en-tête */
 }
-.navbar {
+
+@media (max-width: 768px) {
+  .header {
+    width: 100%;
+    height: auto; /* Hauteur de l'en-tête en pourcentage de la hauteur de la fenêtre */
+    display: flex;
+    justify-content: center; /* Centre l'image horizontalement */
+    align-items: center; /* Centre l'image verticalement */
+    overflow: hidden;
+  }
+  .header .header img {
+    width: 100%; /* Couvre la largeur de l'en-tête */
+    height: auto; /* Couvre la hauteur de l'en-tête */
+  }
+}
+#banner-container {
   display: flex;
-  justify-content: space-between;
+  gap: 15px;
+}
+#banner-container #banner,
+#banner-container #banner2 {
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  /* display: flex;
-  flex-direction: row;
-  justify-content: center; */
-  background-color: #1e3758;
-  color: #fff;
-  /* padding: 15px 0; */
+  justify-content: center;
+  width: 50%;
+  min-height: 470px;
+  position: relative;
+  /* Gestion des points du carrousel */
+  /* Fin du code CSS pour le carousel */
+}
+#banner-container #banner .banner-img,
+#banner-container #banner2 .banner-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+}
+#banner-container #banner .arrow,
+#banner-container #banner2 .arrow {
+  position: absolute;
+}
+#banner-container #banner .arrow_left,
+#banner-container #banner2 .arrow_left {
+  left: 10px;
+  cursor: pointer;
+  z-index: 2;
+}
+#banner-container #banner .arrow_right,
+#banner-container #banner2 .arrow_right {
+  right: 10px;
+  cursor: pointer;
+  z-index: 1;
+}
+#banner-container #banner .dots,
+#banner-container #banner2 .dots {
+  position: absolute;
+  bottom: 40px;
+  display: flex;
+  z-index: 1;
+}
+#banner-container #banner .dots .dot,
+#banner-container #banner2 .dots .dot {
+  margin-inline: 5px;
+  width: 13px;
+  height: 13px;
+  background-color: rgba(255, 255, 255, 0);
+  border: 3px solid #fff;
+  border-radius: 100%;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+#banner-container #banner .dots .dot_selected,
+#banner-container #banner2 .dots .dot_selected {
+  background-color: #fff;
+}
+#banner-container #banner p,
+#banner-container #banner2 p {
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 66px;
+  color: white;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  z-index: 1;
+}
+#banner-container #banner span,
+#banner-container #banner2 span {
+  display: block;
+  font-weight: 400;
+  font-size: 20px;
 }
 
-.navbar a {
-  color: #fff;
-  text-decoration: none;
-  margin: 0 20px;
+/* Style pour les écrans de bureau */
+footer {
+  display: flex;
+  justify-content: center;
 }
+footer .copyright {
+  font-size: 14px;
+  color: #1e3758;
+}
+
+@media (max-width: 768px) {
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+  footer .copyright div {
+    margin-bottom: 10px;
+  }
+}
+body {
+  font-family: "Open Sans", Arial, sans-serif;
+  background-color: #e0e0e0;
+  margin: 0;
+  padding: 0;
+}
+
 .profile-photo {
   width: 100px; /* Ajustez la taille selon vos préférences */
   height: 100px; /* Ajustez la taille selon vos préférences */
   border-radius: 50%; /* Pour arrondir les coins et créer un effet de cercle */
   margin: 10px; /* Ajustez la marge selon vos préférences */
 }
+
 .construction {
   margin: 10px auto 30px;
   background-color: #fff;
@@ -110,30 +201,6 @@ p {
   color: #606061;
 }
 
-.social-icons {
-  margin-top: 20px;
-}
-
-.social-icons a {
-  text-decoration: none;
-  color: #1e3758;
-  font-size: 24px;
-  margin: 0 10px;
-  transition: transform 0.2s;
-}
-
-.social-icons a:hover {
-  transform: scale(1.2);
-}
-
-.contact-info {
-  margin-top: 20px;
-}
-
-.contact-info p {
-  color: #1e3758;
-}
-
 .construction-image {
   margin-top: 20px;
 }
@@ -146,6 +213,17 @@ p {
   gap: 10px;
 }
 
+@media (max-width: 768px) {
+  .construction {
+    max-width: 90%;
+    margin: 10px;
+    padding-bottom: 30px; /* Augmentez la marge en bas pour augmenter la hauteur */
+  }
+  .construction-image img {
+    width: 100%;
+    height: auto;
+  }
+}
 .bouton-projet {
   display: inline-block;
   vertical-align: middle;
@@ -165,11 +243,9 @@ p {
   background-color: #ededed;
   padding: 10px 20px;
 }
-
 .bouton-projet:last-child {
   margin-right: 0;
 }
-
 .bouton-projet:hover {
   background: linear-gradient(to bottom, #bab1ba 5%, #ededed 100%);
   background-color: #bab1ba;
@@ -187,173 +263,65 @@ p {
   filter: blur(1px);
   /* Effet de flou */
 }
-#banner-container {
-  display: flex;
-  gap: 15px;
+
+@media (max-width: 768px) {
+  .bouton-projet {
+    display: block;
+    margin: 10px 0;
+  }
 }
-#banner,
-#banner2 {
+.navbar {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  width: 100%;
-  min-height: 470px;
-  position: relative;
+  /* display: flex;
+              flex-direction: row;
+              justify-content: center; */
+  background-color: #1e3758;
+  color: #fff;
+  /* padding: 15px 0; */
 }
-.banner-img {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  object-fit: cover;
-  object-position: center;
-}
-.banner2-img {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  object-fit: cover;
-  object-position: center;
-}
-
-/* #banner,
-#banner2 {
-  flex: 1;
-  min-height: 470px;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: white;
-} */
-
-/* .banner-img {
-  background-image: url("./assets/img/slide1.jpg");
-  background-size: cover;
-  background-position: center;
-} */
-
-/* .banner2-img {
-  background-image: url("./assets/img/slide2.jpg");
-  background-size: cover;
-  background-position: center;
-} */
-
-/* Code CSS en prévision de l'ajout d'un carousel pour la bannière */
-/* Gestion des fleches du carrousel */
-#banner .arrow,
-#banner2 .arrow {
-  position: absolute;
-  z-index: 9999;
-}
-#banner .arrow_left,
-#banner2 .arrow_left {
-  left: 10px;
-  cursor: pointer;
-}
-#banner .arrow_right,
-#banner2 .arrow_right {
-  right: 10px;
-  cursor: pointer;
-}
-/* Gestion des points du carrousel */
-.dots {
-  position: absolute;
-  bottom: 40px;
-  display: flex;
-}
-.dot {
-  margin-inline: 5px;
-  width: 13px;
-  height: 13px;
-  background-color: #ffffff00;
-  border: 3px solid #fff;
-  border-radius: 100%;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-  cursor: pointer;
-}
-.dot_selected {
-  background-color: #fff;
-}
-/* Fin du code CSS pour le carousel */
-#banner p,
-#banner2 p {
-  font-family: "Roboto Slab", sans-serif;
-  font-weight: 900;
-  font-size: 50px;
-  line-height: 66px;
-  color: white;
-  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-  text-align: center;
-}
-#banner span,
-#banner2 span {
-  display: block;
-  font-weight: 400;
-  font-size: 20px;
-}
-
-/* Style pour les écrans de bureau */
-footer {
-  display: flex;
-  justify-content: center;
-}
-.copyright {
-  font-size: 14px;
-  color: #1e3758;
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 20px;
 }
 
 @media (max-width: 768px) {
-  .header {
-    width: 100%;
-    height: auto; /* Hauteur de l'en-tête en pourcentage de la hauteur de la fenêtre */
-    display: flex;
-    justify-content: center; /* Centre l'image horizontalement */
-    align-items: center; /* Centre l'image verticalement */
-    overflow: hidden;
-  }
-
-  .header img {
-    width: 100%; /* Couvre la largeur de l'en-tête */
-    height: auto; /* Couvre la hauteur de l'en-tête */
-  }
-
   .navbar {
     text-align: center;
     position: absolute;
     bottom: -95px;
     width: 100%;
   }
-
   .navbar a {
     margin: 10px 0;
   }
-
-  .construction {
-    max-width: 90%;
-    margin: 10px;
-    padding-bottom: 30px; /* Augmentez la marge en bas pour augmenter la hauteur */
-  }
-
-  .construction-image img {
-    width: 100%;
-    height: auto;
-  }
-
-  .bouton-projet {
-    display: block;
-    margin: 10px 0;
-  }
-
-  footer {
-    flex-direction: column;
-    text-align: center;
-  }
-  .copyright div {
-    margin-bottom: 10px;
-  }
 }
+.social-icons {
+  margin-top: 20px;
+}
+.social-icons a {
+  text-decoration: none;
+  color: #1e3758;
+  font-size: 48px;
+  margin: 0 10px;
+  transition: transform 0.2s;
+}
+.social-icons a:hover {
+  transform: scale(1.2);
+}
+
+.contact-info {
+  margin-top: 20px;
+}
+.contact-info p {
+  color: #1e3758;
+}
+
+/* Styles CSS */
+/* $background-principal: #1e3758; */
+/* $background-secondaire: #e0e0e0; */
+/* #606061 */
+
+/*# sourceMappingURL=main.css.map */
