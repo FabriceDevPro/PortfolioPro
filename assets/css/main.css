@@ -75,9 +75,13 @@
 }
 
 .banner {
-  flex: 0 0 calc(33.33% - 20px);
+  flex: 0 0 calc(50% - 10px);
   position: relative;
   margin-bottom: 20px;
+}
+
+.banner:nth-child(3) {
+  flex-basis: 100%; /* La troisième bannière occupe toute la largeur */
 }
 
 .banner-content {
@@ -217,14 +221,6 @@ body {
   max-width: 1440px;
   padding: 20px;
   text-align: center;
-}
-
-h1 {
-  color: #1e3758;
-}
-
-p {
-  color: #606061;
 }
 
 .construction-image {
