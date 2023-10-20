@@ -88,8 +88,26 @@
   position: relative;
 }
 
+/* CSS pour cacher l'élément de texte par défaut */
+.banner-text {
+  display: none;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+/* CSS pour afficher le texte au survol de la bannière */
+.banner-link:hover .banner-text {
+  display: block;
+}
+
 .banner-img {
-  width: 100%;
+  width: 85%;
   max-height: 400px;
   object-fit: contain;
   object-position: center;
@@ -97,6 +115,10 @@
   cursor: pointer;
   position: relative; /* Ajout de position: relative */
   border: 5px solid #1e3758;
+}
+
+.slide-transition {
+  transition: transform 0.5s;
 }
 
 .arrows {
@@ -114,20 +136,21 @@
 .arrow_left,
 .arrow_right {
   height: 40px;
-  font-size: 20px;
+  font-size: 40px;
+  color: #606061;
   cursor: pointer;
   position: absolute; /* Ajout de position: absolute */
-  top: 50%;
+  top: 40%;
   transform: translateY(-50%);
   /* Ajustez les valeurs left et right pour centrer les flèches par rapport à banner-img */
 }
 
 .arrow_left {
-  left: 10px; /* Ajustez cette valeur pour positionner la flèche gauche */
+  left: 0px; /* Ajustez cette valeur pour positionner la flèche gauche */
 }
 
 .arrow_right {
-  right: 10px; /* Ajustez cette valeur pour positionner la flèche droite */
+  right: 0px; /* Ajustez cette valeur pour positionner la flèche droite */
 }
 
 .dots {
@@ -162,9 +185,10 @@
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
   text-align: center;
   z-index: 1;
-  background: rgba(0, 0, 0, 0.7);
+  background: #606061;
   margin: 0;
   border-radius: 10px;
+  width: 101%;
 }
 
 span {
@@ -174,9 +198,12 @@ span {
   color: #f0f0f0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1205px) {
   .banner {
     flex-basis: calc(100% - 20px);
+  }
+  .banner-img {
+    width: 80%;
   }
 }
 /* Style pour les écrans de bureau */
@@ -339,6 +366,26 @@ body {
 }
 .contact-info p {
   color: #1e3758;
+}
+
+#btnScrollToTop {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #606061; /* Couleur du bouton */
+  color: white; /* Couleur du texte */
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  z-index: 9999; /* Valeur de z-index élevée pour que le bouton soit au-dessus des autres éléments */
+}
+
+#btnScrollToTop:hover {
+  background-color: #444444; /* Couleur au survol */
 }
 
 /* Styles CSS */

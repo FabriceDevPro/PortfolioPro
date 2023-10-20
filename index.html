@@ -41,12 +41,16 @@
         <img src="./assets/img/php.png" alt="Logo PHP" />
       </div>
       <br />
+      <!-- Retour Haut de Page-->
+      <button onclick="scrollToTop()" id="btnScrollToTop" title="Retour en haut">&#9650;</button>
       <p>et en savoir plus sur mon parcours professionnel. Revenez bientôt pour découvrir mon travail !</p>
       <div id="banner-container">
         <div id="banner1" class="banner">
           <!-- Contenu de la première bannière -->
           <div class="banner-content">
-            <img class="banner-img" src="./assets/img/slideshow1/slide1.png" alt="Banner Print-it" />
+            <a class="banner-link" href="#" target="_blank">
+              <img class="banner-img" src="./assets/img/slideshow1/slide1.png" alt="Banner Print-it" title="Cliquez-ici pour obtenir des informations" />
+            </a>
             <i class="fa-solid fa-circle-chevron-left arrow1 arrow_left"></i>
             <i class="fa-solid fa-circle-chevron-right arrow1 arrow_right"></i>
             <p class="description">Certificat <span>OpenClassroom</span></p>
@@ -56,7 +60,9 @@
         <div id="banner2" class="banner">
           <!-- Contenu de la première bannière -->
           <div class="banner-content">
-            <img class="banner-img" src="./assets/img/slideshow2/slide1.png" alt="Banner Print-it" />
+            <a class="banner-link" href="#" target="_blank">
+              <img class="banner-img" src="./assets/img/slideshow2/slide1.png" alt="Banner Print-it" />
+            </a>
             <i class="fa-solid fa-circle-chevron-left arrow2 arrow_left"></i>
             <i class="fa-solid fa-circle-chevron-right arrow2 arrow_right"></i>
             <p class="description">Projet réalisé<span>en formation</span></p>
@@ -65,7 +71,9 @@
         </div>
         <div id="banner3" class="banner">
           <div class="banner-content">
-            <img class="banner-img" src="./assets/img/slideshow3/slide1.png" alt="Banner Print-it" />
+            <a class="banner-link" href="#" target="_blank">
+              <img class="banner-img" src="./assets/img/slideshow3/slide1.png" alt="Banner Print-it" />
+            </a>
             <i class="fa-solid fa-circle-chevron-left arrow3 arrow_left"></i>
             <i class="fa-solid fa-circle-chevron-right arrow3 arrow_right"></i>
             <p class="description">Projet <span>Personnel</span></p>
@@ -94,5 +102,6 @@
     </footer>
     <script src="./assets/banner.js"></script>
     <script src="./assets/copyright.js"></script>
+    <script src="./assets/commun.js"></script>
   </body>
 </html>
