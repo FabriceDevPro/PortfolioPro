@@ -1,0 +1,60 @@
+@charset "UTF-8";
+/* Styles CSS */
+/* $background-principal: #1e3758; */
+/* $background-secondaire: #e0e0e0; */
+/* #606061 */
+body {
+  font-family: "Open Sans", Arial, sans-serif;
+  background-color: #e0e0e0;
+  margin: 0;
+  padding: 0;
+}
+
+/* Styles pour l'en-tête */
+.header {
+  width: 100%;
+  height: auto; /* Hauteur de l'en-tête en pourcentage de la hauteur de la fenêtre */
+  display: flex;
+  justify-content: center; /* Centre l'image horizontalement */
+  align-items: center; /* Centre l'image verticalement */
+  overflow: hidden;
+}
+.header img {
+  width: 70%; /* Couvre la largeur de l'en-tête */
+  height: auto; /* Couvre la hauteur de l'en-tête */
+}
+
+.construction {
+  margin: 50px auto;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  max-width: 800px;
+  padding: 20px;
+  text-align: center;
+}
+.construction h1 {
+  color: #1e3758;
+}
+.construction p {
+  color: #606061;
+}
+.construction .contact-info {
+  margin-top: 20px;
+}
+.construction .contact-info .contact-info p {
+  color: #1e3758;
+}
+.construction .construction-image {
+  margin-top: 20px;
+}
+
+/* Style pour le copyright */
+.copyright {
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+  margin: 10px 0;
+}
+
+/*# sourceMappingURL=styles-globaux.css.map */
