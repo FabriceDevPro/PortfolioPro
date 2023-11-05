@@ -42,30 +42,26 @@
 
 /* Styles pour l'en-tête */
 .header {
-  width: auto;
-  height: 100%; /* Hauteur de l'en-tête en pourcentage de la hauteur de la fenêtre */
-  display: flex;
-  justify-content: center; /* Centre l'image horizontalement */
-  align-items: center; /* Centre l'image verticalement */
-  overflow: hidden;
+  margin: 10px auto 0px;
+  background-color: #fff;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
-.header .header img {
-  /* width: 40%; Couvre la largeur de l'en-tête */
-  height: auto; /* Couvre la hauteur de l'en-tête */
+.header .logo {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 @media (max-width: 768px) {
   .header {
-    width: 100%;
-    height: auto; /* Hauteur de l'en-tête en pourcentage de la hauteur de la fenêtre */
-    display: flex;
-    justify-content: center; /* Centre l'image horizontalement */
-    align-items: center; /* Centre l'image verticalement */
-    overflow: hidden;
+    max-width: 95%;
+    margin: 10px 10px 0px 10px;
   }
-  .header .header img {
-    width: 100%; /* Couvre la largeur de l'en-tête */
-    height: auto; /* Couvre la hauteur de l'en-tête */
+  .logo {
+    width: 100%;
+    height: auto;
   }
 }
 #banner-container {
@@ -188,7 +184,7 @@
   background: #606061;
   margin: 0;
   border-radius: 10px;
-  width: 101%;
+  width: 100%;
 }
 
 span {
@@ -229,8 +225,9 @@ body {
   font-family: "Open Sans", Arial, sans-serif;
   background-color: #e0e0e0;
   color: #1e3758;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
+  max-width: 1440px;
 }
 
 .profile-photo {
@@ -241,13 +238,16 @@ body {
 }
 
 .construction {
-  margin: 10px auto 30px;
+  margin: 0px auto 30px;
   background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  max-width: 1440px;
-  padding: 20px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.2);
   text-align: center;
+}
+
+h1 {
+  margin: 0;
 }
 
 .construction-image {
@@ -264,9 +264,10 @@ body {
 
 @media (max-width: 768px) {
   .construction {
-    max-width: 90%;
-    margin: 10px;
+    max-width: 95%;
+    margin: 0px 0px 10px 10px;
     padding-bottom: 30px; /* Augmentez la marge en bas pour augmenter la hauteur */
+    font-size: small;
   }
   .construction-image img {
     width: 100%;
