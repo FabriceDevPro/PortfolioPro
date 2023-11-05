@@ -217,15 +217,12 @@ footer .copyright {
     flex-direction: column;
     text-align: center;
   }
-  footer .copyright div {
-    margin-bottom: 10px;
-  }
 }
 body {
   font-family: "Open Sans", Arial, sans-serif;
   background-color: #e0e0e0;
   color: #1e3758;
-  margin: 0 auto;
+  margin: 10px auto;
   padding: 0;
   max-width: 1440px;
 }
@@ -238,7 +235,7 @@ body {
 }
 
 .construction {
-  margin: 0px auto 30px;
+  margin: 0px auto 10px;
   background-color: #fff;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
