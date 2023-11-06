@@ -2,6 +2,33 @@ document.addEventListener("DOMContentLoaded", function () {
   const bannerData1 = [
     {
       image: "slide1.png",
+      tagLine: "Projet Personnel<span>Gestion des Comptes Personnel</span>",
+      link: "pages/Personnel/Projet_Personnel1.html",
+      //link: "https://serveur2-maison.synology.me/Gestion_Comptes_Web/Connexion.php",
+    },
+    {
+      image: "slide2.png",
+      tagLine: "Projet Personnel<span>Gestion des Comptes Personnel</span>",
+      link: "pages/Personnel/Projet_Personnel1.html",
+      //link: "https://serveur2-maison.synology.me/Gestion_Comptes_Web/Connexion.php",
+    },
+    {
+      image: "slide3.png",
+      tagLine: "Projet Personnel<span>Gestion des Comptes Personnel</span>",
+      link: "pages/Personnel/Projet_Personnel1.html",
+      //link: "https://serveur2-maison.synology.me/Gestion_Comptes_Web/Connexion.php",
+    },
+    {
+      image: "slide5.png",
+      tagLine: "Projet Personnel<span>Gestion des Comptes Personnel</span>",
+      link: "pages/Personnel/Projet_Personnel1.html",
+      //link: "https://serveur2-maison.synology.me/Gestion_Comptes_Web/Connexion.php",
+    },
+  ];
+
+  const bannerData2 = [
+    {
+      image: "slide1.png",
       tagLine: "Certificats Obtenu avec<span>OpenClassroom</span>",
       link: "https://openclassrooms.com/fr/course-certificates/9310339984",
       //Certificat formation Créez votre site web avec HTML5 et CSS3
@@ -56,7 +83,7 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   ];
 
-  const bannerData2 = [
+  const bannerData3 = [
     {
       image: "slide1.png",
       tagLine: "Projet Réalisés<span>en Formation</span>",
@@ -82,33 +109,6 @@ document.addEventListener("DOMContentLoaded", function () {
       //link: "fabrice-perso.github.io/Print-it-JS/",
     },
     // Ajoutez d'autres diapositives selon vos besoins
-  ];
-
-  const bannerData3 = [
-    {
-      image: "slide1.png",
-      tagLine: "Projet Personnel<span>Gestion des Comptes Personnel</span>",
-      link: "pages/Personnel/Projet_Personnel1.html",
-      //link: "https://serveur2-maison.synology.me/Gestion_Comptes_Web/Connexion.php",
-    },
-    {
-      image: "slide2.png",
-      tagLine: "Projet Personnel<span>Gestion des Comptes Personnel</span>",
-      link: "pages/Personnel/Projet_Personnel1.html",
-      //link: "https://serveur2-maison.synology.me/Gestion_Comptes_Web/Connexion.php",
-    },
-    {
-      image: "slide3.png",
-      tagLine: "Projet Personnel<span>Gestion des Comptes Personnel</span>",
-      link: "pages/Personnel/Projet_Personnel1.html",
-      //link: "https://serveur2-maison.synology.me/Gestion_Comptes_Web/Connexion.php",
-    },
-    {
-      image: "slide5.png",
-      tagLine: "Projet Personnel<span>Gestion des Comptes Personnel</span>",
-      link: "pages/Personnel/Projet_Personnel1.html",
-      //link: "https://serveur2-maison.synology.me/Gestion_Comptes_Web/Connexion.php",
-    },
   ];
 
   function initializeBanner(bannerId, slidesData, startDelay = 0) {
