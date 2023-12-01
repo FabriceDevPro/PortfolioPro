@@ -3,31 +3,31 @@ const bannerData3 = [
   {
     image: Slide3_1,
     tagLine: { text: "Projet Réalisés", htmlContent: "en Formation" },
-    link: "pages/formation/ProjetFormation",
+    link: "formation/ProjetFormation",
     //"https://fabrice-perso.github.io/Riding_Cities/",
   },
   {
     image: Slide3_2,
     tagLine: { text: "Projet Réalisés", htmlContent: "en Formation" },
-    link: "pages/formation/ProjetFormation",
+    link: "formation/ProjetFormation",
     //link: "fabrice-perso.github.io/Booki/",
   },
   {
     image: Slide3_3,
     tagLine: { text: "Projet Réalisés", htmlContent: "en Formation" },
-    link: "pages/formation/ProjetFormation",
+    link: "formation/ProjetFormation",
     //link: "fabrice-perso.github.io/OhMyFood/",
   },
   {
     image: Slide3_4,
     tagLine: { text: "Projet Réalisés", htmlContent: "en Formation" },
-    link: "pages/formation/ProjetFormation",
+    link: "formation/ProjetFormation",
     //link: "fabrice-perso.github.io/Print-it-JS/",
   },
   {
     image: Slide3_5,
     tagLine: { text: "Projet Réalisés", htmlContent: "en Formation" },
-    link: "pages/formation/ProjetFormation",
+    link: "formation/ProjetFormation",
     //link: "fabrice-perso.github.io/Print-it-JS/",
   },
   // Ajoutez d'autres diapositives selon vos besoins
