@@ -1,107 +1,24 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Fabrice MAGNAN DE BELLEVUE" />
-    <meta name="copyright" content="© FabWebProjects" />
-    <meta name="description" content="Portfolio et CV de Fabrice MAGNAN DE BELLEVUE, développeur web en cours de formation, avec compétences en HTML, CSS, SASS, JavaScript, PHP, et PHPMyAdmin." />
-    <meta name="keywords" content="portfolio, CV, réalisations, compétences, HTML, CSS, SASS, JavaScript, PHP, PHPMyAdmin, développeur web" />
-    <title>Portfolio Fabrice Magnan Local</title>
-    <link href="./assets/css/main.css" rel="stylesheet" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
-    <link rel="icon" href="favicon.png" type="image/png" />
-  </head>
 
-  <body>
-    <div class="loader"></div>
-    <!-- Ajout du loader -->
-    <header class="header">
-      <img src="./assets/img/Header.png" alt="Image de construction du site" class="logo" />
-    </header>
-    <div class="construction">
-      <h1>Site en Construction</h1>
-      <img src="./assets/img/profil.jpg" alt="Votre Photo de Profil" class="profile-photo" />
-      <p>
-        Bonjour, je m'appelle Fabrice MAGNAN de BELLEVUE. <br />
-        Après plus de 15 ans dans le monde du travail sur des postes de supports clients/techniciens ou migrateur de données, j'ai choisi de faire une reconversion professionnelle pour devenir
-        <strong>Développeur Web</strong>.<br /><br />
-        Je réalise ce site pendant ma formation diplômante (BAC+2) chez OpenClassroom. <br /><br />
-        Il vous permettra à terme de découvrir mon portfolio, mon CV, ainsi que mes réalisations en tant que développeur web. Vous pourrez explorer mes compétences dans les langages suivant :
-      </p>
-      <div class="logo-langage">
-        <img src="./assets/img/html.png" alt="Logo HTML" />
-        <img src="./assets/img/css.png" alt="Logo CSS" />
-        <img src="./assets/img/JS.png" alt="Logo JS" />
-        <img src="./assets/img/sass.png" alt="Logo SASS" />
-        <img src="./assets/img/mysql.png" alt="Logo MYSQL" />
-        <img src="./assets/img/php.png" alt="Logo PHP" />
-      </div>
-      <br />
-      <!-- Retour Haut de Page-->
-      <button onclick="scrollToTop()" id="btnScrollToTop" title="Retour en haut">&#9650;</button>
-      <p>et en savoir plus sur mon parcours professionnel. Revenez bientôt pour découvrir mon travail !</p>
-      <div id="banner-container">
-        <div id="banner1" class="banner">
-          <!-- Contenu de la première bannière -->
-          <div class="banner-content">
-            <a class="banner-link" href="#" target="_blank">
-              <img class="banner-img" src="./assets/img/slideshow1/slide1.png" alt="Banner Print-it" title="Cliquez-ici pour obtenir des informations" />
-            </a>
-            <i class="fa-solid fa-circle-chevron-left arrow1 arrow_left"></i>
-            <i class="fa-solid fa-circle-chevron-right arrow1 arrow_right"></i>
-            <p class="description">Projet <span>Personnel</span></p>
-            <div class="dots" id="dots-container1"></div>
-          </div>
-        </div>
-        <div id="banner2" class="banner">
-          <!-- Contenu de la première bannière -->
-          <div class="banner-content">
-            <a class="banner-link" href="#" target="_blank">
-              <img class="banner-img" src="./assets/img/slideshow2/slide1.png" alt="Banner Print-it" title="Cliquez-ici pour obtenir des informations" />
-            </a>
-            <i class="fa-solid fa-circle-chevron-left arrow2 arrow_left"></i>
-            <i class="fa-solid fa-circle-chevron-right arrow2 arrow_right"></i>
-            <p class="description">Certificat <span>OpenClassroom</span></p>
-            <div class="dots" id="dots-container2"></div>
-          </div>
-        </div>
-        <div id="banner3" class="banner">
-          <div class="banner-content">
-            <a class="banner-link" href="#" target="_blank">
-              <img class="banner-img" src="./assets/img/slideshow3/slide1.png" alt="Banner Print-it" title="Cliquez-ici pour obtenir des informations" />
-            </a>
-            <i class="fa-solid fa-circle-chevron-left arrow3 arrow_left"></i>
-            <i class="fa-solid fa-circle-chevron-right arrow3 arrow_right"></i>
-            <p class="description">Projet réalisé<span>en formation</span></p>
-            <div class="dots" id="dots-container3"></div>
-          </div>
-        </div>
-      </div>
-      <div class="social-icons">
-        <a href="https://github.com/Fabrice-Perso/" title="Profil GitHub" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/fabrice-magnan-de-bellevue-631922193" title="Profil LinkedIn" target="_blank"><i class="fab fa-linkedin"></i></a>
-      </div>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Fabrice MAGNAN DE BELLEVUE" />
+  <meta name="copyright" content="© FabWebProjects" />
+  <meta name="description"
+    content="Portfolio et CV de Fabrice MAGNAN DE BELLEVUE, développeur web en cours de formation, avec compétences en HTML, CSS, SASS, JavaScript, PHP, et PHPMyAdmin." />
+  <meta name="keywords"
+    content="portfolio, CV, réalisations, compétences, HTML, CSS, SASS, JavaScript, PHP, PHPMyAdmin, développeur web" />
+  <title>Portfolio Fabrice Magnan</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="icon" href="/favicon.png" type="image/png" />
+</head>
 
-      <div class="contact-info">
-        <p>Contactez-moi par e-mail : <a href="mailto:magnan.fabrice@gmail.com">magnan.fabrice@gmail.com</a></p>
-      </div>
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
 
-      <div class="construction-image">
-        <img src="./assets/img/proposition-image.jpg" alt="Image de construction du site" width="400" height="250" />
-      </div>
-    </div>
-
-    <footer>
-      <div class="copyright">
-        <div id="copyrightText"></div>
-      </div>
-    </footer>
-    <script src="./assets/banner.js"></script>
-    <script src="./assets/copyright.js"></script>
-    <script src="./assets/commun.js"></script>
-  </body>
 </html>
