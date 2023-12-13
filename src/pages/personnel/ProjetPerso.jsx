@@ -44,6 +44,9 @@ const ProjetPerso = () => {
         <p>{"Grâce à cela, nous avons un tableau de suivi. On peut définir des éléments de type Santé pour vérifier les remboursements."}</p>
         <h2>Démonstration et accès au code</h2>
         <p>{"Je peux vous faire une démonstration de l'outil, vous donner les paramètres de connexion pour un compte test ou vous donner accès à mon code via GitHub."}</p>
+        <a className="bouton-projet" href="https://fabwebprojects.fr/Mon_Budget_Perso/connexion.php" target="_blank" rel="noreferrer">
+          Cliquez-ici pour ouvrir le projet
+        </a>
       </section>
       <Social />
     </div>
