@@ -64,7 +64,7 @@ const ProjetFormation = () => {
       name: "Kasa",
       theme: "Créez une application web de location immobilière avec React ",
       brief: "Ce projet a pour but de créer notre premier application en react.",
-      mission: "Votre tâche consiste à développer à faire une refonte totale de l'application web actuelle en la passant en stack complète JavaScript avec NodeJS coté back-end et React coté Front-end.",
+      mission: "Votre tâche consiste à faire une refonte totale de l'application web actuelle en la passant en stack complète JavaScript avec NodeJS coté back-end et React coté Front-end.",
       languages: [
         { name: "HTML", logo: LogoHTML },
         { name: "CSS", logo: LogoCss },
