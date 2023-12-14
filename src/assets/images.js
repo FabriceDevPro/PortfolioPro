@@ -14,7 +14,6 @@ import Slide1_1 from "./img/slideshow1/slide1.webp";
 import Slide1_2 from "./img/slideshow1/slide2.webp";
 import Slide1_3 from "./img/slideshow1/slide3.webp";
 import Slide1_4 from "./img/slideshow1/slide4.webp";
-import Slide1_5 from "./img/slideshow1/slide5.webp";
 import Slide2_1 from "./img/slideshow2/slide1.webp";
 import Slide2_2 from "./img/slideshow2/slide2.webp";
 import Slide2_3 from "./img/slideshow2/slide3.webp";
@@ -49,7 +48,6 @@ export {
   Slide1_2,
   Slide1_3,
   Slide1_4,
-  Slide1_5,
   Slide2_1,
   Slide2_2,
   Slide2_3,

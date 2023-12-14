@@ -1,4 +1,4 @@
-import { Slide1_1, Slide1_2, Slide1_3, Slide1_4, Slide1_5 } from "../assets/images";
+import { Slide1_1, Slide1_2, Slide1_3, Slide1_4 } from "../assets/images";
 
 const bannerData1 = [
   {
@@ -18,11 +18,6 @@ const bannerData1 = [
   },
   {
     image: Slide1_4,
-    tagLine: { text: "Projet Personnel", htmlContent: "Mon Budget Perso" },
-    link: "Personnel/Projet_Personnel1.html",
-  },
-  {
-    image: Slide1_5,
     tagLine: { text: "Projet Personnel", htmlContent: "Mon Budget Perso" },
     link: "Personnel/Projet_Personnel1.html",
   },
