@@ -9,6 +9,7 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import ProjetPerso from "./pages/personnel/ProjetPerso";
 import ProjetFormation from "./pages/formation/ProjetFormation";
+import ProjetEntreprise from "./pages/entreprise/ProjetEntreprise";
 import MissingPage from "./pages/MissingPage";
 
 function App() {
@@ -27,6 +28,8 @@ function App() {
             <Route path="/ProjetPerso" element={<ProjetPerso />} />
             <Route path="/formation/ProjetFormation" element={<Navigate to="/ProjetFormation" replace />} />
             <Route path="/ProjetFormation" element={<ProjetFormation />} />
+            <Route path="/entreprise/ProjetEntreprise" element={<Navigate to="/ProjetEntreprise" replace />} />
+            <Route path="/ProjetEntreprise" element={<ProjetEntreprise />} />
             <Route path="/mentions-legales" element={<LegalMentions />} />
             <Route path="/error404" element={<MissingPage />} />
             {/* Redirection vers `/error404` pour tout autre chemin non reconnu */}

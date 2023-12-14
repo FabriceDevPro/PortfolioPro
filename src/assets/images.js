@@ -7,6 +7,9 @@ import LogoJS from "./img/logo/JS.png";
 import LogoReact from "./img/logo/react.png";
 import LogoMySql from "./img/logo/mysql.png";
 import LogoPHP from "./img/logo/php.png";
+import LogoVite from "./img/logo/vite.png";
+import LogoApi from "./img/logo/api.png";
+import LogoVba from "./img/logo/vba.jpg";
 import Slide1_1 from "./img/slideshow1/slide1.webp";
 import Slide1_2 from "./img/slideshow1/slide2.webp";
 import Slide1_3 from "./img/slideshow1/slide3.webp";
@@ -39,6 +42,9 @@ export {
   LogoReact,
   LogoMySql,
   LogoPHP,
+  LogoVite,
+  LogoApi,
+  LogoVba,
   Slide1_1,
   Slide1_2,
   Slide1_3,

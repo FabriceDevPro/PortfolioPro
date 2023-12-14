@@ -32,7 +32,13 @@ const Navigation = () => {
         <li>
           <NavLink to="/formation/ProjetFormation" className={({ isActive }) => (isActive ? "bouton-projet nav-active" : "bouton-projet")}>
             <FaLaptopCode className="nav-icon" />
-            Projet Formation
+            Projets Formation
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/entreprise/ProjetEntreprise" className={({ isActive }) => (isActive ? "bouton-projet nav-active" : "bouton-projet")}>
+            <FaLaptopCode className="nav-icon" />
+            Projets Entreprise
           </NavLink>
         </li>
       </ul>

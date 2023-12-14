@@ -1,4 +1,4 @@
-import { LogoHTML, LogoCss, LogoSass, LogoJS, LogoReact, LogoMySql, LogoPHP } from "../assets/images";
+import { LogoHTML, LogoCss, LogoSass, LogoJS, LogoReact, LogoVite, LogoMySql, LogoPHP, LogoApi } from "../assets/images";
 
 const Langage = () => {
   return (
@@ -10,7 +10,9 @@ const Langage = () => {
         <img src={LogoCss} alt="Logo CSS" />
         <img src={LogoSass} alt="Logo SASS" />
         <img src={LogoJS} alt="Logo JS" />
+        <img src={LogoApi} alt="Logo API" />
         <img src={LogoReact} alt="Logo REACT" />
+        <img src={LogoVite} alt="Logo VITE" />
         <img src={LogoMySql} alt="Logo MYSQL" />
         <img src={LogoPHP} alt="Logo PHP" />
       </div>
