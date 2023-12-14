@@ -1,4 +1,4 @@
-import { LogoHTML, LogoCss, LogoSass, LogoJS, LogoReact, LogoVite, LogoMySql, LogoPHP, LogoApi } from "../assets/images";
+import { LogoHTML, LogoCss, LogoSass, LogoJS, LogoReact, LogoVite, LogoMySql, LogoPHP, LogoApi, LogoNode, LogoPhpmyadmin } from "../assets/images";
 
 const Langage = () => {
   return (
@@ -11,10 +11,12 @@ const Langage = () => {
         <img src={LogoSass} alt="Logo SASS" />
         <img src={LogoJS} alt="Logo JS" />
         <img src={LogoApi} alt="Logo API" />
+        <img src={LogoNode} alt="Logo NODE" />
         <img src={LogoReact} alt="Logo REACT" />
         <img src={LogoVite} alt="Logo VITE" />
         <img src={LogoMySql} alt="Logo MYSQL" />
         <img src={LogoPHP} alt="Logo PHP" />
+        <img src={LogoPhpmyadmin} alt="Logo PhpMyAdmin" />
       </div>
       <p>et en savoir plus sur mon parcours professionnel. Revenez bientôt pour découvrir mon travail !</p>
     </section>

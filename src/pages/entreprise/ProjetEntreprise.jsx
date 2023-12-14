@@ -1,5 +1,5 @@
 import Social from "../../components/Social";
-import { LogoHTML, LogoCss, LogoJS, LogoMySql, LogoPHP, LogoVba } from "../../assets/images";
+import { LogoHTML, LogoCss, LogoJS, LogoMySql, LogoPHP, LogoVba, LogoPhpmyadmin } from "../../assets/images";
 
 const ProjetEntreprise = () => {
   const projects = [
@@ -14,6 +14,7 @@ const ProjetEntreprise = () => {
         { name: "JS", logo: LogoJS },
         { name: "PHP", logo: LogoPHP },
         { name: "MYSQL", logo: LogoMySql },
+        { name: "LogoPhpmyadmin", logo: LogoPhpmyadmin },
       ],
       url: "https://fabwebprojects.fr/Riding_Cities/index.html",
     },

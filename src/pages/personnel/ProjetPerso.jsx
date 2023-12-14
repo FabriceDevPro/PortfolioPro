@@ -1,5 +1,5 @@
 import Social from "../../components/Social";
-import { LogoHTML, LogoCss, LogoSass, LogoJS, LogoReact, LogoVite, LogoMySql, LogoPHP, LogoApi } from "../../assets/images";
+import { LogoHTML, LogoCss, LogoSass, LogoJS, LogoReact, LogoVite, LogoMySql, LogoPHP, LogoApi, LogoPhpmyadmin } from "../../assets/images";
 
 const ProjetPerso = () => {
   return (
@@ -36,8 +36,9 @@ const ProjetPerso = () => {
           <img src={LogoApi} alt="Logo API" />
           <img src={LogoReact} alt="Logo REACT" />
           <img src={LogoVite} alt="Logo VITE" />
-          <img src={LogoMySql} alt="Logo MYSQL" />
           <img src={LogoPHP} alt="Logo PHP" />
+          <img src={LogoMySql} alt="Logo MYSQL" />
+          <img src={LogoPhpmyadmin} alt="Logo PhpMyAdmin" />
         </div>
         <h2>Fonctionnalités principales :</h2>
         <ul className="features">

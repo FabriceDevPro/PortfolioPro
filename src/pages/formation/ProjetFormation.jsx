@@ -1,5 +1,5 @@
 import Social from "../../components/Social";
-import { LogoHTML, LogoCss, LogoSass, LogoJS, LogoReact, LogoVite, LogoApi } from "../../assets/images";
+import { LogoHTML, LogoCss, LogoSass, LogoJS, LogoReact, LogoVite, LogoApi, LogoNode } from "../../assets/images";
 
 const ProjetFormation = () => {
   const projects = [
@@ -34,6 +34,7 @@ const ProjetFormation = () => {
         { name: "HTML", logo: LogoHTML },
         { name: "CSS", logo: LogoCss },
         { name: "SASS", logo: LogoSass },
+        { name: "NODE", logo: LogoNode },
       ],
       url: "https://fabwebprojects.fr/OhMyFood/index.html",
     },
@@ -55,6 +56,7 @@ const ProjetFormation = () => {
         { name: "HTML", logo: LogoHTML },
         { name: "CSS", logo: LogoCss },
         { name: "SASS", logo: LogoSass },
+        { name: "NODE", logo: LogoNode },
         { name: "JS", logo: LogoJS },
         { name: "API", logo: LogoApi },
       ],
@@ -69,6 +71,7 @@ const ProjetFormation = () => {
         { name: "HTML", logo: LogoHTML },
         { name: "CSS", logo: LogoCss },
         { name: "SASS", logo: LogoSass },
+        { name: "NODE", logo: LogoNode },
         { name: "JS", logo: LogoJS },
         { name: "REACT", logo: LogoReact },
         { name: "VITE.JS", logo: LogoVite },

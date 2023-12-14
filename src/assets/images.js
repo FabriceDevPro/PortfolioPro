@@ -10,6 +10,8 @@ import LogoPHP from "./img/logo/php.png";
 import LogoVite from "./img/logo/vite.png";
 import LogoApi from "./img/logo/api.png";
 import LogoVba from "./img/logo/vba.jpg";
+import LogoNode from "./img/logo/NodeJS.png";
+import LogoPhpmyadmin from "./img/logo/phpmyadmin.png";
 import Slide1_1 from "./img/slideshow1/slide1.webp";
 import Slide1_2 from "./img/slideshow1/slide2.webp";
 import Slide1_3 from "./img/slideshow1/slide3.webp";
@@ -44,6 +46,8 @@ export {
   LogoVite,
   LogoApi,
   LogoVba,
+  LogoNode,
+  LogoPhpmyadmin,
   Slide1_1,
   Slide1_2,
   Slide1_3,

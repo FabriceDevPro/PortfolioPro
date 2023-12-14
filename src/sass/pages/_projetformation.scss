@@ -72,9 +72,10 @@ $spacing-unit: 10px;
     gap: $spacing-unit;
 
     img {
-      max-width: $spacing-unit * 10;
       height: auto;
       margin: 0 $spacing-unit;
+      max-width: 100px;
+      border-radius: 10px;
     }
   }
 }
