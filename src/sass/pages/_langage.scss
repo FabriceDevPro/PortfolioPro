@@ -19,3 +19,13 @@
     }
   }
 }
+@media (max-width: 768px) {
+  .Langage {
+    font-size: 12px;
+    .logo-langage {
+      img {
+        max-width: 60px;
+      }
+    }
+  }
+}

@@ -1,46 +1,36 @@
-// Navigation.js
+import { useState } from "react";
 import { NavLink } from "react-router-dom";
-import { FaHome, FaInfoCircle, FaLaptopCode } from "react-icons/fa";
+import { FaBars, FaHome, FaInfoCircle, FaLaptopCode } from "react-icons/fa";
 import { MdContactMail } from "react-icons/md";
 
+const navLinks = [
+  { to: "/", label: "Accueil", Icon: FaHome },
+  { to: "/about", label: "À Propos", Icon: FaInfoCircle },
+  { to: "/contact", label: "Contact", Icon: MdContactMail },
+  { to: "/personnel/ProjetPerso", label: "Projet Perso", Icon: FaLaptopCode },
+  { to: "/formation/ProjetFormation", label: "Projets Formation", Icon: FaLaptopCode },
+  { to: "/entreprise/ProjetEntreprise", label: "Projets Entreprise", Icon: FaLaptopCode },
+];
+
 const Navigation = () => {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const renderLinkClass = ({ isActive }) => (isActive ? "bouton-projet nav-active" : "bouton-projet");
+
   return (
     <nav className="navbar">
-      <ul>
-        <li>
-          <NavLink to="/" className={({ isActive }) => (isActive ? "bouton-projet nav-active" : "bouton-projet")}>
-            <FaHome className="nav-icon" /> Accueil
-          </NavLink>
-        </li>
-        <li>
-          <NavLink to="/about" className={({ isActive }) => (isActive ? "bouton-projet nav-active" : "bouton-projet")}>
-            <FaInfoCircle className="nav-icon" />À Propos
-          </NavLink>
-        </li>
-        <li>
-          <NavLink to="/contact" className={({ isActive }) => (isActive ? "bouton-projet nav-active" : "bouton-projet")}>
-            <MdContactMail className="nav-icon" />
-            Contact
-          </NavLink>
-        </li>
-        <li>
-          <NavLink to="/personnel/ProjetPerso" className={({ isActive }) => (isActive ? "bouton-projet nav-active" : "bouton-projet")}>
-            <FaLaptopCode className="nav-icon" />
-            Projet Perso
-          </NavLink>
-        </li>
-        <li>
-          <NavLink to="/formation/ProjetFormation" className={({ isActive }) => (isActive ? "bouton-projet nav-active" : "bouton-projet")}>
-            <FaLaptopCode className="nav-icon" />
-            Projets Formation
-          </NavLink>
-        </li>
-        <li>
-          <NavLink to="/entreprise/ProjetEntreprise" className={({ isActive }) => (isActive ? "bouton-projet nav-active" : "bouton-projet")}>
-            <FaLaptopCode className="nav-icon" />
-            Projets Entreprise
-          </NavLink>
-        </li>
+      <button className="burger-menu" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
+        <FaBars />
+      </button>
+      <ul className={isMobileMenuOpen ? "nav-links mobile" : "nav-links"}>
+        {navLinks.map(({ to, label, Icon }) => (
+          <li key={to}>
+            <NavLink to={to} className={renderLinkClass} onClick={() => setIsMobileMenuOpen(false)}>
+              <Icon className="nav-icon" />
+              {label}
+            </NavLink>
+          </li>
+        ))}
       </ul>
     </nav>
   );

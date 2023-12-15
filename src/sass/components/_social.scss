@@ -27,3 +27,13 @@
     }
   }
 }
+@media (max-width: 768px) {
+  .Social {
+    font-size: 0.75rem;
+    .social-icons {
+      a {
+        font-size: 32px;
+      }
+    }
+  }
+}

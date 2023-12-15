@@ -153,3 +153,41 @@
   //   width: 80%;
   // }
 }
+@media (max-width: 768px) {
+  .Banner {
+    .carroussel {
+      width: 100%;
+    }
+    #banner-container {
+      flex-direction: column;
+    }
+    .arrow_left,
+    .arrow_right {
+      top: 25%;
+      font-size: 40px;
+    }
+    .description {
+      font-size: 18px;
+    }
+    .banner-content {
+      width: 100%;
+    }
+    span {
+      font-size: 14px;
+    }
+    .carroussel {
+      width: 90%; // Fait en sorte que toutes les bannières prennent toute la largeur
+      margin-bottom: 20px; // Ajoute un espace entre les bannières
+
+      &:not(:first-child) {
+        flex: auto; // Exemple de réinitialisation
+        max-width: none;
+        margin-right: 0;
+
+        &:nth-child(odd) {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}

@@ -13,13 +13,10 @@ const Footer = () => {
 
   return (
     <footer>
-      <div className="left-section">{/* Autres éléments du footer si nécessaire */}</div>
-      <div className="right-section">
-        {copyrightText}
-        <Link to="/mentions-legales" className="legal-link">
-          Mentions Légales
-        </Link>
-      </div>
+      {copyrightText}
+      <Link to="/mentions-legales" className="legal-link">
+        Mentions Légales
+      </Link>
     </footer>
   );
 };

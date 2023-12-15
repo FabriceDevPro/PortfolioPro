@@ -9,9 +9,9 @@ footer {
   }
 }
 
-// @media (max-width: 768px) {
-//   footer {
-//     flex-direction: column;
-//     text-align: center;
-//   }
-// }
+@media (max-width: 768px) {
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+}

@@ -1,3 +1,7 @@
+$button-color: #ecf3f9;
+$hover-color: #555;
+$font-color: #555;
+$box-shadow-color: rgba(0, 0, 0, 0.2);
 .bouton-projet,
 .project-view-button {
   display: inline-block;
@@ -22,9 +26,15 @@
     margin-right: 0;
   }
 
-  &:hover {
-    background: linear-gradient(to bottom, #bab1ba 5%, #ededed 100%);
-    background-color: #bab1ba;
+  // &:hover {
+  //   background: linear-gradient(to bottom, #bab1ba 5%, #ededed 100%);
+  //   background-color: #bab1ba;
+  // }
+  &:hover,
+  &.nav-active {
+    background-color: darken($button-color, 5%);
+    color: $hover-color;
+    box-shadow: 0 4px $box-shadow-color;
   }
   &:active {
     position: relative;
@@ -46,3 +56,9 @@
     margin: 10px 0;
   }
 }
+// &: hover;
+//   &.nav-active {
+//     background-color: darken($button-color, 5%);
+//     color: $hover-color;
+//     box-shadow: 0 4px $box-shadow-color;
+//   }

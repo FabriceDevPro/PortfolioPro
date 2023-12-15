@@ -27,7 +27,7 @@ const ProjetPerso = () => {
             <span className="description">{"Migration vers React avec Vite.js et création d'une API pour le Back-End."}</span>
           </li>
         </ol>
-        <h2 className="technologies-used">Technologies utilisées :</h2>
+        <h2 className="technologies-used">Technologie(s) utilisée(s) :</h2>
         <div className="project-languages">
           <img src={LogoHTML} alt="Logo HTML" />
           <img src={LogoCss} alt="Logo CSS" />

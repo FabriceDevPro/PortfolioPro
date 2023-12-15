@@ -97,7 +97,7 @@ const ProjetFormation = () => {
               <strong>Mission : </strong>
               {project.mission}
             </p>
-            <h3 className="technologies-used">Technologies utilisées :</h3>
+            <h3 className="technologies-used">Technologie(s) utilisée(s) :</h3>
             <div className="project-languages">
               {project.languages.map((lang, langIndex) => (
                 <img key={langIndex} src={lang.logo} alt={`${lang.name} Logo`} />
