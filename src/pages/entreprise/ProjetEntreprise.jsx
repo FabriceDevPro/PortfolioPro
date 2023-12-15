@@ -30,7 +30,7 @@ const ProjetEntreprise = () => {
   return (
     <div className="Container">
       <section className="project-enterprise-section">
-        <h1>{"Mon Projet réalisé en Entreprise"}</h1>
+        <h1>{"Mes Projets réalisés en Entreprise"}</h1>
         {projects.map((project, index) => (
           <div key={index} className="project-container">
             <h2 className="project-title">
