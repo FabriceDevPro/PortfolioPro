@@ -1,6 +1,6 @@
 .profile-photo {
-  width: 100px; /* Ajustez la taille selon vos préférences */
-  height: 100px; /* Ajustez la taille selon vos préférences */
+  width: 10%; /* Ajustez la taille selon vos préférences */
+  height: 10%; /* Ajustez la taille selon vos préférences */
   border-radius: 50%; /* Pour arrondir les coins et créer un effet de cercle */
   margin: 10px; /* Ajustez la marge selon vos préférences */
 }
@@ -28,6 +28,10 @@
   }
 }
 @media (max-width: 768px) {
+  .profile-photo {
+    width: 20%; /* Ajustez la taille selon vos préférences */
+    height: 20%;
+  }
   .Social {
     font-size: 0.75rem;
     .social-icons {
