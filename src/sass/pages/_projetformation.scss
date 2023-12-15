@@ -79,3 +79,35 @@ $spacing-unit: 10px;
     }
   }
 }
+@media (max-width: 768px) {
+  .Projet-Formation {
+    h1,
+    h2 {
+      font-size: 1rem;
+    }
+    .project-title {
+      font-size: 1rem;
+      margin: 0;
+    }
+    p {
+      font-size: 0.75rem;
+    }
+    .chronology {
+      font-size: 0.75rem;
+    }
+    .features,
+    .writing-details {
+      font-size: 0.75rem;
+    }
+    .project-languages {
+      img {
+        max-width: 40px;
+      }
+    }
+    .bouton-projet {
+      width: 60%; // Utiliser plus de largeur pour faciliter la lecture
+      margin: 0rem; // Centrer dans la vue
+      text-align: center;
+    }
+  }
+}

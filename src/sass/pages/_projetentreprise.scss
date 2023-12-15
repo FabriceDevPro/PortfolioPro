@@ -12,7 +12,7 @@
   }
 
   .project-container {
-    width: 100%;
+    max-width: 100%;
     margin-bottom: 2rem;
     padding-bottom: 2rem;
     border-bottom: 1px solid #333;
@@ -48,6 +48,41 @@
       margin: 0 10px;
       max-width: 100px;
       border-radius: 10px;
+      width: 100%; /* ajustez la largeur au conteneur */
+    }
+  }
+}
+@media (max-width: 768px) {
+  .project-enterprise-section {
+    h1,
+    h2 {
+      font-size: 1rem;
+    }
+    .project-title {
+      font-size: 1rem;
+      margin: 0;
+    }
+    p {
+      font-size: 0.75rem;
+    }
+    .chronology {
+      font-size: 0.75rem;
+    }
+    .features,
+    .writing-details {
+      font-size: 0.75rem;
+    }
+    .project-technologies {
+      flex-wrap: wrap;
+
+      .technology-logo {
+        max-width: 40px;
+      }
+    }
+    .bouton-projet {
+      width: 60%; // Utiliser plus de largeur pour faciliter la lecture
+      margin: 0rem; // Centrer dans la vue
+      text-align: center;
     }
   }
 }
