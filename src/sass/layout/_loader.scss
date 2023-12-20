@@ -1,24 +1,25 @@
 /* Loader styles */
-.loader {
+.loader__container {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(255, 255, 255, 0.9);
   display: flex;
+  height: 100%;
+  width: 100%;
   justify-content: center;
   align-items: center;
+  background-color: rgba(255, 255, 255, 0.9);
   z-index: 9999;
-  animation: fadeOut 3s ease forwards;
+  opacity: 1;
+  animation: fadeInOut 3s linear forwards;
+}
 
-  &:after {
-    content: "";
-    height: 7.5rem;
-    width: 7.5rem;
-    border: 1rem solid #1e3758;
-    border-top: 1rem solid transparent;
-    border-radius: 50%;
-    animation: spin 2s linear infinite, fadeOut 1s ease-in-out 3s forwards; /* Animation de rotation et de disparition */
-  }
+/* Style du loader */
+.loader {
+  border: 1rem solid #1e3758;
+  border-top: 1rem solid transparent;
+  border-radius: 50%;
+  height: 7.5rem;
+  width: 7.5rem;
+  animation: spin 2s linear infinite, fadeOut 1s ease-in-out 3s forwards; /* Animation de rotation et de disparition */
 }

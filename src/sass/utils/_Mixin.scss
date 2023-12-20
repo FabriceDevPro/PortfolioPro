@@ -1,0 +1,6 @@
+@use "_Variables.scss" as *;
+
+@mixin flex-alignement-center {
+  justify-content: center;
+  align-items: center;
+}

@@ -1,3 +1,16 @@
+@keyframes fadeInOut {
+  0% {
+    background-color: rgba(255, 255, 255, 0.9);
+    z-index: 9999;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+    z-index: -1;
+    background-color: transparent;
+  }
+}
+/* Animation de rotation du loader */
 @keyframes spin {
   0% {
     transform: rotate(0deg);
@@ -7,12 +20,12 @@
   }
 }
 
+/* Animation de disparition du loader */
 @keyframes fadeOut {
   0% {
     opacity: 1;
   }
   100% {
     opacity: 0;
-    display: none;
   }
 }

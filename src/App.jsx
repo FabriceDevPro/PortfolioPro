@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet";
 import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
 import Home from "./pages/Home";
 import Header from "./components/Header";
@@ -15,6 +16,17 @@ import MissingPage from "./pages/MissingPage";
 function App() {
   return (
     <div className="Page">
+      <Helmet>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-43LQQ38FF0"></script>
+        <script>
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-43LQQ38FF0');
+          `}
+        </script>
+      </Helmet>
       <BrowserRouter>
         <Header />
         <Navigation />
