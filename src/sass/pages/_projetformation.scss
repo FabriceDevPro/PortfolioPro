@@ -6,6 +6,10 @@ $font-size-title: 1.5rem;
 $font-size-subtitle: 1.1rem;
 $font-size-default: 1rem;
 $spacing-unit: 10px;
+$button-color: #ecf3f9;
+$hover-color: #555;
+$font-color: #555;
+$box-shadow-color: rgba(0, 0, 0, 0.2);
 
 .Projet-Formation {
   display: flex;
@@ -13,6 +17,7 @@ $spacing-unit: 10px;
   justify-content: center;
   align-items: center;
   padding: $spacing-unit * 2;
+  width: 95%;
 
   h1 {
     text-align: center;
@@ -77,6 +82,33 @@ $spacing-unit: 10px;
       max-width: 70px;
       border-radius: 10px;
     }
+  }
+}
+.filter-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.filter-container button {
+  margin: 0 10px;
+  padding: 5px 10px;
+  background-color: #00bc77; // Utilisez votre couleur primaire
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: darken(#00bc77, 10%);
+  }
+}
+.filter-button {
+  @extend .bouton-projet; // Utilisez votre style de bouton existant
+  background-color: $button-color;
+  &:hover {
+    background-color: $hover-color;
+    color: $font-color;
   }
 }
 @media (max-width: 768px) {

@@ -1,4 +1,4 @@
-import { LogoHTML, LogoCss, LogoSass, LogoJS, LogoReact, LogoVite, LogoMySql, LogoPHP, LogoApi, LogoNode, LogoPhpmyadmin } from "../assets/images";
+import { LogoHTML, LogoCss, LogoSass, LogoJS, LogoReact, LogoVite, LogoRedux, LogoMySql, LogoPHP, LogoApi, LogoNode, LogoPhpmyadmin } from "../assets/images";
 
 const Langage = () => {
   return (
@@ -14,6 +14,7 @@ const Langage = () => {
         <img src={LogoNode} alt="Logo NODE" />
         <img src={LogoReact} alt="Logo REACT" />
         <img src={LogoVite} alt="Logo VITE" />
+        <img src={LogoRedux} alt="Logo REDUX" />
         <img src={LogoMySql} alt="Logo MYSQL" />
         <img src={LogoPHP} alt="Logo PHP" />
         <img src={LogoPhpmyadmin} alt="Logo PhpMyAdmin" />

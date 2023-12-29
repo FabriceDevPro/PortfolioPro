@@ -11,6 +11,7 @@ import LogoVite from "./img/logo/vite.png";
 import LogoApi from "./img/logo/api.png";
 import LogoVba from "./img/logo/vba.jpg";
 import LogoNode from "./img/logo/NodeJS.png";
+import LogoRedux from "./img/logo/redux.png";
 import LogoPhpmyadmin from "./img/logo/phpmyadmin.png";
 import Slide1_1 from "./img/slideshow1/slide1.webp";
 import Slide1_2 from "./img/slideshow1/slide2.webp";
@@ -32,6 +33,7 @@ import Slide3_3 from "./img/slideshow3/slide3.webp";
 import Slide3_4 from "./img/slideshow3/slide4.webp";
 import Slide3_5 from "./img/slideshow3/slide5.webp";
 import Slide3_6 from "./img/slideshow3/slide6.webp";
+import Slide3_7 from "./img/slideshow3/slide7.webp";
 
 export {
   headerImage,
@@ -47,6 +49,7 @@ export {
   LogoApi,
   LogoVba,
   LogoNode,
+  LogoRedux,
   LogoPhpmyadmin,
   Slide1_1,
   Slide1_2,
@@ -68,4 +71,5 @@ export {
   Slide3_4,
   Slide3_5,
   Slide3_6,
+  Slide3_7,
 };

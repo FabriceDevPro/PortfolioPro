@@ -1,4 +1,4 @@
-import { Slide3_1, Slide3_2, Slide3_3, Slide3_4, Slide3_5, Slide3_6 } from "../assets/images";
+import { Slide3_1, Slide3_2, Slide3_3, Slide3_4, Slide3_5, Slide3_6, Slide3_7 } from "../assets/images";
 const bannerData3 = [
   {
     image: Slide3_1,
@@ -27,6 +27,11 @@ const bannerData3 = [
   },
   {
     image: Slide3_6,
+    tagLine: { text: "Projet Réalisés", htmlContent: "en Formation" },
+    link: "formation/ProjetFormation",
+  },
+  {
+    image: Slide3_7,
     tagLine: { text: "Projet Réalisés", htmlContent: "en Formation" },
     link: "formation/ProjetFormation",
   },
