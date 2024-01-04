@@ -34,7 +34,13 @@ import Slide3_4 from "./img/slideshow3/slide4.webp";
 import Slide3_5 from "./img/slideshow3/slide5.webp";
 import Slide3_6 from "./img/slideshow3/slide6.webp";
 import Slide3_7 from "./img/slideshow3/slide7.webp";
-
+import ProjetF2 from "./img/projet_formation/projet2.webp";
+import ProjetF3 from "./img/projet_formation/projet3.webp";
+import ProjetF4 from "./img/projet_formation/projet4.webp";
+import ProjetF5 from "./img/projet_formation/projet5.webp";
+import ProjetF6 from "./img/projet_formation/projet6.webp";
+import ProjetF8 from "./img/projet_formation/projet8.webp";
+import ProjetF11 from "./img/projet_formation/projet11.webp";
 export {
   headerImage,
   ProfilImage,
@@ -72,4 +78,11 @@ export {
   Slide3_5,
   Slide3_6,
   Slide3_7,
+  ProjetF2,
+  ProjetF3,
+  ProjetF4,
+  ProjetF5,
+  ProjetF6,
+  ProjetF8,
+  ProjetF11,
 };

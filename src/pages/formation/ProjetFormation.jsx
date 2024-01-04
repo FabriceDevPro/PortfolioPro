@@ -1,22 +1,24 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Social from "../../components/Social";
-import { LogoHTML, LogoCss, LogoSass, LogoJS, LogoReact, LogoVite, LogoApi, LogoNode, LogoRedux } from "../../assets/images";
-
+import { LogoHTML, LogoCss, LogoSass, LogoJS, LogoReact, LogoVite, LogoApi, LogoNode, LogoRedux, ProjetF2, ProjetF3, ProjetF4, ProjetF5, ProjetF6, ProjetF8, ProjetF11 } from "../../assets/images";
+import ProjectModal from "./ProjectModal";
 const ProjetFormation = () => {
-  const projects = [
+  const [projects] = useState([
     {
       id: 2,
-      name: "Riding Cities",
+      name: "Projet 2 - Riding Cities",
       theme: "Premiers pas sur le langage HTML",
       brief: "Ce projet a pour but de faire découvrir le langage HTML.",
       mission:
         "Vous rejoignez l’agence Webonzaï pour un stage en tant que développeur junior. Romain, votre maître de stage et CTO, est en déplacement professionnel la semaine de votre arrivée. Pour vous permettre d’avancer sans lui, il vous confie par e-mail votre première mission : mettre à jour la page Internet de Riding Cities, une association sportive qui promeut le skate en région.",
       languages: [{ name: "HTML", logo: LogoHTML }],
       url: "https://fabwebprojects.fr/Riding_Cities/index.html",
+      imgcard: ProjetF2,
+      img: ProjetF2,
     },
     {
       id: 3,
-      name: "Booki",
+      name: "Projet 3 - Booki",
       theme: "Créez la page d'accueil d'une agence de voyage avec HTML & CSS ",
       brief: "Ce projet a pour but de développer les compétences sur le HTML et de découvrir le CSS avec l'utilisation de flexbox et le Responsive.",
       mission:
@@ -26,10 +28,12 @@ const ProjetFormation = () => {
         { name: "CSS", logo: LogoCss },
       ],
       url: "https://fabwebprojects.fr/Booki/index.html",
+      imgcard: ProjetF3,
+      img: ProjetF3,
     },
     {
       id: 4,
-      name: "OhMyFood",
+      name: "Projet 4 - OhMyFood",
       theme: "Améliorez l'interface d'un site mobile avec des animations CSS ",
       brief: "Ce projet a pour but de développer les compétences sur le HTML, le CSS, d'apprendre à utiliser le SASS, apprendre les animations en CSS.",
       mission:
@@ -41,19 +45,23 @@ const ProjetFormation = () => {
         { name: "NODE", logo: LogoNode },
       ],
       url: "https://fabwebprojects.fr/OhMyFood/index.html",
+      imgcard: ProjetF4,
+      img: ProjetF4,
     },
     {
       id: 5,
-      name: "Print It",
+      name: "Projet 5 - Print It",
       theme: "Premiers pas sur le langage JavaScript",
       brief: "Ce projet a pour but de vous faire découvrir le langage JavaScript en mettant en place notre premier carroussel.",
       mission: "Votre tâche consiste à rendre un site statique dynamique avec la mise en place d'un carroussel",
       languages: [{ name: "JS", logo: LogoJS }],
       url: "https://fabwebprojects.fr/Print_It/index.html",
+      imgcard: ProjetF5,
+      img: ProjetF5,
     },
     {
       id: 6,
-      name: "Portfolio Architecte - Sophie Bluel",
+      name: "Projet 6 - Portfolio Architecte - Sophie Bluel",
       theme: "Créez une page web dynamique avec JavaScript ",
       brief: "Ce projet a pour but de réaliser le portfolio d'un architecte en le rendant dynamique avec une API Rest.",
       mission:
@@ -67,10 +75,12 @@ const ProjetFormation = () => {
         { name: "API", logo: LogoApi },
       ],
       url: "https://fabwebprojects.fr/Sophie-bluel/index.html",
+      imgcard: ProjetF6,
+      img: ProjetF6,
     },
     {
       id: 8,
-      name: "Kasa",
+      name: "Projet 8 - Kasa",
       theme: "Créez une application web de location immobilière avec React ",
       brief: "Ce projet a pour but de créer notre premier application en react.",
       mission: "Votre tâche consiste à faire une refonte totale de l'application web actuelle en la passant en stack complète JavaScript avec NodeJS coté back-end et React coté Front-end.",
@@ -84,10 +94,12 @@ const ProjetFormation = () => {
         { name: "VITE.JS", logo: LogoVite },
       ],
       url: "https://fabwebprojects.fr/Kasa",
+      imgcard: ProjetF8,
+      img: ProjetF8,
     },
     {
       id: 11,
-      name: "ArgentBank",
+      name: "Projet 11 - ArgentBank",
       theme: "Implémentez le front-end d'une application bancaire avec React + Redux",
       brief: "Mise en place d'un dahsboard et restriction d'accès avec une authentification utilisateur",
       mission: "Votre tâche consiste à créer le dashboard de l'application bancaire en utilisatn React + Redux.",
@@ -103,78 +115,90 @@ const ProjetFormation = () => {
         { name: "API", logo: LogoApi },
       ],
       url: "https://fabwebprojects.fr/ArgentBank/",
+      imgcard: ProjetF11,
+      img: ProjetF11,
     },
     // Ajoutez d'autres projets ici
-  ];
+  ]);
+  const [filteredProjects, setFilteredProjects] = useState(projects);
+  const [filterLang, setFilterLang] = useState("Tous");
+  const [sortOrder, setSortOrder] = useState("asc"); // 'asc' ou 'desc'
 
-  const [filteredTech, setFilteredTech] = useState("Toutes");
-  const [sortedProjects, setSortedProjects] = useState([]);
-  const [sortDirection, setSortDirection] = useState("ascending");
-  useEffect(() => {
-    let filtered = projects.filter((project) => filteredTech === "Toutes" || project.languages.some((lang) => lang.name === filteredTech));
-
-    // Tri en fonction de la direction
-    if (sortDirection === "ascending") {
-      filtered.sort((a, b) => a.id - b.id);
+  // Fonction de filtrage par langage
+  const filterByLanguage = (language) => {
+    setFilterLang(language);
+    if (language === "Tous") {
+      setFilteredProjects(projects);
     } else {
-      filtered.sort((a, b) => b.id - a.id);
+      setFilteredProjects(projects.filter((project) => project.languages.some((lang) => lang.name === language)));
     }
+  };
 
-    setSortedProjects(filtered);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [filteredTech, sortDirection]);
+  // Fonction de tri par ID
+  const sortByID = () => {
+    const sortedProjects = [...filteredProjects].sort((a, b) => {
+      return sortOrder === "asc" ? a.id - b.id : b.id - a.id;
+    });
+    setFilteredProjects(sortedProjects);
+    setSortOrder(sortOrder === "asc" ? "desc" : "asc");
+  };
 
-  const techOptions = ["Toutes", ...new Set(projects.flatMap((project) => project.languages.map((lang) => lang.name)))];
+  // Récupérez tous les langages uniques pour les boutons de filtrage
+  const allLanguages = ["Tous", ...new Set(projects.flatMap((project) => project.languages.map((lang) => lang.name)))];
 
-  const [expandedProjectId, setExpandedProjectId] = useState(null);
+  const [selectedProject, setSelectedProject] = useState(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  // Pour ouvrir un modal
+  const openModal = (project) => {
+    setSelectedProject(project);
+    setIsModalOpen(true);
+  };
+
+  // Pour fermer un modal
+  const closeModal = () => {
+    setSelectedProject(null);
+    setIsModalOpen(false);
+  };
 
   return (
-    <div className="Container">
-      <section className="Projet-Formation">
+    <div className="container">
+      <div className="projet-formation-container">
         <h1>Mes Projets réalisés en Formation OpenClassroom</h1>
-        <button className="bouton-projet" onClick={() => setSortDirection(sortDirection === "ascending" ? "descending" : "ascending")}>
-          {sortDirection === "ascending" ? "Tri Décroissant" : "Tri Croissant"}
-        </button>
-        <div className="filter-container">
-          {techOptions.map((tech, index) => (
-            <button key={index} onClick={() => setFilteredTech(tech)}>
-              {tech}
+        <div className="filter-buttons">
+          {allLanguages.map((language) => (
+            <button key={language} onClick={() => filterByLanguage(language)} className={filterLang === language ? "active" : ""}>
+              {language}
             </button>
           ))}
+          <button onClick={sortByID} className="sort-button">
+            Tri par ID {sortOrder === "asc" ? "↑" : "↓"}
+          </button>
         </div>
-
-        {sortedProjects.map((project) => (
-          <div key={project.id} className="project-container">
-            <div className="project-theme">
-              <h3 className="project-title">
-                Projet {project.id} : {project.name}
-              </h3>
-              <p className="project-subtitle">{project.theme}</p>
-            </div>
-            <button className="bouton-projet" onClick={() => setExpandedProjectId(project.id === expandedProjectId ? null : project.id)}>
-              {expandedProjectId === project.id ? "Réduire" : "Détails"}
-            </button>
-            {expandedProjectId === project.id && (
-              <>
+        <div className="projects-grid">
+          {filteredProjects.map((project) => (
+            <div key={project.id} className="project-card">
+              <div className="project-image-container">
+                <img src={project.imgcard} alt={`Aperçu de ${project.name}`} className="project-image" />
+              </div>
+              <div className="project-content">
+                <h2 className="project-title">{project.name}</h2>
                 <p className="project-brief">{project.brief}</p>
-                <p className="project-mission">
-                  <strong>Mission : </strong>
-                  {project.mission}
-                </p>
-                <h3 className="technologies-used">Technologie(s) utilisée(s) :</h3>
                 <div className="project-languages">
-                  {project.languages.map((lang, langIndex) => (
-                    <img key={langIndex} src={lang.logo} alt={`${lang.name} Logo`} />
+                  {project.languages.map((lang) => (
+                    <img key={lang.name} src={lang.logo} alt={lang.name} className="language-logo" />
                   ))}
                 </div>
-                <a href={project.url} target="_blank" rel="noopener noreferrer" className="bouton-projet">
-                  Voir le projet
-                </a>
-              </>
-            )}
-          </div>
-        ))}
-      </section>
+                <div className="project-view">
+                  <button onClick={() => openModal(project)} className="project-view-button">
+                    Voir Plus
+                  </button>
+                </div>
+              </div>
+            </div>
+          ))}
+          {isModalOpen && <ProjectModal isOpen={isModalOpen} onClose={closeModal} project={selectedProject} />}
+        </div>
+      </div>
       <Social />
     </div>
   );
