@@ -40,6 +40,7 @@ import ProjetF4 from "./img/projet_formation/projet4.webp";
 import ProjetF5 from "./img/projet_formation/projet5.webp";
 import ProjetF6 from "./img/projet_formation/projet6.webp";
 import ProjetF8 from "./img/projet_formation/projet8.webp";
+import ProjetF9 from "./img/projet_formation/projet9.webp";
 import ProjetF11 from "./img/projet_formation/projet11.webp";
 export {
   headerImage,
@@ -84,5 +85,6 @@ export {
   ProjetF5,
   ProjetF6,
   ProjetF8,
+  ProjetF9,
   ProjetF11,
 };

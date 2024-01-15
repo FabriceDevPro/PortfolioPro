@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Social from "../../components/Social";
-import { LogoHTML, LogoCss, LogoSass, LogoJS, LogoReact, LogoVite, LogoApi, LogoNode, LogoRedux, ProjetF2, ProjetF3, ProjetF4, ProjetF5, ProjetF6, ProjetF8, ProjetF11 } from "../../assets/images";
+import { LogoHTML, LogoCss, LogoSass, LogoJS, LogoReact, LogoVite, LogoApi, LogoNode, LogoRedux, ProjetF2, ProjetF3, ProjetF4, ProjetF5, ProjetF6, ProjetF8,ProjetF9, ProjetF11 } from "../../assets/images";
 import ProjectModal from "./ProjectModal";
 const ProjetFormation = () => {
   const [projects] = useState([
@@ -96,6 +96,20 @@ const ProjetFormation = () => {
       url: "https://fabwebprojects.fr/Kasa",
       imgcard: ProjetF8,
       img: ProjetF8,
+    },    
+    {
+      id: 9,
+      name: "Projet 9 - Nina Carducci",
+      theme: "Optimisez le référencement d'un site de photographe ",
+      brief: "Ce projet a pour but d'optimiser le référencement d'un site",
+      mission: "Votre tâche consiste à faire ...",
+      languages: [
+        { name: "HTML", logo: LogoHTML },
+        { name: "CSS", logo: LogoCss },
+      ],
+      url: "https://fabwebprojects.fr/NinaCarducci/",
+      imgcard: ProjetF9,
+      img: ProjetF9,
     },
     {
       id: 11,
