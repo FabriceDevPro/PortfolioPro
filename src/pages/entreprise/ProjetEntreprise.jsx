@@ -16,7 +16,7 @@ const ProjetEntreprise = () => {
         { name: "MYSQL", logo: LogoMySql },
         { name: "LogoPhpmyadmin", logo: LogoPhpmyadmin },
       ],
-      url: "https://fabwebprojects.fr/Riding_Cities/index.html",
+      url: "https://portfolio.fabwebprojects.fr/Riding_Cities/index.html",
     },
     {
       name: "ComparAdis",
@@ -24,7 +24,7 @@ const ProjetEntreprise = () => {
       description:
         "Ma mission a consisté à créer une interface web utilisateur pour remplir un questionnaire métier et ainsi permette l'intégration en automatique dans une application interne utilisant la technologie vb.net",
       languages: [{ name: "VBA", logo: LogoVba, isLarge: true }],
-      url: "https://fabwebprojects.fr/Riding_Cities/index.html",
+      url: "https://portfolio.fabwebprojects.fr/Riding_Cities/index.html",
     },
   ];
   return (
