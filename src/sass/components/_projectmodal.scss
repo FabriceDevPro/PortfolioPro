@@ -1,0 +1,133 @@
+/* ProjectModal.scss */
+@use "sass:math";
+$spacing-unit: 10px;
+$button-color: #ecf3f9;
+$box-shadow-color: rgba(0, 0, 0, 0.2);
+
+.custom-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background:#e0e0e0;
+  width: 80%;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  z-index: 9999;
+  max-height: 1000px;
+
+  .modal-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+      h2 {
+        margin: 0;
+      }
+
+    .close-button {
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      border: none;
+      background: #444444;
+      color: white;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 30px;
+      border-radius: 0.313rem;
+      
+      &:hover {
+        background-color: #1e3758;
+      }
+    }
+  }
+
+  .modal-content {
+    display: flex;
+    flex-direction: column;
+    
+    .modal-body {
+      display: grid;
+      grid-template-columns: 1fr 2fr; /* 1 fraction pour l'image, 3 fractions pour les détails */
+      gap: 20px; /* Espace entre l'image et les détails */
+      align-items: stretch; /* Alignement vertical au début pour éviter l'étirement */
+      max-height: 600px; 
+          
+      .modal-image-container {
+        width: 100%; /* Utilisez toute la largeur disponible de la colonne */
+        overflow: hidden; /* Empêche le débordement de l'image */
+        img {
+          width: 100%; /* L'image remplit le conteneur */
+          height: auto; /* Hauteur automatique pour conserver l'aspect ratio */
+          border-radius: 10px; /* Rayon de bordure pour l'image */
+          object-fit: contain; /* Ajuste et couvre la zone sans perdre l'aspect ratio */
+          max-height: 600px;
+        }
+      }
+    
+      .modal-project-details {
+        display: flex;
+        flex-direction: column; /* Organise le contenu en colonne */
+        justify-content: flex-start; /* Alignement du contenu au début */
+        overflow: auto; /* Ajoute un défilement si le contenu dépasse */
+        background: #fff;
+        border-radius: 10px;
+        padding:20px;
+      }
+
+      .modal-project-languages {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: $spacing-unit;
+        margin-top: $spacing-unit;
+
+        .modal-language-logo {
+          display: inline-block;
+          width: 60px; // Taille des icônes
+          height: 60px;
+          padding: math.div($spacing-unit, 4); // Ajuster la taille du padding si nécessaire
+          margin-bottom: $spacing-unit;
+          background-color: $button-color; // Couleur de fond des icônes
+          border-radius: 25%; // Rend les icônes circulaires
+          box-shadow: 0 4px 8px $box-shadow-color;
+          transition: all 0.3s ease;
+
+          &:hover {
+            background-color: darken($button-color, 10%);
+            box-shadow: 0 6px 12px darken($box-shadow-color, 10%);
+            transform: translateY(-3px);
+            text-align: center;
+          }
+
+          img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease;
+          }
+
+          .modal-language-name {
+            display: none; // Cache le nom du langage par défaut
+            transition: 0.3s ease;
+          }
+
+          &:hover .modal-language-name {
+            display: block; // Affiche le nom au survol
+            margin-top: math.div($spacing-unit, 4);
+            text-align: center;
+          }
+        }
+      }
+    }
+  
+
+    .modal-footer {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+  }
+}

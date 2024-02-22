@@ -100,7 +100,7 @@ $card-background: #fff;
     .projects-grid {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(450px, 1fr)); // ajustez selon la largeur souhaitée des cartes
-        gap: $spacing-unit; // Espace entre les cartes
+        gap: 40px; // Espace entre les cartes
         overflow-y: auto; // Active le défilement vertical si nécessaire
         max-height: 610px;
     
@@ -111,7 +111,7 @@ $card-background: #fff;
         background: $card-background;
         border-radius: $spacing-unit;
         box-shadow: 0 4px 8px $box-shadow-color;
-        height: 420px;
+        height: 500px;
         width: 98%;
 
         .project-image-container {
@@ -120,7 +120,7 @@ $card-background: #fff;
           align-items: center;
           overflow: hidden;
           border-radius: 10px 0px 0px 10px;
-          width:70%;
+          width:100%;
           img {
             width: 100%;
             height: auto;
@@ -135,7 +135,8 @@ $card-background: #fff;
           justify-content: space-between;
           padding: $spacing-unit;
           text-align: left;
-    
+          width: 80%;
+
           .project-title {
             display: flex;
             justify-content: center;
@@ -207,6 +208,34 @@ $card-background: #fff;
           }
         }
         transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease; // Appliquez la transition à l'état de base pour une animation fluide à l'entrée et à la sortie du survol
+      }
+    }
+  }
+}
+
+
+@media (max-width: 768px) {
+  .project-list-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    .project-list-title {
+      .projects-grid{
+        grid-template-columns:1fr;
+        .project-card{
+          height: 330px;
+          .project-image-container{
+            display:none;
+          }
+          .project-content {
+            .project-title{
+              font-size: 1rem;
+              margin:0;
+            }
+            .project-brief{
+              font-size: 0.8rem;
+            }
+          }
+        }
       }
     }
   }

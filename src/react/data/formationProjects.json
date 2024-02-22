@@ -4,7 +4,7 @@
     "name": "Projet 2 - Riding Cities",
     "theme": "Premiers pas sur le langage HTML",
     "brief": "Ce projet a pour but de faire découvrir le langage HTML.",
-    "mission": "Vous rejoignez l’agence Webonzaï pour un stage en tant que développeur junior...",
+    "mission": "Vous rejoignez l’agence Webonzaï pour un stage en tant que développeur junior. Romain, votre maître de stage et CTO, est en déplacement professionnel la semaine de votre arrivée. Pour vous permettre d’avancer sans lui, il vous confie par e-mail votre première mission : mettre à jour la page Internet de Riding Cities, une association sportive qui promeut le skate en région.",
     "languages": [
       { "name": "HTML" }
     ],
@@ -15,8 +15,8 @@
     "id": 3,
     "name": "Projet 3 - Booki",
     "theme": "Créez la page d'accueil d'une agence de voyage avec HTML & CSS",
-    "brief": "Ce projet a pour but de développer les compétences sur le HTML...",
-    "mission": "L’entreprise souhaite développer un site Internet...",
+    "brief": "Ce projet a pour but de développer les compétences sur le HTML et de découvrir le CSS avec l'utilisation de flexbox et le Responsive.",
+    "mission": "L’entreprise souhaite développer un site Internet qui permette aux usagers de trouver des hébergements et des activités dans la ville de leur choix. Vous êtes chargé d'intégrer l'interface du site avec du code HTML et CSS.",
     "languages": [
       { "name": "HTML" },
       { "name": "CSS" }
@@ -28,8 +28,8 @@
     "id": 4,
     "name": "Projet 4 - OhMyFood",
     "theme": "Améliorez l'interface d'un site mobile avec des animations CSS",
-    "brief": "Ce projet a pour but de développer les compétences sur le HTML...",
-    "mission": "Votre tâche consiste à développer un site “mobile first”...",
+    "brief": "Ce projet a pour but de développer les compétences sur le HTML, le CSS, d'apprendre à utiliser le SASS, apprendre les animations en CSS.",
+    "mission": "Votre tâche consiste à développer un site “mobile first” qui répertorie les menus de restaurants gastronomiques. En plus des systèmes classiques de réservation, les clients pourront composer le menu de leur repas pour que les plats soient prêts à leur arrivée. Finis, les temps d'attente au restaurant !",
     "languages": [
       { "name": "HTML" },
       { "name": "CSS" },
@@ -42,8 +42,8 @@
     "id": 5,
     "name": "Projet 5 - Print It",
     "theme": "Premiers pas sur le langage JavaScript",
-    "brief": "Découvrir le langage JavaScript en mettant en place un carrousel.",
-    "mission": "Rendre un site statique dynamique avec un carrousel.",
+    "brief": "Ce projet a pour but de vous faire découvrir le langage JavaScript en mettant en place notre premier carroussel..",
+    "mission": "Votre tâche consiste à rendre un site statique dynamique avec la mise en place d'un carroussel.",
     "languages": [
       { "name": "JS" }
     ],
@@ -54,8 +54,8 @@
     "id": 6,
     "name": "Projet 6 - Portfolio Architecte - Sophie Bluel",
     "theme": "Créez une page web dynamique avec JavaScript",
-    "brief": "Réaliser le portfolio d'un architecte en le rendant dynamique avec une API Rest.",
-    "mission": "Rendre dynamique le portfolio d'un architecte en le reliant à une API.",
+    "brief": "Ce projet a pour but de réaliser le portfolio d'un architecte en le rendant dynamique avec une API Rest.",
+    "mission": "Votre tâche consiste à rendre dynamique le portfolio d'un architecte en le reliant à une API, permettant une connexion à une interface admin, la gestion des travaux (Ajout-Suppression) à travers un modal.",
     "languages": [
       { "name": "HTML" },
       { "name": "CSS" },
@@ -70,8 +70,8 @@
     "id": 8,
     "name": "Projet 8 - Kasa",
     "theme": "Créez une application web de location immobilière avec React",
-    "brief": "Créer une application en React.",
-    "mission": "Refonte totale de l'application web en utilisant JavaScript avec React.",
+    "brief": "Ce projet a pour but de créer notre premier application en react.",
+    "mission": "Votre tâche consiste à faire une refonte totale de l'application web actuelle en la passant en stack complète JavaScript avec NodeJS coté back-end et React coté Front-end.",
     "languages": [
       { "name": "HTML" },
       { "name": "CSS" },
@@ -88,8 +88,8 @@
     "id": 9,
     "name": "Projet 9 - Nina Carducci",
     "theme": "Optimisez le référencement d'un site de photographe",
-    "brief": "Optimiser le référencement d'un site.",
-    "mission": "Optimisation SEO du site de Nina Carducci.",
+    "brief": "Ce projet a pour but de optimiser le référencement, les performances d'un site qui est déjà en production.",
+    "mission": "Votre tâche consiste à faire : - une optimisation globale du site tant sur les performances que sur le SEO. - Mettre en place le référencement local en utilisant Schema.org. - Ajouter les metas pour les réseaux sociaux. - Faire les modifications liées à l’accessibilité du site.-Produire un rapport d’optimisation présentant toutes vos actions et leur impact. ",
     "languages": [
       { "name": "HTML" },
       { "name": "CSS" }
