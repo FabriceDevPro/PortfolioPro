@@ -1,0 +1,49 @@
+// SkillCard.scss
+.skill-card {
+    flex: 1 0 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: white;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+  
+    &.selected {
+        animation: pulse 1s infinite;
+  
+        .skill-logo {
+          transform: scale(1.1);
+        }
+  
+        .skill-overlay {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background-color: rgba(255, 255, 255, 0.2);
+          z-index: 10;
+          border-radius: 10px;
+        }
+      }
+  
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+      }
+  
+      .skill-logo {
+        max-width: 100%;
+        max-height: 100px;
+        transition: transform 0.3s ease;
+      }
+  
+    // .skill-overlay {
+    //   // Styles pour l'overlay si la compétence est sélectionnée
+    // }
+  }

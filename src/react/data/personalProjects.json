@@ -1,0 +1,37 @@
+{
+  "name": "Mon Budget Perso",
+  "description": "Mon projet personnel est bien plus qu'une simple application. C'est une transformation qui a évolué depuis mes débuts en 2016, lorsque j'ai créé un outil Excel pour gérer mes finances personnelles. Au fil des ans, il s'est métamorphosé, incorporant des fonctionnalités avancées, une base de données robuste, et depuis juillet 2023, il s'est transformé en une application web. Cette transition a été rendue possible grâce à mes efforts d'apprentissage autodidacte, mais aussi grâce à ma formation, qui a enrichi mes compétences en développement web. Explorez cette frise chronologique pour découvrir l'évolution de ce projet passionnant, et découvrez les compétences variées que j'ai mises en œuvre, à la fois issues de mon apprentissage autodidacte et de ma formation.",
+  "images": [
+    {
+      "titre": "Vue de la page de connexion du projet personnel",
+      "nomimage": "view-login.webp"
+    },
+    {
+      "titre": "Autre image du projet personnel",
+      "nomimage": "view-list.webp"
+    },
+    {
+      "titre": "Encore une autre image du projet personnel",
+      "nomimage": "view-account.webp"
+    },
+    {
+      "titre": "Encore une autre image du projet personnel",
+      "nomimage": "view-create.webp"
+    }
+  ],
+  "fonctionnalites": [
+    "Gestion de comptes bancaires personnels (jusqu'à 5 comptes Courant-Différé-Joint et 5 comptes Épargne).",
+    "Saisies d'écritures comptables de Revenus ou de Dépenses.",
+    "Partage des écritures entre 2 utilisateurs.",
+    "Compte Joint utilisable par les utilisateurs définis, tandis que les autres comptes sont individuels.",
+    "Validation des écritures sur une période après rapprochement bancaire et réalisation de clôtures d'exercices."
+  ],
+  "detailsEcritures": [
+    "Type de saisie : Revenus ou Dépenses.",
+    "Groupe, Catégorie (rattachée à un Compte), Sous-Catégorie, Détail.",
+    "Possibilité de définir des écritures récurrentes et des prélèvements automatiques.",
+    "Création d'écritures automatiques entre 2 comptes existants dans le logiciel (même utilisateur ou différent)."
+  ],
+  "demonstration": "Je peux vous faire une démonstration de l'outil, vous donner les paramètres de connexion pour un compte test ou vous donner accès à mon code via GitHub.",
+  "lienProjet": "https://fabwebprojects.fr/Mon_Budget_Perso/connexion.php"
+}

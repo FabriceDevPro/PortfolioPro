@@ -1,0 +1,41 @@
+.scroll-to-top {
+  display: flex;
+  position: fixed;
+  bottom: 20px;
+  right: 60px;
+  background-color: #606061; /* Couleur du bouton */
+  color: white; /* Couleur du texte */
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  z-index: 9999; /* Valeur de z-index élevée pour que le bouton soit au-dessus des autres éléments */
+
+  & :hover {
+    background-color: #444444; /* Couleur au survol */
+  }
+}
+
+@media (max-width: 768px) {
+  .scroll-to-top {
+    display: flex;
+    position: fixed;
+    bottom: 20px;
+    right: 5px;
+    background-color: #606061; /* Couleur du bouton */
+    color: white; /* Couleur du texte */
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    z-index: 9999; /* Valeur de z-index élevée pour que le bouton soit au-dessus des autres éléments */
+
+    & :hover {
+      background-color: #444444; /* Couleur au survol */
+    }
+  }
+}

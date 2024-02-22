@@ -6,7 +6,7 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin: 100px auto;
+    margin: 50px auto;
     padding: 20px;
     border-radius: 10px;
     background: linear-gradient(to bottom, rgba(173, 216, 230, 0.9), rgba(173, 216, 230, 0.9));
@@ -21,7 +21,7 @@
       justify-content: center; /* Centrer le contenu du logo-container */
       align-items: center; /* Aligner les éléments verticalement */
       position: absolute; /* Positionner absolument le logo par rapport à la section "À propos" */
-      top: -80px; /* Positionner le logo partiellement au-dessus de la section "À propos" */
+      top: -55px; /* Positionner le logo partiellement au-dessus de la section "À propos" */
       left: -320px; /* Commencer le logo à partir du bord gauche de la section "À propos" */
       z-index: 10; /* S'assurer que le logo apparaît au-dessus des autres éléments */
       animation: slowSpin 15s linear infinite;
@@ -34,7 +34,7 @@
   
     .section-title {
       color: #1e3758; // La couleur que vous avez choisie
-      font-size: 2.5em; // Une taille plus grande pour le titre
+      font-size: 2.0em; // Une taille plus grande pour le titre
       margin-bottom: 1.5rem;
     }
   
@@ -42,8 +42,9 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 50px; // Espace entre l'image et le texte
+      gap: 30px; // Espace entre l'image et le texte
       width: 100%;
+      text-align: justify;
     }
   
     .profile-photo {
@@ -57,9 +58,8 @@
   
     .About_Me {
       color: #1e3758; // La couleur pour le texte
-      font-size: 1em;
+      font-size: 1.5em;
       line-height: 1.8;
-      max-width: 1000px; // Une largeur maximale pour le contrôle de la ligne de texte
     }
   }
   

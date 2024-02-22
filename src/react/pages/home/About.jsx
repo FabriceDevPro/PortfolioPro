@@ -4,7 +4,7 @@ import { ProfilImage } from "../../../assets/images";
 
 const About = () => (
   <>
-    <h2 className="section-title">À propos de moi</h2>
+    <h2 className="section-title">Développeur Web</h2>
     <div className="about-content">
       <img src={ProfilImage} alt="Fabrice MAGNAN de BELLEVUE" className="profile-photo" />
       <p className="About_Me">

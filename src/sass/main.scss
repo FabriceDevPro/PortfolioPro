@@ -1,7 +1,14 @@
 @use "abstracts/keyframes";
 @use "components/scrollbar";
+@use "components/scrollToTop";
+@use "components/social";
+@use "components/button";
 @use "base/base";
 @use "layout/header";
 @use "layout/footer";
 @use "pages/legal_mentions";
 @use "pages/about";
+@use "pages/skills";
+@use "pages/skillCard";
+@use "pages/projects";
+@use "pages/error";
