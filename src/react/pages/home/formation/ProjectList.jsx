@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { useState } from 'react';
 import ProjectCard from './ProjectCard';
 import ProjectModal from './ProjectModal';
-import { LogoHTML, LogoCss, LogoSass, LogoJS, LogoReact, LogoVite, LogoApi,LogoSwagger, LogoRedux,LogoAgile,LogoKanban,LogoGitHub,LogoGitHubSmall } from "../../../../assets/images-skills-formation";
+import { LogoHTML, LogoCss, LogoSass, LogoJS, LogoReact, LogoVite, LogoApi,LogoSwagger, LogoRedux,LogoAgile,LogoKanban,LogoGitHubSmall } from "../../../../assets/images-skills-formation";
 import { LogoMySql,LogoPHP,LogoLaravel,LogoPhpmyadmin } from "../../../../assets/images-skills-perso";
 import { viewp2,viewp3,viewp4, viewp5,viewp6,viewp7,viewp8,viewp9,viewp10,viewp11 } from "../../../../assets/images-projet-formation";
 import { useSkills } from '../../../hooks/useSkills';
