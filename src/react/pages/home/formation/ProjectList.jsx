@@ -3,9 +3,9 @@ import PropTypes from 'prop-types';
 import { useState } from 'react';
 import ProjectCard from './ProjectCard';
 import ProjectModal from './ProjectModal';
-import { LogoHTML, LogoCss, LogoSass, LogoJS, LogoReact, LogoVite, LogoApi,LogoSwagger, LogoRedux } from "../../../../assets/images-skills-formation";
+import { LogoHTML, LogoCss, LogoSass, LogoJS, LogoReact, LogoVite, LogoApi,LogoSwagger, LogoRedux,LogoAgile,LogoKanban,LogoGitHub,LogoGitHubSmall } from "../../../../assets/images-skills-formation";
 import { LogoMySql,LogoPHP,LogoLaravel,LogoPhpmyadmin } from "../../../../assets/images-skills-perso";
-import { viewp2,viewp3,viewp4, viewp5,viewp6,viewp8,viewp9,viewp11 } from "../../../../assets/images-projet-formation";
+import { viewp2,viewp3,viewp4, viewp5,viewp6,viewp7,viewp8,viewp9,viewp10,viewp11 } from "../../../../assets/images-projet-formation";
 import { useSkills } from '../../../hooks/useSkills';
 import { TbArrowsDownUp } from "react-icons/tb";
 
@@ -25,9 +25,10 @@ const ProjectList = ({ projects, title }) => {
       case 4: return viewp4;
       case 5: return viewp5;
       case 6: return viewp6;
-      case 7: return viewp6;
+      case 7: return viewp7;
       case 8: return viewp8;
       case 9: return viewp9;
+      case 10: return viewp10;
       case 11: return viewp11;
       default: return null;
     }
@@ -47,6 +48,9 @@ const ProjectList = ({ projects, title }) => {
       case 'PHP': return LogoPHP;
       case 'LARAVEL': return LogoLaravel;
       case 'PHPMYADMIN': return LogoPhpmyadmin;
+      case 'KANBAN': return LogoKanban;
+      case 'AGILE': return LogoAgile;
+      case 'GITHUB': return LogoGitHubSmall;
       default: return null;
     }
   };

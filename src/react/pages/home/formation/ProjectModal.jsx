@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import Modal from "react-modal";
 import { FaGithub } from 'react-icons/fa6';
 import { TbWorldWww } from "react-icons/tb";
-
+import { HiLightBulb } from "react-icons/hi";
 const ProjectModal = ({ isOpen, onClose, project }) => {
   return (
     <Modal
@@ -25,9 +25,9 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
             <img src={project.img} alt={project.name} />
           </div>
           <div className="modal-project-details">
-            {/* <p>
+            <p>
               <strong>Thème :</strong> {project.theme}
-            </p> */}
+            </p>            
             {/* <p>
               <strong>Brief :</strong> {project.brief}
             </p> */}
@@ -47,6 +47,10 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
                 <strong>Défis rencontrés :</strong> {project.challenges}
               </p>
             )}
+            <div>
+              <HiLightBulb  />
+              <span>Idée lumineuse</span>
+              </div>
             <p>
               <strong>Technologie(s) utilisée(s) :</strong>
             </p>

@@ -20,19 +20,19 @@
     ],
     "images": [
       {
-        "titre": "Vue de la page de connexion du projet personnel",
+        "titre": "Vue de l'écran de connexion ",
         "nomimage": "view-login.webp"
       },
       {
-        "titre": "Autre image du projet personnel",
+        "titre": "Vue de l'écran Liste Saisie - Tous les comptes",
         "nomimage": "view-list.webp"
       },
       {
-        "titre": "Encore une autre image du projet personnel",
+        "titre": "Vue de l'écran Liste Saisie - Compte xxxx",
         "nomimage": "view-account.webp"
       },
       {
-        "titre": "Encore une autre image du projet personnel",
+        "titre": "Vue de l'écran Création d'écriture comptable",
         "nomimage": "view-create.webp"
       }
     ],
