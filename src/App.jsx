@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import { basename } from "./config";
 import { useEffect, useState } from 'react';
+import { SkillsProvider } from "./react/context/SkillsContext";
 import ReactModal from "react-modal";
 import Home from "./react/pages/Home";
 import Header from "./react/components/Header";
@@ -33,19 +34,21 @@ function AppWrapper() {
 
 function App() {
   return (
-    <Router basename={basename}>
-      <Header />
-      <Routes>
-        <Route path="/" element={<><Home /><AppWrapper /></>} />
-        <Route path="/certifications" element={<><Certifications /><AppWrapper /></>} />
-        <Route path="/curriculum" element={<><Curriculum /><AppWrapper /></>} />
-        <Route path="/mentions-legales" element={<><LegalMentions /><AppWrapper /></>} />
-        <Route path="/error404" element={<MissingPage />} />
-        <Route path="*" element={<><MissingPage /><AppWrapper /></>} />
-      </Routes>
-      <ScrollToTop />
-      <Footer />
-    </Router>
+    <SkillsProvider>
+      <Router basename={basename}>
+        <Header />
+        <Routes>
+          <Route path="/" element={<><Home /><AppWrapper /></>} />
+          <Route path="/certifications" element={<><Certifications /><AppWrapper /></>} />
+          <Route path="/curriculum" element={<><Curriculum /><AppWrapper /></>} />
+          <Route path="/mentions-legales" element={<><LegalMentions /><AppWrapper /></>} />
+          <Route path="/error404" element={<MissingPage />} />
+          <Route path="*" element={<><MissingPage /><AppWrapper /></>} />
+        </Routes>
+        <ScrollToTop />
+        <Footer />
+      </Router>
+    </SkillsProvider>
   );
 }
 

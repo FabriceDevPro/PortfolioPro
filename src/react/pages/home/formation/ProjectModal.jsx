@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import Modal from "react-modal";
 import { FaGithub } from 'react-icons/fa6';
-import { IoIosRocket } from 'react-icons/io';
+import { TbWorldWww } from "react-icons/tb";
 
 const ProjectModal = ({ isOpen, onClose, project }) => {
   return (
@@ -50,7 +50,7 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
         <div className="modal-footer">
           <a href={project.url} target="_blank" rel="noopener noreferrer">
             <button className="project-view-button">
-            <IoIosRocket className="icon button-icon" />
+            <TbWorldWww className="icon button-icon" />
               Voir le site démo</button>
           </a>
           <a href={project.url_git} target="_blank" rel="noopener noreferrer">

@@ -10,7 +10,11 @@
   background: linear-gradient(to bottom, rgba(173, 216, 230, 0.9), rgba(173, 216, 230, 0.9));
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   max-width: 80%;
-
+  .filter-icon {
+    margin-left: 10px;
+    color: #1e3758; // Ou toute autre couleur pour indiquer l'activité du filtre
+    cursor: pointer;
+  }
   .section-title {
     color: #1e3758;
     font-size: 2.0em;

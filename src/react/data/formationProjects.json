@@ -67,6 +67,20 @@
     "url_git": "https://github.com/Fabrice-Perso/Portfolio_architecte_sophie_bluel"
   },
   {
+    "id": 7,
+    "name": "Projet 7 - Gestion de Projet",
+    "theme": "Créez une page web dynamique avec JavaScript",
+    "brief": "Ce projet a pour but de réaliser le portfolio d'un architecte en le rendant dynamique avec une API Rest.",
+    "mission": "Votre tâche consiste à rendre dynamique le portfolio d'un architecte en le reliant à une API, permettant une connexion à une interface admin, la gestion des travaux (Ajout-Suppression) à travers un modal.",
+    "languages": [
+      { "name": "KANBAN" },
+      { "name": "AGILE" },
+      { "name": "GITHUB"}
+    ],
+    "url": "https://portfolio.fabwebprojects.fr/Sophie-bluel/index.html",
+    "url_git": "https://github.com/Fabrice-Perso/Portfolio_architecte_sophie_bluel"
+  },
+  {
     "id": 8,
     "name": "Projet 8 - Kasa",
     "theme": "Créez une application web de location immobilière avec React",

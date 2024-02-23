@@ -25,6 +25,7 @@ const ProjectList = ({ projects, title }) => {
       case 4: return viewp4;
       case 5: return viewp5;
       case 6: return viewp6;
+      case 7: return viewp6;
       case 8: return viewp8;
       case 9: return viewp9;
       case 11: return viewp11;

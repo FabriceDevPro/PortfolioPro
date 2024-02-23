@@ -1,18 +1,19 @@
-import { useEffect } from 'react';
+// Home.js
+import { useEffect, useContext } from 'react';
 import { useLocation } from 'react-router-dom';
 import About from "./home/About";
 import { LogoImage } from "../../assets/images";
-import { SkillsProvider } from '../context/SkillsContext';
+import { SkillsContext } from '../context/SkillsContext';
 import Skills from "./home/Skills";
 import PersonalProjectCard from './home/PersonalProjectCard';
 import personalProjects from '../data/personalProjects';
 import ProjectList from './home/formation/ProjectList';
 import formationProjects from '../data/formationProjects';
-import Curriculum from './Curriculum';
 
 const Home = () => {
-   
     const location = useLocation();
+    // Déplacez cette ligne à l'intérieur de la fonction `Home` pour utiliser le contexte correctement
+    const { activeSkill } = useContext(SkillsContext);
 
     useEffect(() => {
       if (location.hash) {
@@ -23,38 +24,39 @@ const Home = () => {
       } else {
         window.scrollTo(0, 0);
       }
-    }, [location]);    
+    }, [location]);
+    
+    // Filtrez les projets ici, à l'intérieur de la fonction `Home`
+    const filteredProjects = activeSkill
+        ? formationProjects.filter(project => project.languages.some(lang => lang.name === activeSkill))
+        : formationProjects;
+
     return (
-        <SkillsProvider>
-            <main>            
-                <section className="About" id="about">
-                    <div className="logo-container">
-                        <img src={LogoImage} alt="Logo FAB WEB PROJECT" className="logo" />
-                    </div>
-                    <About />
-                </section>
-                <section className="Skills" id="skills">
-                  <Skills />
-                </section>
-                <section className="project-list-container" id="projects">
-                  <div className="project-list-title">
-                    <PersonalProjectCard 
+      <main>
+          <section className="About" id="about">
+              <div className="logo-container">
+                  <img src={LogoImage} alt="Logo FAB WEB PROJECT" className="logo" />
+              </div>
+              <About />
+          </section>
+          <section className="Skills" id="skills">
+              <Skills />
+          </section>
+          <section className="project-list-container" id="projects">
+            <div className="project-list-title">
+                <PersonalProjectCard 
                     title="Mes projets personnels"
-                    project={personalProjects.name} 
-                    images={personalProjects.images} 
-                    description={personalProjects.description}
-                    />
-                  </div>
-                  <div className="project-list-title">
-                    <ProjectList 
+                    projects={personalProjects} 
+                />
+            </div>
+            <div className="project-list-title">
+                <ProjectList 
                     title="Mes projets de formation"
-                    projects={formationProjects} 
-                    />
-                  </div>
-                </section>
-            </main>
-        </SkillsProvider>    
-      
+                    projects={filteredProjects} // Utilisez les projets filtrés ici
+                />
+            </div>
+          </section>
+      </main>
     );
 };
 
