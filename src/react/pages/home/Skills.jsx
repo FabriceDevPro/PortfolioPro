@@ -1,8 +1,8 @@
 // Skills.js
 import { useState, useEffect } from 'react';
 import SkillCard from './SkillCard'; // Assurez-vous que le chemin vers SkillCard.js est correct
-import { LogoHTML, LogoCss, LogoSass, LogoJS, LogoReact, LogoVite, LogoApi, LogoRedux } from "../../../assets/images-skills-formation";
-import { LogoMySql, LogoPHP, LogoLaravel, LogoPhpmyadmin, LogoGit, LogoGitHub, LogoKanban, LogoAgile } from "../../../assets/images-skills-perso";
+import { LogoHTML, LogoCss, LogoSass, LogoJS, LogoReact, LogoVite, LogoApi, LogoSwagger,LogoRedux,LogoGit, LogoGitHub, LogoKanban, LogoAgile } from "../../../assets/images-skills-formation";
+import { LogoMySql, LogoPHP, LogoLaravel, LogoPhpmyadmin } from "../../../assets/images-skills-perso";
 import useScrollToHash from "../../hooks/useScrollToHash";
 import { useSkills } from '../../hooks/useSkills';
 import { NavLink } from 'react-router-dom';
@@ -45,34 +45,35 @@ const Skills = () => {
   }, []);
 
   const frontendSkills = [
-    { name: 'HTML', logo: LogoHTML },
-    { name: 'CSS', logo: LogoCss },
-    { name: 'SASS', logo: LogoSass },
-    { name: 'JS', logo: LogoJS },
-    { name: 'REACT', logo: LogoReact },
-    { name: 'VITE.JS', logo: LogoVite },
-    { name: 'REDUX', logo: LogoRedux },
+    { name: 'HTML', logo: LogoHTML,altText: 'HTML' },
+    { name: 'CSS', logo: LogoCss,altText: 'CSS' },
+    { name: 'SASS', logo: LogoSass,altText: 'SASS' },
+    { name: 'JS', logo: LogoJS,altText: 'JS' },
+    { name: 'REACT', logo: LogoReact,altText: 'React' },
+    { name: 'VITE.JS', logo: LogoVite,altText: 'VITE.JS' },
+    { name: 'REDUX', logo: LogoRedux,altText: 'REDUX' },
   ];
 
   const backendSkills = [
-    { name: 'API', logo: LogoApi },
-    { name: 'PHP', logo: LogoPHP },
-    { name: 'LARAVEL', logo: LogoLaravel },
+    { name: 'API', logo: LogoApi,altText: 'Rest API' },
+    { name: 'SWAGGER', logo:LogoSwagger,altText: 'SWAGGER'},
+    { name: 'PHP', logo: LogoPHP,altText: 'PHP' },
+    { name: 'LARAVEL', logo: LogoLaravel,altText: 'Framework LARAVEL' },
   ];
 
   const databaseSkills = [
-    { name: 'MySql', logo: LogoMySql },
-    { name: 'Phpmyadmin', logo: LogoPhpmyadmin },
+    { name: 'MySql', logo: LogoMySql,altText: 'MySql' },
+    { name: 'Phpmyadmin', logo: LogoPhpmyadmin,altText: 'Phpmyadmin' },
   ];
 
   const kanbanSkills = [
-    { name: 'KANBAN', logo: LogoKanban },
-    { name: 'AGILE', logo: LogoAgile },
+    { name: 'KANBAN', logo: LogoKanban,altText: 'Kanban' },
+    { name: 'AGILE', logo: LogoAgile,altText: 'Methode Agile' },
   ];
 
   const gitSkills = [
-    { name: 'GIT', logo: LogoGit },
-    { name: 'GITHUB', logo: LogoGitHub },
+    { name: 'GIT', logo: LogoGit,altText: 'GIT' },
+    { name: 'GITHUB', logo: LogoGitHub,altText: 'GITHUB' },
   ];
 
   const handleSkillSelect = (skillName) => {

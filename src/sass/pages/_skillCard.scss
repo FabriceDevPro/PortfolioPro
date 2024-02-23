@@ -12,6 +12,20 @@
   overflow: visible;
   cursor: pointer;
 
+  .skill-alt-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 0; // Ajustez selon vos besoins
+    background-color: rgba(0, 0, 0, 0.5); // Fond légèrement foncé
+    color: white; // Texte en blanc
+    text-align: center;
+    font-size: 0.9em; // Ajustez selon vos besoins
+    border-bottom-left-radius: 10px; // Assurez-vous que cela correspond au border-radius de votre .skill-card
+    border-bottom-right-radius: 10px;
+  }
+
   &.selected {
     animation: pulse 1s infinite;
 

@@ -25,22 +25,35 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
             <img src={project.img} alt={project.name} />
           </div>
           <div className="modal-project-details">
-            <p>
+            {/* <p>
               <strong>Thème :</strong> {project.theme}
-            </p>
-            <p>
+            </p> */}
+            {/* <p>
               <strong>Brief :</strong> {project.brief}
-            </p>
+            </p> */}
             <p>
               <strong>Mission :</strong> {project.mission}
             </p>
+            {project.results && (
+              <p>
+                <strong>Résultats atteints :</strong> {project.results}
+              </p>
+            )}
+            <p>
+              <strong>Apprentissages clés :</strong> {project.learnings}
+            </p>
+            {project.challenges && (
+              <p>
+                <strong>Défis rencontrés :</strong> {project.challenges}
+              </p>
+            )}
             <p>
               <strong>Technologie(s) utilisée(s) :</strong>
             </p>
             <div className="modal-project-languages">
               {project.languages.map((lang) => (
                 <div key={lang.name} className="modal-language-logo">
-                  <img src={lang.logo} alt={lang.name} />
+                  <img src={lang.logo} alt={`logo_${lang.name}`} />
                   <span className="modal-language-name">{lang.name}</span>
                 </div>
               ))}
@@ -69,22 +82,25 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
 
 // Déclarez les prop-types pour valider les props
 ProjectModal.propTypes = {
-  isOpen: PropTypes.bool.isRequired, // isOpen doit être un booléen obligatoire
-  onClose: PropTypes.func.isRequired, // onClose doit être une fonction obligatoire
+  isOpen: PropTypes.bool.isRequired,
+  onClose: PropTypes.func.isRequired, 
   project: PropTypes.shape({
-    name: PropTypes.string.isRequired, // name doit être une chaîne obligatoire
-    img: PropTypes.string.isRequired, // img doit être une chaîne obligatoire
-    theme: PropTypes.string.isRequired, // theme doit être une chaîne obligatoire
-    brief: PropTypes.string.isRequired, // brief doit être une chaîne obligatoire
-    mission: PropTypes.string.isRequired, // mission doit être une chaîne obligatoire
+    name: PropTypes.string.isRequired, 
+    img: PropTypes.string.isRequired, 
+    theme: PropTypes.string.isRequired, 
+    brief: PropTypes.string.isRequired, 
+    mission: PropTypes.string.isRequired, 
+    results: PropTypes.string, 
+    learnings: PropTypes.string.isRequired, 
+    challenges: PropTypes.string, 
     languages: PropTypes.arrayOf(
       PropTypes.shape({
         name: PropTypes.string.isRequired,
         logo: PropTypes.string.isRequired,
       })
-    ).isRequired, // languages doit être un tableau d'objets avec des propriétés spécifiées
-    url: PropTypes.string.isRequired,
-    url_git: PropTypes.string.isRequired, // url doit être une chaîne obligatoire
+    ).isRequired, 
+    url: PropTypes.string.isRequired, 
+    url_git: PropTypes.string.isRequired, 
   }).isRequired,
 };
 

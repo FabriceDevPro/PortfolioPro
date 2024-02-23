@@ -10,7 +10,7 @@ $box-shadow-color: rgba(0, 0, 0, 0.2);
   left: 50%;
   transform: translate(-50%, -50%);
   background:#e0e0e0;
-  width: 80%;
+  width: 90%;
   padding: 20px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
@@ -58,11 +58,14 @@ $box-shadow-color: rgba(0, 0, 0, 0.2);
       .modal-image-container {
         width: 100%; /* Utilisez toute la largeur disponible de la colonne */
         overflow: hidden; /* Empêche le débordement de l'image */
+        display: flex;
+        justify-content: center;
+        align-items: center;
         img {
           width: 100%; /* L'image remplit le conteneur */
           height: auto; /* Hauteur automatique pour conserver l'aspect ratio */
           border-radius: 10px; /* Rayon de bordure pour l'image */
-          object-fit: contain; /* Ajuste et couvre la zone sans perdre l'aspect ratio */
+          object-fit: fill; /* Ajuste et couvre la zone sans perdre l'aspect ratio */
           max-height: 600px;
         }
       }
@@ -74,7 +77,9 @@ $box-shadow-color: rgba(0, 0, 0, 0.2);
         overflow: auto; /* Ajoute un défilement si le contenu dépasse */
         background: #fff;
         border-radius: 10px;
-        padding:20px;
+        padding: 0px 20px;
+        overflow-y: auto; // Active le défilement vertical si nécessaire
+        max-height: 600px;
       }
 
       .modal-project-languages {

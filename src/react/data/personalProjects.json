@@ -12,6 +12,7 @@
       { "name": "VITE.JS" },
       { "name": "REDUX" },
       { "name": "API" },
+      { "name": "SWAGGER"},
       { "name": "PHP" },
       { "name": "MYSQL" },
       { "name": "PHPMYADMIN" }, 

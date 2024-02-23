@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { useState } from 'react';
 import ProjectCard from './ProjectCard';
 import ProjectModal from './ProjectModal';
-import { LogoHTML, LogoCss, LogoSass, LogoJS, LogoReact, LogoVite, LogoApi, LogoRedux } from "../../../../assets/images-skills-formation";
+import { LogoHTML, LogoCss, LogoSass, LogoJS, LogoReact, LogoVite, LogoApi,LogoSwagger, LogoRedux } from "../../../../assets/images-skills-formation";
 import { LogoMySql,LogoPHP,LogoLaravel,LogoPhpmyadmin } from "../../../../assets/images-skills-perso";
 import { viewp2,viewp3,viewp4, viewp5,viewp6,viewp8,viewp9,viewp11 } from "../../../../assets/images-projet-formation";
 import { useSkills } from '../../../hooks/useSkills';
@@ -41,6 +41,7 @@ const ProjectList = ({ projects, title }) => {
       case 'REACT': return LogoReact;
       case 'VITE.JS': return LogoVite;
       case 'API': return LogoApi;
+      case 'SWAGGER': return LogoSwagger;
       case 'REDUX': return LogoRedux;
       case 'MYSQL': return LogoMySql;
       case 'PHP': return LogoPHP;

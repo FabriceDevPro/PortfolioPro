@@ -7,22 +7,23 @@ const About = () => (
     <h2 className="section-title">Développeur Web</h2>
     <div className="about-content">
       <img src={ProfilImage} alt="Fabrice MAGNAN de BELLEVUE" className="profile-photo" />
-      <p className="About_Me">
-        {`Bonjour, je suis Fabrice MAGNAN de BELLEVUE. Avec 15 ans d'expérience en informatique, ma reconversion professionnelle en Intégrateur Web via OpenClassrooms a consolidé ma passion pour le développement.`}
-
-        <br /><br />
+      <div className="About_Me">
+        <p>
+          {`Bonjour, je suis Fabrice MAGNAN de BELLEVUE. Avec 15 ans d'expérience en informatique, ma reconversion professionnelle en Intégrateur Web via OpenClassrooms a consolidé ma passion pour le développement.`}
+        </p>
         
-        {`Autodidacte, j'ai acquis des compétences en front-end et back-end, développé une application de gestion comptable et géré un serveur NAS pour l'hébergement web.`}
-
-        <br /><br />
+        <p>
+          {`Autodidacte, j'ai acquis des compétences en front-end et back-end, développé une application de gestion comptable et géré un serveur NAS pour l'hébergement web.`}
+        </p>
         
-        {`Le projet spécifique que j'ai réalisé pour mon dernier employeur, un éditeur de logiciels pour le secteur de l'immobilier, était un questionnaire en ligne en PHP/JS, aujourd'hui utilisé par ses clients.`}
-
-        <br /><br />
+        <p>
+          {`Le projet spécifique que j'ai réalisé pour mon dernier employeur, un éditeur de logiciels pour le secteur de l'immobilier, était un questionnaire en ligne en PHP/JS, aujourd'hui utilisé par ses clients.`}
+        </p>
         
-        {`Cette réalisation souligne ma capacité à créer des solutions web efficaces et adaptées aux besoins spécifiques des secteurs.`}
-
-      </p>
+        <p>
+          {`Cette réalisation souligne ma capacité à créer des solutions web efficaces et adaptées aux besoins spécifiques des secteurs.`}
+        </p>
+      </div>
     </div>
   </>
 );

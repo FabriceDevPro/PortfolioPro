@@ -111,7 +111,7 @@ $card-background: #fff;
         grid-template-columns: repeat(auto-fill, minmax(450px, 1fr)); // ajustez selon la largeur souhaitée des cartes
         gap: 40px; // Espace entre les cartes
         overflow-y: auto; // Active le défilement vertical si nécessaire
-        max-height: 530px;
+        max-height: 560px;
     
       .project-card {
         display: flex;

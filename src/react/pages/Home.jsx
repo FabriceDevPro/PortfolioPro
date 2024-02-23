@@ -9,6 +9,7 @@ import PersonalProjectCard from './home/PersonalProjectCard';
 import personalProjects from '../data/personalProjects';
 import ProjectList from './home/formation/ProjectList';
 import formationProjects from '../data/formationProjects';
+import TechnicsSkills from './home/TechnicsSkills';
 
 const Home = () => {
     const location = useLocation();
@@ -54,7 +55,10 @@ const Home = () => {
                     title="Mes projets de formation"
                     projects={filteredProjects} // Utilisez les projets filtrés ici
                 />
-            </div>
+            </div>            
+          </section>
+          <section className="TechnicsSkills" id="TechnicsSkills">
+            <TechnicsSkills />
           </section>
       </main>
     );

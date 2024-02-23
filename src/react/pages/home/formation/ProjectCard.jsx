@@ -11,7 +11,7 @@ const ProjectCard = ({ project, onOpenModal }) => (
       <p className="project-brief">{project.brief}</p>
       <div className="project-languages">
         {project.languages.map((lang, index) => (
-          <img key={index} src={lang.logo} alt={lang.name} className="language-logo" />
+          <img key={index} src={lang.logo} alt={`logo_${lang.name}`} className="language-logo" />
         ))}
       </div>
       <button onClick={() => onOpenModal(project)} className="project-view-button">
