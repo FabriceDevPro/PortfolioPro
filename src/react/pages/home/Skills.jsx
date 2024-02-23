@@ -5,6 +5,8 @@ import { LogoHTML, LogoCss, LogoSass, LogoJS, LogoReact, LogoVite, LogoApi, Logo
 import { LogoMySql, LogoPHP, LogoLaravel, LogoPhpmyadmin } from "../../../assets/images-skills-perso";
 import useScrollToHash from "../../hooks/useScrollToHash";
 import { useSkills } from '../../hooks/useSkills';
+import { NavLink } from 'react-router-dom';
+import { FaAward, FaGraduationCap } from 'react-icons/fa';
 
 const Skills = () => {
   const { setActiveSkill } = useSkills();
@@ -80,6 +82,14 @@ const Skills = () => {
             ))}
           </div>
         </div>
+      </div>
+      <div className='certifications-button'>
+      <NavLink to="/certifications">
+        <button className="project-view-button">
+          <FaAward className="icon button-icon" />
+          Voir mes certifications
+        </button>
+      </NavLink>
       </div>
     </>
   );

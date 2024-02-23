@@ -35,11 +35,20 @@ $card-background: #fff;
     display: flex;
     flex-direction: column;
   
+    .section-title-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
     .section-title {
       color: $primary-color;
       font-size: 2em;
       margin-bottom: 2rem;
       font-weight: 600;
+    }
+    .sort-buttons {
+      margin-left: 10px; // Ajoutez une marge entre le titre et le bouton de tri
     }
     .personal-project-card {
       display: flex;
@@ -102,7 +111,7 @@ $card-background: #fff;
         grid-template-columns: repeat(auto-fill, minmax(450px, 1fr)); // ajustez selon la largeur souhaitée des cartes
         gap: 40px; // Espace entre les cartes
         overflow-y: auto; // Active le défilement vertical si nécessaire
-        max-height: 610px;
+        max-height: 530px;
     
       .project-card {
         display: flex;
@@ -111,8 +120,8 @@ $card-background: #fff;
         background: $card-background;
         border-radius: $spacing-unit;
         box-shadow: 0 4px 8px $box-shadow-color;
-        height: 500px;
-        width: 98%;
+        height: 530px;
+        width: 100%;
 
         .project-image-container {
           display: flex;

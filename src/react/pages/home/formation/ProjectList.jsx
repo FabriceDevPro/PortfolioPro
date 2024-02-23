@@ -7,9 +7,16 @@ import { LogoHTML, LogoCss, LogoSass, LogoJS, LogoReact, LogoVite, LogoApi, Logo
 import { LogoMySql,LogoPHP,LogoLaravel,LogoPhpmyadmin } from "../../../../assets/images-skills-perso";
 import { viewp2,viewp3,viewp4, viewp5,viewp6,viewp8,viewp9,viewp11 } from "../../../../assets/images-projet-formation";
 import { useSkills } from '../../../hooks/useSkills';
+import { TbArrowsDownUp } from "react-icons/tb";
 
 const ProjectList = ({ projects, title }) => {
   const { activeSkill } = useSkills();
+  const [isAscOrder, setIsAscOrder] = useState(true);
+
+  // Fonction pour inverser l'ordre de tri
+  const toggleOrder = () => {
+    setIsAscOrder(!isAscOrder);
+  };
 
   const getProjectImage = (id) => {
     switch (id) {
@@ -61,32 +68,61 @@ const ProjectList = ({ projects, title }) => {
     setSelectedProject(null);
     setIsModalOpen(false);
   };
-  const filteredProjects = activeSkill
-    ? projects.filter((project) => project.languages.some(lang => lang.name === activeSkill))
-    : projects;
-    console.log("isModalOpen:", isModalOpen);
-    console.log("projects:", projects);
+
+// Définissez une fonction de tri pour les projets
+const sortProjects = (projects, ascending) => {
+  const sortedProjects = [...projects]; // Créez une copie des projets pour ne pas modifier l'original
+  sortedProjects.sort((a, b) => {
+    // Comparez les ids des projets pour trier en fonction de l'ordre croissant ou décroissant
+    return ascending ? a.id - b.id : b.id - a.id;
+  });
+  return sortedProjects;
+};
+
+// Utilisez la fonction de tri dans filteredProjects
+const filteredProjects = activeSkill
+  ? sortProjects(
+      projects.filter((project) => project.languages.some(lang => lang.name === activeSkill)),
+      isAscOrder
+    )
+  : sortProjects(projects, isAscOrder);
+  
     return (
     <>
-    <h2 className="section-title">{title}</h2>
-    <div className="projects-grid">
-      {filteredProjects.map((project) => (
-        <ProjectCard
-          key={project.id}
-          project={{
-            ...project,
-            imgcard: getProjectImage(project.id),
-            languages: project.languages.map(lang => ({
-              ...lang,
-              logo: getLanguageLogo(lang.name)
-            }))
-          }}
-          onOpenModal={openModal}
-        />
-      ))}
-    </div>
-    {isModalOpen && <ProjectModal isOpen={isModalOpen} onClose={closeModal} project={selectedProject} />}
-  </>
+      <div className="section-title-container">
+        <h2 className="section-title">{title}</h2>
+        {/* Boutons pour le tri */}
+        <div className="sort-buttons">
+          <button
+            className="icon-button"
+            onClick={toggleOrder}
+            title={isAscOrder ? 'Tri croissant' : 'Tri décroissant'}
+          >
+            <TbArrowsDownUp title={isAscOrder ? 'Tri croissant' : 'Tri décroissant'}/>
+          </button>
+        </div>
+      </div>
+      {/* La grille de projets */}
+      <div className="projects-grid">
+        {/* Affichage des cartes de projet filtrées */}
+        {filteredProjects.map((project) => (
+          <ProjectCard
+            key={project.id}
+            project={{
+              ...project,
+              imgcard: getProjectImage(project.id),
+              languages: project.languages.map(lang => ({
+                ...lang,
+                logo: getLanguageLogo(lang.name)
+              }))
+            }}
+            onOpenModal={openModal}
+          />
+        ))}
+      </div>
+      {/* Modal pour afficher les détails du projet sélectionné */}
+      {isModalOpen && <ProjectModal isOpen={isModalOpen} onClose={closeModal} project={selectedProject} />}
+    </>
   );
 };
 

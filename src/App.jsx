@@ -9,6 +9,7 @@ import ScrollToTop from "./react/components/ScrollToTop";
 import Social from "./react/components/Social";
 import LegalMentions from "./react/pages/LegalMentions";
 import MissingPage from "./react/pages/MissingPage";
+import Certifications from "./react/pages/Certifications";
 
 // Configuration de React Modal
 ReactModal.setAppElement("#root");
@@ -35,6 +36,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<><Home /><AppWrapper /></>} />
+        <Route path="/certifications" element={<><Certifications /><AppWrapper /></>} />
         <Route path="/mentions-legales" element={<><LegalMentions /><AppWrapper /></>} />
         <Route path="/error404" element={<MissingPage />} />
         <Route path="*" element={<><MissingPage /><AppWrapper /></>} />
