@@ -110,6 +110,7 @@ $box-shadow-color: rgba(0, 0, 0, 0.2);
   height: auto;
   overflow: hidden;
   line-height: 0; /* Ajuster la hauteur de ligne pour centrer l'icône */
+  border-radius: 10px;
   &:hover {
     background-color: darken(#ededed, 5%);
     color: #1e3758;

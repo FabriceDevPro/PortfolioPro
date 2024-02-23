@@ -81,12 +81,18 @@ const Skills = () => {
     setSelectedSkill(skillName);
   };
 
+  // Fonction pour réinitialiser le filtre sélectionné
+  const handleFilterReset = () => {
+    setSelectedSkill(null); // Réinitialise le filtre
+    setActiveSkill(null); // Si vous souhaitez également réinitialiser l'état global du skill actif
+  };
+
   return (
     <>
       <h2 className="section-title" id="skills">Mes Compétences</h2>
       <div className="skill-container">
         <div className="skills-group">
-          <h3>Frontend {selectedSkill && <FaFilter className="filter-icon" />}</h3>
+          <h3>Frontend {selectedSkill && <FaFilter className="filter-icon" onClick={handleFilterReset} title="Supprimer le filtre"/>}</h3>
           <div className="skill-set">
             {frontendSkills.map((skill, index) => {
               const skillNameUpper = skill.name.toUpperCase();

@@ -2,7 +2,7 @@ import { NASLogo, SynologyLogo, OvhLogo } from "../../../assets/images-skills-te
 
 const TechnicsSkills = () => {
     return (
-      <div className="technicsSkillsSection">
+      <>
         <h2>Compétences Techniques</h2>
         <div className="technicsSkillsCard">
           <h3>Hébergement Autonome de Mon Portfolio</h3>
@@ -21,7 +21,7 @@ const TechnicsSkills = () => {
             <img src={OvhLogo} alt="OVH" className="logoImage" />
           </div>
         </div>
-      </div>
+      </>
     );
 };
 
