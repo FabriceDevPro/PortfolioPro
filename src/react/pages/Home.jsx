@@ -8,6 +8,7 @@ import PersonalProjectCard from './home/PersonalProjectCard';
 import personalProjects from '../data/personalProjects';
 import ProjectList from './home/formation/ProjectList';
 import formationProjects from '../data/formationProjects';
+import Curriculum from './Curriculum';
 
 const Home = () => {
    
@@ -33,9 +34,9 @@ const Home = () => {
                     <About />
                 </section>
                 <section className="Skills" id="skills">
-                    <Skills />
+                  <Skills />
                 </section>
-                <section className="project-list-container">
+                <section className="project-list-container" id="projects">
                   <div className="project-list-title">
                     <PersonalProjectCard 
                     title="Mes projets personnels"
@@ -45,7 +46,10 @@ const Home = () => {
                     />
                   </div>
                   <div className="project-list-title">
-                    <ProjectList projects={formationProjects} title="Mes projets de formation"/>
+                    <ProjectList 
+                    title="Mes projets de formation"
+                    projects={formationProjects} 
+                    />
                   </div>
                 </section>
             </main>

@@ -10,11 +10,11 @@ function Header() {
             <nav className={isNavVisible ? 'nav-visible' : ''}>
                 <Link to="/#about">A propos</Link>
                 <Link to="/#skills">Compétences</Link>                
-                <Link to="/#projectsformation">Mes Projets</Link>
+                <Link to="/#projects">Mes Projets</Link>
                 {/* <Link to="/#projectsperso">Projet Personnel</Link> */}
-                <Link to="/#projectsformation">CV</Link>
+                <Link to="/curriculum">CV</Link>
                 {/* <Link to="/#projectsformation">Projets en Entreprise</Link>                 */}
-                <Link to="/Contact#contact">Contact</Link>
+                <Link to="/Contact">Contact</Link>
             </nav>
         </header>
     );

@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import SkillCard from './SkillCard'; // Assurez-vous que le chemin vers SkillCard.js est correct
 import { LogoHTML, LogoCss, LogoSass, LogoJS, LogoReact, LogoVite, LogoApi, LogoRedux } from "../../../assets/images-skills-formation";
-import { LogoMySql, LogoPHP, LogoLaravel, LogoPhpmyadmin } from "../../../assets/images-skills-perso";
+import { LogoMySql, LogoPHP, LogoLaravel, LogoPhpmyadmin, LogoGit,LogoGitHub,LogoKanban,LogoAgile } from "../../../assets/images-skills-perso";
 import useScrollToHash from "../../hooks/useScrollToHash";
 import { useSkills } from '../../hooks/useSkills';
 import { NavLink } from 'react-router-dom';
@@ -33,7 +33,16 @@ const Skills = () => {
     { name: 'MySql', logo: LogoMySql },
     { name: 'Phpmyadmin', logo: LogoPhpmyadmin },
   ];
-  
+
+  const kanbanSkills = [
+    { name: 'KANBAN', logo: LogoKanban },
+    { name: 'AGILE', logo: LogoAgile },
+  ];
+
+  const gitSkills = [
+    { name: 'GIT', logo: LogoGit },
+    { name: 'GITHUB', logo: LogoGitHub },
+  ];
   const handleSkillSelect = (skillName) => {
     setActiveSkill(skillName);
     setSelectedSkill(skillName);
@@ -73,6 +82,32 @@ const Skills = () => {
           <h3>Base de données</h3>
           <div className="skill-set">
             {databaseSkills.map((skill, index) => (
+              <SkillCard
+                key={index}
+                skill={skill}
+                isSelected={selectedSkill === skill.name}
+                onSkillSelect={handleSkillSelect}
+              />
+            ))}
+          </div>
+        </div>
+        <div className="skills-group">
+          <h3>Gestion de Projet</h3>
+          <div className="skill-set">
+            {kanbanSkills.map((skill, index) => (
+              <SkillCard
+                key={index}
+                skill={skill}
+                isSelected={selectedSkill === skill.name}
+                onSkillSelect={handleSkillSelect}
+              />
+            ))}
+          </div>
+        </div>
+        <div className="skills-group">
+          <h3>Versionning</h3>
+          <div className="skill-set">
+            {gitSkills.map((skill, index) => (
               <SkillCard
                 key={index}
                 skill={skill}
