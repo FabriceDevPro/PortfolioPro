@@ -1,17 +1,17 @@
 import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import { basename } from "./config";
 import { useEffect, useState } from 'react';
-import { SkillsProvider } from "./react/context/SkillsContext";
+import { SkillsProvider } from "./context/SkillsContext";
 import ReactModal from "react-modal";
-import Home from "./react/pages/Home";
-import Header from "./react/components/Header";
-import Footer from "./react/components/Footer";
-import ScrollToTop from "./react/components/ScrollToTop";
-import Social from "./react/components/Social";
-import LegalMentions from "./react/pages/LegalMentions";
-import MissingPage from "./react/pages/MissingPage";
-import Certifications from "./react/pages/Certifications";
-import Curriculum from "./react/pages/Curriculum";
+import Home from "./pages/Home";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import ScrollToTop from "./components/ScrollToTop";
+import Social from "./components/Social";
+import LegalMentions from "./pages/LegalMentions";
+import MissingPage from "./pages/MissingPage";
+import Certifications from "./pages/Certifications";
+import Curriculum from "./pages/Curriculum";
 
 // Configuration de React Modal
 ReactModal.setAppElement("#root");

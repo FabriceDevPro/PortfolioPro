@@ -1,0 +1,268 @@
+$primary-color: #1e3758;
+$secondary-color: #0056b3;
+$card-background: #fff;
+$box-shadow-color: rgba(0, 0, 0, 0.2);
+$spacing-unit: 10px;
+@use "sass:math";
+$primary-color: #1e3758;
+$secondary-color: #0056b3;
+$accent-color: #333;
+$background-theme: #e0e0e0;
+$font-size-title: 1.5rem;
+$font-size-subtitle: 1.1rem;
+$font-size-default: 1rem;
+$spacing-unit: 10px;
+$button-color: #ecf3f9;
+$hover-color: #555;
+$font-color: #555;
+$box-shadow-color: rgba(0, 0, 0, 0.2);
+$card-background: #fff;
+
+.projects-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 10px;
+  background: linear-gradient(to bottom, rgba(173, 216, 230, 0.9), rgba(173, 216, 230, 0.9));
+  backdrop-filter: blur(10px); // Flou d'arrière-plan pour améliorer la lisibilité
+  border: 1px solid rgba(0, 0, 0, 0.1); // Cadre subtil
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+  max-width: 80%;
+  position: relative;
+
+  .projects-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Crée deux colonnes de taille égale */
+    text-align: center;
+    gap: 25px;
+  
+    .personal-projects-container,
+    .formation-projects-container {
+      display: flex;
+      flex-direction: column;
+  
+      .section-title-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .section-title {
+        color: $primary-color;
+        font-size: 2em;
+        margin-bottom: 2rem;
+        font-weight: 600;
+      }
+      .sort-buttons {
+        margin-left: 10px; // Ajoutez une marge entre le titre et le bouton de tri
+      }
+      .personal-projects-collection{
+        display:flex;
+        flex-direction: column;
+        gap: 40px; // Espace entre les cartes
+        overflow-y: auto; // Active le défilement vertical si nécessaire
+        max-height: 530px;
+      
+        .personal-project-card {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          background: $card-background;
+          border-radius: 10px;
+          box-shadow: 0 4px 8px $box-shadow-color;
+          padding: 20px;
+          transition: all 0.3s ease;
+          height: 530px;
+      
+          &:hover {
+            box-shadow: 0 6px 12px $box-shadow-color;
+          }
+      
+          .personal-project-image-container {
+            width: 100%;
+            margin-bottom: 10px;
+      
+            img {
+              width: 100%;
+              height: auto;
+              border-radius: 10px;
+            }
+          }
+      
+          .personal-project-content {
+            text-align: center;
+      
+            .personal-project-title {
+              color: $primary-color;
+              font-size: 1.5rem;
+              margin-bottom: 10px;
+            }
+      
+            .personal-project-brief {
+              color: #555;
+              font-size: 1rem;
+              margin-bottom: 20px;
+            }
+      
+            .personal-project-view-button {
+              background-color: $secondary-color;
+              color: #fff;
+              border: none;
+              padding: 10px;
+              border-radius: 10px;
+              cursor: pointer;
+              text-align: center;
+      
+              &:hover {
+                background-color: darken($secondary-color, 10%);
+              }
+            }
+          }
+        }
+      }
+      .formation-projects-collection {
+          display: grid;
+          grid-template-columns: repeat(auto-fill, minmax(450px, 1fr)); // ajustez selon la largeur souhaitée des cartes
+          gap: 40px; // Espace entre les cartes
+          overflow-y: auto; // Active le défilement vertical si nécessaire
+          max-height: 560px;
+      
+        .formation-projects-card {
+          display: flex;
+          flex-direction: row;
+          align-items: normal;
+          background: $card-background;
+          border-radius: $spacing-unit;
+          box-shadow: 0 4px 8px $box-shadow-color;
+          height: 530px;
+          width: 100%;
+
+          .project-image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            border-radius: 10px 0px 0px 10px;
+            width:100%;
+            img {
+              width: 100%;
+              height: auto;
+              object-fit: cover;
+            }
+          }
+      
+          .project-content {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: $spacing-unit;
+            text-align: left;
+            width: 80%;
+
+            .project-title {
+              display: flex;
+              justify-content: center;
+              color: $secondary-color;
+              font-size: 1.2rem;
+              margin-bottom: math.div($spacing-unit, 2);
+            }
+      
+            .project-brief {
+              color: $accent-color;
+              font-size: $font-size-default;
+              margin-bottom: $spacing-unit;
+            }
+      
+            .project-languages {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              flex-wrap: wrap;
+              gap: $spacing-unit;
+              margin-top: $spacing-unit;
+      
+              .language-logo {
+                display: inline-block;
+                width: 40px; // Taille des icônes
+                height: 40px;
+                padding: math.div($spacing-unit, 4); // Ajuster la taille du padding si nécessaire
+                margin-bottom: $spacing-unit;
+                background-color: $button-color; // Couleur de fond des icônes
+                border-radius: 25%; // Rend les icônes circulaires
+                box-shadow: 0 4px 8px $box-shadow-color;
+                transition: all 0.3s ease;
+      
+                &:hover {
+                  background-color: darken($button-color, 10%);
+                  box-shadow: 0 6px 12px darken($box-shadow-color, 10%);
+                  transform: translateY(-3px);
+                  text-align: center;
+                }
+      
+                img {
+                  width: 100%;
+                  height: auto;
+                  transition: transform 0.3s ease;
+                }
+      
+                .language-name {
+                  display: none; // Cache le nom du langage par défaut
+                  transition: 0.3s ease;
+                }
+      
+                &:hover .language-name {
+                  display: block; // Affiche le nom au survol
+                  margin-top: math.div($spacing-unit, 4);
+                }
+              }
+            }
+            .project-view {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+      
+              .project-view-button {
+                width: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              }
+            }
+          }
+          transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease; // Appliquez la transition à l'état de base pour une animation fluide à l'entrée et à la sortie du survol
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .project-list-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    .project-list-title {
+      .projects-grid{
+        grid-template-columns:1fr;
+        .project-card{
+          height: 330px;
+          .project-image-container{
+            display:none;
+          }
+          .project-content {
+            .project-title{
+              font-size: 1rem;
+              margin:0;
+            }
+            .project-brief{
+              font-size: 0.8rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

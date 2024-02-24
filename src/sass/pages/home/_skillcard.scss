@@ -12,7 +12,13 @@
   overflow: visible;
   cursor: pointer;
 
-  .skill-alt-text {
+  .skill-card__logo {
+    max-width: 100%;
+    max-height: 100px;
+    transition: transform 0.3s ease;
+  }
+  
+  .skill-card__alt-text {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -29,11 +35,11 @@
   &.selected {
     animation: pulse 1s infinite;
 
-    .skill-logo {
+    .skill-card__logo {
       transform: scale(1.1);
     }
 
-    .skill-overlay {
+    .skill-card__overlay {
       position: absolute;
       top: 0;
       left: 0;
@@ -74,10 +80,4 @@
     visibility: visible;
     transform: translateX(-50%) translateY(-10px);
   }
-}
-
-.skill-logo {
-  max-width: 100%;
-  max-height: 100px;
-  transition: transform 0.3s ease;
 }

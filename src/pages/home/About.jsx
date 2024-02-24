@@ -1,13 +1,13 @@
 // About.js
 
-import { ProfilImage } from "../../../assets/images";
+import { ProfilImage } from "../../assets/images";
 
 const About = () => (
   <>
-    <h2 className="section-title">Développeur Web</h2>
-    <div className="about-content">
-      <img src={ProfilImage} alt="Fabrice MAGNAN de BELLEVUE" className="profile-photo" />
-      <div className="About_Me">
+    <h2 className="about-section__title">Développeur Web</h2>
+    <div className="about-section__content">
+      <img src={ProfilImage} alt="Fabrice MAGNAN de BELLEVUE" className="about-section__photo" />
+      <div className="about-section__description">
         <p>
           {`Bonjour, je suis Fabrice MAGNAN de BELLEVUE. Avec 15 ans d'expérience en informatique, ma reconversion professionnelle en Intégrateur Web via OpenClassrooms a consolidé ma passion pour le développement.`}
         </p>
@@ -29,9 +29,6 @@ const About = () => (
 );
 
 export default About;
-
-""
-
 
 {/* <p className="About_Me">
         {`Bonjour, je suis Fabrice MAGNAN de BELLEVUE. Fort de 15 ans d’expérience dans le secteur informatique, englobant à la fois les services et l’édition de logiciels, j’ai parcouru un chemin diversifié allant de la hotline à la migration de données, jusqu'à me consacrer pleinement au développement web.`}

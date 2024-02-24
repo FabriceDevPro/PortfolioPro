@@ -8,15 +8,18 @@ import viewp8 from "./img/projet_formation/view-p8.webp";
 import viewp9 from "./img/projet_formation/view-p9.webp";
 import viewp10 from "./img/projet_formation/view-p10.webp";
 import viewp11 from "./img/projet_formation/view-p11.webp";
-export {
-  viewp2,
-  viewp3,
-  viewp4,
-  viewp5,
-  viewp6,
-  viewp7,
-  viewp8,
-  viewp9,
-  viewp10,
-  viewp11,
+
+const imagesProjetFormation = {
+  "view-p2.webp": viewp2,
+  "view-p3.webp": viewp3,
+  "view-p4.webp": viewp4,
+  "view-p5.webp": viewp5,
+  "view-p6.webp": viewp6,
+  "view-p7.webp": viewp7,
+  "view-p8.webp": viewp8,
+  "view-p9.webp": viewp9,
+  "view-p10.webp": viewp10,
+  "view-p11.webp": viewp11,
 };
+
+export default imagesProjetFormation;

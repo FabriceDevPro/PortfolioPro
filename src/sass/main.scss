@@ -7,10 +7,7 @@
 @use "base/base";
 @use "layout/header";
 @use "layout/footer";
+@use 'pages/home' as home;
 @use "pages/legal_mentions";
-@use "pages/about";
-@use "pages/technicsskills";
-@use "pages/skills";
-@use "pages/skillCard";
-@use "pages/projects";
 @use "pages/error";
+@use "pages/certification";

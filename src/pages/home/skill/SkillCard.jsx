@@ -6,6 +6,7 @@ const SkillCard = ({ skill, isSelected, onSkillSelect, projectCount, formationCo
   const [isHovered, setIsHovered] = useState(false);
   // La fonction qui sera appelée lorsque l'utilisateur cliquera sur la carte
   const handleClick = () => {
+    console.log(`Click sur ${skill.name}, Projets: ${projectCount}, Formations: ${formationCount}`);
     onSkillSelect(skill.name);
   };
 
@@ -21,10 +22,10 @@ const SkillCard = ({ skill, isSelected, onSkillSelect, projectCount, formationCo
       onMouseLeave={() => setIsHovered(false)}
       {...tooltipProps}
     >
-      <img src={skill.logo} alt={skill.name} className="skill-logo" />
-      {isSelected && <div className="skill-overlay"></div>}
+      <img src={skill.logo} alt={skill.name} className="skill-card__logo" />
+      {isSelected && <div className="skill-card__overlay"></div>}
       {isHovered && (
-        <div className="skill-alt-text">{skill.altText}</div>
+        <div className="skill-card__alt-text">{skill.altText}</div>
       )}      
     </div>
   );

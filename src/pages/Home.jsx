@@ -2,14 +2,14 @@
 import { useEffect, useContext } from 'react';
 import { useLocation } from 'react-router-dom';
 import About from "./home/About";
-import { LogoImage } from "../../assets/images";
+import { LogoImage } from "../assets/images";
 import { SkillsContext } from '../context/SkillsContext';
-import Skills from "./home/Skills";
-import PersonalProjectCard from './home/PersonalProjectCard';
+import Skills from "./home/skill/Skills";
+import Projects from './home/Projects';
 import personalProjects from '../data/personalProjects';
-import ProjectList from './home/formation/ProjectList';
 import formationProjects from '../data/formationProjects';
-import TechnicsSkills from './home/TechnicsSkills';
+import TechnicsSkills from './home/skill-technics/TechnicsSkills';
+
 
 const Home = () => {
     const location = useLocation();
@@ -34,29 +34,21 @@ const Home = () => {
 
     return (
       <main>
-          <section className="About" id="about">
-              <div className="logo-container">
-                  <img src={LogoImage} alt="Logo FAB WEB PROJECT" className="logo" />
-              </div>
-              <About />
-          </section>
-          <section className="Skills" id="skills">
-              <Skills />
-          </section>
-          <section className="project-list-container" id="projects">
-            <div className="project-list-title">
-                <PersonalProjectCard 
-                    title="Mes projets personnels"
-                    projects={personalProjects} 
-                />
-            </div>
-            <div className="project-list-title">
-                <ProjectList 
-                    title="Mes projets de formation"
-                    projects={filteredProjects} // Utilisez les projets filtrés ici
-                />
-            </div>            
-          </section>
+        <section className="about-section" id="about">
+          <div className="about-section__logo-container">
+            <img src={LogoImage} alt="Logo FAB WEB PROJECT" className="about-section__logo" />
+          </div>
+          <About />
+        </section>
+        <section className="skills-section" id="skills">
+            <Skills />
+        </section>
+        <section className="projects-section" id="projects">
+          <Projects 
+            personalProjects={personalProjects} 
+            formationProjects={filteredProjects} 
+          />  
+        </section>
           <section className="TechnicsSkills" id="TechnicsSkills">
             <TechnicsSkills />
           </section>

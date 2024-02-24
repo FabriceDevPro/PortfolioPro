@@ -1,0 +1,12 @@
+@use "home/about";
+@use 'home/skills' as skills;
+@use "home/_skillcard";
+@use "home/projects";
+@use 'home/projet-formation' as projetFormation;
+@use 'home/projet-perso' as projetPerso;
+@use "home/technicsskills";
+
+// @use "pages/technicsskills";
+// @use "pages/skills";
+// @use "pages/skillCard";
+// @use "pages/projects";

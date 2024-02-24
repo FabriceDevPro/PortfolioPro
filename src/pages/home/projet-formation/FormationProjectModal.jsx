@@ -3,7 +3,7 @@ import Modal from "react-modal";
 import { FaGithub } from 'react-icons/fa6';
 import { TbWorldWww } from "react-icons/tb";
 import { HiLightBulb } from "react-icons/hi";
-const ProjectModal = ({ isOpen, onClose, project }) => {
+const FormationProjectModal = ({ isOpen, onClose, project }) => {
   return (
     <Modal
       isOpen={isOpen}
@@ -58,7 +58,7 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
               {project.languages.map((lang) => (
                 <div key={lang.name} className="modal-language-logo">
                   <img src={lang.logo} alt={`logo_${lang.name}`} />
-                  <span className="modal-language-name">{lang.name}</span>
+                  <span className="modal-language-name">{lang.altText}</span>
                 </div>
               ))}
             </div>
@@ -85,7 +85,7 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
 };
 
 // Déclarez les prop-types pour valider les props
-ProjectModal.propTypes = {
+FormationProjectModal.propTypes = {
   isOpen: PropTypes.bool.isRequired,
   onClose: PropTypes.func.isRequired, 
   project: PropTypes.shape({
@@ -108,4 +108,4 @@ ProjectModal.propTypes = {
   }).isRequired,
 };
 
-export default ProjectModal;
+export default FormationProjectModal;

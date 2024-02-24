@@ -9,8 +9,10 @@
     "learnings": "Ce projet a été une occasion précieuse d'approfondir ma maîtrise du HTML. J'ai acquis une meilleure compréhension des principes de base du web design et de l'importance de structurer le contenu de manière accessible et esthétiquement agréable.",
     "challenges": "L'un des principaux défis a été d'adapter et d'intégrer le code existant aux nouvelles exigences sans perturber les fonctionnalités préexistantes de la page. Cela a nécessité une analyse minutieuse et des tests continus pour assurer une transition fluide.",  
     "languages": [
-      { "name": "HTML" }
+      { "name": "HTML", "altText": "HTML5"},
+      { "name": "GIT_SMALL", "altText": "Git"}
     ],
+    "img": "view-p2.webp",
     "url": "https://portfolio.fabwebprojects.fr/Riding_Cities/index.html",
     "url_git": "https://github.com/Fabrice-Perso/Riding_Cities"
   },
@@ -23,10 +25,12 @@
     "results": "Réalisation d'une interface responsive qui adapte dynamiquement son contenu et son layout en fonction de la taille de l'écran, offrant une expérience utilisateur optimale sur divers appareils.",
     "learnings": "Acquisition d'une compréhension approfondie des principes de design responsive, maîtrise des flexbox pour le positionnement des éléments, et pratique du CSS pour styliser précisément selon une maquette.",
     "challenges": "Adapter une base de code existante aux nouvelles spécifications tout en conservant une structure cohérente et en respectant les contraintes techniques détaillées dans la note de synthèse.",
-    "languages": [
-      { "name": "HTML" },
-      { "name": "CSS" }
+    "languages": [      
+      { "name": "HTML", "altText": "HTML5"},
+      { "name": "CSS", "altText": "CSS3"},
+      { "name": "GIT_SMALL", "altText": "Git"}
     ],
+    "img": "view-p3.webp",
     "url": "https://portfolio.fabwebprojects.fr/Booki/index.html",
     "url_git": "https://github.com/Fabrice-Perso/Booki"
   },
@@ -40,10 +44,12 @@
     "learnings": "Approfondissement des compétences en HTML et CSS, maîtrise de SASS pour une gestion plus efficace des styles CSS, et mise en œuvre d'animations CSS pour dynamiser l'interface utilisateur. Acquisition de compétences en conception 'mobile first' et en responsive design.",
     "challenges": "Création d'une expérience utilisateur cohérente et agréable sur différents appareils (mobiles, tablettes, desktops) tout en respectant les maquettes fournies. Intégration d'animations complexes, notamment pour les sélections de plats et le loader de la page d'accueil, tout en assurant la performance et la fluidité du site.",
     "languages": [
-      { "name": "HTML" },
-      { "name": "CSS" },
-      { "name": "SASS"}
+      { "name": "HTML", "altText": "HTML5"},
+      { "name": "CSS", "altText": "CSS3"},
+      { "name": "SASS", "altText": "Sass"},
+      { "name": "GIT_SMALL", "altText": "Git"}
     ],
+    "img": "view-p4.webp",
     "url": "https://portfolio.fabwebprojects.fr/OhMyFood/index.html",
     "url_git": "https://github.com/Fabrice-Perso/OhMyFood"
   },
@@ -57,8 +63,10 @@
     "learnings": "Ce projet a été une introduction pratique au JavaScript, permettant de comprendre et d'appliquer les concepts de base comme les événements, la manipulation du DOM, et les boucles. J'ai également appris à utiliser les conditions pour créer un défilement infini dans le carrousel, améliorant ainsi l'expérience utilisateur sur le site.",
     "challenges": "Intégrer le carrousel au sein d'un site existant sans altérer sa structure ou son style a été un défi. Il a fallu veiller à ce que le carrousel soit pleinement fonctionnel et responsive, s'adaptant aux différentes tailles d'écran. La mise en œuvre d'un défilement infini sans erreurs lorsque l'utilisateur atteint la fin des images a nécessité une réflexion logique et des tests approfondis.",
     "languages": [
-      { "name": "JS" }
+      { "name": "JS", "altText": "JavaScript"},
+      { "name": "GIT_SMALL", "altText": "Git"}
     ],
+    "img": "view-p5.webp",
     "url": "https://portfolio.fabwebprojects.fr/Print_It/index.html",
     "url_git": "https://github.com/Fabrice-Perso/Print-it-JS"
   },
@@ -72,12 +80,15 @@
     "learnings": "Approfondissement des compétences en JavaScript, notamment dans la manipulation du DOM et l'utilisation d'APIs Rest pour dynamiser le contenu. Acquisition d'une expérience pratique en matière de sécurité des formulaires et de gestion des sessions utilisateurs. Compréhension approfondie du processus de développement front-end en collaboration étroite avec une équipe de conception UX/UI.",
     "challenges": "Intégration fidèle des maquettes fournies en respectant une approche 'mobile first'. Gestion des défis techniques liés à l'authentification des utilisateurs et à la sécurisation des données. Développement d'une interface administrateur intuitive pour la gestion des projets sans compromettre la sécurité ou l'expérience utilisateur.",
     "languages": [
-      { "name": "HTML" },
-      { "name": "CSS" },
-      { "name": "SASS"},
-      { "name": "JS" },
-      { "name": "API"}
+      { "name": "HTML", "altText": "HTML5"},
+      { "name": "CSS", "altText": "CSS3"},
+      { "name": "SASS", "altText": "Sass"},
+      { "name": "JS", "altText": "JavaScript"},
+      { "name": "API", "altText": "API REST"},
+      { "name": "API", "altText": "API REST"},
+      { "name": "GIT_SMALL", "altText": "Git"}
     ],
+    "img": "view-p6.webp",
     "url": "https://portfolio.fabwebprojects.fr/Sophie-bluel/index.html",
     "url_git": "https://github.com/Fabrice-Perso/Portfolio_architecte_sophie_bluel"
   },
@@ -91,10 +102,13 @@
     "learnings": "Acquisition d'une expérience approfondie dans la planification et la gestion de projet en utilisant des méthodologies agiles. Développement de compétences en communication technique pour la présentation de solutions à des non-techniciens. Renforcement des connaissances en veille technologique et en spécifications techniques.",
     "challenges": "Défi de traduire les besoins fonctionnels en spécifications techniques claires et réalisables. Mise en œuvre d'une veille technologique structurée pour soutenir l'innovation du projet. Organisation et planification du projet en tenant compte des contraintes de temps et des attentes du client.",
     "languages": [
-      { "name": "KANBAN" },
-      { "name": "AGILE" },
-      { "name": "GITHUB"}
+      { "name": "KANBAN", "altText": "Kanban"},
+      { "name": "AGILE", "altText": "Méthode Agile"},
+      { "name": "GIT_SMALL", "altText": "Git"},
+      { "name": "GITHUB_SMALL", "altText": "GitHub"}     
+
     ],
+    "img": "view-p7.webp",
     "url": "https://portfolio.fabwebprojects.fr/Sophie-bluel/index.html",
     "url_git": "https://github.com/Fabrice-Perso/Portfolio_architecte_sophie_bluel"
   },
@@ -108,14 +122,15 @@
     "learnings": "Maîtrise approfondie de React et React Router pour la création d'interfaces utilisateur dynamiques et interactives. Expérience accrue dans l'utilisation de Sass pour un styling avancé et l'implémentation d'animations CSS pour améliorer l'UX. Compréhension renforcée du développement front-end sans back-end initial, en manipulant des données JSON.",
     "challenges": "Adaptation aux contraintes de design sans accès immédiat au back-end, nécessitant une gestion créative des données JSON fournies. Mise en œuvre d'animations CSS et intégration fidèle des maquettes Figma dans un environnement React. Gestion des états et des routes pour une application single-page sans perte de performance ou d'accessibilité.",
     "languages": [
-      { "name": "HTML" },
-      { "name": "CSS" },
-      { "name": "SASS"},
-      { "name": "JS" },
-      { "name": "REACT" },
-      { "name": "VITE.JS"}
-
+      { "name": "HTML", "altText": "HTML5"},
+      { "name": "CSS", "altText": "CSS3"},
+      { "name": "SASS", "altText": "Sass"},
+      { "name": "JS", "altText": "JavaScript"},
+      { "name": "REACT", "altText": "React.js"},
+      { "name": "VITE", "altText": "Vite.js"},
+      { "name": "GIT_SMALL", "altText": "Git"}
     ],
+    "img": "view-p8.webp",
     "url": "https://portfolio.fabwebprojects.fr/Kasa",
     "url_git": "https://github.com/Fabrice-Perso/Kasa"
   },
@@ -129,9 +144,12 @@
     "learnings": "Approfondissement des connaissances en SEO, notamment dans l'utilisation de Schema.org pour le référencement local et l'importance des meta tags pour les réseaux sociaux. Développement de compétences en optimisation des performances web, notamment dans la réduction du poids des images et l'amélioration du code pour un chargement plus rapide. Compréhension accrue des exigences d’accessibilité web et de leur mise en œuvre pour rendre le site plus accessible.",
     "challenges": "Optimisation d'un site existant sans perturber son fonctionnement, nécessitant une analyse détaillée et des tests rigoureux. Adaptation des techniques d'optimisation SEO à un site de photographe, avec un focus particulier sur le référencement local et l'accessibilité. Gestion des images de haute qualité sans compromettre les performances du site.",  
     "languages": [
-      { "name": "HTML" },
-      { "name": "CSS" }
+      { "name": "HTML", "altText": "HTML5"},
+      { "name": "CSS", "altText": "CSS3"},
+      { "name": "GIT_SMALL", "altText": "Git"}
+
     ],
+    "img": "view-p9.webp",
     "url": "https://portfolio.fabwebprojects.fr/NinaCarducci/",
     "url_git": "https://github.com/Fabrice-Perso/NinaCarducci"
   },
@@ -145,9 +163,11 @@
     "learnings": "Approfondissement des compétences en débuggage et en optimisation de la performance web. Acquisition d'une expérience pratique dans l'utilisation des outils de développement web pour identifier et résoudre les problèmes de manière efficace. Renforcement de la compréhension des principes d'accessibilité et de SEO.",
     "challenges": "Identification précise et correction des bugs sans documentation complète sur les problèmes existants. Adaptation et amélioration du code hérité sans altérer les fonctionnalités existantes. Mise en œuvre d'une solution qui respecte les contraintes de design et les attentes du client.",
     "languages": [
-      { "name": "HTML" },
-      { "name": "CSS" }
+      { "name": "HTML", "altText": "HTML5"},
+      { "name": "CSS", "altText": "CSS3"},
+      { "name": "GIT_SMALL", "altText": "Git"}
     ],
+    "img": "view-p10.webp",
     "url": "https://portfolio.fabwebprojects.fr/724events/",
     "url_git": "https://github.com/Fabrice-Perso/724events"
   },
@@ -160,17 +180,22 @@
     "results": "Développement réussi d'un dashboard utilisateur pour ArgentBank, offrant une expérience utilisateur fluide et sécurisée. Les utilisateurs peuvent désormais se connecter, visualiser et modifier leurs informations de profil, améliorant significativement l'engagement et la satisfaction client.",
     "learnings": "Ce projet a permis d'approfondir les connaissances en React et Redux, en se concentrant sur les meilleures pratiques pour la gestion de l'état et l'intégration d'APIs sécurisées. De plus, l'expérience acquise en matière d'optimisation de la performance et d'accessibilité du site constitue un atout majeur pour les projets futurs.",
     "languages": [
-        { "name": "HTML"},
-        { "name": "CSS"},
-        { "name": "SASS" },
-        { "name": "JS" },
-        { "name": "REACT" },
-        { "name": "VITE.JS" },
-        { "name": "REDUX" },
-        { "name": "API" },
-        { "name": "SWAGGER" }
-      ],
-      "url": "https://portfolio.fabwebprojects.fr/ArgentBank/",
-      "url_git": "https://github.com/Fabrice-Perso/ArgentBank-website"
+      { "name": "HTML", "altText": "HTML5"},
+      { "name": "CSS", "altText": "CSS3"},
+      { "name": "SASS", "altText": "Sass"},
+      { "name": "JS", "altText": "JavaScript"},
+      { "name": "REACT", "altText": "React.js"},
+      { "name": "VITE", "altText": "Vite.js"},
+      { "name": "REDUX", "altText": "Redux"},
+      { "name": "API", "altText": "API REST"},
+      { "name": "SWAGGER", "altText": "Swagger"},
+      { "name": "REDUX", "altText": "Redux"},
+      { "name": "API", "altText": "API REST"},
+      { "name": "SWAGGER", "altText": "Swagger"},
+      { "name": "GIT_SMALL", "altText": "Git"}
+    ],
+    "img": "view-p11.webp",
+    "url": "https://portfolio.fabwebprojects.fr/ArgentBank/",
+    "url_git": "https://github.com/Fabrice-Perso/ArgentBank-website"
   }
 ]

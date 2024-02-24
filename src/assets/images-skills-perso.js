@@ -5,11 +5,13 @@ import LogoVba from "./img/skills-perso/vba.jpg";
 import LogoPhpmyadmin from "./img/skills-perso/phpmyadmin.png";
 import LogoExcel from "./img/skills-perso/excel.png";
 
-export {
-  LogoMySql,
-  LogoPHP,
-  LogoLaravel,
-  LogoVba,
-  LogoExcel,
-  LogoPhpmyadmin,
+const imagesSkillsPerso = {
+  "mysql.png": LogoMySql,
+  "php.png": LogoPHP,
+  "laravel.png": LogoLaravel,
+  "vba.png": LogoVba,
+  "phpmyadmin.png": LogoPhpmyadmin,
+  "excel.png": LogoExcel,
 };
+
+export default imagesSkillsPerso;
