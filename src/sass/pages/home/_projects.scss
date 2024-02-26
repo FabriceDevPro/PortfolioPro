@@ -43,19 +43,40 @@ $card-background: #fff;
     .formation-projects-container {
       display: flex;
       flex-direction: column;
+      position: relative;
   
+      &::after {
+        content: attr(data-tooltip); // Utilise l'attribut data-tooltip pour le contenu
+        position: absolute;
+        bottom: 94%; // Ajustez cette valeur pour positionner l'info-bulle
+        left: 50%;
+        transform: translateX(-50%) translateY(-10px); // Centrer l'info-bulle et ajuster sa position verticale
+        background-color: #1e3758;
+        color: white;
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-size: 0.8rem;
+        white-space: nowrap;
+        z-index: 999;
+        opacity: 0; // Initialement invisible
+        visibility: hidden; // Initialement non visible
+        transition: opacity 0.3s, visibility 0.3s, transform 0.3s ease;
+        pointer-events: none; // Assurez-vous que l'info-bulle n'interfère pas avec d'autres interactions
+      }
+    
+      // Affiche l'info-bulle au survol du titre
+      &:hover::after {
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(-50%) translateY(-20px); // Ajustez pour l'animation de l'info-bulle
+      }
+
       .section-title-container {
         display: flex;
         align-items: center;
         justify-content: center;
       }
-
-      .section-title {
-        color: $primary-color;
-        font-size: 2em;
-        margin-bottom: 2rem;
-        font-weight: 600;
-      }
+     
       .sort-buttons {
         margin-left: 10px; // Ajoutez une marge entre le titre et le bouton de tri
       }

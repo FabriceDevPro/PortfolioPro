@@ -189,9 +189,6 @@
       { "name": "REDUX", "altText": "Redux"},
       { "name": "API", "altText": "API REST"},
       { "name": "SWAGGER", "altText": "Swagger"},
-      { "name": "REDUX", "altText": "Redux"},
-      { "name": "API", "altText": "API REST"},
-      { "name": "SWAGGER", "altText": "Swagger"},
       { "name": "GIT_SMALL", "altText": "Git"}
     ],
     "img": "view-p11.webp",

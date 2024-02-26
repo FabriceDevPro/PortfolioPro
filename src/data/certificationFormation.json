@@ -1,157 +1,164 @@
 [
-    {
-    "id": 1,
-    "name": "Créez votre site web avec HTML5 et CSS3",    
+    {"id": 1,
+    "name": "Concevez votre site web avec php et mysql",
+    "description":"PHP permet de créer des sites dynamiques : blogs, forums, réseaux sociaux, espaces membres... Découvrez PHP associé à MySQL et créez votre premier site web !",
     "img": "viewcertif1.webp",
-    "url": "https://openclassrooms.com/fr/course-certificates/9310339984"
-    },
+    "url": "https://openclassrooms.com/fr/course-certificates/6770250279"
+    },  
     {
     "id": 2,
-    "name": "Comprendre le Web",    
+    "name": "Créez votre site web avec HTML5 et CSS3",
+    "description":"Vous rêvez d'apprendre à créer des sites web ? Débutez avec ce cours qui vous enseignera tout ce qu'il faut savoir sur le développement de sites web en HTML5 et CSS3 !",
     "img": "viewcertif2.webp",
-    "url": "https://openclassrooms.com/fr/course-certificates/5836623145"
+    "url": "https://openclassrooms.com/fr/course-certificates/9310339984"
     },
     {
     "id": 3,
-    "name": "Administrez vos bases de données avec MySQL",    
-    "img": "viewcertif1.webp",
-    "url": "https://openclassrooms.com/fr/course-certificates/9310339984"
+    "name": "Comprendre le Web",
+    "img": "viewcertif3.webp",
+    "description":"Le monde du Web vous intéresse, mais vous n’y connaissez rien ? Vous décrochez quand vous entendez du vocabulaire geek ? Imprégnez-vous de la culture du Web avec ce cours !",
+    "url": "https://openclassrooms.com/fr/course-certificates/5836623145"
     },
     {
     "id": 4,
-    "name": "Créez des animations CSS modernes",    
-    "img": "viewcertif1.webp",
-    "url": "https://openclassrooms.com/fr/course-certificates/3962581562"
+    "name": "Administrez vos bases de données avec MySQL",
+    "img": "viewcertif4.webp",
+    "description":"MySQL est un système de gestion de base de données (SGBD). Son rôle est d'enregistrer des informations dans de gigantesques tableaux (les tables) que l'on relie entre eux. On y communique en langage SQL, un langage qu'il est recommandé de connaître aujourd'hui.",
+    "url": "https://openclassrooms.com/fr/course-certificates/9310339984"
     },
     {
     "id": 5,
-    "name": "Concevez votre site web avec php et mysql",    
-    "img": "viewcertif1.webp",
-    "url": "https://openclassrooms.com/fr/course-certificates/6770250279"
+    "name": "Gérez votre projet informatique facilement",
+    "img": "viewcertif5.webp",
+    "description":"Gérez un projet informatique de manière professionnelle en utilisant les méthodologies agiles.",
+    "url": "https://openclassrooms.com/fr/course-certificates/3111995729"
     },
     {
-    "id": 6,
-    "name": "Adoptez Visual Studio comme environnement de développement",    
-    "img": "viewcertif1.webp",
-    "url": "https://openclassrooms.com/fr/course-certificates/6770250279"
+      "id": 6,
+      "name": "Initiez-vous à la gestion de projet agile",
+      "img": "viewcertif6.webp",
+      "description":"Formez votre équipe agile, prenez en compte le besoin des utilisateurs et développez des pratiques agiles comme le Planning Poker, les méthodes Kanban et Lean...",
+      "url": "https://openclassrooms.com/fr/course-certificates/3610922021"      
     },
     {
     "id": 7,
-    "name": "Apprenez à programmer avec JavaScript",    
-    "img": "viewcertif1.webp",
-    "url": "https://openclassrooms.com/fr/course-certificates/6770250279"
+    "name": "Mettez en place un système de veille informationnelle",
+    "img": "viewcertif7.webp",
+    "description":"Apprenez à faire de la veille pour vous adapter aux évolutions de votre métier et à utiliser des outils de veille informationnelle.",
+    "url": "https://openclassrooms.com/fr/course-certificates/2231882352"
     },
     {
     "id": 8,
-    "name": "Apprenez à utiliser la ligne de commande dans un terminal",    
-    "img": "viewcertif1.webp",
-    "url": "https://openclassrooms.com/fr/course-certificates/6770250279"
+    "name": "Augmentez votre trafic grâce au référencement naturel (SEO)",
+    "img": "viewcertif8.webp",
+    "description":"Décuplez le trafic de votre site web grâce au référencement naturel. Construisez une stratégie SEO intégrée à la stratégie marketing.",
+    "url": "https://openclassrooms.com/fr/course-certificates/4837257140"
     },
     {
     "id": 9,
-    "name": "Augmentez votre trafic grâce au référencement naturel (SEO)",    
+    "name": "Apprenez à utiliser la ligne de commande dans un terminal",
     "img": "viewcertif1.webp",
     "url": "https://openclassrooms.com/fr/course-certificates/6770250279"
-    },
+    },    
     {
     "id": 10,
-    "name": "Corrigez vos bugs et trouvez une solution à vos problèmes de code",    
+    "name": "Corrigez vos bugs et trouvez une solution à vos problèmes de code",
     "img": "viewcertif1.webp",
     "url": "https://openclassrooms.com/fr/course-certificates/6770250279"
     },
     {
     "id": 11,
-    "name": "Créez des pages web dynamiques avec JavaScript",    
+    "name": "Créez des pages web dynamiques avec JavaScript",
     "img": "viewcertif1.webp",
     "url": "https://openclassrooms.com/fr/course-certificates/6770250279"
     },
     {
     "id": 12,
-    "name": "Débutez avec React",    
+    "name": "Débutez avec React",
     "img": "viewcertif1.webp",
     "url": "https://openclassrooms.com/fr/course-certificates/6770250279"
     },
     {
     "id": 13,
-    "name": "Découvrez le fonctionnement des algorithmes",    
+    "name": "Découvrez le fonctionnement des algorithmes",
     "img": "viewcertif1.webp",
     "url": "https://openclassrooms.com/fr/course-certificates/6770250279"
     },
     {
     "id": 14,
-    "name": "Découvrez les métiers de développeur",    
+    "name": "Découvrez les métiers de développeur",
     "img": "viewcertif1.webp",
     "url": "https://openclassrooms.com/fr/course-certificates/6770250279"
     },
     {
     "id": 15,
-    "name": "Devenez développeur agile",    
+    "name": "Devenez développeur agile",
     "img": "viewcertif1.webp",
     "url": "https://openclassrooms.com/fr/course-certificates/6770250279"
     },
     {
     "id": 16,
-    "name": "Devenez un expert de Git et GitHub",    
+    "name": "Devenez un expert de Git et GitHub",
     "img": "viewcertif1.webp",
     "url": "https://openclassrooms.com/fr/course-certificates/6770250279"
     },
     {
     "id": 17,
-    "name": "Gérez du code avec Git et GitHub",    
+    "name": "Gérez du code avec Git et GitHub",
     "img": "viewcertif1.webp",
     "url": "https://openclassrooms.com/fr/course-certificates/6770250279"
     },
     {
     "id": 18,
-    "name": "Gérez votre application React avec Redux et Redux Toolkit",    
+    "name": "Gérez votre application React avec Redux et Redux Toolkit",
     "img": "viewcertif1.webp",
     "url": "https://openclassrooms.com/fr/course-certificates/6770250279"
     },
     {
-    "id": 19,
-    "name": "Gérez votre projet informatique facilement",    
-    "img": "viewcertif1.webp",
-    "url": "https://openclassrooms.com/fr/course-certificates/6770250279"
-    },
+      "id": 19,
+      "name": "Créez des animations CSS modernes",
+      "img": "viewcertif1.webp",
+      "url": "https://openclassrooms.com/fr/course-certificates/3962581562"
+      },
     {
-    "id": 20,
-    "name": "Initiez-vous à la gestion de projet agile",    
-    "img": "viewcertif1.webp",
-    "url": "https://openclassrooms.com/fr/course-certificates/6770250279"
+      "id": 20,
+      "name": "Adoptez Visual Studio comme environnement de développement",
+      "img": "viewcertif1.webp",
+      "url": "https://openclassrooms.com/fr/course-certificates/6770250279"
     },
     {
     "id": 21,
-    "name": "Intégrez une maquette Figma en HTML-CSS",    
+    "name": "Intégrez une maquette Figma en HTML-CSS",
     "img": "viewcertif1.webp",
     "url": "https://openclassrooms.com/fr/course-certificates/6770250279"
     },
     {
     "id": 22,
-    "name": "Mettez en ligne votre site web",    
+    "name": "Mettez en ligne votre site web",
     "img": "viewcertif1.webp",
     "url": "https://openclassrooms.com/fr/course-certificates/6770250279"
     },
     {
     "id": 23,
-    "name": "Mettez en place un système de veille informationnelle",    
+    "name": "Apprenez à programmer avec JavaScript",
     "img": "viewcertif1.webp",
     "url": "https://openclassrooms.com/fr/course-certificates/6770250279"
     },
     {
     "id": 24,
-    "name": "Mettez en place votre environnement front-end",    
+    "name": "Mettez en place votre environnement front-end",
     "img": "viewcertif1.webp",
     "url": "https://openclassrooms.com/fr/course-certificates/6770250279"
     },
     {
     "id": 25,
-    "name": "Simplifiez vous le CSSS avec Sass",    
+    "name": "Simplifiez vous le CSSS avec Sass",
     "img": "viewcertif1.webp",
     "url": "https://openclassrooms.com/fr/course-certificates/6770250279"
     },
     {
     "id": 26,
-    "name": "Utilisez ChatGPT pour améliorer votre productivité",    
+    "name": "Utilisez ChatGPT pour améliorer votre productivité",
     "img": "viewcertif1.webp",
     "url": "https://openclassrooms.com/fr/course-certificates/6770250279"
     }

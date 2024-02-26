@@ -73,8 +73,10 @@ const Skills = () => {
 
   return (
     <>
-      <h2 className="skills-section__section-title" id="skills">Mes Compétences</h2>
-      <FaFilter className="skills-section__filter-reset" onClick={handleFilterReset} title="Réinitialiser le filtre"/>
+      <div className="skills-section__title-container">
+        <h2 className="skills-section__section-title" id="skills">Mes Compétences</h2>
+        <FaFilter className="skills-section__filter-reset" onClick={handleFilterReset} title="Réinitialiser le filtre"/>
+      </div>
       <div className="skills-section__skill-container">
         {['Frontend', 'Backend', 'Base de Données', 'Gestion de Projets', 'Versioning'].map(category => (
           <div key={category} className="skills-section__skills-group">

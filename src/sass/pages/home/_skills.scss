@@ -11,10 +11,21 @@
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   max-width: 80%;
 
-  .skills-section__section-title {
-    color: #1e3758;
-    font-size: 2.0em;
-    margin-bottom: 1.5rem;
+  .skills-section__title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    .skills-section__section-title {      
+      color: #1e3758;
+      font-size: 2.0em;
+      margin-right: 10px;
+    }
+
+    .skills-section__filter-reset {
+      cursor: pointer;
+    }
   }
 
   .skills-section__skill-container {

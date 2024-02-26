@@ -5,16 +5,16 @@ import FormationProject from './projet-formation/FormationProject';
 const Projects = ({ personalProjects, formationProjects }) => {
   return (
     <div className="projects-container">
-      <div className="personal-projects-container">
+      <div className="personal-projects-container" data-tooltip={`Nombre de projets réalisés : ${personalProjects.length}`}>
         <PersonalProject 
           title="Mes projets personnels"
-          projects={personalProjects} 
+          projects={personalProjects}
         />
       </div>
-      <div className="formation-projects-container">
+      <div className="formation-projects-container" data-tooltip={`Nombre de projets réalisés : ${formationProjects.length}`}>
         <FormationProject 
           title="Mes projets de formation"
-          projects={formationProjects} 
+          projects={formationProjects}
         />
       </div>            
     </div>

@@ -55,7 +55,7 @@ const FormationProject = ({ projects, title }) => {
   return (
     <>
       <div className="section-title-container">
-        <h2 className="section-title">{title}</h2>
+      <h2 className="section-title">{title}</h2>
         <div className="sort-buttons">
           <button className="icon-button" onClick={toggleOrder} title={isAscOrder ? 'Tri croissant' : 'Tri décroissant'}>
             <TbArrowsDownUp />

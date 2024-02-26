@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import PersonalProjectCard from './PersonalProjectCard'; // Assurez-vous d'ajuster le chemin d'importation
 
-const PersonalProject = ({ title, projects }) => {
+const PersonalProject = ({ title, projects  }) => {
   return (
     <>
       <div className="section-title-container">
