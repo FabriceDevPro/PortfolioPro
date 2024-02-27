@@ -37,14 +37,16 @@ function App() {
     <SkillsProvider>
       <Router basename={basename}>
         <Header />
-        <Routes>
-          <Route path="/" element={<><Home /><AppWrapper /></>} />
-          <Route path="/certifications" element={<><Certifications /><AppWrapper /></>} />
-          <Route path="/curriculum" element={<><Curriculum /><AppWrapper /></>} />
-          <Route path="/mentions-legales" element={<><LegalMentions /><AppWrapper /></>} />
-          <Route path="/error404" element={<MissingPage />} />
-          <Route path="*" element={<><MissingPage /><AppWrapper /></>} />
-        </Routes>
+        <main>
+          <Routes>
+            <Route path="/" element={<><Home /><AppWrapper /></>} />
+            <Route path="/certifications" element={<><Certifications /><AppWrapper /></>} />
+            <Route path="/curriculum" element={<><Curriculum /><AppWrapper /></>} />
+            <Route path="/mentions-legales" element={<><LegalMentions /><AppWrapper /></>} />
+            <Route path="/error404" element={<MissingPage />} />
+            <Route path="*" element={<><MissingPage /><AppWrapper /></>} />
+          </Routes>
+        </main>        
         <ScrollToTop />
         <Footer />
       </Router>

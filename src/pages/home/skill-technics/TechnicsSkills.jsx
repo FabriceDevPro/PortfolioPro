@@ -3,8 +3,10 @@ import { NASLogo, SynologyLogo, OvhLogo } from "../../../assets/images-skills-te
 const TechnicsSkills = () => {
     return (
       <>
-        <h2>Compétences Techniques</h2>
-        <div className="technicsSkillsCard">
+        <div className="technics-skills-section__title-container">
+          <h2 className="technics-skills-section__section-title">Compétences Techniques</h2>
+        </div>
+        <div className="technics-skills-section__card">
           <h3>Hébergement Autonome de Mon Portfolio</h3>
           <p>
             {`Pour l'hébergement de mon portfolio, j'ai choisi un serveur NAS Synology, largement apprécié pour sa robustesse et son accessibilité, propulsé par DiskStation Manager (DSM). DSM, un système d'exploitation basé sur Linux et spécifiquement conçu pour la gestion des NAS, offre une interface utilisateur graphique intuitive qui simplifie la configuration des serveurs, la gestion des fichiers et l'accès aux divers services NAS. Cette plateforme me permet d'installer et de gérer des paquets pour des fonctionnalités supplémentaires, telles que la gestion de base de données avec phpMyAdmin et l'hébergement web via WebStation, renforçant ainsi la flexibilité et l'efficacité de mon environnement d'hébergement.`}
@@ -15,10 +17,10 @@ const TechnicsSkills = () => {
           <p>
             {`Cette infrastructure distincte pour l'hébergement, illustre mon engagement à maintenir une présence en ligne sécurisée et performante.`}
           </p>
-          <div className="logosContainer">
-            <img src={NASLogo} alt="NAS Synology" className="logoImage" />
-            <img src={SynologyLogo} alt="Synology DSM" className="logoImage" />
-            <img src={OvhLogo} alt="OVH" className="logoImage" />
+          <div className="technics-skills-section__logos-container">
+            <img src={NASLogo} alt="NAS Synology" className="technics-skills-section__logo-image" />
+            <img src={SynologyLogo} alt="Synology DSM" className="technics-skills-section__logo-image" />
+            <img src={OvhLogo} alt="OVH" className="technics-skills-section__logo-image" />
           </div>
         </div>
       </>

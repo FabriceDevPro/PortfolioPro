@@ -20,7 +20,6 @@ const LegalMentions = () => {
     useScrollToHash(100); // 100px est un exemple, remplacez par la hauteur de votre en-tête fixe
   
   return (
-    <main>
     <section className="legal-mentions" id="legal-mentions">
       <h1>Mentions Légales</h1>
 
@@ -55,7 +54,6 @@ const LegalMentions = () => {
 
       <p>Dernière mise à jour : 01/12/2023</p>
     </section>
-    </main>
   );
 };
 

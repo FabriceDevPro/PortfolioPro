@@ -30,7 +30,7 @@ const Certifications = () => {
   const cardsPerRow = 3; // Adaptez cette valeur à votre mise en page
 
   return (
-    <main>
+    <>
       {Object.entries(sortedGroupedCertifications).map(([groupName, certs]) => (
         <section key={groupName} className="certifications-section" id={groupName.toLowerCase()}>
           <h2 className="section-title">{`Certifications ${groupName}`}</h2>
@@ -49,7 +49,7 @@ const Certifications = () => {
           </div>
         </section>
       ))}
-    </main>
+    </>
   );
 };
 

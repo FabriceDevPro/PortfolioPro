@@ -33,7 +33,7 @@ const Home = () => {
         : formationProjects;
 
     return (
-      <main>
+      <>
         <section className="about-section" id="about">
           <div className="about-section__logo-container">
             <img src={LogoImage} alt="Logo FAB WEB PROJECT" className="about-section__logo" />
@@ -49,10 +49,10 @@ const Home = () => {
             formationProjects={filteredProjects} 
           />  
         </section>
-          <section className="TechnicsSkills" id="TechnicsSkills">
-            <TechnicsSkills />
-          </section>
-      </main>
+        <section className="technics-skills-section" id="technics-skills">
+          <TechnicsSkills />
+        </section>
+      </>
     );
 };
 

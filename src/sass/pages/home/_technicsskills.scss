@@ -1,5 +1,4 @@
-// TechnicsSkills.scss
-.TechnicsSkills {
+.technics-skills-section {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -13,33 +12,44 @@
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     max-width: 80%;
     position: relative;
-}
 
-.technicsSkillsCard {
-    display: flex;
-    flex-direction: column;
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    padding: 20px;
-    transition: all 0.3s ease;
-    line-height: 1.6; // Améliore la lisibilité du texte
+    .technics-skills-section__title-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
     
-}
-
-.logosContainer {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
-}
-
-.logoImage {
-    margin-right: 10px;
-    width: auto;
-    height: 175px; // Ajustez en fonction de la taille désirée
-}
-
-// Ajustement pour le dernier logo, pour éviter un espace supplémentaire à droite
-.logoImage:last-child {
-    margin-right: 0;
+        .technics-skills-section__section-title {      
+            color: #1e3758;
+            font-size: 2.0em;
+            margin-right: 10px;
+        }
+    }
+        
+    .technics-skills-section__card {
+        display: flex;
+        flex-direction: column;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        padding: 20px;
+        transition: all 0.3s ease;
+        line-height: 1.6; // Améliore la lisibilité du texte
+        
+        .technics-skills-section__logos-container {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+                
+            .technics-skills-section__logo-image {
+                margin-right: 10px;
+                width: auto;
+                height: 175px; // Ajustez en fonction de la taille désirée
+                
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+    }  
 }
