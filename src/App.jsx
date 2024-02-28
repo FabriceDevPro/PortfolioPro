@@ -12,6 +12,7 @@ import LegalMentions from "./pages/LegalMentions";
 import MissingPage from "./pages/MissingPage";
 import Certifications from "./pages/Certifications";
 import CurriculumVitae from "./pages/CurriculumVitae";
+import Contact from "./pages/Contact";
 
 // Configuration de React Modal
 ReactModal.setAppElement("#root");
@@ -47,6 +48,7 @@ function App() {
         <main>
           <Routes>
             <Route path="/" element={<><Home /><AppWrapper /></>} />
+            <Route path="/contact" element={<Contact />} />
             <Route path="/certifications" element={<><Certifications /><AppWrapper /></>} />
             <Route path="/curriculum-vitae" element={<><CurriculumVitae /><AppWrapper /></>} />
             <Route path="/mentions-legales" element={<><LegalMentions /><AppWrapper /></>} />
