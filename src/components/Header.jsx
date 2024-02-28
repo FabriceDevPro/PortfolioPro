@@ -12,7 +12,7 @@ function Header() {
                 <Link to="/#skills">Compétences</Link>                
                 <Link to="/#projects">Mes Projets</Link>
                 {/* <Link to="/#projectsperso">Projet Personnel</Link> */}
-                <Link to="/curriculum">CV</Link>
+                <Link to="/curriculum-vitae">CV</Link>
                 {/* <Link to="/#projectsformation">Projets en Entreprise</Link>                 */}
                 <Link to="/Contact">Contact</Link>
             </nav>

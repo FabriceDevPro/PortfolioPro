@@ -12,7 +12,8 @@
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
   max-width: 80%;
   position: relative;
-
+  animation: fadeIn 1s ease-in-out;
+  
   .projects-container {
     display: grid;
     grid-template-columns: 1fr 1fr; /* Crée deux colonnes de taille égale */
@@ -69,7 +70,16 @@
     }
   }
 }
-
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 @media (max-width: 768px) {
   .project-list-container {
     display: grid;

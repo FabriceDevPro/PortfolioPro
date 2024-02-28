@@ -1,0 +1,322 @@
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.curriculumvitae-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 10px;
+  background: linear-gradient(to bottom, rgba(173, 216, 230, 0.9), rgba(173, 216, 230, 0.9));
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  max-width: 80%;
+  position: relative;
+  animation: fadeIn 1s ease-in-out;
+
+  .cv-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 50px;
+    width: 100%;
+
+    .cv-section {
+      display:flex;
+      flex-direction: column;
+      width: 95%;
+      text-align: left;
+      padding: 15px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+      h2 {
+        display: flex;
+        align-items: center;
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+        padding-bottom: 5px;
+        border-bottom: 2px solid #1e3758;
+        svg {
+          margin-right: 10px;
+        }
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      li {
+        margin-bottom: 10px;
+      }
+    }
+
+    .cv-left-column {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 20px;
+      width:100%;
+    
+      .cv-profile-pic {
+        width: 100%;
+        max-width: 150px;
+        align-self: center;
+
+        img {
+          width: 100%;
+          border-radius: 50%;
+          border: 3px solid #fff;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+      }
+    
+      .cv-contact {
+        width: 100%;
+
+        .cv-contact-info {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 5px;
+        }
+        .cv-contact-text {
+          display: flex;
+          align-items: center;
+          justify-content: center; // Centrage horizontal du texte avec les icônes
+          gap: 5px; // Espacement ajusté entre l'icône et le texte
+          svg {
+              // Icônes plus petites pour correspondre à la taille du texte
+              height: 15px;
+              width: 15px;
+          }
+          a {
+            display: inline-block;
+            margin-left: 5px; // Espacement après l'icône
+            color: #1e3758; // Couleur du texte des liens
+            text-decoration: none; // Retire le soulignement des liens
+            &:hover {
+              text-decoration: underline; // Ajoute un soulignement au survol, si désiré
+            }
+          }
+        }
+        h1, h2, p {
+          margin: 0;
+        }
+        h1 {
+          font-size: 1.8rem;
+        }
+        p, li {
+          font-size: 1rem;
+        }
+        h2 {
+          margin-top: 20px;
+        }
+        // Ici, ajoutez le style pour les icônes si nécessaire
+        svg {
+          // exemple de style, à ajuster selon les besoins
+          min-width: 20px; // Assurez-vous que les icônes ont une largeur fixe pour aligner le texte correctement
+        }
+      }
+    }
+
+    .cv-right-column {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      width:100%;
+    }
+
+
+    .cv-section.cv-experience {
+      display: flex;
+      flex-direction: column;
+      width: 95%;
+      margin-bottom: 20px;
+    
+      h2 {
+        display: flex;
+        align-items: center;
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+        padding-bottom: 5px;
+        border-bottom: 2px solid #1e3758;
+        svg {
+          margin-right: 10px;
+        }
+      }
+    
+      .timeline {
+        position: relative;
+        padding-left: 25px; // Espace pour la barre de timeline et les points
+    
+        &:before {
+          content: '';
+          position: absolute;
+          top: 25px; // Ajuster en fonction de la position de votre premier titre h3
+          bottom: 10px; // Ajuster si nécessaire
+          left: 1px; // Centrer par rapport aux points
+          width: 2px;
+          background: #1e3758; // Couleur de la barre
+        }
+      }
+    
+      .timeline-item {
+        position: relative;
+        margin-bottom: 20px;
+    
+        .timeline-dot {
+          position: absolute;
+          left: -28px;
+          top: 25px; // Ajuster pour centrer verticalement avec le titre h3
+          height: 10px;
+          width: 10px;
+          border-radius: 50%;
+          background: #1e3758; // Couleur des points
+        }
+    
+        .experience-content {
+          background-color: #fff;
+          padding: 15px;
+          border-radius: 5px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+          h3 {
+            margin-top: 0;
+            margin-bottom: 5px;
+            font-size: 1.2rem;
+          }
+          p, ul {
+            margin: 10px 0; // Uniformise l'espacement autour des paragraphes et listes
+          }
+
+          p {
+            margin: 0 0 10px 0;
+            font-size: 0.8rem;
+            
+            strong {
+              font-weight: bold;
+            }
+          }
+    
+          ul {
+            list-style: none;
+            padding: 0;
+            
+            li {
+              font-size: 0.8rem;
+              margin-bottom: 10px;
+              
+              &:before {
+                content: '• ';
+                color: #1e3758; // Couleur des puces
+                font-size: 1.5rem; // Taille plus grande pour les puces
+                margin-right: 0.5rem; // Ajouter un peu d'espace entre la puce et le texte
+                vertical-align: middle;
+              }
+            }
+          }
+        }
+      }
+    }
+    
+    .skills-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+    }
+
+    .skill-item {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      width:100%;
+      margin-bottom: 10px;
+      
+      svg {
+        margin-right: 5px;
+      }
+
+      .skill-logo{
+        display: flex;
+        align-items: center; /* Alignement vertical des icônes et du texte */
+        margin-right: 10px; /* Espacement entre l'icône/le texte et la barre de progression */
+        font-size: 1rem; /* Taille de la police pour le texte des compétences */
+        font-weight: bold; /* Rendre le texte de la compétence gras */
+        width: 30%;
+        
+        svg {
+          height: 20px; // Taille des icônes ajustée pour uniformité
+          width: 20px; // Taille des icônes ajustée pour uniformité
+          margin-right: 5px;
+        }
+      }
+
+      .skill-level {
+        flex-grow: 1;
+        position: relative;
+        height: 10px;
+        background-color: #ddd;
+        border-radius: 5px;
+        margin-left: 10px; // Ensure some space between the text and the bar
+
+        &:before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 100%;
+          border-radius: 5px;
+          background-color: #4CAF50;
+          transition: width 0.5s ease-in-out;
+        }
+      }
+
+      .skill-level.level-90:before { width: 90%; }
+      .skill-level.level-80:before { width: 80%; }
+      .skill-level.level-70:before { width: 70%; }
+      .skill-level.level-60:before { width: 60%; }
+      .skill-level.level-50:before { width: 50%; }
+      .skill-level.level-40:before { width: 40%; }
+      .skill-level.level-30:before { width: 30%; }
+      .skill-level.level-20:before { width: 20%; }
+      .skill-level.level-10:before { width: 10%; }
+
+      .skill-progress {
+        position: absolute;
+        height: 100%;
+        border-radius: 5px; /* Bords arrondis pour la barre de progression */
+        background-color: #4CAF50; /* Couleur de remplissage de la barre de progression */
+        transition: width 0.5s ease-in-out; /* Transition pour l'animation de la barre de progression */
+      }
+    }
+
+    .cv-section.cv-soft-skills {
+      .soft-skills-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        padding: 0;
+    
+        li {
+          display: flex;
+          align-items: center;
+          font-size: 0.8rem;
+          list-style: none;
+    
+          .bullet-icon {
+            margin-right: 10px; /* Espacement entre l'icône et le texte */
+            min-width: 15px;
+          }
+        }
+      }
+    }
+  }
+}

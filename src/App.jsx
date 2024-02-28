@@ -11,23 +11,26 @@ import Social from "./components/Social";
 import LegalMentions from "./pages/LegalMentions";
 import MissingPage from "./pages/MissingPage";
 import Certifications from "./pages/Certifications";
-import Curriculum from "./pages/Curriculum";
+import CurriculumVitae from "./pages/CurriculumVitae";
 
 // Configuration de React Modal
 ReactModal.setAppElement("#root");
 
 function AppWrapper() {
   const [showSocial, setShowSocial] = useState(true);
+  const [showFooter, setShowFooter] = useState(true);
   let location = useLocation();
 
   useEffect(() => {
     // Cache le composant Social sur la page d'erreur 404 et les mentions légales    
-    setShowSocial(location.pathname !== "/error404" && location.pathname !== "/mentions-legales");
+    setShowSocial(location.pathname !== "/error404" && location.pathname !== "/mentions-legales" && location.pathname !== "/certifications" && location.pathname !== "/curriculum-vitae");
+    setShowFooter(location.pathname !== "/error404" &&location.pathname !== "/curriculum-vitae");
   }, [location]);
 
   return (
     <>
       {showSocial && <Social />}
+      {showFooter && <Footer />}
     </>
   );
 }
@@ -41,14 +44,14 @@ function App() {
           <Routes>
             <Route path="/" element={<><Home /><AppWrapper /></>} />
             <Route path="/certifications" element={<><Certifications /><AppWrapper /></>} />
-            <Route path="/curriculum" element={<><Curriculum /><AppWrapper /></>} />
+            <Route path="/curriculum-vitae" element={<><CurriculumVitae /><AppWrapper /></>} />
             <Route path="/mentions-legales" element={<><LegalMentions /><AppWrapper /></>} />
             <Route path="/error404" element={<MissingPage />} />
             <Route path="*" element={<><MissingPage /><AppWrapper /></>} />
           </Routes>
         </main>        
         <ScrollToTop />
-        <Footer />
+        {/* <Footer /> */}
       </Router>
     </SkillsProvider>
   );
