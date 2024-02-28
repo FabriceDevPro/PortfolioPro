@@ -10,6 +10,7 @@ import personalProjects from '../data/personalProjects';
 import formationProjects from '../data/formationProjects';
 import TechnicsSkills from './home/skill-technics/TechnicsSkills';
 import { FaRegFilePdf } from "react-icons/fa";
+import { basename } from '../config';
 
 const Home = () => {
     const location = useLocation();
@@ -57,7 +58,7 @@ const Home = () => {
             className="project-view-button" 
             onClick={() => {
               const link = document.createElement('a');
-              link.href = '/cv-Magnanfabrice.pdf';
+              link.href = `${basename}cv-Magnanfabrice.pdf`;
               link.download = 'cv-Magnanfabrice.pdf';
               link.style.display = 'none'; // Assurez-vous que le lien n'est pas visible
               document.body.appendChild(link); // Ajoute le lien à la page
