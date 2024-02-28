@@ -19,16 +19,19 @@ ReactModal.setAppElement("#root");
 function AppWrapper() {
   const [showSocial, setShowSocial] = useState(true);
   const [showFooter, setShowFooter] = useState(true);
+  // const [showHeader, setShowHeader] = useState(true);
   let location = useLocation();
 
   useEffect(() => {
     // Cache le composant Social sur la page d'erreur 404 et les mentions légales    
     setShowSocial(location.pathname !== "/error404" && location.pathname !== "/mentions-legales" && location.pathname !== "/certifications" && location.pathname !== "/curriculum-vitae");
     setShowFooter(location.pathname !== "/error404" &&location.pathname !== "/curriculum-vitae");
+    // setShowHeader(location.pathname !== "/curriculum-vitae");
   }, [location]);
 
   return (
     <>
+      {/* {showHeader && <Header />} */}
       {showSocial && <Social />}
       {showFooter && <Footer />}
     </>
@@ -36,10 +39,11 @@ function AppWrapper() {
 }
 
 function App() {
+
   return (
-    <SkillsProvider>
-      <Router basename={basename}>
-        <Header />
+    <SkillsProvider>      
+      <Router basename={basename}>        
+      <Header />
         <main>
           <Routes>
             <Route path="/" element={<><Home /><AppWrapper /></>} />
@@ -51,7 +55,6 @@ function App() {
           </Routes>
         </main>        
         <ScrollToTop />
-        {/* <Footer /> */}
       </Router>
     </SkillsProvider>
   );

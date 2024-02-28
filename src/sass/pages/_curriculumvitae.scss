@@ -132,14 +132,20 @@
       align-items: center;
       gap: 20px;
       width:100%;
+      h2 {
+        display: flex;
+        align-items: center;
+        font-size: 1.5rem;
+        margin:0.5em;
+      }
     }
 
 
-    .cv-section.cv-experience {
+    .cv-section {
       display: flex;
       flex-direction: column;
       width: 95%;
-      margin-bottom: 20px;
+      
     
       h2 {
         display: flex;
@@ -193,10 +199,14 @@
             margin-bottom: 5px;
             font-size: 1.2rem;
           }
-          p, ul {
-            margin: 10px 0; // Uniformise l'espacement autour des paragraphes et listes
+          h4 {
+            margin-top: 0;
+            margin-bottom: 5px;
+            font-size: 0.9rem;
           }
-
+          p, ul {
+            margin: 10px 0; // Uniformise l'espacement autour des paragraphes et listes            
+          }
           p {
             margin: 0 0 10px 0;
             font-size: 0.8rem;
@@ -205,13 +215,13 @@
               font-weight: bold;
             }
           }
-    
+   
           ul {
             list-style: none;
             padding: 0;
             
             li {
-              font-size: 0.8rem;
+              font-size: 0.9rem;
               margin-bottom: 10px;
               
               &:before {
@@ -228,73 +238,30 @@
     }
     
     .skills-container {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      display: flex;
+      flex-wrap: wrap;
       gap: 10px;
+      justify-content: start; // Alignez les éléments au début du conteneur
+      padding: 5px;
     }
-
+    
     .skill-item {
       display: flex;
-      align-items: center;
-      gap: 30px;
-      width:100%;
-      margin-bottom: 10px;
+      align-items: center; // Centre verticalement les icônes avec le texte
+      gap: 10px; // Réduisez l'espace entre l'icône et le texte
+      margin-bottom: 10px; // Espace au bas de chaque élément de compétence
+      font-size: 1rem; // Taille de la police pour le texte des compétences
+      font-weight: bold; // Rendre le texte de la compétence gras
       
       svg {
-        margin-right: 5px;
+        height: 20px; // Taille des icônes
+        width: 20px; // Taille des icônes
+        margin-right: 5px; // Espace après l'icône avant le texte
       }
-
-      .skill-logo{
+    
+      .skill-logo {
         display: flex;
-        align-items: center; /* Alignement vertical des icônes et du texte */
-        margin-right: 10px; /* Espacement entre l'icône/le texte et la barre de progression */
-        font-size: 1rem; /* Taille de la police pour le texte des compétences */
-        font-weight: bold; /* Rendre le texte de la compétence gras */
-        width: 30%;
-        
-        svg {
-          height: 20px; // Taille des icônes ajustée pour uniformité
-          width: 20px; // Taille des icônes ajustée pour uniformité
-          margin-right: 5px;
-        }
-      }
-
-      .skill-level {
-        flex-grow: 1;
-        position: relative;
-        height: 10px;
-        background-color: #ddd;
-        border-radius: 5px;
-        margin-left: 10px; // Ensure some space between the text and the bar
-
-        &:before {
-          content: '';
-          position: absolute;
-          top: 0;
-          left: 0;
-          height: 100%;
-          border-radius: 5px;
-          background-color: #4CAF50;
-          transition: width 0.5s ease-in-out;
-        }
-      }
-
-      .skill-level.level-90:before { width: 90%; }
-      .skill-level.level-80:before { width: 80%; }
-      .skill-level.level-70:before { width: 70%; }
-      .skill-level.level-60:before { width: 60%; }
-      .skill-level.level-50:before { width: 50%; }
-      .skill-level.level-40:before { width: 40%; }
-      .skill-level.level-30:before { width: 30%; }
-      .skill-level.level-20:before { width: 20%; }
-      .skill-level.level-10:before { width: 10%; }
-
-      .skill-progress {
-        position: absolute;
-        height: 100%;
-        border-radius: 5px; /* Bords arrondis pour la barre de progression */
-        background-color: #4CAF50; /* Couleur de remplissage de la barre de progression */
-        transition: width 0.5s ease-in-out; /* Transition pour l'animation de la barre de progression */
+        align-items: center; // Alignement vertical des icônes et du texte
       }
     }
 
@@ -320,3 +287,173 @@
     }
   }
 }
+/* Écrans moyens */
+//@media (min-width: 500px) and (max-width: 1140px) {
+@media print {  
+  body {
+    background-color: #ADD8E6;
+    background: none;
+    .header{
+      display:none;
+    }
+    .curriculumvitae-section{
+      width: 97%;
+      max-width: 100%;
+      margin: 0px 0px;
+      border-radius: 0px;
+      border: 0px solid rgba(0, 0, 0, 0.1);
+      box-shadow: 0 0px 0px rgba(0, 0, 0, 0.2);
+      background-color: #ADD8E6;
+      .cv-container{
+        gap: 15px;
+        .cv-left-column{
+          gap: 5px;
+          .cv-profile-pic{
+            max-width: 100px;
+          }
+          .cv-contact{
+            font-size: 12px;
+          }          
+        }
+        .cv-right-column{          
+          gap: 5px;
+          h1{
+            font-size: 1.2rem;
+            margin:0.2em;;
+          }
+          h2{
+            font-size: 1rem;
+            margin:0.2em;;
+          }
+          
+        }
+        .cv-section {
+          padding: 10px;
+          font-size: 12px;
+          h2{
+            font-size: 1rem;
+            margin:0px;
+            svg{
+              width: 20px;
+              height: 20px;
+            }
+          }
+          li{
+            font-size: 12px;
+            margin-bottom: 0px;
+          }
+          ul{
+            margin: 0;
+          }
+          .timeline:before{
+            top: 5px;
+            bottom: 30px;
+          }
+
+          .timeline-item{
+            margin-bottom: 10px;
+            .timeline-dot{
+              top: 10px;
+            }
+            .experience-content{   
+              padding: 0px;                 
+              h3 {
+                margin-top: 0;
+                margin-bottom: 5px;
+                font-size: 0.8rem;
+                }
+              h4{
+                margin-top: 0;
+                margin-bottom: 4px;
+                font-size: 0.7rem;
+                }
+              p{
+                font-size: 0.6rem;
+              }
+              ul li{
+                font-size: 0.6rem;
+                margin-bottom: 0px;
+              }
+            }                      
+          }          
+        }
+        .skills-container {
+          gap: 0px 10px;
+        }
+        .skill-item {
+          margin-bottom: 0px;  
+        }
+      }
+    }
+    .curriculumvitae-section .cv-container .cv-section.cv-soft-skills .soft-skills-list {
+      gap: 0px;
+      li{
+        font-size: 12px;
+        .bullet-icon{
+          margin-right: 5px;
+          min-width: 5px;
+        }
+        svg{
+          width: 5px;
+          height: 5px;
+        }
+      }
+    }
+  }
+}
+// @media (max-width: 768px) {
+//   .About {
+//       padding: 20px;
+    
+//       .logo-container {
+//           top: -35px; /* Ajuster la position pour les petits écrans */
+//           left: -0px; /* Ajuster la position pour les petits écrans */
+//       }
+//       .section-title {        
+//           font-size: 1.5em; // Une taille plus grande pour le titre
+//           margin-bottom: 1.0rem;
+//       }
+//       .profile-photo {
+//           width: 100px;
+//           height: 100px;
+//       }
+//       .About_Me {
+//           font-size: 0.8em;
+//       }
+//       .about-content {
+//           flex-direction: column;
+//           text-align: center;
+//       }
+//   }
+
+// }
+// /* Petits écrans */
+// @media (max-width: 600px) {
+
+// }
+
+// // // print and
+// @media  (width: 794px) and (height: 1123px) {
+//   body {
+//     background-color: #ffffff;
+//     background: none;
+//     color: #000000; // Couleurs plus sombres pour une meilleure lisibilité à l'impression
+//   }
+
+//   // Réduire la taille de police pour l'impression
+//   .curriculumvitae-section{
+//     width: 100%;
+//     max-width: 100%;
+//     margin: 0px auto;
+//   }
+//   .curriculumvitae-section .cv-container .cv-section  h1, h2, p {
+//     font-size: 1rem;
+//   }
+  
+//   // Masquer des éléments qui ne sont pas nécessaires à l'impression
+//   .header, .footer, .social-links {
+//     display: none;
+//   }
+
+//   // Ajustements spécifiques pour l'impression peuvent être ajoutés ici
+// }

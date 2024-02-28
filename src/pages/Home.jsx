@@ -9,7 +9,7 @@ import Projects from './home/Projects';
 import personalProjects from '../data/personalProjects';
 import formationProjects from '../data/formationProjects';
 import TechnicsSkills from './home/skill-technics/TechnicsSkills';
-
+import { FaRegFilePdf } from "react-icons/fa";
 
 const Home = () => {
     const location = useLocation();
@@ -51,6 +51,23 @@ const Home = () => {
         </section>
         <section className="technics-skills-section" id="technics-skills">
           <TechnicsSkills />
+        </section>
+        <section className="curriculumvitae-section" id="download-cv">          
+          <button 
+            className="project-view-button" 
+            onClick={() => {
+              const link = document.createElement('a');
+              link.href = '/cv-Magnanfabrice.pdf';
+              link.download = 'cv-Magnanfabrice.pdf';
+              link.style.display = 'none'; // Assurez-vous que le lien n'est pas visible
+              document.body.appendChild(link); // Ajoute le lien à la page
+              link.click(); // Déclenche le téléchargement
+              document.body.removeChild(link); // Supprime le lien de la page
+            }}
+          >
+            <FaRegFilePdf className="icon button-icon" />
+            Télécharger mon CV
+          </button>
         </section>
       </>
     );
