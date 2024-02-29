@@ -1,9 +1,10 @@
+import PropTypes from 'prop-types';
 import { useForm } from "react-hook-form";
 import emailjs from "@emailjs/browser";
 import { useState } from "react";
 import useScrollToHash from "../hooks/useScrollToHash";
 
-const Contact = () => {
+const Contact = ({ closeModal }) => {
   const {
     register,
     handleSubmit,
@@ -29,26 +30,28 @@ const Contact = () => {
         setConfirmationMessageType("error");
       });
   };
-// Appel du hook avec la hauteur de l'en-tête si nécessaire.
-useScrollToHash(100); // 100px est un exemple, remplacez par la hauteur de votre en-tête fixe
+
+  // Appel du hook avec la hauteur de l'en-tête si nécessaire.
+  useScrollToHash(100); // 100px est un exemple, remplacez par la hauteur de votre en-tête fixe
+
   return (
-    <main>
-    <section className="Contact" id="Contact">
+    <>
       <h2>Formulaire de Contact</h2>
+      <button className="close-modal-button" onClick={closeModal}>
+        X
+      </button>
       <form onSubmit={handleSubmit(onSubmit)}>
         <label htmlFor="from_name" className="labelform">
-          {" "}
           Votre nom :
         </label>
         <input type="text" name="from_name" {...register("from_name", { required: true })} placeholder="Votre nom" required />
-        {errors.name && <p>name requis</p>}
+        {errors.from_name && <p>Le nom est requis</p>}
 
         <label htmlFor="subject" className="labelform">
-          {" "}
           Sujet :
         </label>
         <input type="text" name="subject" {...register("subject", { required: true })} placeholder="Sujet de votre mail" required />
-        {errors.subject && <p>subject requis</p>}
+        {errors.subject && <p>Le sujet est requis</p>}
 
         <label htmlFor="email" className="labelform">
           Email :
@@ -60,14 +63,18 @@ useScrollToHash(100); // 100px est un exemple, remplacez par la hauteur de votre
           Message :
         </label>
         <textarea name="message" {...register("message", { required: true })} placeholder="Votre message" required />
-        {errors.message && <p>message requis</p>}
+        {errors.message && <p>Message requis</p>}
 
-        <button type="submit">Envoyer</button>
+        <button type="submit" className="submit-button">Envoyer</button>
       </form>
       {confirmationMessage && <p className={`confirmation-message ${confirmationMessageType}`}>{confirmationMessage}</p>}
-    </section>
-    </main>
+    </>
   );
+};
+
+// Définir les propTypes
+Contact.propTypes = {
+  closeModal: PropTypes.func.isRequired, // closeModal doit être une fonction requise
 };
 
 export default Contact;

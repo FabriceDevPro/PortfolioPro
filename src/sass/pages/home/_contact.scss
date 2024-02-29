@@ -1,0 +1,159 @@
+.contact-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 600px;
+  padding: 30px;
+  border-radius: 10px;
+  background: linear-gradient(to bottom, rgba(173, 216, 230, 0.9), rgba(173, 216, 230, 0.9));
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  outline: none;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  // Ajout d'une croix de fermeture pour le modal
+  .close-modal-button {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    border: none;
+    background: #444444;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 30px;
+    border-radius: 0.313rem;
+  }
+}
+
+.contact-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+  form {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+
+    .labelform {
+      text-align: left;
+      // padding: 10px 0;
+      font-size: 18px; // Plus grand pour une meilleure lisibilité
+      font-weight: 600; // Plus gras pour l'accentuation
+      color: #333; // Couleur foncée pour un contraste plus fort
+      padding-bottom: 5px; // Espace avant le champ de saisie
+    }
+    // Amélioration du design des champs de formulaire
+    // input,
+    // textarea {
+    //   margin: 10px 0; // Ajoute de l'espace entre les champs
+    //   padding: 15px; // Plus de padding pour un meilleur aspect visuel
+    //   border: 2px solid #d3d3d3; // Bordure plus épaisse pour un style plus moderne
+    //   &:focus {
+    //     border-color: #1e3758; // Couleur de la bordure lors du focus correspondant au bouton d'envoi
+    //     box-shadow: 0 0 8px rgba(30, 55, 88, 0.6); // Ombre extérieure pour le focus
+    //   }
+    // }
+
+    input,
+    textarea {
+      border: 1px solid #ccc; // Bordure plus fine
+      border-radius: 5px; // Coins arrondis
+      box-shadow: inset 0 2px 4px rgba(0,0,0,0.1); // Ombre intérieure légère
+      padding: 15px; // Plus de padding pour un aspect plus spacieux
+      margin-bottom: 20px; // Plus d'espace entre les champs
+      font-size: 16px; // Taille de police légèrement augmentée
+      transition: all 0.3s ease-in-out; // Transition douce pour le focus
+  
+      &:focus {
+        border-color: #1e3758; // Couleur de bordure lors du focus
+        box-shadow: 0 0 8px rgba(30, 55, 88, 0.6); // Ombre extérieure plus prononcée pour le focus
+      }
+    }
+     textarea {
+       min-height: 150px;
+       resize: vertical;
+     }
+
+     button[type="submit"] {
+      padding: 12px 20px;
+      background-color: #1e3758; // Reprend la couleur du header
+      color: white;
+      font-size: 18px;
+      font-weight: bold;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.2s, box-shadow 0.2s;
+    
+      &:hover {
+        background-color: #15263f; // Nuance légèrement plus foncée au survol
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); // Ombre subtile au survol
+      }
+    }
+  }
+
+  .confirmation-message {
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1em;
+
+    &.success {
+      background-color: #28a745;
+      color: #fff;
+    }
+
+    &.error {
+      background-color: #dc3545;
+      color: #fff;
+    }
+  }
+
+  .drop-zone {
+    border: 2px dashed #1e3758;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .drop-zone p {
+    margin-top: 10px;
+  }
+  
+  .file-upload-label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .file-upload-input {
+    display: none; /* Pour cacher l'input de téléchargement */
+  }
+  
+  /* Style lors du survol */
+  .drop-zone.hover {
+    background-color: #f0f0f0;
+  }
+
+@media (max-width: 768px) {
+  .contact-section {
+    form {
+      width: 100%; // Prend toute la largeur pour les petits écrans
+    }
+  }
+}

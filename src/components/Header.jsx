@@ -14,7 +14,7 @@ function Header() {
                 {/* <Link to="/#projectsperso">Projet Personnel</Link> */}
                 <Link to="/curriculum-vitae#cv">CV</Link>
                 {/* <Link to="/#projectsformation">Projets en Entreprise</Link>                 */}
-                <Link to="/contact#contact">Contact</Link>
+                <Link to="/#contact">Contact</Link>
             </nav>
         </header>
     );
