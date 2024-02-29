@@ -1,9 +1,16 @@
+// Importation du fichier typography.scss
+@import "typography";
+@import "../abstracts/variables";
+
 body {
-    font-family: "Open Sans", Arial, sans-serif;
-    background-color: #fff;
-    color: #1e3758;
-    background: linear-gradient(to right, #445c68, #718a96, #9db3bc);
+    @include font-stack;
+    color: $primary-color;
+    background: $background-gradient-primary;
     margin: 0;
     padding: 0;
-    overflow-x: hidden; // Assurez-vous que le contenu ne dépasse pas de l'écran
+    overflow-x: hidden;  
   }
+main{
+  display:flex;
+  flex-direction: column;
+}
