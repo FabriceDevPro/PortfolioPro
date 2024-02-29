@@ -1,0 +1,63 @@
+// styles/fonctionalite.scss
+@import "../../abstracts/mixin";
+@import "../../abstracts/keyframes";
+@import "../../abstracts/variables";
+.details-ecritures-section {
+  @include section-styles;
+
+  .section-title {
+    color: #1e3758;
+    font-size: 2em;
+    margin-bottom: 2rem;
+    font-weight: 600;
+  }
+
+  .features-container { // Réutilisez la classe existante pour un style cohérent
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 20px;
+    width: 100%;
+  }
+
+  .feature-card { // Style des cartes similaire à celui de Fonctionalite
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .icon { // Icônes dans les cartes
+      width: 30px;
+      height: 30px;
+      color: #007FFF;
+      margin-bottom: 10px;
+    }
+
+    .feature-text { // Texte dans les cartes
+      h3 {
+        color: #1e3758;
+        font-size: 1.1em;
+        margin-bottom: 0.5rem;
+        font-weight: 600;
+      }
+
+      p {
+        color: #333;
+        font-size: 0.9em;
+        margin: 0;
+      }
+    }
+  }
+
+  // Répondre aux mobiles et petits écrans
+  @media (max-width: 768px) {
+    .features-container {
+      grid-template-columns: 1fr; // Une seule colonne sur les petits écrans
+    }
+  }
+}

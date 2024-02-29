@@ -12,6 +12,7 @@ import LegalMentions from "./pages/LegalMentions";
 import MissingPage from "./pages/MissingPage";
 import Certifications from "./pages/Certifications";
 import CurriculumVitae from "./pages/CurriculumVitae";
+import PersonalProjectView from './pages/home/projet-perso/PersonalProjectView';
 
 // Configuration de React Modal
 ReactModal.setAppElement("#root");
@@ -44,13 +45,15 @@ function App() {
         <main>
           <Routes>
             <Route path="/" element={<><Home /><AppWrapper /></>} />
+            <Route path="/personal-project/:id" element={<PersonalProjectView />} />
             <Route path="/certifications" element={<><Certifications /><AppWrapper /></>} />
             <Route path="/curriculum-vitae" element={<><CurriculumVitae /><AppWrapper /></>} />
             <Route path="/mentions-legales" element={<><LegalMentions /><AppWrapper /></>} />
             <Route path="/error404" element={<MissingPage />} />
             <Route path="*" element={<><MissingPage /><AppWrapper /></>} />
           </Routes>
-        </main>        
+        </main>
+        <AppWrapper />
         <ScrollToTop />
       </Router>
     </SkillsProvider>

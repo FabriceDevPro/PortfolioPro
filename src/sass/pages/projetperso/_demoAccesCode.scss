@@ -1,0 +1,44 @@
+// styles/fonctionalite.scss
+@import "../../abstracts/mixin";
+@import "../../abstracts/keyframes";
+@import "../../abstracts/variables";
+.demo-acces-code-section {
+  @include section-styles;
+
+  .section-title {
+    color: #1e3758;
+    font-size: 2em;
+    margin-bottom: 2rem;
+    font-weight: 600;
+  }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      .button-projet, .button-github {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        padding: 10px 15px;
+        border-radius: 8px;
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        background: #007FFF;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        &:hover {
+          background: darken(#007FFF, 10%);
+        }
+        .icon {
+          display: block;
+        }
+      }
+      .button-github {
+        background: #1e3758;
+        &:hover {
+          background: darken(#1e3758, 10%);
+        }
+      }
+    }
+  }

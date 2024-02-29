@@ -39,20 +39,90 @@
       }
     ],
     "fonctionnalites": [
-      "Gestion de comptes bancaires personnels (jusqu'à 5 comptes Courant-Différé-Joint et 5 comptes Épargne).",
-      "Saisies d'écritures comptables de Revenus ou de Dépenses.",
-      "Partage des écritures entre 2 utilisateurs.",
-      "Compte Joint utilisable par les utilisateurs définis, tandis que les autres comptes sont individuels.",
-      "Validation des écritures sur une période après rapprochement bancaire et réalisation de clôtures d'exercices."
+      {
+        "titre": "Gestion de comptes bancaires personnels",
+        "description": "Jusqu'à 5 comptes de types : Courant - Différé - Joint et 5 comptes Épargne."
+      },
+      {
+        "titre": "Compte Joint",
+        "description": "Utilisable par les utilisateurs définis, tandis que les autres comptes sont individuels."
+      },
+      {
+        "titre": "Saisies d'écritures comptables",
+        "description": "De Revenus ou de Dépenses."
+      },
+      {
+        "titre": "Pointage des écritures comptables",
+        "description": "Possibilité de pointer les écritures pour réaliser son rapprochement bancaire."
+      },
+      {
+        "titre": "Partage des écritures",
+        "description": "Entre 2 utilisateurs."
+      },
+      {
+        "titre": "Validation des écritures",
+        "description": "Validation des écritures sur une période après rapprochement bancaire et réalisation de clôtures d'exercices."
+      },
+      {
+        "titre": "Clôture de l'Exercice Comptable",
+        "description": "Sur une période après rapprochement bancaire et réalisation de clôtures d'exercices."
+      }
     ],
     "detailsEcritures": [
-      "Type de saisie : Revenus ou Dépenses.",
-      "Groupe, Catégorie (rattachée à un Compte), Sous-Catégorie, Détail.",
-      "Possibilité de définir des écritures récurrentes et des prélèvements automatiques.",
-      "Création d'écritures automatiques entre 2 comptes existants dans le logiciel (même utilisateur ou différent)."
+      {
+        "titre":"Type de saisie",
+        "description":"Revenus ou Dépenses."
+      },
+      {
+        "titre":"Catégories",
+        "description":"Groupe, Catégorie (rattachée à un Compte), Sous-Catégorie, Détail."
+      },
+      {
+        "titre":"Écritures récurrentes",
+        "description":"Possibilité de définir des écritures récurrentes et des prélèvements automatiques."
+      },
+      {
+        "titre":"Transferts automatiques",
+        "description":"Création d'écritures automatiques entre 2 comptes existants dans le logiciel (même utilisateur ou différent)."
+      },
+      {
+        "titre":"Statut du Partage",
+        "description":"Tableau de suivi et éléments de type Commandes"
+      },
+      {
+        "titre":"Statut du Rapprochement Bancaire",
+        "description":"Tableau de suivi et éléments de type Commandes"
+      },
+      {
+        "titre":"Suivi des dépenses liés à la Santé",
+        "description":"Tableau de suivi et éléments de type Santé pour vérifier les remboursements."
+      },
+      {
+        "titre":"Suivi des Provisions",
+        "description":"Tableau de suivi et éléments de type Provisions"
+      },
+      {
+        "titre":"Suivi des Commandes",
+        "description":"Tableau de suivi et éléments de type Commandes"
+      }
     ],
     "demonstration": "Je peux vous faire une démonstration de l'outil, vous donner les paramètres de connexion pour un compte test ou vous donner accès à mon code via GitHub.",
-    "lienProjet": "https://fabwebprojects.fr/Mon_Budget_Perso/connexion.php"
+    "lienProjet": [
+      {
+        "titre":"Voir la version (PHP)",
+        "lien":"https://fabwebprojects.fr/Mon_Budget_Perso/connexion.php"
+      },
+      {
+        "titre":"Voir la version (Vite.js + Redux + API Laravel)",
+        "lien":"https://fabwebprojects.fr/MonBudgetPerso/"
+      }
+    ],
+    "lienGitHub": [
+      {
+        "titre":"Code sur GitHub",
+        "lien":"https://github.com/user/repo"
+      }
+    ]
   },
   {
     "id": 2,
@@ -94,17 +164,72 @@
       }
     ],
     "fonctionnalites": [
-      "Gestion de comptes bancaires personnels (jusqu'à 5 comptes Courant-Différé-Joint et 5 comptes Épargne).",
-      "Saisies d'écritures comptables de Revenus ou de Dépenses.",
-      "Partage des écritures entre 2 utilisateurs.",
-      "Compte Joint utilisable par les utilisateurs définis, tandis que les autres comptes sont individuels.",
-      "Validation des écritures sur une période après rapprochement bancaire et réalisation de clôtures d'exercices."
+      {
+        "titre": "Gestion de comptes bancaires personnels",
+        "description": "Jdqsdsqdsqdqsd."
+      },
+      {
+        "titre": "Compte Joint",
+        "description": "Jdqsdsqdsqdqsd."
+      },
+      {
+        "titre": "Saisies d'écritures comptables",
+        "description": "Jdqsdsqdsqdqsd."
+      },
+      {
+        "titre": "Pointage des écritures comptables",
+        "description": "Jdqsdsqdsqdqsd."
+      },
+      {
+        "titre": "Partage des écritures",
+        "description": "Jdqsdsqdsqdqsd."
+      },
+      {
+        "titre": "Validation des écritures",
+        "description": "Jdqsdsqdsqdqsd."
+      },
+      {
+        "titre": "Clôture de l'Exercice Comptable",
+        "description": "Jdqsdsqdsqdqsd."
+      }
     ],
     "detailsEcritures": [
-      "Type de saisie : Revenus ou Dépenses.",
-      "Groupe, Catégorie (rattachée à un Compte), Sous-Catégorie, Détail.",
-      "Possibilité de définir des écritures récurrentes et des prélèvements automatiques.",
-      "Création d'écritures automatiques entre 2 comptes existants dans le logiciel (même utilisateur ou différent)."
+      {
+        "titre":"Type de saisie",
+        "description":"Revenus ou Dépenses."
+      },
+      {
+        "titre":"Catégories",
+        "description":"Groupe, Catégorie (rattachée à un Compte), Sous-Catégorie, Détail."
+      },
+      {
+        "titre":"Écritures récurrentes",
+        "description":"Possibilité de définir des écritures récurrentes et des prélèvements automatiques."
+      },
+      {
+        "titre":"Transferts automatiques",
+        "description":"Création d'écritures automatiques entre 2 comptes existants dans le logiciel (même utilisateur ou différent)."
+      },
+      {
+        "titre":"Statut du Partage",
+        "description":"Tableau de suivi et éléments de type Commandes"
+      },
+      {
+        "titre":"Statut du Rapprochement Bancaire",
+        "description":"Tableau de suivi et éléments de type Commandes"
+      },
+      {
+        "titre":"Suivi des dépenses liés à la Santé",
+        "description":"Tableau de suivi et éléments de type Santé pour vérifier les remboursements."
+      },
+      {
+        "titre":"Suivi des Provisions",
+        "description":"Tableau de suivi et éléments de type Provisions"
+      },
+      {
+        "titre":"Suivi des Commandes",
+        "description":"Tableau de suivi et éléments de type Commandes"
+      }
     ],
     "demonstration": "Je peux vous faire une démonstration de l'outil, vous donner les paramètres de connexion pour un compte test ou vous donner accès à mon code via GitHub.",
     "lienProjet": "https://fabwebprojects.fr/Mon_Budget_Perso/connexion.php"

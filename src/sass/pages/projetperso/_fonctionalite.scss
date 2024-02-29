@@ -1,0 +1,68 @@
+// styles/fonctionalite.scss
+@import "../../abstracts/mixin";
+@import "../../abstracts/keyframes";
+@import "../../abstracts/variables";
+.fonctionalites-section {
+  @include section-styles;
+
+  .section-title {
+    color: #1e3758;
+    font-size: 2em;
+    margin-bottom: 2rem;
+    font-weight: 600;
+  }
+
+  .features-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 20px;
+    width: 100%;
+  }
+
+  .feature-card {
+    display: flex;
+    flex-direction: column; // Les éléments s'alignent verticalement
+    justify-content: center; // Centrer verticalement dans la carte
+    align-items: center; // Centrer horizontalement dans la carte
+    text-align: center; // 
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    }
+  }
+
+  .icon {
+    width: 30px;
+    height: 30px;
+    color: #007FFF;
+    margin-bottom: 10px;
+  }
+
+  .feature-text {
+    h3 {
+      color: #1e3758;
+      font-size: 1.1em;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+    }
+
+    p {
+      color: #333;
+      font-size: 0.9em;
+      margin: 0;
+    }
+  }
+
+  // Répondre aux mobiles et petits écrans
+  @media (max-width: 768px) {
+    .features-container {
+      grid-template-columns: 1fr; // Une seule colonne sur les petits écrans
+    }
+  }
+}
