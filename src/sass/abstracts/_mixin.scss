@@ -13,6 +13,7 @@
     border: 1px solid rgba(0, 0, 0, 0.1); // Cadre subtil
     box-shadow: 0 8px 16px $box-shadow-color;
     max-width: 80%;
+    width: 100%;
     position: relative;
     animation: fadeIn 1s ease-in-out;
   }

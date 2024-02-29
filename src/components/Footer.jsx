@@ -13,10 +13,12 @@ const Footer = () => {
 
   return (
     <footer>
+      <p>
       {copyrightText}
       <Link to="/mentions-legales#legal-mentions" className="legal-link">
         Mentions Légales
       </Link>
+      </p>
     </footer>
   );
 };

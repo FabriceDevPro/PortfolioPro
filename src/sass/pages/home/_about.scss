@@ -1,5 +1,7 @@
 // styles/About.scss
 @import "../../abstracts/mixin";
+@import "../../abstracts/keyframes";
+@import "../../abstracts/variables";
 .about-section {
   @include section-styles;
   
@@ -26,7 +28,6 @@
     justify-content: center;
     width: 100%;
   
-
       .about-section__title {
         color: $primary-color; // La couleur que vous avez choisie
         font-size: 2.0em; // Une taille plus grande pour le titre
@@ -38,7 +39,7 @@
         align-items: center;
 
         .about-section__logo-card {
-          background: #fff; // Couleur de fond de la "carte"
+          background:  $card-background; // Couleur de fond de la "carte"
           border-radius: 5px; // Bords arrondis
           box-shadow: 0 2px 4px rgba(0,0,0,0.1); // Ombre subtile
           padding: 10px; // Espace autour du logo
@@ -79,9 +80,13 @@
     }
   }
 }  
-  @media only screen and (max-width: 1024px) {
+
+  @media only screen and (min-width: 900px) and (max-width: 1024px) {
     .about-section .about-section__logo-container .about-section__logo {
-      max-width: 45%; /* Légèrement plus petit sur écrans moyens */
+      max-width: 40%; /* Légèrement plus petit sur écrans moyens */
+    }
+    .about-section .about-section__header {
+      justify-content: end;
     }
     .about-section .about-section__content .about-section__photo {
       min-width: 20%;
@@ -93,18 +98,6 @@
     }
     .about-section .about-section__content .about-section__description{
       font-size: 1.2em;
-    }
-  }
-
-  @media only screen and (min-width: 1025px) {
-    /* Vos styles pour ordinateurs de bureau ici */
-  }
-  @media only screen and (min-width: 901px) and (max-width: 1024px) {
-    .about-section .about-section__logo-container .about-section__logo {
-      max-width: 40%; /* Légèrement plus petit sur écrans moyens */
-    }
-    .about-section .about-section__header {
-      justify-content: end;
     }
   }
   @media only screen and (min-width: 769px) and (max-width: 900px) {
@@ -125,14 +118,14 @@
   }
   @media only screen and (max-width: 768px) {
     .about-section {
-      margin: 30px auto;
-      padding: 0px;
+      margin: 30px auto 10px;
+      padding: 0px 0px 10px;
       max-width: 95%;
     }
   
     .about-section .about-section__logo-container {
-      top: 40px;
-      left: -260px;
+      top: 45px;
+      left: -225px;
     }
     .about-section .about-section__logo-container .about-section__logo {
       max-width: 25%; /* Plus petit sur smartphones */
@@ -154,7 +147,7 @@
     }
     .about-section .about-section__content {
       gap: 5px;
-      justify-content: normal;
+      justify-content: space-around;
     }
     .about-section .about-section__content .about-section__photo {
       min-width: 20%;

@@ -1,22 +1,7 @@
-$primary-color: #1e3758;
-$secondary-color: #1e3758;
-$card-background: #fff;
-$box-shadow-color: rgba(0, 0, 0, 0.2);
-$spacing-unit: 10px;
 @use "sass:math";
-$primary-color: #1e3758;
-$secondary-color: #1e3758;
-$accent-color: #555;
-$background-theme: #e0e0e0;
-$font-size-title: 1.5rem;
-$font-size-subtitle: 1.1rem;
-$font-size-default: 1rem;
-$spacing-unit: 10px;
-$button-color: #ecf3f9;
-$hover-color: #555;
-$font-color: #555;
-$box-shadow-color: rgba(0, 0, 0, 0.2);
-$card-background: #fff;
+@import "../../abstracts/mixin";
+@import "../../abstracts/keyframes";
+@import "../../abstracts/variables";
 
 .formation-projects-collection {
     display: grid;
@@ -61,7 +46,7 @@ $card-background: #fff;
       .project-title {
         display: flex;
         justify-content: center;
-        color: $secondary-color;
+        color: $primary-color;
         font-size: 1.2rem;
         margin-bottom: math.div($spacing-unit, 2);
       }
@@ -131,3 +116,39 @@ $card-background: #fff;
     transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease; // Appliquez la transition à l'état de base pour une animation fluide à l'entrée et à la sortie du survol
   }
 }
+@media only screen and (min-width: 900px) and (max-width: 1024px) {
+  .personal-projects-collection .personal-project-card .personal-project-content{
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 900px) { 
+  .personal-projects-collection .personal-project-card .personal-project-content{
+    font-size: 0.6rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .formation-projects-collection{
+    display:flex;
+    flex-direction: column;
+    gap: 20px;
+    max-height: 280px;
+  }
+  .formation-projects-collection .formation-projects-card .project-content .project-title{
+    font-size: 1.0rem;
+  }
+  .formation-projects-collection .formation-projects-card .project-content .project-brief{
+    font-size: 0.8rem;
+  }
+  .project-view-button {
+    font-size: 13px;
+    padding: 5px 15px;
+  }
+  .formation-projects-collection .project-view-button {
+    display:none;
+  }
+  .formation-projects-collection .formation-projects-card .project-content .project-languages{
+    display:none;
+  }
+}  

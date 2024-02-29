@@ -1,22 +1,7 @@
-$primary-color: #1e3758;
-$secondary-color: #1e3758;
-$card-background: #fff;
-$box-shadow-color: rgba(0, 0, 0, 0.2);
-$spacing-unit: 10px;
 @use "sass:math";
-$primary-color: #1e3758;
-$secondary-color: #1e3758;
-$accent-color: #555;
-$background-theme: #e0e0e0;
-$font-size-title: 1.5rem;
-$font-size-subtitle: 1.1rem;
-$font-size-default: 1rem;
-$spacing-unit: 10px;
-$button-color: #ecf3f9;
-$hover-color: #555;
-$font-color: #555;
-$box-shadow-color: rgba(0, 0, 0, 0.2);
-$card-background: #fff;
+@import "../../abstracts/mixin";
+@import "../../abstracts/keyframes";
+@import "../../abstracts/variables";
 
 .personal-projects-collection{
     display:flex;
@@ -67,7 +52,7 @@ $card-background: #fff;
         }
   
         .personal-project-view-button {
-          background-color: $secondary-color;
+          background-color: $primary-color;
           color: #fff;
           border: none;
           padding: 10px;
@@ -76,9 +61,35 @@ $card-background: #fff;
           text-align: center;
   
           &:hover {
-            background-color: darken($secondary-color, 10%);
+            background-color: darken($primary-color, 10%);
           }
         }
       }
     }
   }
+  @media only screen and (min-width: 900px) and (max-width: 1024px) {
+    .personal-projects-collection .personal-project-card .personal-project-content{
+      font-size: 0.8rem;
+    }
+  }
+
+  @media only screen and (min-width: 769px) and (max-width: 900px) { 
+    .personal-projects-collection .personal-project-card .personal-project-content{
+      font-size: 0.6rem;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .personal-projects-collection{
+      gap: 20px;
+      max-height: 430px;
+    }
+    .personal-project-title{
+      font-size: 1.2rem;}
+      .personal-projects-collection .personal-project-card{
+        padding: 5px;
+      }
+      .personal-projects-collection .personal-project-card .personal-project-content .personal-project-brief{
+      font-size: 0.8rem;
+    }
+  }  

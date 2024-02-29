@@ -6,7 +6,7 @@ import LogoReact from "../../assets/img/skills-formation/react.png";
 const About = () => (
   <>
     <div className="about-section__header">
-      <h2 className="about-section__title">Développeur Web Full Stack</h2>
+      <h1 className="about-section__title">Développeur Web Full Stack</h1>
       <div className="about-section__logos">
         <div className="about-section__logo-card">
           <img src={LogoReact} alt="React Logo" className="about-section__card__logo"/>

@@ -1,3 +1,8 @@
+// styles/Skillcard.scss
+@import "../../abstracts/mixin";
+@import "../../abstracts/keyframes";
+@import "../../abstracts/variables";
+
 .skill-card {
   flex: 1 0 120px;
   display: flex;
@@ -7,7 +12,7 @@
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  background-color: white;
+  background-color:  $card-background;
   position: relative;
   overflow: visible;
   cursor: pointer;
@@ -62,7 +67,7 @@
     bottom: 120%;
     left: 50%;
     transform: translateX(-50%);
-    background-color: #1e3758;
+    background-color: $primary-color;
     color: white;
     padding: 5px 10px;
     border-radius: 5px;
@@ -80,4 +85,19 @@
     visibility: visible;
     transform: translateX(-50%) translateY(-10px);
   }
+}
+@media only screen and (min-width: 769px) and (max-width: 900px) {
+  .skill-card{
+    height: 80px;
+  }
+  .skill-card .skill-card__logo{
+    max-height: 75px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .skill-card{
+    height: 55px;
+  }
+  .skill-card .skill-card__logo{
+    max-height: 50px;}
 }
