@@ -33,48 +33,50 @@ const Chronologie = ({ chronologie }) => {
   return (
     <>
       <div className="section-title">Chronologie du projet</div>
-      <div className="timeline">
-        {sortedChronologie.map((item, index) => (
-          <div key={index} className={`timeline-item ${index % 2 !== 0 ? 'inverse' : ''}`}>
-            <div className="timeline-content card">
-              {item.images.map((img, imgIndex) => (
-                <div className="image-wrapper" key={imgIndex}>
-                  <img src={images_projet_perso[img.nomimage]} alt={img.titre || 'Image de la chronologie'} className="timeline-image" />
+      <div className="timeline-wrapper">
+        <div className="timeline">
+          {sortedChronologie.map((item, index) => (
+            <div key={index} className={`timeline-item ${index % 2 !== 0 ? 'inverse' : ''}`}>
+              <div className="timeline-content card">
+                {item.images.map((img, imgIndex) => (
+                  <div className="image-wrapper" key={imgIndex}>
+                    <img src={images_projet_perso[img.nomimage]} alt={img.titre || 'Image de la chronologie'} className="timeline-image" />
+                  </div>
+                ))}
+                <div className="timeline-header">
+                  <h3>{item.version} - {item.titre}</h3>
                 </div>
-              ))}
-              <div className="timeline-header">
-                <h3>{item.version} - {item.titre}</h3>
+                  <div className={`description ${expanded[index] ? 'expanded' : ''}`}>
+                    <div className="description-title">
+                      <h4>Description :</h4>
+                    </div>
+                    <div className='description-text'>                    
+                      {item.description}
+                    </div>
+                    <div className="languages">
+                      <div className="languages-title">
+                        <h4>Langages utilisés à ce niveau du projet :</h4>
+                      </div>
+                      <div className="languages-container">
+                        {item.languages.map((lang, langIndex) => (
+                          <div key={langIndex} className="languages-card">
+                            <img src={imagesSkills[`${lang.name.toLowerCase()}.png`]} alt={lang.name} className="languages-card__logo" />
+                            <div className="languages-card__alt-text">{lang.name}</div>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                <span className="read-more" onClick={() => toggleExpand(index)}>
+                  {expanded[index] ? 'Lire moins' : 'Lire plus'}
+                  {expanded[index] ? <FaChevronUp /> : <FaChevronDown />}
+                </span>
               </div>
-                <div className={`description ${expanded[index] ? 'expanded' : ''}`}>
-                  <div className="description-title">
-                    <h4>Description :</h4>
-                  </div>
-                  <div className='description-text'>                    
-                    {item.description}
-                  </div>
-                  <div className="languages">
-                    <div className="languages-title">
-                      <h4>Langages utilisés à ce niveau du projet :</h4>
-                    </div>
-                    <div className="languages-container">
-                      {item.languages.map((lang, langIndex) => (
-                        <div key={langIndex} className="languages-card">
-                          <img src={imagesSkills[`${lang.name.toLowerCase()}.png`]} alt={lang.name} className="languages-card__logo" />
-                          <div className="languages-card__alt-text">{lang.name}</div>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                </div>
-              <span className="read-more" onClick={() => toggleExpand(index)}>
-                {expanded[index] ? 'Lire moins' : 'Lire plus'}
-                {expanded[index] ? <FaChevronUp /> : <FaChevronDown />}
-              </span>
+              <div className="timeline-point"></div>
+              <div className="timeline-date">{item.date}</div>
             </div>
-            <div className="timeline-point"></div>
-            <div className="timeline-date">{item.date}</div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </>
   );

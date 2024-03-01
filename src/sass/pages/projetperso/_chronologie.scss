@@ -12,18 +12,30 @@
     margin-bottom: 2rem;
     font-weight: 600;
   }
-
-  .timeline {
+  .timeline-wrapper{
+    max-height: 600px; // Hauteur maximale de la timeline avant de déclencher le défilement
+    overflow-y: auto; // Active le défilement vertical si le contenu dépasse 500px
+    display:flex;
+    flex-direction: column;
     position: relative;
     width: 100%;
-    &:before {
-      content: '';
-      position: absolute;
-      left: 50%;
-      top: 0;
-      bottom: 0;
-      width: 4px;
-      background: $primary-color;
+
+    .timeline {
+      display:flex;
+      flex-direction: column;
+      gap:15px;
+      position: relative;
+      width: 100%;
+      
+      &:before {
+        content: '';
+        position: absolute;
+        left: 50%;
+        top: 0;
+        bottom: 0;
+        width: 4px;
+        background: $primary-color;
+      }
     }
   }
 
@@ -32,7 +44,7 @@
     justify-content: flex-start;
     align-items: center;
     position: relative;
-    gap: 50px;
+    gap: 100px;
     
     .timeline-content, .timeline-date {
       flex: 1;
