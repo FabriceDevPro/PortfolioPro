@@ -26,6 +26,9 @@
       margin: 0 10px;
       transition: transform 0.2s;
       cursor: pointer;
+      border: none;
+      background: none;
+
       &:hover {
         transform: scale(1.2);
       }

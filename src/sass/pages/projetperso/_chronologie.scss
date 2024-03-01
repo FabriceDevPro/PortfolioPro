@@ -1,0 +1,139 @@
+// styles/chronologie.scss
+@import "../../abstracts/mixin";
+@import "../../abstracts/keyframes";
+@import "../../abstracts/variables";
+$card-color: #fff;
+$secondary-color: #e74c3c;
+$text-color: #333;
+$line-color: $primary-color;
+$point-size: 20px;
+$color-background: #fff;
+$color-accent: #e74c3c; // La couleur de la flèche et du point central
+$color-text: #333;
+$color-line: #3498db; // La couleur de la ligne de la chronologie
+$size-circle-outer: 20px; // La taille du cercle extérieur
+$size-circle-inner: 10px; // La taille du cercle intérieur
+$thickness-line: 4px;
+.chronologie-section {
+  @include section-styles;
+  
+  .section-title {
+    color: $primary-color;
+    font-size: 2em;
+    margin-bottom: 2rem;
+    font-weight: 600;
+  }
+  
+  .timeline {
+    position: relative;
+    padding: 0;
+    width: 100%;
+
+    // Ligne de la chronologie
+    &:before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      width: $thickness-line;
+      background: $color-line;
+      height: 100%;
+    }
+
+    .timeline-item {
+      position: relative;
+      width: 44%;
+      padding: 20px;
+      background: lighten($color-background, 30%);
+      border-radius: 10px;
+      margin-bottom: 60px;
+
+      // Cercles
+      &:before {
+        content: '';
+        position: absolute;
+        background-color: $secondary-color;
+        border-radius: 50%;
+        width: $point-size;
+        height: $point-size;
+        top: 15%;
+        z-index: 1;
+      }
+    }
+
+    .date-left,
+    .date-right {
+      position: absolute;
+      top: 23%;
+      transform: translateY(-50%);
+      font-weight: bold;
+    }
+
+    .date-left {
+      right: calc(100% + 100px);
+    }
+
+    .date-right {
+      left: calc(100% + 100px);
+    }
+    
+    // Pour les cards à gauche
+    .timeline-item.left {
+      float: left;
+      clear: both;
+
+      &:after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-top: $point-size solid transparent;
+        border-bottom: $point-size solid transparent;
+        border-left: $point-size solid lighten($card-color, 30%);
+        right: -(20px);
+        top: 20px;
+      }
+    }
+
+    // Pour les cards à droite
+    .timeline-item.right {
+      float: right;
+      clear: both;
+
+      &:after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-top: $point-size solid transparent;
+        border-bottom: $point-size solid transparent;
+        border-right: $point-size solid lighten($card-color, 30%);
+        left: -(20px);
+        top: 20px;
+      }
+    }
+
+    // Pour les cards à gauche
+    .timeline-item.left:before {
+      left: 100%;
+      transform: translate(155%, 30%);
+    }
+
+    // Pour les cards à droite
+    .timeline-item.right:before {
+      left: 0%;
+      transform: translate(-255%, 30%);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .timeline .timeline-item {
+      width: 90%;
+      &:nth-child(odd):after, &:nth-child(even):after {
+        left: 50%;
+        transform: translateX(-50%) rotate(90deg);
+      }
+    }
+  }
+}
+

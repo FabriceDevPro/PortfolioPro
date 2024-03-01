@@ -38,6 +38,109 @@
         "nomimage": "view-create.webp"
       }
     ],
+    "chronologie": [
+      {
+        "title": "2016",
+        "cardTitle": "V 1.0.0",
+        "cardSubtitle":"Fichier Excel avec des formules",        
+        "languages": [
+          { "name": "EXCEL" }
+        ],
+        "images": [
+          {
+            "titre": "Vue de l'écran de connexion ",
+            "nomimage": "view-login.webp"
+          }
+        ]
+      },
+      {
+        "title": "2020",
+        "cardTitle": "V 1.1.0",
+        "cardSubtitle":"Utilisation de macros avec userforms et connexion à une base de données Access.",        
+        "languages": [
+          { "name": "EXCEL" },
+          { "name": "VBA" }
+        ],
+        "images": [
+          {
+            "titre": "Vue de l'écran de connexion ",
+            "nomimage": "view-login.webp"
+          }
+        ]
+      },
+      {
+        "title": "07/2023",
+        "cardTitle": "V 2.0.0",
+        "cardSubtitle":"Conversion en format web pour pratiquer mes acquis, utilisation de HTML-SASS-JS pour le Front-End et PHP/MySQL pour le Back-End.",
+        "languages": [
+          { "name": "HTML" },
+          { "name": "CSS" },
+          { "name": "PHP" },
+          { "name": "JS" },
+          { "name": "PHPMYADMIN" },
+          { "name": "MYSQL" }
+        ],
+        "images": [
+          {
+            "titre": "Vue de l'écran de connexion ",
+            "nomimage": "view-login.webp"
+          }
+        ]
+      },
+      {
+        "title": "10/2023",
+        "cardTitle": "V 2.1.0",
+        "cardSubtitle": "Migration vers React avec Vite.js et création d'une API pour le Back-End.",
+        "cardDetailedText":"Message explicatif sur la version 2.1.0",
+        "languages": [
+          { "name": "HTML"},
+          { "name": "CSS"},
+          { "name": "PHP" },
+          { "name": "PHPMYADMIN" },
+          { "name": "MYSQL" },
+          { "name": "JS" },
+          { "name": "SASS" },
+          { "name": "NODE" },        
+          { "name": "REACT" },
+          { "name": "VITE.JS" },
+          { "name": "REDUX" },
+          { "name": "API" }
+        ],
+        "images": [
+          {
+            "titre": "Vue de l'écran de connexion ",
+            "nomimage": "view-login.webp"
+          }
+        ]         
+      },        
+      {
+        "title": "01/2024",
+        "cardTitle": "V 2.2.0",
+        "cardSubtitle": "Transformation de API PHP en API avec le framework Laravel.",
+        "cardDetailedText":"Message explicatif sur la version 2.2.0",
+        "languages": [
+          { "name": "HTML"},
+          { "name": "CSS"},
+          { "name": "PHP" },        
+          { "name": "PHPMYADMIN" },
+          { "name": "MYSQL" },
+          { "name": "JS" },
+          { "name": "SASS" },
+          { "name": "NODE" },        
+          { "name": "REACT" },
+          { "name": "VITE.JS" },
+          { "name": "REDUX" },
+          { "name": "API" },
+          { "name": "LARAVEL" }
+        ],
+        "images": [
+          {
+            "titre": "Vue de l'écran de connexion ",
+            "nomimage": "view-login.webp"
+          }
+        ]  
+      }
+    ],
     "fonctionnalites": [
       {
         "titre": "Gestion de comptes bancaires personnels",
@@ -120,7 +223,7 @@
     "lienGitHub": [
       {
         "titre":"Code sur GitHub",
-        "lien":"https://github.com/user/repo"
+        "estPublic": false
       }
     ]
   },
@@ -163,6 +266,109 @@
         "nomimage": "view-login-excel.webp"
       }
     ],
+    "chronologie": [
+      {
+        "title": "2016",
+        "cardTitle": "V 1.0.0",
+        "cardSubtitle":"Fichier Excel avec des formules",        
+        "languages": [
+          { "name": "EXCEL" }
+        ],
+        "images": [
+          {
+            "titre": "Vue de l'écran de connexion ",
+            "nomimage": "view-login.webp"
+          }
+        ]
+      },
+      {
+        "title": "2020",
+        "cardTitle": "V 1.1.0",
+        "cardSubtitle":"Utilisation de macros avec userforms et connexion à une base de données Access.",        
+        "languages": [
+          { "name": "EXCEL" },
+          { "name": "VBA" }
+        ],
+        "images": [
+          {
+            "titre": "Vue de l'écran de connexion ",
+            "nomimage": "view-login.webp"
+          }
+        ]
+      },
+      {
+        "title": "07/2023",
+        "cardTitle": "V 2.0.0",
+        "cardSubtitle":"Conversion en format web pour pratiquer mes acquis, utilisation de HTML-SASS-JS pour le Front-End et PHP/MySQL pour le Back-End.",
+        "languages": [
+          { "name": "HTML" },
+          { "name": "CSS" },
+          { "name": "PHP" },
+          { "name": "JS" },
+          { "name": "PHPMYADMIN" },
+          { "name": "MYSQL" }
+        ],
+        "images": [
+          {
+            "titre": "Vue de l'écran de connexion ",
+            "nomimage": "view-login.webp"
+          }
+        ]
+      },
+      {
+        "title": "10/2023",
+        "cardTitle": "V 2.1.0",
+        "cardSubtitle": "Migration vers React avec Vite.js et création d'une API pour le Back-End.",
+        "cardDetailedText":"Message explicatif sur la version 2.1.0",
+        "languages": [
+          { "name": "HTML"},
+          { "name": "CSS"},
+          { "name": "PHP" },
+          { "name": "PHPMYADMIN" },
+          { "name": "MYSQL" },
+          { "name": "JS" },
+          { "name": "SASS" },
+          { "name": "NODE" },        
+          { "name": "REACT" },
+          { "name": "VITE.JS" },
+          { "name": "REDUX" },
+          { "name": "API" }
+        ],
+        "images": [
+          {
+            "titre": "Vue de l'écran de connexion ",
+            "nomimage": "view-login.webp"
+          }
+        ]         
+      },        
+      {
+        "title": "01/2024",
+        "cardTitle": "V 2.2.0",
+        "cardSubtitle": "Transformation de API PHP en API avec le framework Laravel.",
+        "cardDetailedText":"Message explicatif sur la version 2.2.0",
+        "languages": [
+          { "name": "HTML"},
+          { "name": "CSS"},
+          { "name": "PHP" },        
+          { "name": "PHPMYADMIN" },
+          { "name": "MYSQL" },
+          { "name": "JS" },
+          { "name": "SASS" },
+          { "name": "NODE" },        
+          { "name": "REACT" },
+          { "name": "VITE.JS" },
+          { "name": "REDUX" },
+          { "name": "API" },
+          { "name": "LARAVEL" }
+        ],
+        "images": [
+          {
+            "titre": "Vue de l'écran de connexion ",
+            "nomimage": "view-login.webp"
+          }
+        ]  
+      }
+    ],    
     "fonctionnalites": [
       {
         "titre": "Gestion de comptes bancaires personnels",
@@ -232,6 +438,18 @@
       }
     ],
     "demonstration": "Je peux vous faire une démonstration de l'outil, vous donner les paramètres de connexion pour un compte test ou vous donner accès à mon code via GitHub.",
-    "lienProjet": "https://fabwebprojects.fr/Mon_Budget_Perso/connexion.php"
+    "lienProjet": [
+      {
+        "titre":"Voir la version (PHP)",
+        "lien":"https://fabwebprojects.fr/Mon_Budget_Perso/connexion.php"
+      }
+    ],
+    "lienGitHub": [
+      {
+        "titre":"Code sur GitHub",
+        "estPublic": true,
+        "lien":"https://github.com/user/repo"
+      }
+    ]
   }
 ]

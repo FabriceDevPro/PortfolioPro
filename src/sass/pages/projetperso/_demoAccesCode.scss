@@ -36,6 +36,7 @@
       }
       .button-github {
         background: #1e3758;
+        cursor: pointer;
         &:hover {
           background: darken(#1e3758, 10%);
         }

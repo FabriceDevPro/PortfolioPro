@@ -7,10 +7,9 @@
 @use "layout/header";
 @use "layout/footer";
 @use 'pages/home' as home;
+@use "pages/personalProject";
 @use "pages/legal_mentions";
 @use "pages/curriculumvitae";
 @use "pages/error";
 @use "pages/certification";
-@use "pages/projetperso/fonctionalite";
-@use "pages/projetperso/details-ecritures";
-@use "pages/projetperso/demoAccesCode";
+

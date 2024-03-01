@@ -1,37 +1,30 @@
-/* eslint-disable react/jsx-no-target-blank */
-import { FaGithub, FaLinkedin,FaEnvelope } from "react-icons/fa6";
-import { useState } from 'react';
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa"; // Assurez-vous que l'importation des icônes est correcte
+import { useContactModal } from '../context/ContactModal';
 
 import Modal from 'react-modal';
 import ContactForm from './Contact';
 
 const Social = () => {
-
-  const [modalIsOpen, setIsOpen] = useState(false);
-
-  function openModal() {
-    setIsOpen(true);
-  }
-
-  function closeModal() {
-    setIsOpen(false);
-  }
+  // Utilisez le contexte pour contrôler l'ouverture et la fermeture du modal
+  const { isModalOpen, openModal, closeModal } = useContactModal();
 
   return (
     <section className="social-section" id="contact">
-      <h2 className="social-section__title">Retrouvez-moi sur les réseaux sociaux :</h2>
+      <h2 className="social-section__title">Pour une collaboration ou un échange, restons en contact :</h2>
       <div className="social-section__icons-container">
-        <a href="https://github.com/Fabrice-Perso/" title="Profil GitHub" target="_blank" className="social-section__icon">
+        <a href="https://github.com/Fabrice-Perso/" title="Mon profil GitHub" target="_blank" rel="noopener noreferrer" className="social-section__icon">
           <FaGithub />
         </a>
-        <a href="https://www.linkedin.com/in/fabrice-magnan-de-bellevue" title="Profil LinkedIn" target="_blank" className="social-section__icon">
+        <a href="https://www.linkedin.com/in/fabrice-magnan-de-bellevue" title="Mon profil LinkedIn" target="_blank" rel="noopener noreferrer" className="social-section__icon">
           <FaLinkedin />
         </a>
-        <a onClick={openModal} className="social-section__icon">
-        <FaEnvelope />
-      </a>
+        {/* Utilisez directement openModal du contexte */}
+        <button onClick={openModal} title="Contactez-moi" className="social-section__icon">
+          <FaEnvelope />
+        </button>
+      </div>
       <Modal
-        isOpen={modalIsOpen}
+        isOpen={isModalOpen} // Assurez-vous que cette variable correspond à l'état du modal
         onRequestClose={closeModal}
         contentLabel="Contact Form Modal"
         className="contact-modal"
@@ -39,7 +32,6 @@ const Social = () => {
       >
         <ContactForm closeModal={closeModal} />
       </Modal>
-      </div>
     </section>
   );
 };

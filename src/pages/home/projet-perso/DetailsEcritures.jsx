@@ -21,7 +21,7 @@ const getIconForDetail = (titre) => {
 
 const DetailsEcritures = ({ detailsEcritures }) => {
   return (
-    <div className="details-ecritures-section">
+    <>
       <h2 className="section-title">Détails des Ecritures :</h2>
       <div className="features-container">
         {detailsEcritures.map((detail, index) => (
@@ -34,7 +34,7 @@ const DetailsEcritures = ({ detailsEcritures }) => {
           </div>
         ))}
       </div>
-    </div>
+    </>
   );
 };
 

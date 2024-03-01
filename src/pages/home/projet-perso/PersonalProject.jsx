@@ -18,28 +18,36 @@ const PersonalProject = ({ title, projects  }) => {
 
 PersonalProject.propTypes = {
   title: PropTypes.string.isRequired,
-  projects: PropTypes.arrayOf(
-    PropTypes.shape({
-      id: PropTypes.number.isRequired,
+  projects: PropTypes.arrayOf(PropTypes.shape({
+    id: PropTypes.number.isRequired,
+    name: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+    languages: PropTypes.arrayOf(PropTypes.shape({
       name: PropTypes.string.isRequired,
+    })).isRequired,
+    images: PropTypes.arrayOf(PropTypes.shape({
+      titre: PropTypes.string.isRequired,
+      nomimage: PropTypes.string.isRequired,
+    })).isRequired,
+    fonctionnalites: PropTypes.arrayOf(PropTypes.shape({
+      titre: PropTypes.string.isRequired,
       description: PropTypes.string.isRequired,
-      languages: PropTypes.arrayOf(
-        PropTypes.shape({
-          name: PropTypes.string.isRequired,
-        })
-      ),
-      images: PropTypes.arrayOf(
-        PropTypes.shape({
-          titre: PropTypes.string.isRequired,
-          nomimage: PropTypes.string.isRequired,
-        })
-      ).isRequired,
-      fonctionnalites: PropTypes.arrayOf(PropTypes.string),
-      detailsEcritures: PropTypes.arrayOf(PropTypes.string),
-      demonstration: PropTypes.string,
-      lienProjet: PropTypes.string,
-    })
-  ).isRequired,
+    })).isRequired,
+    detailsEcritures: PropTypes.arrayOf(PropTypes.shape({
+      titre: PropTypes.string.isRequired,
+      description: PropTypes.string.isRequired,
+    })).isRequired,
+    demonstration: PropTypes.string.isRequired,
+    lienProjet: PropTypes.arrayOf(PropTypes.shape({
+      titre: PropTypes.string.isRequired,
+      lien: PropTypes.string.isRequired,
+    })),
+    lienGitHub: PropTypes.arrayOf(PropTypes.shape({
+      titre: PropTypes.string.isRequired,
+      estPublic: PropTypes.bool,
+      lien: PropTypes.string,
+    })),
+  })).isRequired,
 };
 
 export default PersonalProject;

@@ -16,7 +16,7 @@ const iconMapping = {
 
 const Fonctionalite = ({ fonctionnalites }) => {
   return (    
-    <div className="fonctionalites-section">
+    <>
       <h2 className="section-title">Fonctionnalités Principales :</h2>
       <div className="features-container">
         {fonctionnalites.map((fonctionnalite, index) => (
@@ -29,7 +29,7 @@ const Fonctionalite = ({ fonctionnalites }) => {
           </div>
         ))}
       </div>
-    </div>
+    </>
   );
 };
 
