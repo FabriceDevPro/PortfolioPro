@@ -26,7 +26,10 @@ const DetailsEcritures = ({ detailsEcritures }) => {
       <div className="features-container">
         {detailsEcritures.map((detail, index) => (
           <div key={index} className="feature-card">
-            {getIconForDetail(detail.titre)} {/* Utiliser la fonction getIconForDetail pour déterminer l'icône */}
+            {detail.badge && (
+              <div className="badge">{detail.badge}</div>
+            )}
+            {getIconForDetail(detail.titre)}
             <div className="feature-text">
               <h3>{detail.titre}</h3>
               <p>{detail.description}</p>

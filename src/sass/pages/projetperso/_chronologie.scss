@@ -2,18 +2,7 @@
 @import "../../abstracts/mixin";
 @import "../../abstracts/keyframes";
 @import "../../abstracts/variables";
-$card-color: #fff;
-$secondary-color: #e74c3c;
-$text-color: #333;
-$line-color: $primary-color;
-$point-size: 20px;
-$color-background: #fff;
-$color-accent: #e74c3c; // La couleur de la flèche et du point central
-$color-text: #333;
-$color-line: #3498db; // La couleur de la ligne de la chronologie
-$size-circle-outer: 20px; // La taille du cercle extérieur
-$size-circle-inner: 10px; // La taille du cercle intérieur
-$thickness-line: 4px;
+
 .chronologie-section {
   @include section-styles;
   
@@ -23,117 +12,213 @@ $thickness-line: 4px;
     margin-bottom: 2rem;
     font-weight: 600;
   }
-  
+
   .timeline {
     position: relative;
-    padding: 0;
     width: 100%;
-
-    // Ligne de la chronologie
     &:before {
       content: '';
       position: absolute;
       left: 50%;
-      transform: translateX(-50%);
-      width: $thickness-line;
-      background: $color-line;
-      height: 100%;
-    }
-
-    .timeline-item {
-      position: relative;
-      width: 44%;
-      padding: 20px;
-      background: lighten($color-background, 30%);
-      border-radius: 10px;
-      margin-bottom: 60px;
-
-      // Cercles
-      &:before {
-        content: '';
-        position: absolute;
-        background-color: $secondary-color;
-        border-radius: 50%;
-        width: $point-size;
-        height: $point-size;
-        top: 15%;
-        z-index: 1;
-      }
-    }
-
-    .date-left,
-    .date-right {
-      position: absolute;
-      top: 23%;
-      transform: translateY(-50%);
-      font-weight: bold;
-    }
-
-    .date-left {
-      right: calc(100% + 100px);
-    }
-
-    .date-right {
-      left: calc(100% + 100px);
-    }
-    
-    // Pour les cards à gauche
-    .timeline-item.left {
-      float: left;
-      clear: both;
-
-      &:after {
-        content: '';
-        position: absolute;
-        width: 0;
-        height: 0;
-        border-top: $point-size solid transparent;
-        border-bottom: $point-size solid transparent;
-        border-left: $point-size solid lighten($card-color, 30%);
-        right: -(20px);
-        top: 20px;
-      }
-    }
-
-    // Pour les cards à droite
-    .timeline-item.right {
-      float: right;
-      clear: both;
-
-      &:after {
-        content: '';
-        position: absolute;
-        width: 0;
-        height: 0;
-        border-top: $point-size solid transparent;
-        border-bottom: $point-size solid transparent;
-        border-right: $point-size solid lighten($card-color, 30%);
-        left: -(20px);
-        top: 20px;
-      }
-    }
-
-    // Pour les cards à gauche
-    .timeline-item.left:before {
-      left: 100%;
-      transform: translate(155%, 30%);
-    }
-
-    // Pour les cards à droite
-    .timeline-item.right:before {
-      left: 0%;
-      transform: translate(-255%, 30%);
+      top: 0;
+      bottom: 0;
+      width: 4px;
+      background: $primary-color;
     }
   }
 
-  @media (max-width: 768px) {
-    .timeline .timeline-item {
-      width: 90%;
-      &:nth-child(odd):after, &:nth-child(even):after {
-        left: 50%;
-        transform: translateX(-50%) rotate(90deg);
+  .timeline-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    gap: 50px;
+    
+    .timeline-content, .timeline-date {
+      flex: 1;
+      z-index: 1;
+    }
+
+    .timeline-point {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: #e0e0e0; // Couleur de fond identique à celle de la date
+      border: 4px solid $primary-color; // Pour faire correspondre la couleur de la ligne de la timeline
+      position: absolute;
+      left: 50%;
+      transform: translateX(-45%);
+    }
+    
+    .timeline-content {
+      background-color: #e0e0e0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 20px 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      max-width: 47%;
+      text-align: left; // Changed to left align text
+      position: relative; // Needed for absolute positioning of read-more button
+      
+      .image-wrapper {
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        
+        .timeline-image {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 4px;
+        }
       }
+      .timeline-header{
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        padding: 5px;
+
+        h3{
+          font-size: 1em; // Adjusted for readability
+          margin: 0.5em 0; // Added margin for spacing
+        }
+      }
+      .description {
+        // Hauteur initiale réduite pour masquer le contenu
+        max-height: 0; 
+        overflow: hidden;
+        transition: max-height 0.5s ease; // Transition fluide pour l'expansion/la réduction
+        position: relative;
+        
+        // Utilisez overflow: auto pour ajouter une barre de défilement si nécessaire
+        &.expanded {
+          max-height: 300px; // Hauteur maximale ajustée pour afficher le contenu
+          overflow: auto; // Barre de défilement si le contenu dépasse
+        }
+        .description-title{
+          display: flex;
+          padding: 5px;
+          justify-content: left;
+          h4{
+            margin: 0;
+            border-bottom:2px solid #1e3758;
+          }
+        }
+        .description-text{
+          padding: 10px;
+        
+        }
+        .languages{
+          display: flex;
+          flex-direction: column;
+          width: 95%;
+          gap: 20px;
+          padding: 5px;
+          .languages-title{
+            display: flex;
+            padding: 5px;
+            justify-content: left;
+            h4{
+              margin: 0;
+              border-bottom:2px solid #1e3758;
+            }
+          }
+          .languages-container{ 
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            padding: 5px;
+
+            .languages-card {
+              flex: 1 0 90px; /* Réduit la base de flex pour que les cartes soient plus petites */
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              height: 80px; /* Réduit la hauteur des cartes */
+              border-radius: 10px;
+              box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+              transition: transform 0.3s ease, box-shadow 0.3s ease;
+              background-color: $card-background;
+              position: relative;
+              overflow: visible;
+              cursor: pointer;
+            
+              .languages-card__logo {
+                max-width: 80%; /* Permet une certaine marge autour du logo */
+                max-height: 60px; /* Réduit la hauteur maximale du logo */
+                transition: transform 0.3s ease;
+              }
+              
+              .languages-card__alt-text {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                padding: 5px 0; /* Réduit le padding pour un aspect plus compact */
+                background-color: rgba(0, 0, 0, 0.5);
+                color: white;
+                text-align: center;
+                font-size: 0.8em; /* Ajustement de la taille de police pour l'espace réduit */
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+                opacity: 0; // Rendre le texte invisible par défaut
+                visibility: hidden; // Assurez-vous qu'il n'est pas visible
+                transition: opacity 0.3s ease, visibility 0.3s ease; 
+              }
+            
+              // Affiche le texte lors du survol de la carte
+              &:hover .languages-card__alt-text {
+                opacity: 1;
+                visibility: visible;
+              }
+              &:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+              }
+            }
+          }
+        }
+      }
+      
+      .read-more {
+        position: absolute;
+        bottom: 0;
+        right: 5px;
+        color: $link-color;
+        cursor: pointer;
+        font-size: 0.9em;
+        display: flex;
+        align-items: center;
+        
+        &:hover {
+          text-decoration: underline;
+        }
+        
+        // Assurez-vous que l'icône ou le texte "Voir plus/Lire moins" est correctement positionné
+        i, svg {
+          margin-left: 5px;
+        }
+      }
+    }
+
+    .timeline-date {
+      flex: 0 1 auto; // Adjusted to allow date to not take full flex space
+      text-align: center;
+      background-color: #e0e0e0;
+      border-radius: 10px;
+      padding: 5px 10px; // Added padding for styling
+      font-weight: bold;
+    }
+  }
+
+  .timeline-item:nth-child(even) {
+    flex-direction: row-reverse;
+    
+    .timeline-date {
+      left: auto; // Reset left for row-reverse
+      right: 5%; // Align to the right for even items
     }
   }
 }
-

@@ -21,6 +21,9 @@ const Fonctionalite = ({ fonctionnalites }) => {
       <div className="features-container">
         {fonctionnalites.map((fonctionnalite, index) => (
           <div key={index} className="feature-card">
+            {fonctionnalite.badge && (
+              <div className="badge">{fonctionnalite.badge}</div>
+            )}
             {iconMapping[fonctionnalite.titre] || <CiBank className="icon" />} {/* Fallback Icon */}
             <div className="feature-text">
               <h3>{fonctionnalite.titre}</h3>
@@ -37,6 +40,7 @@ Fonctionalite.propTypes = {
   fonctionnalites: PropTypes.arrayOf(PropTypes.shape({
     titre: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
+    badge: PropTypes.string, // `badge` est optionnel
   })).isRequired,
 };
 

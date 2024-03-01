@@ -30,10 +30,26 @@
     border-radius: 8px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-
+    overflow: hidden;
+    position: relative;
+    
     &:hover {
       transform: translateY(-5px);
       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    }
+    .badge {
+      position: absolute;
+      top: 40px;
+      right: -20px; /* Ajustez cette valeur pour que le badge dépasse correctement */
+      background-color: #007bff; /* Couleur de fond pour le badge */
+      color: white; /* Couleur du texte */
+      padding: 5px 19px; /* Ajustez selon la taille du badge */
+      transform: rotate(45deg);
+      transform-origin: top right;
+      font-size: 14px; /* Ajustez selon la taille du texte */
+      border-radius: 0 0 5px 5px;
+      z-index: 10; /* Assurez que le badge est au-dessus des autres éléments */
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optionnel pour un peu d'ombre */
     }
   }
 

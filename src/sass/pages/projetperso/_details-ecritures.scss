@@ -19,41 +19,61 @@
     width: 100%;
   }
 
-  .feature-card { // Style des cartes similaire à celui de Fonctionalite
+  .feature-card {
+    display: flex;
+    flex-direction: column; // Les éléments s'alignent verticalement
+    justify-content: center; // Centrer verticalement dans la carte
+    align-items: center; // Centrer horizontalement dans la carte
+    text-align: center; // 
     background: #ffffff;
     padding: 20px;
     border-radius: 8px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-
+    overflow: hidden;
+    position: relative;
+    
     &:hover {
       transform: translateY(-5px);
       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
     }
-
-    .icon { // Icônes dans les cartes
-      width: 30px;
-      height: 30px;
-      color: #007FFF;
-      margin-bottom: 10px;
-    }
-
-    .feature-text { // Texte dans les cartes
-      h3 {
-        color: #1e3758;
-        font-size: 1.1em;
-        margin-bottom: 0.5rem;
-        font-weight: 600;
-      }
-
-      p {
-        color: #333;
-        font-size: 0.9em;
-        margin: 0;
-      }
+    .badge {
+      position: absolute;
+      top: 40px;
+      right: -20px; /* Ajustez cette valeur pour que le badge dépasse correctement */
+      background-color: #007bff; /* Couleur de fond pour le badge */
+      color: white; /* Couleur du texte */
+      padding: 5px 19px; /* Ajustez selon la taille du badge */
+      transform: rotate(45deg);
+      transform-origin: top right;
+      font-size: 14px; /* Ajustez selon la taille du texte */
+      border-radius: 0 0 5px 5px;
+      z-index: 10; /* Assurez que le badge est au-dessus des autres éléments */
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optionnel pour un peu d'ombre */
     }
   }
+  .icon {
+    width: 30px;
+    height: 30px;
+    color: #007FFF;
+    margin-bottom: 10px;
+  }
 
+  .feature-text {
+    h3 {
+      color: #1e3758;
+      font-size: 1.1em;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+    }
+
+    p {
+      color: #333;
+      font-size: 0.9em;
+      margin: 0;
+    }
+  }
+  
   // Répondre aux mobiles et petits écrans
   @media (max-width: 768px) {
     .features-container {
