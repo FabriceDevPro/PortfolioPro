@@ -9,7 +9,7 @@ const PersonalProjectCard = ({ project }) => {
   const navigate = useNavigate();
 
   const redirectToDetails = () => {
-    navigate(`/personal-project/${project.id}`);
+    navigate(`/personal-project/${project.id}#personalProject`);
   };
 
   const galleryImages = project.images.map((image) => ({
