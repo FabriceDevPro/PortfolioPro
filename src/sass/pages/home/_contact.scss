@@ -146,6 +146,13 @@
   }
 
 @media (max-width: 768px) {
+  .contact-modal{
+    width: 70%;
+    transform: translate(-53%, -50%);
+    h2{
+      font-size: 1.2em;
+    }
+  }
   .contact-section {
     form {
       width: 100%; // Prend toute la largeur pour les petits écrans
