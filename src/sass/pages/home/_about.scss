@@ -70,7 +70,7 @@
       height: 15%;
       object-fit: cover;
       border: 4px solid white;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 2px 4px $box-shadow-color;
     }
     
     .about-section__description {
@@ -78,80 +78,78 @@
       font-size: 1.5em;
       line-height: 1.8;
     }
-  }
-}  
+  } 
 
   @media only screen and (min-width: 900px) and (max-width: 1024px) {
-    .about-section .about-section__logo-container .about-section__logo {
+     .about-section__logo-container .about-section__logo {
       max-width: 40%; /* Légèrement plus petit sur écrans moyens */
     }
-    .about-section .about-section__header {
+     .about-section__header {
       justify-content: end;
     }
-    .about-section .about-section__content .about-section__photo {
+     .about-section__content .about-section__photo {
       min-width: 20%;
       min-height: 20%;
       border: 2px solid white;
     }
-    .about-section .about-section__header .about-section__title{
+     .about-section__header .about-section__title{
       font-size: 1.8em;
     }
-    .about-section .about-section__content .about-section__description{
+     .about-section__content .about-section__description{
       font-size: 1.2em;
     }
   }
-  @media only screen and (min-width: 769px) and (max-width: 900px) {
-    .about-section .about-section__logo-container .about-section__logo {
+  @media (min-width: 769px) and (max-width: 900px) {
+     .about-section__logo-container .about-section__logo {
       max-width: 35%; /* Réduire la taille du logo pour s'adapter à la plage 901px à 1024px */
     }
-    .about-section .about-section__content .about-section__photo {
+     .about-section__content .about-section__photo {
       min-width: 20%;
       min-height: 20%;
       border: 2px solid white;
     }
-    .about-section .about-section__header .about-section__title{
+     .about-section__header .about-section__title{
       font-size: 1.5em;
     }
-    .about-section .about-section__content .about-section__description{
+     .about-section__content .about-section__description{
       font-size: 1.0em;
     }
   }
-  @media only screen and (max-width: 768px) {
-    .about-section {
+  @media (max-width: 768px) {
       margin: 30px auto 10px;
       padding: 0px 0px 10px;
       max-width: 95%;
-    }
-  
-    .about-section .about-section__logo-container {
+
+     .about-section__logo-container {
       top: 45px;
       left: -225px;
     }
-    .about-section .about-section__logo-container .about-section__logo {
+     .about-section__logo-container .about-section__logo {
       max-width: 25%; /* Plus petit sur smartphones */
     }
-    .about-section .about-section__header {
+     .about-section__header {
       display:flex;
       flex-direction: column;
       justify-content: center;
     }
-    .about-section .about-section__header .about-section__logos .about-section__logo-card .about-section__card__logo {
+     .about-section__header .about-section__logos .about-section__logo-card .about-section__card__logo {
       width: 30px;
     }
-    .about-section .about-section__header .about-section__title{
+     .about-section__header .about-section__title{
       font-size: 1.2em;
     }
-    .about-section .about-section__content .about-section__description{
-      font-size: 0.8em;
+     .about-section__content .about-section__description{
+      font-size: 0.9em;
       width: 70%;
     }
-    .about-section .about-section__content {
+     .about-section__content {
       gap: 5px;
       justify-content: space-around;
     }
-    .about-section .about-section__content .about-section__photo {
+     .about-section__content .about-section__photo {
       min-width: 20%;
       min-height: 20%;
       border: 2px solid white;
     }
   }
+}

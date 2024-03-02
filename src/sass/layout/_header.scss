@@ -6,14 +6,14 @@
     top: 0;
     z-index: 1000;
     background-color: #35485d; /* Une teinte bleu-gris foncée */
-    color: #fff;
+    color: white;
     height: 30px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     .burger-menu {
       display: none; // Par défaut, le bouton burger n'est pas affiché
       cursor: pointer;
       font-size: 30px;
-      color: #fff;
+      color: white;
       background: none;
       border: none;
       position: absolute;
@@ -29,18 +29,18 @@
       font-size: large;
       a {
         text-decoration: none; // Enlève le soulignement par défaut
-        color: #fff; // Couleur claire pour le texte pour un bon contraste
+        color: white; // Couleur claire pour le texte pour un bon contraste
         font-weight: bold; // Rend le texte un peu plus gras
         transition: color 0.3s ease;
   
         &:hover {
-          color: #fff; // Changement de couleur au survol
-          border-bottom: 2px solid #ffffff; // Souligne le lien au survol
+          color: white; // Changement de couleur au survol
+          border-bottom: 2px solid white; // Souligne le lien au survol
         }
   
         &.active {
-          color: #fff; // Couleur pour le lien actif
-          border-bottom: 2px solid #ffffff; // Souligne le lien actif
+          color: white; // Couleur pour le lien actif
+          border-bottom: 2px solid white; // Souligne le lien actif
         }
       }
     }
@@ -64,6 +64,10 @@
       align-items: center;
       gap: 20px;
       z-index: 1000;
+      
+      .cv-link {
+        display: none;
+      }
     }
   
     .header nav.nav-visible {

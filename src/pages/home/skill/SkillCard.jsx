@@ -5,8 +5,7 @@ import PropTypes from 'prop-types';
 const SkillCard = ({ skill, isSelected, onSkillSelect, projectCount, formationCount }) => {
   const [isHovered, setIsHovered] = useState(false);
   // La fonction qui sera appelée lorsque l'utilisateur cliquera sur la carte
-  const handleClick = () => {
-    console.log(`Click sur ${skill.name}, Projets: ${projectCount}, Formations: ${formationCount}`);
+  const handleClick = () => {    
     onSkillSelect(skill.name);
   };
 

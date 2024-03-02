@@ -26,7 +26,7 @@ function AppWrapper() {
   useEffect(() => {
     // Cache le composant Social sur la page d'erreur 404 et les mentions légales    
     setShowSocial(location.pathname !== "/error404" && location.pathname !== "/mentions-legales" && location.pathname !== "/certifications" && location.pathname !== "/curriculum-vitae");
-    setShowFooter(location.pathname !== "/error404" &&location.pathname !== "/curriculum-vitae");
+    setShowFooter(location.pathname !== "/error404" &&location.pathname !== "/curriculum-vitae" );
   }, [location]);
 
   return (
@@ -46,13 +46,13 @@ function App() {
       <Header />
         <main>
           <Routes>
-            <Route path="/" element={<><Home /><AppWrapper /></>} />
+            <Route path="/" element={<Home />} />
             <Route path="/personal-project/:id" element={<PersonalProjectView />} />
-            <Route path="/certifications" element={<><Certifications /><AppWrapper /></>} />
-            <Route path="/curriculum-vitae" element={<><CurriculumVitae /><AppWrapper /></>} />
-            <Route path="/mentions-legales" element={<><LegalMentions /><AppWrapper /></>} />
+            <Route path="/certifications" element={<Certifications />} />
+            <Route path="/curriculum-vitae" element={<CurriculumVitae />} />
+            <Route path="/mentions-legales" element={<LegalMentions />} />
             <Route path="/error404" element={<MissingPage />} />
-            <Route path="*" element={<><MissingPage /><AppWrapper /></>} />
+            <Route path="*" element={<MissingPage />} />
           </Routes>
         </main>
         <AppWrapper />

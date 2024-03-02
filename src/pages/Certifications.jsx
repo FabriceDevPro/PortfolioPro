@@ -1,5 +1,6 @@
 import certifications from '../data/certificationFormation';
 import CertificationCard from './certifications/CertificationCard';
+import useScrollToHash from "../hooks/useScrollToHash";
 
 // Fonction pour regrouper les certifications par groupe
 const groupCertifications = (certifications) => {
@@ -27,8 +28,9 @@ const sortGroupedCertifications = (groupedCertifications) => {
 const Certifications = () => {
   const groupedCertifications = groupCertifications(certifications);
   const sortedGroupedCertifications = sortGroupedCertifications(groupedCertifications);
-  const cardsPerRow = 3; // Adaptez cette valeur à votre mise en page
+  const cardsPerRow = 4; // Adaptez cette valeur à votre mise en page
 
+  useScrollToHash(100);
   return (
     <>
       {Object.entries(sortedGroupedCertifications).map(([groupName, certs]) => (

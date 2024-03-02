@@ -1,3 +1,8 @@
+// styles/contact.scss
+@import "../../abstracts/mixin";
+@import "../../abstracts/keyframes";
+@import "../../abstracts/variables";
+
 .contact-modal {
   position: fixed;
   top: 50%;
@@ -7,11 +12,12 @@
   max-width: 600px;
   padding: 30px;
   border-radius: 10px;
-  background: linear-gradient(to bottom, rgba(173, 216, 230, 0.9), rgba(173, 216, 230, 0.9));
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  background: $background-gradient-secondary;
+  box-shadow: 0 8px 16px $box-shadow-color;
   text-align: center;
   outline: none;
   z-index: 1000;
+  
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -55,17 +61,6 @@
       color: #333; // Couleur foncée pour un contraste plus fort
       padding-bottom: 5px; // Espace avant le champ de saisie
     }
-    // Amélioration du design des champs de formulaire
-    // input,
-    // textarea {
-    //   margin: 10px 0; // Ajoute de l'espace entre les champs
-    //   padding: 15px; // Plus de padding pour un meilleur aspect visuel
-    //   border: 2px solid #d3d3d3; // Bordure plus épaisse pour un style plus moderne
-    //   &:focus {
-    //     border-color: #1e3758; // Couleur de la bordure lors du focus correspondant au bouton d'envoi
-    //     box-shadow: 0 0 8px rgba(30, 55, 88, 0.6); // Ombre extérieure pour le focus
-    //   }
-    // }
 
     input,
     textarea {
@@ -78,7 +73,7 @@
       transition: all 0.3s ease-in-out; // Transition douce pour le focus
   
       &:focus {
-        border-color: #1e3758; // Couleur de bordure lors du focus
+        border-color:  $primary-color; // Couleur de bordure lors du focus
         box-shadow: 0 0 8px rgba(30, 55, 88, 0.6); // Ombre extérieure plus prononcée pour le focus
       }
     }
@@ -89,7 +84,7 @@
 
      button[type="submit"] {
       padding: 12px 20px;
-      background-color: #1e3758; // Reprend la couleur du header
+      background-color:  $primary-color; // Reprend la couleur du header
       color: white;
       font-size: 18px;
       font-weight: bold;
@@ -100,7 +95,7 @@
     
       &:hover {
         background-color: #15263f; // Nuance légèrement plus foncée au survol
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); // Ombre subtile au survol
+        box-shadow: 0 2px 4px $box-shadow-color; // Ombre subtile au survol
       }
     }
   }
@@ -114,17 +109,17 @@
 
     &.success {
       background-color: #28a745;
-      color: #fff;
+      color: white;
     }
 
     &.error {
       background-color: #dc3545;
-      color: #fff;
+      color: white;
     }
   }
 
   .drop-zone {
-    border: 2px dashed #1e3758;
+    border: 2px dashed  $primary-color;
     border-radius: 5px;
     padding: 20px;
     text-align: center;

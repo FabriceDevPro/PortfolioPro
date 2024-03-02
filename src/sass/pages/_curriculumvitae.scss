@@ -17,7 +17,7 @@
       width: 95%;
       text-align: left;
       padding: 15px;
-      background-color: #fff;
+      background-color: white;
       border-radius: 5px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
@@ -27,7 +27,7 @@
         font-size: 1.5rem;
         margin-bottom: 10px;
         padding-bottom: 5px;
-        border-bottom: 2px solid #1e3758;
+        border-bottom: 2px solid  $primary-color;
         svg {
           margin-right: 10px;
         }
@@ -58,7 +58,7 @@
         img {
           width: 100%;
           border-radius: 50%;
-          border: 3px solid #fff;
+          border: 3px solid white;
           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
       }
@@ -85,7 +85,7 @@
           a {
             display: inline-block;
             margin-left: 5px; // Espacement après l'icône
-            color: #1e3758; // Couleur du texte des liens
+            color:  $primary-color; // Couleur du texte des liens
             text-decoration: none; // Retire le soulignement des liens
             &:hover {
               text-decoration: underline; // Ajoute un soulignement au survol, si désiré
@@ -139,7 +139,7 @@
         font-size: 1.5rem;
         margin-bottom: 10px;
         padding-bottom: 5px;
-        border-bottom: 2px solid #1e3758;
+        border-bottom: 2px solid  $primary-color;
         svg {
           margin-right: 10px;
         }
@@ -156,7 +156,7 @@
           bottom: 10px; // Ajuster si nécessaire
           left: 1px; // Centrer par rapport aux points
           width: 2px;
-          background: #1e3758; // Couleur de la barre
+          background:  $primary-color; // Couleur de la barre
         }
       }
     
@@ -171,11 +171,11 @@
           height: 10px;
           width: 10px;
           border-radius: 50%;
-          background: #1e3758; // Couleur des points
+          background:  $primary-color; // Couleur des points
         }
     
         .experience-content {
-          background-color: #fff;
+          background-color: white;
           padding: 15px;
           border-radius: 5px;
           box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -212,7 +212,7 @@
               
               &:before {
                 content: '• ';
-                color: #1e3758; // Couleur des puces
+                color:  $primary-color; // Couleur des puces
                 font-size: 1.5rem; // Taille plus grande pour les puces
                 margin-right: 0.5rem; // Ajouter un peu d'espace entre la puce et le texte
                 vertical-align: middle;
@@ -288,7 +288,7 @@
       margin: 0px 0px;
       border-radius: 0px;
       border: 0px solid rgba(0, 0, 0, 0.1);
-      box-shadow: 0 0px 0px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 0px 0px $box-shadow-color;
       background-color: #ADD8E6;
       .cv-container{
         gap: 15px;
@@ -387,77 +387,11 @@
     }
   }
 }
-@media only screen and (min-width: 900px) and (max-width: 1024px) {
-  .about-section .about-section__logo-container .about-section__logo {
-    max-width: 40%; /* Légèrement plus petit sur écrans moyens */
-  }
-  .about-section .about-section__header {
-    justify-content: end;
-  }
-  .about-section .about-section__content .about-section__photo {
-    min-width: 20%;
-    min-height: 20%;
-    border: 2px solid white;
-  }
-  .about-section .about-section__header .about-section__title{
-    font-size: 1.8em;
-  }
-  .about-section .about-section__content .about-section__description{
-    font-size: 1.2em;
-  }
-}
-@media only screen and (min-width: 769px) and (max-width: 900px) {
-  .about-section .about-section__logo-container .about-section__logo {
-    max-width: 35%; /* Réduire la taille du logo pour s'adapter à la plage 901px à 1024px */
-  }
-  .about-section .about-section__content .about-section__photo {
-    min-width: 20%;
-    min-height: 20%;
-    border: 2px solid white;
-  }
-  .about-section .about-section__header .about-section__title{
-    font-size: 1.5em;
-  }
-  .about-section .about-section__content .about-section__description{
-    font-size: 1.0em;
-  }
-}
+
 @media only screen and (max-width: 768px) {
   .curriculumvitae-section {
     margin: 30px auto 10px;
     padding: 0px 0px 10px;
     max-width: 95%;
-  }
-
-  .about-section .about-section__logo-container {
-    top: 45px;
-    left: -225px;
-  }
-  .about-section .about-section__logo-container .about-section__logo {
-    max-width: 25%; /* Plus petit sur smartphones */
-  }
-  .about-section .about-section__header {
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  .about-section .about-section__header .about-section__logos .about-section__logo-card .about-section__card__logo {
-    width: 30px;
-  }
-  .about-section .about-section__header .about-section__title{
-    font-size: 1.2em;
-  }
-  .about-section .about-section__content .about-section__description{
-    font-size: 0.8em;
-    width: 70%;
-  }
-  .about-section .about-section__content {
-    gap: 5px;
-    justify-content: space-around;
-  }
-  .about-section .about-section__content .about-section__photo {
-    min-width: 20%;
-    min-height: 20%;
-    border: 2px solid white;
   }
 }

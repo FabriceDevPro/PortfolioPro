@@ -23,7 +23,7 @@
         flex-direction: column;
         background:  $card-background;
         border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 4px 8px $box-shadow-color;
         padding: 20px;
         transition: all 0.3s ease;
         line-height: 1.6; // Améliore la lisibilité du texte
@@ -54,7 +54,7 @@
         h3{
             font-size: 1.1em;}
         p{
-            font-size: 0.8em;
+            font-size: 0.9em;
         }
     }
     .description-section .description-section__card .description-section__logos-container{
@@ -68,11 +68,11 @@
         font-size: 1.5em;
     }
     .description-section .description-section__card {
-        width: 90%;
+        width: 95%;
         h3{
             font-size: 1.0em;}
         p{
-            font-size: 0.8em;
+            font-size: 0.9em;
         }
     }
     .description-section .description-section__card .description-section__logos-container{
@@ -91,13 +91,13 @@
         font-size: 1.2em;
     }  
     .description-section .description-section__card {
-        width: 80%;
+        width: 85%;
         h3{
             font-size: 1.0em;
             margin:0;
         }
         p{
-            font-size: 0.8em;
+            font-size: 0.9em;
         }
     }
     .description-section .description-section__card .description-section__logos-container{

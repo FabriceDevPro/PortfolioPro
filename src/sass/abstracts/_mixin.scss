@@ -17,3 +17,9 @@
     position: relative;
     animation: fadeIn 1s ease-in-out;
   }
+  @mixin disabled {
+    cursor: not-allowed;
+    background-color: $disabled-background;
+    color: $disabled-color;
+    filter: blur(1px);
+  }

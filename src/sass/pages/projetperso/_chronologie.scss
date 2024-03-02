@@ -55,7 +55,7 @@
       width: 20px;
       height: 20px;
       border-radius: 50%;
-      background: #e0e0e0; // Couleur de fond identique à celle de la date
+      background: $background-third; // Couleur de fond identique à celle de la date
       border: 4px solid $primary-color; // Pour faire correspondre la couleur de la ligne de la timeline
       position: absolute;
       left: 50%;
@@ -63,7 +63,7 @@
     }
     
     .timeline-content {
-      background-color: #e0e0e0;
+      background-color: $background-third;
       border: 1px solid #ccc;
       border-radius: 8px;
       padding: 20px 5px;
@@ -115,7 +115,7 @@
           justify-content: left;
           h4{
             margin: 0;
-            border-bottom:2px solid #1e3758;
+            border-bottom:2px solid  $primary-color;
           }
         }
         .description-text{
@@ -134,7 +134,7 @@
             justify-content: left;
             h4{
               margin: 0;
-              border-bottom:2px solid #1e3758;
+              border-bottom:2px solid  $primary-color;
             }
           }
           .languages-container{ 
@@ -218,7 +218,7 @@
     .timeline-date {
       flex: 0 1 auto; // Adjusted to allow date to not take full flex space
       text-align: center;
-      background-color: #e0e0e0;
+      background-color: $background-third;
       border-radius: 10px;
       padding: 5px 10px; // Added padding for styling
       font-weight: bold;
@@ -232,5 +232,11 @@
       left: auto; // Reset left for row-reverse
       right: 5%; // Align to the right for even items
     }
+  }
+}
+// Répondre aux mobiles et petits écrans
+@media (max-width: 768px) {
+  .chronologie-section {
+    display: none;
   }
 }

@@ -9,14 +9,14 @@
     width: 95%;
   
     h2 {
-      color: #1e3758; // Assurez-vous que cette couleur s'harmonise avec votre design
+      color:  $primary-color; // Assurez-vous que cette couleur s'harmonise avec votre design
       margin-top: 20px;
       margin-bottom: 1rem;
       font-size: 1.5em;
     }
 
     p {
-      color: #1e3758; // Assurez-vous que cette couleur s'harmonise avec votre design
+      color:  $primary-color; // Assurez-vous que cette couleur s'harmonise avec votre design
       font-size: 1em; // Adaptez la taille de la police si nécessaire
       line-height: 1.6;
       margin-bottom: 1rem;

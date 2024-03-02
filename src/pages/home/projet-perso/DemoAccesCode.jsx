@@ -22,8 +22,8 @@ const DemoAccesCode = ({ demonstration, lienProjet, lienGitHub }) => {
       <div className="buttons">
         {lienProjet.map((projet, index) => (
           <a key={index} className="button-projet" href={projet.lien} target="_blank" rel="noopener noreferrer">
-            <IoIosRocket className="icon button-icon" />
-            {projet.titre}
+            <IoIosRocket className="icon button-icon" /> {/* Icône */}
+            <span className="button-text">{projet.titre}</span> {/* Texte */}
           </a>
         ))}
         {lienGitHub.map((github, index) => (
