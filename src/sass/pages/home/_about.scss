@@ -4,7 +4,8 @@
 @import "../../abstracts/variables";
 .about-section {
   @include section-styles;
-  
+  gap:15px;
+
   .about-section__logo-container {
     display: flex;
     justify-content: center; /* Centrer le contenu du logo-container */
@@ -121,8 +122,8 @@
       max-width: 95%;
 
      .about-section__logo-container {
-      top: 45px;
-      left: -225px;
+      top: 55px;
+      left: -200px;
     }
      .about-section__logo-container .about-section__logo {
       max-width: 25%; /* Plus petit sur smartphones */
@@ -140,11 +141,12 @@
     }
      .about-section__content .about-section__description{
       font-size: 0.9em;
-      width: 70%;
+      width: 95%;
     }
      .about-section__content {
       gap: 5px;
       justify-content: space-around;
+      flex-direction: column;
     }
      .about-section__content .about-section__photo {
       min-width: 20%;

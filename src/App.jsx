@@ -56,7 +56,7 @@ function App() {
           </Routes>
         </main>
         <AppWrapper />
-        <ScrollToTop />
+        <ScrollToTop/>
       </Router>
     </ContactModalProvider>
     </SkillsProvider>
