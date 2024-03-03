@@ -35,16 +35,16 @@ const Home = () => {
 
     return (
       <>
-        <section className="about-section" id="about">
+        {/* <section className="about-section" id="about">
           <div className="about-section__logo-container">
             <img src={LogoImage} alt="Logo FAB WEB PROJECT" className="about-section__logo" />
           </div>
           <About />
-        </section>
+        </section> */}
         <section className="skills-section" id="skills">
             <Skills />
         </section>
-        <section className="projects-section" id="projects">
+        {/* <section className="projects-section" id="projects">
           <Projects 
             personalProjects={personalProjects} 
             formationProjects={filteredProjects} 
@@ -69,7 +69,7 @@ const Home = () => {
             <FaRegFilePdf className="icon button-icon" />
             Télécharger mon CV
           </button>
-        </section>
+        </section> */}
       </>
     );
 };

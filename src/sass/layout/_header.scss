@@ -47,8 +47,11 @@
   }
   // Pour les petits écrans, vous pouvez ajouter un menu hamburger ou simplifier la navigation
   @media (max-width: 768px) {
-  .header .burger-menu {
-      display: block; // Affiche le bouton burger en mode mobile
+    .header{
+      padding: 10px 0px;
+    }
+    .header .burger-menu {
+      display: flex; // Affiche le bouton burger en mode mobile
     }
   
     .header nav {

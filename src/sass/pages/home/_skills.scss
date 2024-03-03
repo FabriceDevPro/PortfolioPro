@@ -28,32 +28,32 @@
     width: 100%;
     gap: 20px;
 
-    .skills-section__skills-group {
-      display: flex;
-      align-items: center;
-      gap: 20px;
+    // .skills-section__skills-group {
+    //   display: flex;
+    //   align-items: center;
+    //   gap: 20px;
 
-      h3 {
-        text-align: left;
-        margin: 0;
-        padding-right: 20px;
-        width: 150px;
-      }
+    //   h3 {
+    //     text-align: left;
+    //     margin: 0;
+    //     padding-right: 20px;
+    //     width: 150px;
+    //   }
       
-      .skills-section__filter-icon {
-        margin-left: 10px;
-        color: $primary-color;
-        cursor: pointer;
-      }
+    //   .skills-section__filter-icon {
+    //     margin-left: 10px;
+    //     color: $primary-color;
+    //     cursor: pointer;
+    //   }
 
-      .skills-section__skill-set {
-        display: flex;
-        align-items: center;
-        gap: 20px;
-        width: 100%;
-        flex-wrap: wrap;
-      }
-    }
+    //   .skills-section__skill-set {
+    //     display: flex;
+    //     align-items: center;
+    //     gap: 20px;
+    //     width: 100%;
+    //     flex-wrap: wrap;
+    //   }
+    // }
   }
 
   .skills-section__certifications-button {
@@ -63,44 +63,49 @@
 
 }
 
-@media only screen and (min-width: 900px) and (max-width: 1024px) {
-  .skills-section .skills-section__title-container .skills-section__section-title{
-    font-size: 1.8em;
-  }
-}
-@media only screen and (min-width: 769px) and (max-width: 900px) {
-  .skills-section .skills-section__title-container .skills-section__section-title{
-    font-size: 1.5em;
-  }
-  .skills-section .skills-section__skill-container .skills-section__skills-group .skills-section__skill-set{
-    gap: 10px;
-  }
-}
+// @media only screen and (min-width: 900px) and (max-width: 1024px) {
+//   .skills-section .skills-section__title-container .skills-section__section-title{
+//     font-size: 1.8em;
+//   }
+// }
+// @media only screen and (min-width: 769px) and (max-width: 900px) {
+//   .skills-section .skills-section__title-container .skills-section__section-title{
+//     font-size: 1.5em;
+//   }
+//   .skills-section .skills-section__skill-container .skills-section__skills-group .skills-section__skill-set{
+//     gap: 10px;
+//   }
+// }
 @media only screen and (max-width: 768px) {
-  .skills-section {
-    margin: 30px auto 10px;
-    padding: 0px 0px 10px;
-    max-width: 95%;
-  }
+  // .skills-section {
+  //   margin: 30px auto 10px;
+  //   padding: 0px 0px 10px;
+  //   max-width: 85%;
+  // }
 
-  .skills-section .skills-section__title-container .skills-section__section-title{
-    font-size: 1.0em;
-  }
-  .skills-section .skills-section__skill-container .skills-section__skills-group h3{
-    width: 100%;
-    text-align: center;
-    font-size: 0.9em;
-  }
-  .skills-section .skills-section__skill-container .skills-section__skills-group{
-    flex-direction: column;
-    gap: 10px;
-  }
-  .skills-section .skills-section__skill-container .skills-section__skills-group .skills-section__skill-set{
-    width: 95%;
-    gap: 10px;
-  }
-  .skills-section .skills-section__certifications-button{
-    align-self: center;
-    margin-top: 10px;
-  }
+  // .skills-section .skills-section__skill-container{
+  //   width: 95%;
+  // }
+  // .skills-section .skills-section__title-container .skills-section__section-title{
+  //   font-size: 1.0em;
+  // }
+  // .skills-section .skills-section__skill-container .skills-section__skills-group h3{
+  //   width: 100%;
+  //   text-align: center;
+  //   font-size: 0.9em;
+  // }
+  // .skills-section .skills-section__skill-container .skills-section__skills-group{
+  //   flex-direction: column;
+  //   gap: 10px;
+  //   width: 100%;
+  // }
+  // .skills-section .skills-section__skill-container .skills-section__skills-group .skills-section__skill-set{
+  //   // display:grid;
+  //   // grid-template-columns: 1fr 1fr;    
+  //   // gap: 10px;
+  // }
+  // .skills-section .skills-section__certifications-button{
+  //   align-self: center;
+  //   margin-top: 10px;
+  // }
 }
