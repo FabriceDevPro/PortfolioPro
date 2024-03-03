@@ -44,25 +44,25 @@ const Contact = ({ closeModal }) => {
         <label htmlFor="from_name" className="labelform">
           Votre nom :
         </label>
-        <input type="text" name="from_name" {...register("from_name", { required: true })} placeholder="Votre nom" required />
+        <input type="text" id="from_name" name="from_name" {...register("from_name", { required: true })} placeholder="Votre nom" required />
         {errors.from_name && <p>Le nom est requis</p>}
 
         <label htmlFor="subject" className="labelform">
           Sujet :
         </label>
-        <input type="text" name="subject" {...register("subject", { required: true })} placeholder="Sujet de votre mail" required />
+        <input type="text" id="subject" name="subject" {...register("subject", { required: true })} placeholder="Sujet de votre mail" required />
         {errors.subject && <p>Le sujet est requis</p>}
 
         <label htmlFor="email" className="labelform">
           Email :
         </label>
-        <input type="email" name="email" {...register("email", { required: true })} placeholder="Votre email" required />
+        <input type="email" id="email" name="email" {...register("email", { required: true })} placeholder="Votre email" required />
         {errors.email && <p>Email requis</p>}
 
         <label htmlFor="message" className="labelform">
           Message :
         </label>
-        <textarea name="message" {...register("message", { required: true })} placeholder="Votre message" required />
+        <textarea id="message" name="message" {...register("message", { required: true })} placeholder="Votre message" required />
         {errors.message && <p>Message requis</p>}
 
         <button type="submit" className="submit-button">Envoyer</button>

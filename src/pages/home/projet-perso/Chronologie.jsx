@@ -60,7 +60,7 @@ const Chronologie = ({ chronologie }) => {
                       <div className="languages-container">
                         {item.languages.map((lang, langIndex) => (
                           <div key={langIndex} className="languages-card">
-                            <img src={imagesSkills[`${lang.name.toLowerCase()}.png`]} alt={lang.name} className="languages-card__logo" />
+                            <img src={imagesSkills[`${lang.name.toLowerCase()}.webp`]} alt={lang.name} className="languages-card__logo" />
                             <div className="languages-card__alt-text">{lang.name}</div>
                           </div>
                         ))}

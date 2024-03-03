@@ -19,7 +19,7 @@ const FormationProject = ({ projects, title }) => {
   const getProjectImage = (imageName) => imagesProjetFormation[imageName] || null;
 
   const getLanguageLogo = (languageName) => {
-    const logoKey = `${languageName.toLowerCase()}.png`;
+    const logoKey = `${languageName.toLowerCase()}.webp`;
     const logo = imagesSkillsFormation[logoKey];
     return logo || null;
   };

@@ -8,7 +8,7 @@ const Description = ({ project,description }) => {
                 <h1 className="description-section__section-title">{project}</h1>
             </div>
             <div className="description-section__card">
-                <h3>Description</h3>
+                <h2>Description</h2>
                 <p>{description}</p>
             </div>
         </>

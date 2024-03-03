@@ -10,7 +10,7 @@ function Header() {
 
     return (
         <header className="header">
-            <button className="burger-menu" onClick={() => setIsNavVisible(!isNavVisible)}>
+            <button className="burger-menu" onClick={() => setIsNavVisible(!isNavVisible)} aria-label="Menu">
                 <FaBars /> {/* Utilisation de l'icône FaBars ici */}
             </button>
             <nav className={isNavVisible ? 'nav-visible' : ''}>
