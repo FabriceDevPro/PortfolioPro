@@ -63,7 +63,7 @@ const Skills = () => {
     { name: 'GITHUB', altText: 'GitHub', category: 'Versioning', source: 'formation' },
   ].map(skill => ({
     ...skill,
-    logo: skill.source === 'formation' ? imagesSkillsFormation[`${skill.name.toLowerCase()}.png`] : imagesSkillsPerso[`${skill.name.toLowerCase()}.png`],
+    logo: skill.source === 'formation' ? imagesSkillsFormation[`${skill.name.toLowerCase()}.webp`] : imagesSkillsPerso[`${skill.name.toLowerCase()}.webp`],
   }));
 
   const handleSkillSelect = (skillName) => {

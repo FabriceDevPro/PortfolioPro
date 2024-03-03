@@ -1,7 +1,7 @@
 // About.js
 import { ProfilImage } from "../../assets/images";
-import LogoPHP from "../../assets/img/skills-perso/php.png";
-import LogoReact from "../../assets/img/skills-formation/react.png";
+import LogoPHP from "../../assets/img/skills-perso/php.webp";
+import LogoReact from "../../assets/img/skills-formation/react.webp";
 
 const About = () => (
   <>

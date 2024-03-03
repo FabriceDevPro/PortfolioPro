@@ -11,14 +11,14 @@
     justify-content: center; /* Centrer le contenu du logo-container */
     align-items: center; /* Aligner les éléments verticalement */
     position: absolute; /* Positionner absolument le logo par rapport à la section "À propos" */
-    top: -55px; /* Positionner le logo partiellement au-dessus de la section "À propos" */
-    left: -320px; /* Commencer le logo à partir du bord gauche de la section "À propos" */
+    top: -60px; /* Positionner le logo partiellement au-dessus de la section "À propos" */
+    left: -200px; /* Commencer le logo à partir du bord gauche de la section "À propos" */
     z-index: 10; /* S'assurer que le logo apparaît au-dessus des autres éléments */
     animation: slowSpin 15s linear infinite;
     
     
     .about-section__logo {
-      max-width: 50%; /* Ajuster la largeur maximale du logo selon vos besoins */
+      max-width: 80%; /* Ajuster la largeur maximale du logo selon vos besoins */
       height: auto; /* Conserver le ratio d'aspect de l'image */
     }
   }
@@ -82,11 +82,11 @@
   } 
 
   @media only screen and (min-width: 900px) and (max-width: 1024px) {
-     .about-section__logo-container .about-section__logo {
-      max-width: 40%; /* Légèrement plus petit sur écrans moyens */
-    }
      .about-section__header {
       justify-content: end;
+    }
+    .about-section__logo-container .about-section__logo {
+      max-width: 60%; /* Plus petit sur smartphones */
     }
      .about-section__content .about-section__photo {
       min-width: 20%;
@@ -101,8 +101,8 @@
     }
   }
   @media (min-width: 769px) and (max-width: 900px) {
-     .about-section__logo-container .about-section__logo {
-      max-width: 35%; /* Réduire la taille du logo pour s'adapter à la plage 901px à 1024px */
+    .about-section__logo-container .about-section__logo {
+      max-width: 50%; /* Plus petit sur smartphones */
     }
      .about-section__content .about-section__photo {
       min-width: 20%;
@@ -122,11 +122,11 @@
       max-width: 95%;
 
      .about-section__logo-container {
-      top: 55px;
-      left: -200px;
+      top: 45px;
+      left: -150px;
     }
      .about-section__logo-container .about-section__logo {
-      max-width: 25%; /* Plus petit sur smartphones */
+      max-width: 40%; /* Plus petit sur smartphones */
     }
      .about-section__header {
       display:flex;

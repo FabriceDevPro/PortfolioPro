@@ -1,35 +1,35 @@
-import LogoHTML from "./img/skills-formation/html.png";
-import LogoCss from "./img/skills-formation/css.png";
-import LogoSass from "./img/skills-formation/sass.png";
-import LogoJS from "./img/skills-formation/js.png";
-import LogoReact from "./img/skills-formation/react.png";
-import LogoVite from "./img/skills-formation/vite.png";
-import LogoApi from "./img/skills-formation/api.png";
-import LogoSwagger from "./img/skills-formation/swagger.png";
-import LogoRedux from "./img/skills-formation/redux.png";
-import LogoGit from "./img/skills-formation/git.png";
-import LogoGitSmall from "./img/skills-formation/git_small.png";
-import LogoGitHub from "./img/skills-formation/github.png";
-import LogoGitHubSmall from "./img/skills-formation/github_small.png";
-import LogoKanban from "./img/skills-formation/kanban.png";
-import LogoAgile from "./img/skills-formation/agile.png";
+import LogoHTML from "./img/skills-formation/html.webp";
+import LogoCss from "./img/skills-formation/css.webp";
+import LogoSass from "./img/skills-formation/sass.webp";
+import LogoJS from "./img/skills-formation/js.webp";
+import LogoReact from "./img/skills-formation/react.webp";
+import LogoVite from "./img/skills-formation/vite.webp";
+import LogoApi from "./img/skills-formation/api.webp";
+import LogoSwagger from "./img/skills-formation/swagger.webp";
+import LogoRedux from "./img/skills-formation/redux.webp";
+import LogoGit from "./img/skills-formation/git.webp";
+import LogoGitSmall from "./img/skills-formation/git_small.webp";
+import LogoGitHub from "./img/skills-formation/github.webp";
+import LogoGitHubSmall from "./img/skills-formation/github_small.webp";
+import LogoKanban from "./img/skills-formation/kanban.webp";
+import LogoAgile from "./img/skills-formation/agile.webp";
 
 const imagesSkillsFormation = {
-  "html.png": LogoHTML,
-  "css.png": LogoCss,
-  "sass.png": LogoSass,
-  "js.png": LogoJS,
-  "react.png": LogoReact,
-  "vite.png": LogoVite,
-  "api.png": LogoApi,
-  "swagger.png": LogoSwagger,
-  "redux.png": LogoRedux,
-  "git.png": LogoGit,
-  "git_small.png": LogoGitSmall,
-  "github.png": LogoGitHub,
-  "github_small.png": LogoGitHubSmall,
-  "kanban.png": LogoKanban,
-  "agile.png": LogoAgile,
+  "html.webp": LogoHTML,
+  "css.webp": LogoCss,
+  "sass.webp": LogoSass,
+  "js.webp": LogoJS,
+  "react.webp": LogoReact,
+  "vite.webp": LogoVite,
+  "api.webp": LogoApi,
+  "swagger.webp": LogoSwagger,
+  "redux.webp": LogoRedux,
+  "git.webp": LogoGit,
+  "git_small.webp": LogoGitSmall,
+  "github.webp": LogoGitHub,
+  "github_small.webp": LogoGitHubSmall,
+  "kanban.webp": LogoKanban,
+  "agile.webp": LogoAgile,
 };
 
 export default imagesSkillsFormation;

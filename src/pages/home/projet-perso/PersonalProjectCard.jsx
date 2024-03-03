@@ -12,10 +12,15 @@ const PersonalProjectCard = ({ project }) => {
     navigate(`/personal-project/${project.id}#personalProject`);
   };
 
-  const galleryImages = project.images.map((image) => ({
-    original: images_projet_perso[image.nomimage], // Utilisez l'objet d'images pour récupérer chaque image
-    description: image.titre,
-  }));
+  const galleryImages = project.images.map((image) => {
+    // Retirer l'extension du nom de l'image pour utiliser comme alt text
+    const imageNameWithoutExtension = image.nomimage.split('.').slice(0, -1).join('.');
+    return {
+      original: images_projet_perso[image.nomimage],
+      description: image.titre,
+      originalAlt: imageNameWithoutExtension // Utiliser le nom de l'image sans l'extension comme alt text
+    };
+  });
 
   return (
     <div className="personal-project-card">
