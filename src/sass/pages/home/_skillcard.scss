@@ -91,6 +91,16 @@
 @media only screen and (min-width: 769px) and (max-width: 900px) {
   .skill-card{
     height: 80px;
+    
+    &::after {
+      display: none;
+    }
+    &[data-tooltip]:hover::after {
+      display: none;
+    }
+  }
+  .skill-card .skill-card__logo{
+    max-height: 75px;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -98,12 +108,10 @@
     height: 80px;
    
     &::after {
-      left: 20%;
+      display: none;
     }
     &[data-tooltip]:hover::after {
-      opacity: 1;
-      visibility: visible;
-      transform: translateX(-20%) translateY(-10px);
+      display: none;
     }
   }
  }

@@ -25,6 +25,13 @@
         box-shadow: 0 6px 12px $box-shadow-color;
       }
   
+      .personal-project-title {
+        color: $primary-color;
+        font-size: 1.5rem;
+        margin: 0px;
+        margin-bottom: 5px;
+      }
+
       .personal-project-image-container {
         width: 100%;
         margin-bottom: 10px;
@@ -38,13 +45,7 @@
   
       .personal-project-content {
         text-align: center;
-  
-        .personal-project-title {
-          color: $primary-color;
-          font-size: 1.5rem;
-          margin-bottom: 10px;
-        }
-  
+    
         .personal-project-brief {
           color: #555;
           font-size: 1rem;
@@ -82,7 +83,7 @@
   @media only screen and (max-width: 768px) {
     .personal-projects-collection{
       gap: 20px;
-      max-height: 430px;
+      max-height: 410px;
     }
     .personal-project-title{
       font-size: 1.0rem;}

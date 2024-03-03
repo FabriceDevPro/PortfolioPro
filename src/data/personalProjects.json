@@ -60,9 +60,9 @@
         "version": "V 1.1.0",
         "titre":"Utilisation de macros avec userforms et connexion à une base de données Access.",        
         "description":"Message explicatif sur la version 1.1.0",
-        "languages": [
-          { "name": "EXCEL" },
-          { "name": "VBA" }
+        "languages": [          
+          { "name": "VBA" },
+          { "name": "ACCESS" }
         ],
         "images": [
           {
