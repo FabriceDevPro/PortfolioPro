@@ -75,13 +75,42 @@ $button-color: #ecf3f9;
       .modal-project-details {
         display: flex;
         flex-direction: column; /* Organise le contenu en colonne */
-        justify-content: flex-start; /* Alignement du contenu au début */
+        justify-content: space-around; /* Alignement du contenu au début */
         overflow: auto; /* Ajoute un défilement si le contenu dépasse */
         background: white;
         border-radius: 10px;
         padding: 0px 20px;
         overflow-y: auto; // Active le défilement vertical si nécessaire
         max-height: 600px;
+        .modal-project-details-title{
+          margin: 5px 0px;
+          font-size: 1em;
+        }
+        p{
+          margin: 2px 0px;
+          font-size: 0.9em;
+        }
+        ul {
+          list-style-type: none;
+          padding: 0;
+          margin: 0; 
+        }
+        
+        li {
+          display: flex; /* Utilise flex pour aligner l'icône et le texte */
+          align-items: center; /* Centre les éléments verticalement */
+          font-size: 0.9em;
+        }
+        
+        li svg {
+          padding: 2px;
+          margin: 5px;
+          width: 1rem;
+          height: 1rem;
+          color:  $primary-color;
+          border: 2px solid  $primary-color;
+          border-radius: 50%;
+        }
       }
 
       .modal-project-languages {
@@ -91,40 +120,44 @@ $button-color: #ecf3f9;
         flex-wrap: wrap;
         gap: $spacing-unit;
         margin-top: $spacing-unit;
-
+      
         .modal-language-logo {
+          position: relative; // Ajout pour le positionnement absolu des enfants
           display: inline-block;
-          width: 60px; // Taille des icônes
-          height: 60px;
+          width: 50px; // Taille des icônes
+          height: 50px;
           padding: math.div($spacing-unit, 4); // Ajuster la taille du padding si nécessaire
           margin-bottom: $spacing-unit;
           background-color: $button-color; // Couleur de fond des icônes
           border-radius: 25%; // Rend les icônes circulaires
           box-shadow: 0 4px 8px $box-shadow-color;
           transition: all 0.3s ease;
-
+      
           &:hover {
             background-color: darken($button-color, 10%);
             box-shadow: 0 6px 12px darken($box-shadow-color, 10%);
             transform: translateY(-3px);
-            text-align: center;
           }
-
+      
           img {
             width: 100%;
             height: auto;
             transition: transform 0.3s ease;
           }
-
+      
           .modal-language-name {
+            position: absolute; // Permet au texte de s'afficher par-dessus l'icône
+            top: 50%; // Centre verticalement
+            left: 50%; // Centre horizontalement
+            transform: translate(-50%, -50%); // Ajuste le centrage
             display: none; // Cache le nom du langage par défaut
             transition: 0.3s ease;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff; // Choisissez une couleur de texte qui contraste bien avec votre couleur de fond d'icône
           }
-
+      
           &:hover .modal-language-name {
             display: block; // Affiche le nom au survol
-            margin-top: math.div($spacing-unit, 4);
-            text-align: center;
           }
         }
       }

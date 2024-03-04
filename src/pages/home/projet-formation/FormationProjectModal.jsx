@@ -25,56 +25,64 @@ const FormationProjectModal = ({ isOpen, onClose, project }) => {
             <img src={project.img} alt={project.name} />
           </div>
           <div className="modal-project-details">
-            <p>
-              <strong>Thème :</strong> {project.theme}
-            </p>            
-            {/* <p>
-              <strong>Brief :</strong> {project.brief}
-            </p> */}
-            <p>
-              <strong>Mission :</strong> {project.mission}
-            </p>
+            <div className="modal-project-brief">
+              <h3 className="modal-project-details-title">Thème :</h3>
+              <p>{project.theme}</p>
+            </div>
+            <div className="modal-project-brief">
+              <h3 className="modal-project-details-title">Mission :</h3>
+              <p>{project.mission}</p>
+            </div>            
             {project.results && (
-              <p>
-                <strong>Résultats atteints :</strong> {project.results}
-              </p>
-            )}
-            <p>
-              <strong>Apprentissages clés :</strong> {project.learnings}
-            </p>
-            {project.challenges && (
-              <p>
-                <strong>Défis rencontrés :</strong> {project.challenges}
-              </p>
-            )}
-            <div>
-              <HiLightBulb  />
-              <span>Idée lumineuse</span>
-              </div>
-            <p>
-              <strong>Technologie(s) utilisée(s) :</strong>
-            </p>
-            <div className="modal-project-languages">
-              {project.languages.map((lang) => (
-                <div key={lang.name} className="modal-language-logo">
-                  <img src={lang.logo} alt={`logo_${lang.name}`} />
-                  <span className="modal-language-name">{lang.altText}</span>
+              <div className="modal-project-brief">
+                <h3 className="modal-project-details-title">Résultats atteints :</h3>
+                <p>{project.results}</p>
                 </div>
-              ))}
+            )}            
+            <div className="modal-project-brief">
+              <h3 className="modal-project-details-title">Compétences évaluées :</h3>
+              <ul>
+                {project.learnings.map((learning, index) => (
+                  <li key={index}><HiLightBulb /> {learning}</li>
+                ))}
+              </ul>
+            </div>            
+            {project.challenges && (
+              <div className="modal-project-brief">
+              <h3 className="modal-project-details-title">Défis rencontrés :</h3>
+              <p>{project.challenges}</p>
+              </div>
+            )}            
+            <div className="modal-project-brief">
+              <h3 className="modal-project-details-title">Technologie(s) utilisée(s) :</h3>
+              <div className="modal-project-languages">
+                {project.languages.map((lang) => (
+                  <div key={lang.name} className="modal-language-logo">
+                    <img src={lang.logo} alt={`logo_${lang.name}`} />
+                    <span className="modal-language-name">{lang.altText}</span>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>
         <div className="modal-footer">
-          <a href={project.url} target="_blank" rel="noopener noreferrer">
-            <button className="project-view-button">
-            <TbWorldWww className="icon button-icon" />
-              Voir le site démo</button>
-          </a>
-          <a href={project.url_git} target="_blank" rel="noopener noreferrer">
-            <button className="project-view-button">
-            <FaGithub className="icon button-icon" />
-              Voir GitHub</button>
-          </a>
+          {project.url && (
+            <a href={project.url} target="_blank" rel="noopener noreferrer">
+              <button className="project-view-button">
+                <TbWorldWww className="icon button-icon" />
+                Voir le site démo
+              </button>
+            </a>
+          )}
+          {project.url_git && (
+            <a href={project.url_git} target="_blank" rel="noopener noreferrer">
+              <button className="project-view-button">
+                <FaGithub className="icon button-icon" />
+                Voir GitHub
+              </button>
+            </a>
+          )}
           <button onClick={onClose} className="project-view-button">
             Fermer
           </button>

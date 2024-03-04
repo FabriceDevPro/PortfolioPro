@@ -13,6 +13,8 @@ import LogoGitHub from "./img/skills-formation/github.webp";
 import LogoGitHubSmall from "./img/skills-formation/github_small.webp";
 import LogoKanban from "./img/skills-formation/kanban.webp";
 import LogoAgile from "./img/skills-formation/agile.webp";
+import LogoSeo from "./img/skills-formation/seo.webp";
+import LogoJest from "./img/skills-formation/jest.webp";
 
 const imagesSkillsFormation = {
   "html.webp": LogoHTML,
@@ -30,6 +32,8 @@ const imagesSkillsFormation = {
   "github_small.webp": LogoGitHubSmall,
   "kanban.webp": LogoKanban,
   "agile.webp": LogoAgile,
+  "seo.webp": LogoSeo,
+  "jest.webp": LogoJest,
 };
 
 export default imagesSkillsFormation;

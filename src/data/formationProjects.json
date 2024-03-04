@@ -4,10 +4,10 @@
     "name": "Projet 2 - Riding Cities",
     "theme": "Premiers pas sur le langage HTML",
     "brief": "Ce projet a pour but de faire découvrir le langage HTML.",
-    "mission": "Vous rejoignez l’agence Webonzaï pour un stage en tant que développeur junior. Romain, votre maître de stage et CTO, est en déplacement professionnel la semaine de votre arrivée. Pour vous permettre d’avancer sans lui, il vous confie par e-mail votre première mission : mettre à jour la page Internet de Riding Cities, une association sportive qui promeut le skate en région. Ce projet implique la création d'une nouvelle section 'Les membres fondateurs', avec les noms et photos des créateurs de l'association, et la modification de la section comprenant le bouton 'Télécharger le planning de cours' pour ajouter un titre et deux boutons permettant de télécharger deux plannings de cours différents (un pour les enfants et un pour les adultes).",
-    "results": "La mise à jour de la page web de l'association Riding Cities a été un succès, résultant en une amélioration significative de l'accessibilité et de l'esthétique de la page. La nouvelle section 'Les membres fondateurs' ajoute une touche personnelle et communautaire, tandis que la mise à jour des plannings de cours offre une meilleure expérience utilisateur.",
-    "learnings": "Ce projet a été une occasion précieuse d'approfondir ma maîtrise du HTML. J'ai acquis une meilleure compréhension des principes de base du web design et de l'importance de structurer le contenu de manière accessible et esthétiquement agréable.",
-    "challenges": "L'un des principaux défis a été d'adapter et d'intégrer le code existant aux nouvelles exigences sans perturber les fonctionnalités préexistantes de la page. Cela a nécessité une analyse minutieuse et des tests continus pour assurer une transition fluide.",  
+    "mission": "Stage chez Webonzaï en tant que développeur junior, avec pour première mission la mise à jour du site de Riding Cities, une association de skate. En absence du CTO, j'ai réalisé de manière autonome l'ajout d'une section pour les membres fondateurs et la mise à jour des plannings de cours pour enfants et adultes, améliorant significativement l'accessibilité et l'esthétique du site.",
+    "learnings": [
+      "Intégrer des éléments sur une page web en utilisant les fondamentaux de HTML"
+    ],
     "languages": [
       { "name": "HTML", "altText": "HTML5"},
       { "name": "GIT_SMALL", "altText": "Git"}
@@ -22,9 +22,11 @@
     "theme": "Créez la page d'accueil d'une agence de voyage avec HTML & CSS",
     "brief": "Ce projet a pour but de développer les compétences sur le HTML et de découvrir le CSS avec l'utilisation de flexbox et le Responsive.",
     "mission": "Intégrer l'interface du site Booki en collaboration étroite avec Sarah, la CTO, et Loïc, l’UI designer, en respectant les maquettes fournies pour les versions desktop, tablette, et mobile.",
-    "results": "Réalisation d'une interface responsive qui adapte dynamiquement son contenu et son layout en fonction de la taille de l'écran, offrant une expérience utilisateur optimale sur divers appareils.",
-    "learnings": "Acquisition d'une compréhension approfondie des principes de design responsive, maîtrise des flexbox pour le positionnement des éléments, et pratique du CSS pour styliser précisément selon une maquette.",
-    "challenges": "Adapter une base de code existante aux nouvelles spécifications tout en conservant une structure cohérente et en respectant les contraintes techniques détaillées dans la note de synthèse.",
+    "learnings": [
+      "Implémenter une interface responsive avec HTML et CSS",
+      "Installer un environnement de développement front-end",
+      "Intégrer du contenu conformément à une maquette avec HTML et CSS"
+    ],
     "languages": [      
       { "name": "HTML", "altText": "HTML5"},
       { "name": "CSS", "altText": "CSS3"},
@@ -40,9 +42,11 @@
     "theme": "Améliorez l'interface d'un site mobile avec des animations CSS",
     "brief": "Ce projet vise à développer les compétences en HTML, CSS et à apprendre l'utilisation de SASS ainsi que les animations CSS pour une interface de site mobile first.",
     "mission": "Développer un site mobile first qui répertorie les menus de restaurants gastronomiques, permettant aux clients de composer leur menu à l'avance pour une expérience utilisateur sans attente.",
-    "results": "Développement réussi d'un site responsive 'mobile first' pour OhMyFood, avec intégration d'animations CSS soignées pour améliorer l'expérience utilisateur. Le site présente 4 menus de restaurants gastronomiques de Paris, avec une interface intuitive permettant une navigation fluide entre les différentes sections.",
-    "learnings": "Approfondissement des compétences en HTML et CSS, maîtrise de SASS pour une gestion plus efficace des styles CSS, et mise en œuvre d'animations CSS pour dynamiser l'interface utilisateur. Acquisition de compétences en conception 'mobile first' et en responsive design.",
-    "challenges": "Création d'une expérience utilisateur cohérente et agréable sur différents appareils (mobiles, tablettes, desktops) tout en respectant les maquettes fournies. Intégration d'animations complexes, notamment pour les sélections de plats et le loader de la page d'accueil, tout en assurant la performance et la fluidité du site.",
+    "learnings": [
+      "Intégrer une maquette en mobile-first",
+      "Mettre en œuvre des animations CSS",
+      "Versionner son projet avec Git et Github"
+    ],
     "languages": [
       { "name": "HTML", "altText": "HTML5"},
       { "name": "CSS", "altText": "CSS3"},
@@ -59,9 +63,10 @@
     "theme": "Premiers pas sur le langage JavaScript",
     "brief": "Le but de ce projet était d'initier à JavaScript en développant un carrousel dynamique pour un site statique.",
     "mission": "Transformer un site statique d'une imprimerie en ajoutant un carrousel interactif pour afficher divers produits et services.",
-    "results": "Création réussie d'un carrousel dynamique qui améliore significativement l'interactivité du site de l'imprimerie 'Print It'. Cette fonctionnalité permet désormais aux visiteurs de parcourir facilement les services offerts par l'imprimerie, avec une interface utilisateur plus engageante.",
-    "learnings": "Ce projet a été une introduction pratique au JavaScript, permettant de comprendre et d'appliquer les concepts de base comme les événements, la manipulation du DOM, et les boucles. J'ai également appris à utiliser les conditions pour créer un défilement infini dans le carrousel, améliorant ainsi l'expérience utilisateur sur le site.",
-    "challenges": "Intégrer le carrousel au sein d'un site existant sans altérer sa structure ou son style a été un défi. Il a fallu veiller à ce que le carrousel soit pleinement fonctionnel et responsive, s'adaptant aux différentes tailles d'écran. La mise en œuvre d'un défilement infini sans erreurs lorsque l'utilisateur atteint la fin des images a nécessité une réflexion logique et des tests approfondis.",
+    "learnings": [
+      "Programmer en utilisant les fondamentaux de JavaScript"
+    ],
+    "challenges":"Mise en place d'un défilement automatique des images (non demandés)",
     "languages": [
       { "name": "JS", "altText": "JavaScript"},
       { "name": "GIT_SMALL", "altText": "Git"}
@@ -76,15 +81,17 @@
     "theme": "Créez une page web dynamique avec JavaScript",
     "brief": "Réalisation d'un portfolio pour une architecte d'intérieur, avec une interface dynamique grâce à une API Rest.",
     "mission": "Développement d'un site web dynamique pour présenter les travaux de l'architecte Sophie Bluel, incluant une page de gestion pour l'ajout et la suppression de projets via une interface administrateur.",
-    "results": "Création réussie d'une galerie de projets dynamique, améliorant la visibilité en ligne de l'architecte. Mise en place d'un système de connexion sécurisé pour l'administrateur permettant la gestion fluide des contenus du portfolio. Intégration d'une modale pour l'ajout facile de nouveaux travaux, enrichissant régulièrement le site avec de nouvelles réalisations.",
-    "learnings": "Approfondissement des compétences en JavaScript, notamment dans la manipulation du DOM et l'utilisation d'APIs Rest pour dynamiser le contenu. Acquisition d'une expérience pratique en matière de sécurité des formulaires et de gestion des sessions utilisateurs. Compréhension approfondie du processus de développement front-end en collaboration étroite avec une équipe de conception UX/UI.",
-    "challenges": "Intégration fidèle des maquettes fournies en respectant une approche 'mobile first'. Gestion des défis techniques liés à l'authentification des utilisateurs et à la sécurisation des données. Développement d'une interface administrateur intuitive pour la gestion des projets sans compromettre la sécurité ou l'expérience utilisateur.",
+    "learnings": [
+      "Gérer les événements utilisateurs avec JavaScript",
+      "Manipuler les éléments du DOM avec JavaScript",
+      "Récupérer les données utilisateurs dans le JavaScript via des formulaires"
+    ],
+    "challenges": "Ajout de la fonctionnalité Drag & Drop pour le téléchargement des images (non demandée)",
     "languages": [
       { "name": "HTML", "altText": "HTML5"},
       { "name": "CSS", "altText": "CSS3"},
       { "name": "SASS", "altText": "Sass"},
       { "name": "JS", "altText": "JavaScript"},
-      { "name": "API", "altText": "API REST"},
       { "name": "API", "altText": "API REST"},
       { "name": "GIT_SMALL", "altText": "Git"}
     ],
@@ -98,19 +105,22 @@
     "theme": "Planifiez le développement du site de votre client",
     "brief": "Ce projet consiste à planifier et préparer le développement d'un outil 'Menu Maker' pour les restaurateurs, en mettant en place une méthodologie de travail agile.",
     "mission": "Collaboration avec l'équipe produit pour définir les spécifications techniques, organiser la gestion du projet et développer un système de veille pour le projet 'Menu Maker by Qwenta'.",
-    "results": "Élaboration réussie d'un plan de projet détaillé, incluant les spécifications techniques et une méthodologie agile pour le développement du 'Menu Maker'. Mise en place d'un outil de veille efficace pour suivre les tendances et innovations pouvant influencer le projet.",
-    "learnings": "Acquisition d'une expérience approfondie dans la planification et la gestion de projet en utilisant des méthodologies agiles. Développement de compétences en communication technique pour la présentation de solutions à des non-techniciens. Renforcement des connaissances en veille technologique et en spécifications techniques.",
-    "challenges": "Défi de traduire les besoins fonctionnels en spécifications techniques claires et réalisables. Mise en œuvre d'une veille technologique structurée pour soutenir l'innovation du projet. Organisation et planification du projet en tenant compte des contraintes de temps et des attentes du client.",
+    "learnings": [
+      "Présenter la solution technique",
+      "Rédiger les spécifications techniques d'un projet web à partir de besoins fonctionnels",
+      "Découper une fonctionnalités en tâches pour préparer le développement",
+      "Mettre en place une méthode de veille technologique",
+      "Suivre le déroulement du projet grâce à un outil de gestion de projet"
+    ],
     "languages": [
       { "name": "KANBAN", "altText": "Kanban"},
       { "name": "AGILE", "altText": "Méthode Agile"},
       { "name": "GIT_SMALL", "altText": "Git"},
       { "name": "GITHUB_SMALL", "altText": "GitHub"}     
-
     ],
     "img": "view-p7.webp",
-    "url": "https://portfolio.fabwebprojects.fr/Sophie-bluel/index.html",
-    "url_git": "https://github.com/Fabrice-Perso/Portfolio_architecte_sophie_bluel"
+    "url": "",
+    "url_git": "https://github.com/users/Fabrice-Perso/projects/23"
   },
   {
     "id": 8,
@@ -118,9 +128,13 @@
     "theme": "Créez une application web de location immobilière avec React",
     "brief": "Ce projet vise à refondre totalement l'application web de Kasa pour une stack moderne en JavaScript, en utilisant React pour le front-end et NodeJS pour le back-end.",
     "mission": "Développer l'application React en respectant les maquettes Figma fournies, en intégrant des composants React, des routes avec React Router et en gérant l'état global sans back-end initial.",
-    "results": "Développement réussi d'une application React responsive, implémentant une navigation fluide entre les annonces et les détails des logements. Intégration réussie de fonctionnalités complexes comme le carrousel d'images et les menus déroulants animés (Collapse), en respectant les contraintes de design et fonctionnelles.",
-    "learnings": "Maîtrise approfondie de React et React Router pour la création d'interfaces utilisateur dynamiques et interactives. Expérience accrue dans l'utilisation de Sass pour un styling avancé et l'implémentation d'animations CSS pour améliorer l'UX. Compréhension renforcée du développement front-end sans back-end initial, en manipulant des données JSON.",
-    "challenges": "Adaptation aux contraintes de design sans accès immédiat au back-end, nécessitant une gestion créative des données JSON fournies. Mise en œuvre d'animations CSS et intégration fidèle des maquettes Figma dans un environnement React. Gestion des états et des routes pour une application single-page sans perte de performance ou d'accessibilité.",
+    "learnings": [
+      "Configurer la navigation entre les pages de l'application avec React Router",
+      "Développer des éléments de l'interface d'un site web grâce à des composants React",
+      "Mettre en œuvre des animations CSS",
+      "Développer une interface web avec Sass",
+      "Initialiser une application avec Create React App/Vite.js"
+    ],
     "languages": [
       { "name": "HTML", "altText": "HTML5"},
       { "name": "CSS", "altText": "CSS3"},
@@ -140,14 +154,15 @@
     "theme": "Optimisez le référencement d'un site de photographe",
     "brief": "Optimisation du référencement et des performances du site de la photographe Nina Carducci, déjà en production.",
     "mission": "Réaliser une optimisation globale du site pour améliorer les performances et le SEO, mettre en place le référencement local avec Schema.org, ajouter des meta tags pour les réseaux sociaux, améliorer l’accessibilité du site et produire un rapport d’optimisation.",
-    "results": "Amélioration significative des performances du site, réduction du temps de chargement grâce à l'optimisation des images et du code. Mise en œuvre réussie du référencement local et des meta tags pour les réseaux sociaux, entraînant une augmentation de la visibilité et du trafic sur le site. Accessibilité du site améliorée, conformément aux standards WCAG.",
-    "learnings": "Approfondissement des connaissances en SEO, notamment dans l'utilisation de Schema.org pour le référencement local et l'importance des meta tags pour les réseaux sociaux. Développement de compétences en optimisation des performances web, notamment dans la réduction du poids des images et l'amélioration du code pour un chargement plus rapide. Compréhension accrue des exigences d’accessibilité web et de leur mise en œuvre pour rendre le site plus accessible.",
-    "challenges": "Optimisation d'un site existant sans perturber son fonctionnement, nécessitant une analyse détaillée et des tests rigoureux. Adaptation des techniques d'optimisation SEO à un site de photographe, avec un focus particulier sur le référencement local et l'accessibilité. Gestion des images de haute qualité sans compromettre les performances du site.",  
+    "learnings": [
+      "Optimiser la performance d'un site web"
+    ],
     "languages": [
       { "name": "HTML", "altText": "HTML5"},
       { "name": "CSS", "altText": "CSS3"},
+      { "name": "JS", "altText": "JavaScript"},
+      { "name": "SEO", "altText": "SEO"},
       { "name": "GIT_SMALL", "altText": "Git"}
-
     ],
     "img": "view-p9.webp",
     "url": "https://portfolio.fabwebprojects.fr/NinaCarducci/",
@@ -159,12 +174,14 @@
     "theme": "Débuggez le site d'une agence d'événementiel",
     "brief": "Finalisez le développement du site web pour l'agence d'événementiel 724 Events, en corrigeant les bugs existants et en assurant le bon fonctionnement de toutes les fonctionnalités.",
     "mission": "Votre mission consiste à identifier et corriger les bugs signalés par l'agence 724 Events. Vous devez également compléter les fonctionnalités manquantes selon les spécifications fournies, tout en veillant à l'optimisation des performances et à l'accessibilité du site.",
-    "results": "Réussite dans la résolution des problèmes de fonctionnalité et d'affichage, entraînant une expérience utilisateur améliorée et une interface plus fluide et accessible. Le site de 724 Events est désormais pleinement opérationnel, avec des performances optimisées et une meilleure visibilité en ligne.",
-    "learnings": "Approfondissement des compétences en débuggage et en optimisation de la performance web. Acquisition d'une expérience pratique dans l'utilisation des outils de développement web pour identifier et résoudre les problèmes de manière efficace. Renforcement de la compréhension des principes d'accessibilité et de SEO.",
-    "challenges": "Identification précise et correction des bugs sans documentation complète sur les problèmes existants. Adaptation et amélioration du code hérité sans altérer les fonctionnalités existantes. Mise en œuvre d'une solution qui respecte les contraintes de design et les attentes du client.",
+    "learnings": [
+      "Débugger un site web grâce aux Chrome DevTools",
+      "Rédiger un cahier de recette pour tester un site"
+    ],
     "languages": [
       { "name": "HTML", "altText": "HTML5"},
       { "name": "CSS", "altText": "CSS3"},
+      { "name": "JEST", "altText": "JEST"},
       { "name": "GIT_SMALL", "altText": "Git"}
     ],
     "img": "view-p10.webp",
@@ -177,8 +194,11 @@
     "theme": "Implémentez le front-end d'une application bancaire avec React + Redux",
     "brief": "Mise en place d'un dashboard et restriction d'accès avec une authentification utilisateur",
     "mission": "Votre tâche consiste à créer le dashboard de l'application bancaire en utilisant React + Redux. Ce projet implique le développement d'une interface utilisateur complexe, l'intégration avec une API pour l'authentification et la gestion des profils utilisateurs, et l'utilisation de Redux pour la gestion de l'état global de l'application.",
-    "results": "Développement réussi d'un dashboard utilisateur pour ArgentBank, offrant une expérience utilisateur fluide et sécurisée. Les utilisateurs peuvent désormais se connecter, visualiser et modifier leurs informations de profil, améliorant significativement l'engagement et la satisfaction client.",
-    "learnings": "Ce projet a permis d'approfondir les connaissances en React et Redux, en se concentrant sur les meilleures pratiques pour la gestion de l'état et l'intégration d'APIs sécurisées. De plus, l'expérience acquise en matière d'optimisation de la performance et d'accessibilité du site constitue un atout majeur pour les projets futurs.",
+    "learnings": [
+      "Afficher les données du back end sur l'interface via des appels API",
+      "Configurer des routes API pour la communication client / serveur",
+      "Implémenter la gestion des données avec Redux pour assurer le fonctionnement du front"
+    ],
     "languages": [
       { "name": "HTML", "altText": "HTML5"},
       { "name": "CSS", "altText": "CSS3"},

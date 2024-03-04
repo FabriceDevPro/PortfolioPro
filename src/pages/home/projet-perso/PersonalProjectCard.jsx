@@ -12,20 +12,21 @@ const PersonalProjectCard = ({ project }) => {
     navigate(`/personal-project/${project.id}#personalProject`);
   };
 
-  const galleryImages = project.images.map((image) => {
-    // Retirer l'extension du nom de l'image pour utiliser comme alt text
+  const hasImages = Array.isArray(project.images) && project.images.length > 0;
+  
+  const galleryImages = hasImages ? project.images.map((image) => {
     const imageNameWithoutExtension = image.nomimage.split('.').slice(0, -1).join('.');
     return {
       original: images_projet_perso[image.nomimage],
       description: image.titre,
-      originalAlt: imageNameWithoutExtension // Utiliser le nom de l'image sans l'extension comme alt text
+      originalAlt: imageNameWithoutExtension
     };
-  });
+  }) : [];
 
   return (
     <div className="personal-project-card">
       <h2 className="personal-project-title">{project.name}</h2>
-      <Gallery items={galleryImages} />
+      {hasImages && <Gallery items={galleryImages} />}
       <div className="personal-project-content">
         <p className="personal-project-brief">{project.description}</p>
         <button className="project-view-button" onClick={redirectToDetails}>
