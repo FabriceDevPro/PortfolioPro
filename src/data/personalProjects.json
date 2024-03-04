@@ -244,25 +244,5 @@
         "estPublic": false
       }
     ]
-  },
-  {
-    "id": 2,
-    "name": "Projet Groupomania",
-    "description": "Créer un réseau social d'entreprise",
-    "languages": [
-    ],
-    "images": [
-    ],
-    "chronologie": [
-    ],
-    "fonctionnalites": [
-    ],
-    "detailsEcritures": [
-    ],
-    "demonstration": "",
-    "lienProjet": [      
-    ],
-    "lienGitHub": [
-    ]
   }
 ]

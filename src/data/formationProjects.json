@@ -199,6 +199,12 @@
       "Configurer des routes API pour la communication client / serveur",
       "Implémenter la gestion des données avec Redux pour assurer le fonctionnement du front"
     ],
+    "challenges": "Mise en ligne de API sur Mongodb cloud + utilisation de render (non demandée)",
+    "complement":[
+      "Vous pouvez créer un compte ou vous pouvez utiliser les identifiants de connexion suivant :",
+      "Email: `tony@stark.com` - Password: `password123",
+      "Email: `steve@rogers.com` - Password: `password456`"
+    ],
     "languages": [
       { "name": "HTML", "altText": "HTML5"},
       { "name": "CSS", "altText": "CSS3"},

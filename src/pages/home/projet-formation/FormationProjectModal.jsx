@@ -52,7 +52,17 @@ const FormationProjectModal = ({ isOpen, onClose, project }) => {
               <h3 className="modal-project-details-title">Défis rencontrés :</h3>
               <p>{project.challenges}</p>
               </div>
-            )}            
+            )}
+            {project.complement && (
+              <div className="modal-project-brief">
+              <h3 className="modal-project-details-title">Information pour la démo :</h3>
+              <ul>
+                {project.complement.map((complement, index) => (
+                  <li key={index}>{complement}</li>
+                ))}
+              </ul>
+              </div>
+            )}              
             <div className="modal-project-brief">
               <h3 className="modal-project-details-title">Technologie(s) utilisée(s) :</h3>
               <div className="modal-project-languages">
@@ -104,7 +114,8 @@ FormationProjectModal.propTypes = {
     mission: PropTypes.string.isRequired, 
     results: PropTypes.string, 
     learnings: PropTypes.string.isRequired, 
-    challenges: PropTypes.string, 
+    challenges: PropTypes.string,
+    complement: PropTypes.string, 
     languages: PropTypes.arrayOf(
       PropTypes.shape({
         name: PropTypes.string.isRequired,
