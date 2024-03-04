@@ -178,7 +178,7 @@
           background-color: white;
           padding: 15px;
           border-radius: 5px;
-          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     
           h3 {
             margin-top: 0;
@@ -279,6 +279,9 @@
   body {
     background-color: #ADD8E6;
     background: none;
+    width: 210mm;
+    height: 297mm;
+    overflow: hidden;
     .header{
       display:none;
     }
@@ -293,7 +296,7 @@
       .cv-container{
         gap: 15px;
         .cv-left-column{
-          gap: 5px;
+          gap: 9px;
           .cv-profile-pic{
             max-width: 100px;
           }
@@ -332,7 +335,7 @@
             margin: 0;
           }
           .timeline:before{
-            top: 5px;
+            top: 10px;
             bottom: 30px;
           }
 
@@ -342,7 +345,8 @@
               top: 10px;
             }
             .experience-content{   
-              padding: 0px;                 
+              padding: 0px;
+              box-shadow: none;
               h3 {
                 margin-top: 0;
                 margin-bottom: 5px;

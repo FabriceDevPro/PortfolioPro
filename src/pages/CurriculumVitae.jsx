@@ -58,7 +58,7 @@ const CurriculumVitae = () => {
                     <div className="cv-section cv-diplome">
                         <h2><FaGraduationCap size={30} />Diplôme</h2>
                         <ul>
-                            <li><strong>2023 :</strong> {`Formation "Intégrateur Web", OpenClassroom (en cours)`}</li>
+                            <li><strong>2024 :</strong> {`Formation "Intégrateur Web", OpenClassroom (en cours)`}</li>
                             <li><strong>2008 :</strong> D.U.T Gestion Entreprise Administration, Option Finance-Comptabilité, Perpignan</li>
                             <li><strong>2004 :</strong> Baccalauréat série STT, Option Informatique de Gestion</li>
                         </ul>
@@ -66,9 +66,9 @@ const CurriculumVitae = () => {
                     <div className="cv-section cv-formation">
                         <h2><FaChalkboardTeacher size={30} />Formation</h2>
                         <ul>
-                            <li><strong>2023 :</strong> {`Formation "Intégrateur Web", OpenClassroom (en cours)`}</li>
-                            <li><strong>2008 :</strong> D.U.T Gestion Entreprise Administration, Option Finance-Comptabilité, Perpignan</li>
-                            <li><strong>2004 :</strong> Baccalauréat série STT, Option Informatique de Gestion</li>
+                            <li><strong>2023-2024 :</strong> {`Formation "Intégrateur Web" de 9 mois, OpenClassroom (en cours)`}</li>
+                            <li><strong>2018 :</strong> Formation SQL Server, Programmation SQL, Orsys Formation</li>
+                            <li><strong>2018 :</strong> Formation VBA EXCEL, FortimeLp</li>
                         </ul>
                     </div>
                     <div className="cv-section cv-projects">
