@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import useScrollToHash from "../hooks/useScrollToHash";
-import { FaMobileAlt,FaHtml5, FaCss3Alt, FaJsSquare, FaPhp, FaDatabase, FaTerminal,FaGitAlt,FaSass,FaLaravel,FaReact,FaGithub } from 'react-icons/fa';
+import { FaMobileAlt,FaHtml5, FaCss3Alt, FaJsSquare, FaPhp, FaDatabase, FaTerminal,FaGitAlt,FaSass,FaLaravel,FaReact,FaGithub, FaRegFilePdf } from 'react-icons/fa';
 import { FaGraduationCap,FaChalkboardTeacher,FaCogs,FaRegLightbulb,FaLaptopCode,FaBriefcase,FaLinkedin,FaCircle } from 'react-icons/fa';
 import { IoIosMail } from 'react-icons/io';
 import { SiMysql } from 'react-icons/si';
@@ -9,6 +9,7 @@ import { TbBrandVscode } from 'react-icons/tb';
 import { DiGitBranch } from 'react-icons/di';
 import { ProfilImage } from "../assets/images";
 import { FaFolderOpen } from 'react-icons/fa';
+import { basename } from '../config';
 
 const CurriculumVitae = () => {
     const location = useLocation();
@@ -27,6 +28,7 @@ const CurriculumVitae = () => {
       // Appel du hook avec la hauteur de l'en-tête si nécessaire.
       useScrollToHash(100); // 100px est un exemple, remplacez par la hauteur de votre en-tête fixe
     return (
+    <>                
         <section className="curriculumvitae-section" id="cv">
             <div className="cv-container">
                 <div className="cv-left-column">
@@ -72,7 +74,7 @@ const CurriculumVitae = () => {
                         </ul>
                     </div>
                     <div className="cv-section cv-projects">
-                        <h2><FaLaptopCode size={30} />Projets de Développement (Autodidacte)</h2>
+                        <h2><FaLaptopCode size={30}/> Projets de Développement (Autodidacte)</h2>
                         <ul>
                             <li><strong>Comparadis : </strong> Programme en VBA Excel pour automatiser des contrôles comptables.</li>
                             <li><strong>Gestion des Comptes Personnels : </strong> Application en VBA Excel pour la gestion de comptes bancaires, avec une base de données ACCESS.</li>
@@ -82,13 +84,16 @@ const CurriculumVitae = () => {
                     <div className="cv-section cv-soft-skills">
                         <h2><FaRegLightbulb size={30} /> Soft Skills</h2>
                         <ul className="soft-skills-list">
-                            <li><FaCircle className="bullet-icon" />{`Esprit d'équipe`}</li>
-                            <li><FaCircle className="bullet-icon" />{`Communication efficace`}</li>
+                            <li><FaCircle className="bullet-icon" />{`Travail en équipe`}</li>
+                            <li><FaCircle className="bullet-icon" />{`Adaptabilité`}</li>
+                            <li><FaCircle className="bullet-icon" />{`Autonomie`}</li>                            
+                            <li><FaCircle className="bullet-icon" />{`Gestion de projet`}</li>
                             <li><FaCircle className="bullet-icon" />{`Résolution créative de problèmes`}</li>
-                            <li><FaCircle className="bullet-icon" />{`Capacité d'adaptation`}</li>
-                            <li><FaCircle className="bullet-icon" />{`Gestion du temps`}</li>
+                            <li><FaCircle className="bullet-icon" />{`Communication efficace`}</li>
+                            <li><FaCircle className="bullet-icon" />{`Curiosité et passion pour la technologie`}</li>                            
                         </ul>
                     </div>
+                    
                 </div>
                 <div className="cv-right-column">
                     <h1>Fabrice MAGNAN de BELLEVUE</h1>
@@ -160,79 +165,97 @@ const CurriculumVitae = () => {
                         <div className="skills-container">
                             <div className="skill-item">
                                 <div className="skill-logo">
-                                    <FaHtml5 size={20} color="#E34F26" /> HTML
+                                    <FaHtml5 size={20} color="#E34F26" /> <span>HTML</span>
                                 </div>
                             </div>
                             <div className="skill-item">
                                 <div className="skill-logo">
-                                    <FaCss3Alt size={20} color="#1572B6" /> CSS
+                                    <FaCss3Alt size={20} color="#1572B6" /><span>CSS</span> 
                                 </div>
                             </div>
                             <div className="skill-item">
                                 <div className="skill-logo">
-                                    <FaSass size={20} color="#1e3758" /> SASS
+                                    <FaSass size={20} color="#1e3758" /> <span>SASS</span>
                                 </div>
                             </div>
                             <div className="skill-item">
                                 <div className="skill-logo">
-                                    <FaJsSquare size={20} color="#F0DB4F" /> JavaScript
+                                    <FaJsSquare size={20} color="#F0DB4F" /> <span>JavaScript</span>
                                 </div>
                             </div>
                             <div className="skill-item">
                                 <div className="skill-logo">
-                                    <FaReact size={20} color="#61DAFB" /> React.js
+                                    <FaReact size={20} color="#61DAFB" /> <span>React.js</span>
                                 </div>
                             </div>
                             <div className="skill-item">
                                 <div className="skill-logo">
-                                <DiGitBranch size={20} color="#555" /> Git Branch
+                                <DiGitBranch size={20} color="#555" /> <span>Git Branch</span>
                                 </div>
                             </div>
                             <div className="skill-item">
                                 <div className="skill-logo">
-                                    <FaGitAlt size={20} color="#F05032" /> Git
+                                    <FaGitAlt size={20} color="#F05032" /> <span>Git</span>
                                 </div>
                             </div>
                             <div className="skill-item">
                                 <div className="skill-logo">
-                                    <FaGithub size={20} color="#1e3758" /> GitHub
+                                    <FaGithub size={20} color="#1e3758" /> <span>GitHub</span>
                                 </div>
                             </div>
                             <div className="skill-item">
                                 <div className="skill-logo">
-                                    <TbBrandVscode size={20} color="#1e3758" /> VsCode
+                                    <TbBrandVscode size={20} color="#1e3758" /> <span>VsCode</span>
                                 </div>
                             </div>
                             <div className="skill-item">
                                 <div className="skill-logo">
-                                    <FaTerminal size={20} color="#1e3758" /> Terminal
+                                    <FaTerminal size={20} color="#1e3758" /> <span>Terminal</span>
                                 </div>
                             </div>
                             <div className="skill-item">
                                 <div className="skill-logo">
-                                    <FaPhp size={20} color="#8892BF" /> PHP
+                                    <FaPhp size={20} color="#8892BF" /> <span>PHP</span>
                                 </div>
                             </div>
                             <div className="skill-item">
                                 <div className="skill-logo">
-                                    <FaLaravel size={20} color="#1e3758" /> Laravel
+                                    <FaLaravel size={20} color="#1e3758" /> <span>Laravel</span>
                                 </div>
                             </div>
                             <div className="skill-item">
                                 <div className="skill-logo">
-                                    <FaDatabase size={20} color="#4479A1" /> SQL
+                                    <FaDatabase size={20} color="#4479A1" /> <span>SQL</span>
                                 </div>
                             </div>
                             <div className="skill-item">
                                 <div className="skill-logo">
-                                    <SiMysql size={20} color="#00758F" /> MySQL
+                                    <SiMysql size={20} color="#00758F" /> <span>MySQL</span>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>                
             </div>
+            <div className="cv-download">
+                        <button 
+                            className="project-view-button" 
+                            onClick={() => {
+                            const link = document.createElement('a');
+                            link.href = `${basename}cv-Magnanfabrice.pdf`;
+                            link.download = 'cv-Magnanfabrice.pdf';
+                            link.style.display = 'none'; // Assurez-vous que le lien n'est pas visible
+                            document.body.appendChild(link); // Ajoute le lien à la page
+                            link.click(); // Déclenche le téléchargement
+                            document.body.removeChild(link); // Supprime le lien de la page
+                            }}
+                            >
+                            <FaRegFilePdf className="icon button-icon" />
+                            Télécharger mon CV
+                        </button>
+                    </div>
         </section>
+    </>
     );
 };
 

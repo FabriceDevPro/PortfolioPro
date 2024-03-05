@@ -1,6 +1,6 @@
-import certifications from '../data/certificationFormation';
-import CertificationCard from './certifications/CertificationCard';
-import useScrollToHash from "../hooks/useScrollToHash";
+import certifications from '../../../data/certificationFormation';
+import CertificationCard from './CertificationCard';
+import useScrollToHash from "../../../hooks/useScrollToHash";
 
 // Fonction pour regrouper les certifications par groupe
 const groupCertifications = (certifications) => {
@@ -28,13 +28,13 @@ const sortGroupedCertifications = (groupedCertifications) => {
 const Certifications = () => {
   const groupedCertifications = groupCertifications(certifications);
   const sortedGroupedCertifications = sortGroupedCertifications(groupedCertifications);
-  const cardsPerRow = 4; // Adaptez cette valeur à votre mise en page
+  const cardsPerRow = 7; // Adaptez cette valeur à votre mise en page
 
   useScrollToHash(100);
   return (
-    <>
+    <section className='certifications-collection'>
       {Object.entries(sortedGroupedCertifications).map(([groupName, certs]) => (
-        <section key={groupName} className="certifications-section" id={groupName.toLowerCase()}>
+        <section key={groupName} className={`certifications-collection-${groupName.toLowerCase()}`} id={groupName.toLowerCase()}>
           <h2 className="section-title">{`Certifications ${groupName}`}</h2>
           <div className="certifications-container">
             {certs.map((certification, index) => (
@@ -51,7 +51,7 @@ const Certifications = () => {
           </div>
         </section>
       ))}
-    </>
+    </section>
   );
 };
 

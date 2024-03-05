@@ -12,22 +12,28 @@
     margin-bottom: 2rem;
     font-weight: 600;
   }
-
+  .certifications-collection {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); // Crée deux colonnes de taille égale
+    gap: 20px; // Espace entre les colonnes et les lignes
+  }
   .certifications-container {
     display: flex;
     flex-wrap: wrap;
     gap: 20px 10px;
     justify-content: space-around;
     width: 100%;
-  }
+    max-height: 475px; // Définissez une hauteur maximale pour le conteneur
+    overflow-y: auto;
+  } 
 
   .certification-card {
-    flex: 0 1 calc(17% - 20px); // 5 cartes par ligne par défaut pour desktop
+    flex: 0 1 calc(45% - 20px); // 5 cartes par ligne par défaut pour desktop
     display: flex;
     flex-direction: column;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    padding: 16px;
+    padding: 5px 16px;
     border-radius: 8px;
     transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
     background-color: $card-background-secondary;
@@ -55,15 +61,15 @@
     .certification-title {
       margin-top: 12px;
       margin-bottom: 8px;
-      font-size: 1rem;
+      font-size: 0.8rem;
     }
 
-    .certification-link {
-      color: #007bff;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 1rem;
-    }
+    // .certification-link {
+    //   color: #007bff;
+    //   text-decoration: none;
+    //   font-weight: bold;
+    //   font-size: 1rem;
+    // }
   }
 
     // Tablettes: 4 cartes par ligne
@@ -110,6 +116,10 @@
     .certification-card .certification-link {
       font-size: 0.8rem;
     }
+    .certification-card .certifications-container {
+      width: 95%;
+      max-height: 280px;
+    }
   }
 
   // Petits mobiles: 1 carte par ligne
@@ -122,6 +132,10 @@
     }
     .certification-card .certification-link {
       font-size: 0.7rem;
+    }
+    .certifications-container {
+      width: 95%;
+      max-height: 280px;
     }
   }
 }

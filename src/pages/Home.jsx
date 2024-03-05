@@ -9,6 +9,7 @@ import Projects from './home/Projects';
 import personalProjects from '../data/personalProjects';
 import formationProjects from '../data/formationProjects';
 import TechnicsSkills from './home/skill-technics/TechnicsSkills';
+import Certifications from './home/certifications/Certifications';
 import { FaRegFilePdf } from "react-icons/fa";
 import { basename } from '../config';
 
@@ -49,6 +50,9 @@ const Home = () => {
             personalProjects={personalProjects} 
             formationProjects={filteredProjects} 
           />  
+        </section>
+        <section className="certifications-section" id="certifications">
+          <Certifications />
         </section>
         <section className="technics-skills-section" id="technics-skills">
           <TechnicsSkills />

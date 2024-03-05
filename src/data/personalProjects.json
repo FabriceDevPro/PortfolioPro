@@ -2,7 +2,8 @@
   {
     "id": 1,
     "name": "Mon Budget Perso",
-    "description": "Mon projet personnel, débuté en 2016 avec un outil Excel pour la gestion de mes finances, a évolué en une application web depuis juillet 2023. Cette transformation, fruit de mes efforts autodidactes et de ma formation en développement web, démontre ma progression et l'application concrète de mes compétences. Explorez cette frise chronologique pour découvrir son évolution et les compétences variées que j'ai acquises.",
+    "description": "C'est un projet personnel, débuté en 2016 en format Excel pour la gestion de mes finances, il a évolué en une application web depuis juillet 2023.",
+    "description-complete": "Mon projet personnel, débuté en 2016 avec un outil Excel pour la gestion de mes finances, a évolué en une application web depuis juillet 2023. Cette transformation, fruit de mes efforts autodidactes et de ma formation en développement web, démontre ma progression et l'application concrète de mes compétences. Explorez cette frise chronologique pour découvrir son évolution et les compétences variées que j'ai acquises.",
     "languages": [
       { "name": "HTML"},
       { "name": "CSS"},

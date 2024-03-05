@@ -17,6 +17,7 @@ function Header() {
                 <Link to="/#about" onClick={closeNav}>A propos</Link>
                 <Link to="/#skills" onClick={closeNav}>Compétences</Link>
                 <Link to="/#projects" onClick={closeNav}>Mes Projets</Link>
+                <Link to="/#formation" onClick={closeNav}>Mes Certifications</Link>
                 <Link to="/curriculum-vitae#cv" className="cv-link" onClick={closeNav}>CV</Link>
                 <Link to="/#contact" onClick={closeNav}>Contact</Link>
             </nav>

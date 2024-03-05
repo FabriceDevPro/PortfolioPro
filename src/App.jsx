@@ -10,7 +10,6 @@ import ScrollToTop from "./components/ScrollToTop";
 import Social from "./components/Social";
 import LegalMentions from "./pages/LegalMentions";
 import MissingPage from "./pages/MissingPage";
-import Certifications from "./pages/Certifications";
 import CurriculumVitae from "./pages/CurriculumVitae";
 import PersonalProjectView from './pages/home/projet-perso/PersonalProjectView';
 import { ContactModalProvider } from "./context/ContactModal";
@@ -25,7 +24,7 @@ function AppWrapper() {
 
   useEffect(() => {
     // Cache le composant Social sur la page d'erreur 404 et les mentions légales    
-    setShowSocial(location.pathname !== "/error404" && location.pathname !== "/mentions-legales" && location.pathname !== "/certifications" && location.pathname !== "/curriculum-vitae");
+    setShowSocial(location.pathname !== "/error404" && location.pathname !== "/mentions-legales" && location.pathname !== "/curriculum-vitae");
     setShowFooter(location.pathname !== "/error404" &&location.pathname !== "/curriculum-vitae" );
   }, [location]);
 
@@ -48,7 +47,6 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/personal-project/:id" element={<PersonalProjectView />} />
-            <Route path="/certifications" element={<Certifications />} />
             <Route path="/curriculum-vitae" element={<CurriculumVitae />} />
             <Route path="/mentions-legales" element={<LegalMentions />} />
             <Route path="/error404" element={<MissingPage />} />

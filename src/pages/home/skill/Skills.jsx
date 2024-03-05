@@ -5,8 +5,7 @@ import imagesSkillsFormation from "../../../assets/images-skills-formation";
 import imagesSkillsPerso from "../../../assets/images-skills-perso";
 import useScrollToHash from "../../../hooks/useScrollToHash";
 import { useSkills } from '../../../hooks/useSkills';
-import { Link } from 'react-router-dom';
-import { FaAward, FaFilter } from 'react-icons/fa';
+import { FaFilter } from 'react-icons/fa';
 import formationProjects from '../../../data/formationProjects';
 import personalProjects from '../../../data/personalProjects';
 
@@ -96,14 +95,6 @@ const Skills = () => {
             </div>
           </div>
         ))}
-      </div>
-      <div className="skills-section__certifications-button">
-        <Link to="/certifications#formation">
-          <button className="project-view-button">
-            <FaAward className="icon button-icon" />
-            Voir mes certifications
-          </button>
-        </Link>
       </div>
     </>
   );
