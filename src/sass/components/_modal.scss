@@ -24,8 +24,8 @@
   }
   .close-button {
     position: absolute;
-    top: 0px;
-    right: 0px;
+    top: 20px;
+    right: 18px;
     border: none;
     background: #444444;
     color: white;
@@ -53,4 +53,11 @@
     display: block; /* Centre l'image horizontalement */
     margin: 0 auto; /* Centre l'image horizontalement */
   }
-  
+  @media (max-width: 768px) {
+    .custom-modal {
+      width: 90%;
+      .close-button {
+        font-size: 20px;
+      }
+    }
+  }

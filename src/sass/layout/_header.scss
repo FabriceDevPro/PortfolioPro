@@ -41,7 +41,10 @@
         &.active {
           color: white; // Couleur pour le lien actif
           border-bottom: 2px solid white; // Souligne le lien actif
-        }
+        }        
+      }
+      .cv-download{
+        display: none;
       }
     }
   }
@@ -70,6 +73,9 @@
       
       .cv-link {
         display: none;
+      }
+      .cv-download{
+        display: flex;
       }
     }
   

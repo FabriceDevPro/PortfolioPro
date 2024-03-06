@@ -23,7 +23,7 @@
     gap: 20px 10px;
     justify-content: space-around;
     width: 100%;
-    max-height: 475px; // Définissez une hauteur maximale pour le conteneur
+    max-height: 600px; // Définissez une hauteur maximale pour le conteneur
     overflow-y: auto;
   } 
 
@@ -72,29 +72,29 @@
     // }
   }
 
-    // Tablettes: 4 cartes par ligne
-    @media (max-width: 1180px) {
-      .certification-card {
-        flex: 0 1 calc(22% - 20px);
-      }
-    }
+  // // Tablettes: 4 cartes par ligne
+  // @media (max-width: 1180px) {
+  //   .certification-card {
+  //     flex: 0 1 calc(22% - 20px);
+  //   }
+  // }
 
-  // Tablettes: 3 cartes par ligne
-  @media (max-width: 1024px) {
-    .section-title {
-      font-size: 1.5em;
-      margin-bottom: 0.5rem;
-    }
-    .certification-card {
-      flex: 0 1 calc(29.33% - 20px);
-    }
-    .certification-card .certification-title{
-      font-size: 0.9rem;
-    }
-    .certification-card .certification-link {
-      font-size: 0.9rem;
-    }
-  }
+  // // Tablettes: 3 cartes par ligne
+  // @media (max-width: 1024px) {
+  //   .section-title {
+  //     font-size: 1.5em;
+  //     margin-bottom: 0.5rem;
+  //   }
+  //   .certification-card {
+  //     flex: 0 1 calc(29.33% - 20px);
+  //   }
+  //   .certification-card .certification-title{
+  //     font-size: 0.9rem;
+  //   }
+  //   .certification-card .certification-link {
+  //     font-size: 0.9rem;
+  //   }
+  // }
 
   // Grands mobiles: 2 cartes par ligne
   @media (max-width: 768px) {
@@ -103,39 +103,48 @@
     max-width: 95%;
     
     .section-title {
-      font-size: 1em;
+      font-size: 1.2em;
       margin-bottom: 0.5rem;
     }
-
-    .certification-card {
-      flex: 0 1 calc(45% - 20px);
-    }
-    .certification-card .certification-title{
-      font-size: 0.8rem;
-    }
-    .certification-card .certification-link {
-      font-size: 0.8rem;
-    }
-    .certification-card .certifications-container {
-      width: 95%;
-      max-height: 280px;
-    }
-  }
-
-  // Petits mobiles: 1 carte par ligne
-  @media (max-width: 480px) {
-    .certification-card {
-      flex: 0 1 100%;
-    }
-    .certification-card .certification-title{
-      font-size: 0.7rem;
-    }
-    .certification-card .certification-link {
-      font-size: 0.7rem;
+    .certifications-collection{
+      display:flex;
+      flex-direction: column;
+      gap: 20px;
     }
     .certifications-container {
       width: 95%;
-      max-height: 280px;
+      max-height: 405px;
+      padding: 10px;
     }
+    // .certification-card {
+    //   flex: 0 1 calc(45% - 20px);
+    // }
+    // .certification-card .certification-title{
+    //   font-size: 0.8rem;
+    // }
+    // .certification-card .certification-link {
+    //   font-size: 0.8rem;
+    // }
+    // .certification-card .certifications-container {
+    //   width: 95%;
+    //   max-height: 280px;
+    // }
   }
+
+  // // Petits mobiles: 1 carte par ligne
+  // @media (max-width: 480px) {
+  //   .certification-card {
+  //     flex: 0 1 100%;
+  //   }
+  //   .certification-card .certification-title{
+  //     font-size: 0.7rem;
+  //   }
+  //   .certification-card .certification-link {
+  //     font-size: 0.7rem;
+  //   }
+  //   .certifications-container {
+  //     width: 95%;
+  //     max-height: 280px;
+  //   }
+  // }
 }

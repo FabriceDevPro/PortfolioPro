@@ -17,7 +17,7 @@
     background: $card-background;
     border-radius: $spacing-unit;
     box-shadow: 0 4px 8px $box-shadow-color;
-    height: 530px;
+    height: 555px;
     width: 100%;
 
     .project-image-container {
@@ -116,30 +116,22 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease; // Appliquez la transition à l'état de base pour une animation fluide à l'entrée et à la sortie du survol
   }
 }
-@media only screen and (min-width: 900px) and (max-width: 1024px) {
-  .personal-projects-collection .personal-project-card .personal-project-content{
-    font-size: 0.8rem;
-  }
-}
-
-@media only screen and (min-width: 769px) and (max-width: 900px) { 
-  .personal-projects-collection .personal-project-card .personal-project-content{
-    font-size: 0.6rem;
-  }
-}
 
 @media only screen and (max-width: 768px) {
   .formation-projects-collection{
     display:flex;
     flex-direction: column;
     gap: 20px;
-    max-height: 280px;
+    max-height: 330px;
   }
   .formation-projects-collection .formation-projects-card .project-content .project-title{
     font-size: 1.0rem;
   }
   .formation-projects-collection .formation-projects-card .project-content .project-brief{
     font-size: 0.8rem;
+  }
+  .formation-projects-collection .formation-projects-card .project-content{
+    justify-content: space-around;
   }
   .project-view-button {
     font-size: 13px;

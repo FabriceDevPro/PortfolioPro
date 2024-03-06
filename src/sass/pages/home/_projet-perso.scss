@@ -4,93 +4,95 @@
 @import "../../abstracts/variables";
 
 .personal-projects-collection{
-    display:flex;
+  display:flex;
+  flex-direction: column;
+  gap: 40px; // Espace entre les cartes
+  overflow-y: auto; // Active le défilement vertical si nécessaire
+  max-height: 630px;
+
+  .personal-project-card {
+    display: flex;
     flex-direction: column;
-    gap: 40px; // Espace entre les cartes
-    overflow-y: auto; // Active le défilement vertical si nécessaire
-    max-height: 630px;
-  
-    .personal-project-card {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      background: $card-background;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px $box-shadow-color;
-      padding: 15px;
-      transition: all 0.3s ease;
-      height: 530px;
-      
-      &:hover {
-        box-shadow: 0 6px 12px $box-shadow-color;
-      }
-  
-      .personal-project-title {
-        color: $primary-color;
-        font-size: 1.5rem;
-        margin: 0px;
-        margin-bottom: 5px;
-      }
-
-      .personal-project-image-container {
-        width: 100%;
-        margin-bottom: 10px;
-  
-        img {
-          width: 100%;
-          height: auto;
-          border-radius: 10px;
-        }
-      }
-  
-      .personal-project-content {
-        text-align: center;
+    align-items: center;
+    background: $card-background;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px $box-shadow-color;
+    padding: 15px;
+    transition: all 0.3s ease;
+    height: 525px;
+    justify-content: space-around;
     
-        .personal-project-brief {
-          color: #555;
-          font-size: 0.9rem;
-          margin-bottom: 20px;
-        }
+    &:hover {
+      box-shadow: 0 6px 12px $box-shadow-color;
+    }
+
+    .personal-project-title {
+      color: $primary-color;
+      font-size: 1.5rem;
+      margin: 0px;
+      margin-bottom: 5px;
+    }
+
+    .personal-project-image-container {
+      width: 100%;
+      margin-bottom: 10px;
+
+      img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+      }
+    }
+
+    .personal-project-content {
+      text-align: center;
   
-        .personal-project-view-button {
-          background-color: $primary-color;
-          color: white;
-          border: none;
-          padding: 10px;
-          border-radius: 10px;
-          cursor: pointer;
-          text-align: center;
-  
-          &:hover {
-            background-color: darken($primary-color, 10%);
-          }
+      .personal-project-brief {
+        color: #555;
+        font-size: 0.9rem;
+        margin-bottom: 20px;
+      }
+
+      .personal-project-view-button {
+        background-color: $primary-color;
+        color: white;
+        border: none;
+        padding: 10px;
+        border-radius: 10px;
+        cursor: pointer;
+        text-align: center;
+
+        &:hover {
+          background-color: darken($primary-color, 10%);
         }
       }
     }
   }
-  @media only screen and (min-width: 900px) and (max-width: 1024px) {
-    .personal-projects-collection .personal-project-card .personal-project-content{
-      font-size: 0.8rem;
-    }
+}
+@media only screen and (min-width: 900px) and (max-width: 1024px) {
+  .personal-projects-collection .personal-project-card .personal-project-content{
+    font-size: 0.8rem;
   }
+}
 
-  @media only screen and (min-width: 769px) and (max-width: 900px) { 
-    .personal-projects-collection .personal-project-card .personal-project-content{
-      font-size: 0.6rem;
-    }
+@media only screen and (min-width: 769px) and (max-width: 900px) { 
+  .personal-projects-collection .personal-project-card .personal-project-content{
+    font-size: 0.6rem;
   }
+}
 
-  @media only screen and (max-width: 768px) {
-    .personal-projects-collection{
-      gap: 20px;
-      max-height: 410px;
+@media only screen and (max-width: 768px) {
+  .personal-projects-collection{
+    gap: 20px;
+    max-height: 360px;
+  }
+  .personal-projects-collection .personal-project-card .personal-project-title{
+    font-size: 1.0rem;
+  }
+    .personal-projects-collection .personal-project-card{
+      padding: 5px;
     }
-    .personal-project-title{
-      font-size: 1.0rem;}
-      .personal-projects-collection .personal-project-card{
-        padding: 5px;
-      }
-      .personal-projects-collection .personal-project-card .personal-project-content .personal-project-brief{
-      font-size: 0.8rem;
-    }
-  }  
+    .personal-projects-collection .personal-project-card .personal-project-content .personal-project-brief{
+    font-size: 0.8rem;
+  }
+}  

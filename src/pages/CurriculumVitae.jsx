@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import useScrollToHash from "../hooks/useScrollToHash";
-import { FaMobileAlt,FaHtml5, FaCss3Alt, FaJsSquare, FaPhp, FaDatabase, FaTerminal,FaGitAlt,FaSass,FaLaravel,FaReact,FaGithub, FaRegFilePdf } from 'react-icons/fa';
+import { FaMobileAlt,FaHtml5, FaCss3Alt, FaJsSquare, FaPhp, FaDatabase, FaTerminal,FaGitAlt,FaSass,FaLaravel,FaReact,FaGithub } from 'react-icons/fa';
 import { FaGraduationCap,FaChalkboardTeacher,FaCogs,FaRegLightbulb,FaLaptopCode,FaBriefcase,FaLinkedin,FaCircle } from 'react-icons/fa';
 import { IoIosMail } from 'react-icons/io';
 import { SiMysql } from 'react-icons/si';
@@ -9,7 +9,7 @@ import { TbBrandVscode } from 'react-icons/tb';
 import { DiGitBranch } from 'react-icons/di';
 import { ProfilImage } from "../assets/images";
 import { FaFolderOpen } from 'react-icons/fa';
-import { basename } from '../config';
+import CvDownloadButton from '../components/CvDownloadButton';
 
 const CurriculumVitae = () => {
     const location = useLocation();
@@ -237,23 +237,7 @@ const CurriculumVitae = () => {
                     </div>
                 </div>                
             </div>
-            <div className="cv-download">
-                        <button 
-                            className="project-view-button" 
-                            onClick={() => {
-                            const link = document.createElement('a');
-                            link.href = `${basename}cv-Magnanfabrice.pdf`;
-                            link.download = 'cv-Magnanfabrice.pdf';
-                            link.style.display = 'none'; // Assurez-vous que le lien n'est pas visible
-                            document.body.appendChild(link); // Ajoute le lien à la page
-                            link.click(); // Déclenche le téléchargement
-                            document.body.removeChild(link); // Supprime le lien de la page
-                            }}
-                            >
-                            <FaRegFilePdf className="icon button-icon" />
-                            Télécharger mon CV
-                        </button>
-                    </div>
+            <CvDownloadButton />
         </section>
     </>
     );
