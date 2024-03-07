@@ -28,7 +28,7 @@
   } 
 
   .certification-card {
-    flex: 0 1 calc(45% - 20px); // 5 cartes par ligne par défaut pour desktop
+    flex: 0 1 calc(44% - 20px); // 5 cartes par ligne par défaut pour desktop
     display: flex;
     flex-direction: column;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);

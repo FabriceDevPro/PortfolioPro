@@ -8,7 +8,7 @@ const ImagePreviewModal = ({ isOpen, onClose, imageSrc, altText, documentUrl }) 
       onRequestClose={onClose}
       contentLabel="Image Preview"
       ariaHideApp={false}
-      className="custom-modal" // Appliquez ou ajustez votre classe CSS pour le style du modal
+      className="modal-preview" // Appliquez ou ajustez votre classe CSS pour le style du modal
       overlayClassName="custom-overlay" // Classe CSS pour l'arrière-plan du modal
     >
       <div className="modal-content">

@@ -8,7 +8,7 @@
     z-index: 9998; /* Assurez-vous que c'est moins que le z-index du modal lui-même */
   }
   
-  .custom-modal {
+  .modal-preview {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -21,40 +21,41 @@
     overflow-y: auto; /* Ajoutez un défilement si le contenu est plus grand que le modal */
     background: none;//linear-gradient(to bottom, rgba(173, 216, 230, 0.9), rgba(173, 216, 230, 0.9)); /* Assurez-vous que le fond est défini pour une bonne visibilité de l'image */
     box-shadow: none;
-  }
-  .close-button {
-    position: absolute;
-    top: 20px;
-    right: 18px;
-    border: none;
-    background: #444444;
-    color: white;
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 30px;
-    border-radius: 0.313rem;
-    
-    &:hover {
-      background-color:  #1e3758;
+  
+    .close-button {
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      border: none;
+      background: #444444;
+      color: white;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 30px;
+      border-radius: 0.313rem;
+      
+      &:hover {
+        background-color:  #1e3758;
+      }
+    }
+    .modal-footer{
+      display:flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      a{color: white;}
+    }
+    /* Style supplémentaire pour l'image à l'intérieur du modal pour s'assurer qu'elle est bien affichée */
+    .modal-image {
+      max-width: 100%; /* Assurez-vous que l'image ne dépasse pas du modal */
+      height: auto; /* Conservez les proportions de l'image */
+      display: block; /* Centre l'image horizontalement */
+      margin: 0 auto; /* Centre l'image horizontalement */
     }
   }
-  .modal-footer{
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    a{color: white;}
-  }
-  /* Style supplémentaire pour l'image à l'intérieur du modal pour s'assurer qu'elle est bien affichée */
-  .modal-image {
-    max-width: 100%; /* Assurez-vous que l'image ne dépasse pas du modal */
-    height: auto; /* Conservez les proportions de l'image */
-    display: block; /* Centre l'image horizontalement */
-    margin: 0 auto; /* Centre l'image horizontalement */
-  }
   @media (max-width: 768px) {
-    .custom-modal {
+    .modal-preview {
       width: 90%;
       .close-button {
         font-size: 20px;
