@@ -5,3 +5,10 @@ const basename = import.meta.env.MODE === "production" ? "/portfoliotest/" : "";
 
 // Exportation de la variable `basename` pour l'utiliser dans d'autres fichiers
 export { basename };
+
+// Importe package.json
+import packageJson from '../package.json'; // Ajuste le chemin relatif
+// Exporte la version (et tout autre config que tu juges nécessaire)
+export const Config = {
+  version: packageJson.version,
+};

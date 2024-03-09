@@ -2,8 +2,8 @@
   {
     "id": 1,
     "name": "Mon Budget Perso",
-    "description": "C'est un projet personnel, débuté en 2016 en format Excel pour la gestion de mes finances, il a évolué en une application web depuis juillet 2023.",
-    "description-complete": "Mon projet personnel, débuté en 2016 avec un outil Excel pour la gestion de mes finances, a évolué en une application web depuis juillet 2023. Cette transformation, fruit de mes efforts autodidactes et de ma formation en développement web, démontre ma progression et l'application concrète de mes compétences. Explorez cette frise chronologique pour découvrir son évolution et les compétences variées que j'ai acquises.",
+    "short_description": "De Excel en 2016 à une application web en 2023 : découvrez Mon Budget Perso, le reflet de mon évolution en développement web.",
+    "long_description": "Mon projet personnel, initié en 2016 sous le nom de Gestion des Comptes Personnels avec un outil Excel pour la gestion de mes finances, s'est métamorphosé en juillet 2023 en une application web, désormais baptisée Mon Budget Perso.\n\nCette évolution marque le fruit de mes efforts autodidactes, magnifiés par une formation en développement web axée principalement sur le front-end. Cette transition illustre ma progression et ma capacité à appliquer de façon tangible les compétences acquises.\n\nL'achèvement de la Version Web 1.0.0 pendant ma formation représente une concrétisation de cet apprentissage. J'ai conçu et développé entièrement ce projet, du front-end au back-end, et assure son hébergement sur mon serveur NAS personnel.\n\nCette démarche témoigne de mon engagement total et de ma polyvalence dans tous les aspects du développement. Parcourez cette frise chronologique pour voir l'évolution de Mon Budget Perso et découvrir les diverses compétences que j'ai développées en cours de route.",
     "languages": [
       { "name": "HTML"},
       { "name": "CSS"},
@@ -41,11 +41,12 @@
     ],
     "chronologie": [
       {
+        "order": 1,
         "date": "2016",
         "nomimage": "view-login.webp",
         "version": "V 1.0.0",
         "titre":"Fichier Excel avec des formules",        
-        "description":"Message explicatif sur la version 1.0.0",
+        "description":"La version 1.0.0 est un simple fichier Excel doté de formules complexes pour la gestion mensuelle des revenus et dépenses.",
         "languages": [
           { "name": "EXCEL" }
         ],
@@ -57,10 +58,11 @@
         ]
       },
       {
+        "order": 2,
         "date": "2020",
         "version": "V 1.1.0",
         "titre":"Utilisation de macros avec userforms et connexion à une base de données Access.",        
-        "description":"Message explicatif sur la version 1.1.0",
+        "description":"La version 1.1.0 marque un tournant majeur, transformant l'application en un projet Excel avancé relié à une base de données Access structurée avec environ 40 tables. Cette mise à jour introduit une collaboration à deux, consolidant toutes les fonctionnalités nécessaires pour une gestion efficace.",
         "languages": [          
           { "name": "VBA" },
           { "name": "ACCESS" }
@@ -73,10 +75,11 @@
         ]
       },
       {
+        "order": 3,
         "date": "07/2023",
-        "version": "V 2.0.0",
+        "version": "Version Web 0.1",
         "titre":"Conversion en format web pour pratiquer mes acquis, utilisation de HTML-SASS-JS pour le Front-End et PHP/MySQL pour le Back-End.",
-        "description":"Message explicatif sur la version 2.0.0",
+        "description":"La version 0.1 initie le passage du projet à une plateforme web, en exploitant HTML, SASS, JS pour le front-end et PHP/MySQL pour le back-end, basée sur la structure originelle de la version Excel. Cette étape marque le début de l'application de mes connaissances en développement web sur un projet concret, avec une mise en œuvre des fonctionnalités essentielles.",
         "languages": [
           { "name": "HTML" },
           { "name": "CSS" },
@@ -93,22 +96,16 @@
         ]
       },
       {
+        "order": 4,
         "date": "10/2023",
-        "version": "V 2.1.0",
+        "version": "V 0.5",
         "titre": "Migration vers React avec Vite.js et création d'une API pour le Back-End.",
-        "description":"Message explicatif sur la version 2.1.0",
-        "languages": [
-          { "name": "HTML"},
-          { "name": "CSS"},
-          { "name": "PHP" },
-          { "name": "PHPMYADMIN" },
-          { "name": "MYSQL" },
-          { "name": "JS" },
-          { "name": "SASS" },    
+        "description":"La version 0.5 transforme l'application grâce à l'adoption de React et Vite.js, optimisant l'interface utilisateur et la performance globale. Les écrans principaux ont été redéveloppés, intégrant uniquement les fonctionnalités essentielles, et une API pour le back-end a été mise en place. Une nouveauté majeure est l'introduction de Redux, choisie après une évaluation approfondie de son impact face à la complexité des données comptables. Ce choix stratégique, résultat de tests comparatifs avec et sans Redux, assure une gestion d'état plus efficace et une meilleure maintenabilité du projet.",
+        "languages": [              
           { "name": "REACT" },
           { "name": "VITE" },
-          { "name": "REDUX" },
-          { "name": "API" }
+          { "name": "SASS" },
+          { "name": "REDUX" }
         ],
         "images": [
           {
@@ -118,20 +115,38 @@
         ]         
       },        
       {
+        "order": 5,
         "date": "01/2024",
-        "version": "V 2.2.0",
+        "version": "V 0.8",
         "titre": "Transformation de API PHP en API avec le framework Laravel.",
-        "description":"Message explicatif sur la version 2.2.0",
+        "description":"La version 0.8 marque le passage de notre API de PHP pur à Laravel, améliorant la sécurité et l'efficacité avec Axios pour les requêtes. Cette évolution a renforcé notre back-end et conservé une gestion d'état cohérente avec Redux. Un défi notable a été le déploiement de l'API sur mon NAS personnel, nécessitant une adaptation technique spécifique pour assurer une intégration fluide et sécurisée.",
         "languages": [
-          { "name": "HTML"},
-          { "name": "CSS"},
-          { "name": "PHP" },        
+          { "name": "API" },
+          { "name": "LARAVEL" }
+        ],
+        "images": [
+          {
+            "titre": "Vue de l'écran de connexion ",
+            "nomimage": "view-login.webp"
+          }
+        ]  
+      },
+      {
+        "order": 6,
+        "date": "03/2024",
+        "version": "Version Web 1.0.0",
+        "titre": "Version de démonstration",
+        "description":"La Version Web 1.0.0 est ma première version de démonstration publique, présentant une interface utilisateur interactive conçue avec React et des performances améliorées grâce à Vite.js. Cette version initie les fonctionnalités essentielles pour une gestion efficace, permettant la création, modification, et suppression de saisies manuelles ou récurrentes. Bien que l'ensemble des fonctionnalités de la version Excel originale ne soient pas encore implémentées, cette itération repose sur une architecture back-end robuste via Laravel, et une gestion d'état optimisée avec Redux. C'est un pas important qui démontre la viabilité et le potentiel de l'application web pour une utilisation concrète. Le travail continue pour enrichir cette plateforme et intégrer progressivement toutes les fonctionnalités envisagées.",
+        "languages": [
+          { "name": "HTML" },
+          { "name": "CSS" },
+          { "name": "PHP" },
+          { "name": "JS" },
           { "name": "PHPMYADMIN" },
           { "name": "MYSQL" },
-          { "name": "JS" },
-          { "name": "SASS" },     
           { "name": "REACT" },
           { "name": "VITE" },
+          { "name": "SASS" },
           { "name": "REDUX" },
           { "name": "API" },
           { "name": "LARAVEL" }

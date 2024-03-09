@@ -17,7 +17,13 @@
             margin-right: 10px;
         }
     }
-        
+    .section-title {
+        color: $primary-color;
+        font-size: 2em;
+        margin-bottom: 2rem;
+        font-weight: 600;
+      }
+          
     .description-section__card {
         display: flex;
         flex-direction: column;

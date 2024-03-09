@@ -13,7 +13,7 @@
     font-weight: 600;
   }
   .timeline-wrapper{
-    max-height: 600px; // Hauteur maximale de la timeline avant de déclencher le défilement
+    max-height: 700px; // Hauteur maximale de la timeline avant de déclencher le défilement
     overflow-y: auto; // Active le défilement vertical si le contenu dépasse 500px
     display:flex;
     flex-direction: column;
@@ -23,9 +23,10 @@
     .timeline {
       display:flex;
       flex-direction: column;
-      gap:15px;
+      gap:50px;
       position: relative;
       width: 100%;
+      padding: 20px 0;
       
       &:before {
         content: '';
@@ -231,6 +232,24 @@
     .timeline-date {
       left: auto; // Reset left for row-reverse
       right: 5%; // Align to the right for even items
+    }
+  }
+  .navigation-bar {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    
+    button {
+      padding: 10px;
+      border: 1px solid $primary-color;
+      background-color: $background-third;
+      color: $primary-color;
+      cursor: pointer;
+      
+      &:hover {
+        background-color: darken($background-third, 10%);
+      }
     }
   }
 }

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-
+import { Config } from '../config';
 const Footer = () => {
   const anneeActuelle = new Date().getFullYear();
   const anneeDebut = 2023;
@@ -8,8 +8,7 @@ const Footer = () => {
   if (anneeActuelle > anneeDebut) {
     copyrightText += ` - ${anneeActuelle}`;
   }
-
-  copyrightText += ` Fabrice Magnan de Bellevue | FabWebProjects.fr | Tous droits réservés | `;
+  copyrightText += ` Fabrice Magnan de Bellevue | FabWebProjects.fr | Tous droits réservés | Version : ${Config.version} | `;
 
   return (
     <footer>

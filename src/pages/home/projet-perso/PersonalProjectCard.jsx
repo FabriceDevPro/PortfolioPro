@@ -28,7 +28,7 @@ const PersonalProjectCard = ({ project }) => {
       <h2 className="personal-project-title">{project.name}</h2>
       {hasImages && <Gallery items={galleryImages} />}
       <div className="personal-project-content">
-        <p className="personal-project-brief">{project.description}</p>
+        <p className="personal-project-brief">{project.short_description}</p>
         <button className="project-view-button" onClick={redirectToDetails}>
           <FaWpexplorer className="icon button-icon" />
           Explorer le Projet
@@ -48,7 +48,7 @@ PersonalProjectCard.propTypes = {
         nomimage: PropTypes.string.isRequired,
       })
     ).isRequired,
-    description: PropTypes.string.isRequired,
+    short_description: PropTypes.string.isRequired,
   }).isRequired,
 };
 

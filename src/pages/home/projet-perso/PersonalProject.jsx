@@ -21,7 +21,8 @@ PersonalProject.propTypes = {
   projects: PropTypes.arrayOf(PropTypes.shape({
     id: PropTypes.number.isRequired,
     name: PropTypes.string.isRequired,
-    description: PropTypes.string.isRequired,
+    short_description: PropTypes.string.isRequired,
+    long_description: PropTypes.string.isRequired,
     languages: PropTypes.arrayOf(PropTypes.shape({
       name: PropTypes.string.isRequired,
     })).isRequired,

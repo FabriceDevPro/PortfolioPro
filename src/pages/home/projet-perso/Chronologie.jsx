@@ -17,22 +17,12 @@ const Chronologie = ({ chronologie }) => {
     }));
   };
 
-  const compareVersions = (a, b) => {
-    const versionA = a.version.match(/\d+/g).map(Number);
-    const versionB = b.version.match(/\d+/g).map(Number);
-
-    for (let i = 0; i < Math.max(versionA.length, versionB.length); i++) {
-      if ((versionA[i] || 0) > (versionB[i] || 0)) return -1;
-      if ((versionA[i] || 0) < (versionB[i] || 0)) return 1;
-    }
-    return 0;
-  };
-
-  const sortedChronologie = [...chronologie].sort(compareVersions);
+  // Utilise l'ordre explicite pour trier la chronologie
+  const sortedChronologie = [...chronologie].sort((a, b) => a.order - b.order);
 
   return (
     <>
-      <div className="section-title">Chronologie du projet</div>
+      <h2 className="section-title">Chronologie du projet</h2>
       <div className="timeline-wrapper">
         <div className="timeline">
           {sortedChronologie.map((item, index) => (

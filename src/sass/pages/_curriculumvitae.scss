@@ -92,6 +92,10 @@
             }
           }
         }
+        // Spécifique pour l'adresse
+        .cv-contact-text.cv-address {
+        flex-direction: column; // Cela force le contenu à s'aligner verticalement
+        }
         h1, h2, p {
           margin: 0;
         }
@@ -284,14 +288,14 @@
   }
 }
 /* Écrans moyens */
-//@media (min-width: 500px) and (max-width: 1140px) {
+//@media (min-width: 500px) {
 @media print {  
   body {
-    background-color: #ADD8E6;
-    background: none;
+    background: white;
     width: 210mm;
     height: 297mm;
     overflow: hidden;
+  }
     .header{
       display:none;
     }
@@ -300,9 +304,9 @@
       max-width: 100%;
       margin: 0px 0px;
       border-radius: 0px;
-      border: 0px solid rgba(0, 0, 0, 0.1);
-      box-shadow: 0 0px 0px $box-shadow-color;
-      background-color: #ADD8E6;
+      border: none;
+      box-shadow: none;
+      background:#F2F2F2;
       .cv-container{
         gap: 15px;
         .cv-left-column{
@@ -329,6 +333,7 @@
         .cv-section {
           padding: 10px;
           font-size: 12px;
+          box-shadow: none;
           h2{
             font-size: 1rem;
             margin:0px;
@@ -409,7 +414,7 @@
         }
       }
     }
-  }
+
 }
 
 @media only screen and (max-width: 768px) {

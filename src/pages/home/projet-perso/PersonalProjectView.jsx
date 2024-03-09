@@ -32,9 +32,9 @@ const PersonalProjectView = () => {
   
     return (
       <section className="personalProject-section" id="personalProject">
-        {project?.description && (
+        {project?.long_description && (
           <section className="description-section">
-            <Description project={project?.name} description={project?.description} />
+            <Description project={project?.name} description={project?.long_description} />
           </section>
         )}
         {project?.chronologie && project.chronologie.length > 0 && (

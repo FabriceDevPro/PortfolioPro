@@ -37,7 +37,7 @@ const CurriculumVitae = () => {
                     </div>
                     <div className="cv-contact">
                         <div className="cv-contact-info">
-                            <div className="cv-contact-text"><span>12 rue des Violettes 31570 BOURG SAINT BERNARD</span></div>
+                            <div className="cv-contact-text cv-address"><span>12 rue des Violettes</span><span>31570 BOURG SAINT BERNARD</span></div>
                             <div className="cv-contact-text"><span>Permis B, Véhiculé</span></div>
                             <div className="cv-contact-text"><span>Né le 26 décembre 1984 </span></div>
                             <div className="cv-contact-text"><FaMobileAlt size={15}/><span>06 78 61 47 00</span></div>
@@ -113,10 +113,10 @@ const CurriculumVitae = () => {
                                     <h3>Septeo ADB (Groupe Septeo)</h3>
                                     <h4>09/2016 à 07/2023 - Technicien Migration, Référent Technique, Rédacteur Procédure, Développeur</h4>
                                     <ul>
-                                        <li>Développement en VBA Excel pour automatiser des contrôles comptables lié aux tâches de migrateurs.</li>
+                                        <li>Développement en VBA Excel pour automatiser des contrôles comptables liés aux tâches de migrateurs.</li>
                                         <li>{`Création d'outils en VB.NET pour améliorer les processus internes.`}</li>
-                                        <li>{`Développement d'un site web pour la saisie et l'intégration de questionnaires de paramétrage en HTML/PHP/JS lié à une BDD sous MySQL. Mise en production réalisé par moi-meme et configuration du fichier.ini.`}</li>
-                                        <li>{`Rédacteurs de procédures, documents techniques`}</li>
+                                        <li>{`Développement d'un site web pour la saisie et l'intégration de questionnaires de paramétrage en HTML/PHP/JS lié à une BDD sous MySQL. Mise en production réalisée par moi-même et configuration du fichier.ini.`}</li>
+                                        <li>{`Rédacteur de procédures, documents techniques`}</li>
                                     </ul>
                                     <h4>11/2018 à 09/2016 - Technicien Support</h4>
                                     <ul>
