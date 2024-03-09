@@ -247,11 +247,11 @@
     "lienProjet": [
       {
         "titre":"Voir la version (PHP)",
-        "lien":"https://fabwebprojects.fr/Mon_Budget_Perso/connexion.php"
+        "lien":"https://portfolio.fabwebprojects.fr/Mon_Budget_PersoPHP/connexion.php"
       },
       {
         "titre":"Voir la version (Vite.js + Redux + API Laravel)",
-        "lien":"https://fabwebprojects.fr/MonBudgetPerso/"
+        "lien":"https://portfolio.fabwebprojects.fr/MonBudgetPerso/"
       }
     ],
     "lienGitHub": [
