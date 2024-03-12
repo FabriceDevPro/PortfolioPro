@@ -1,0 +1,77 @@
+// styles/fonctionalite.scss
+@import "../../abstracts/mixin";
+@import "../../abstracts/keyframes";
+@import "../../abstracts/variables";
+.demo-acces-code-section {
+  @include section-styles;
+
+  .section-title {
+    color:  $primary-color;
+    font-size: 2em;
+    margin-bottom: 2rem;
+    font-weight: 600;
+  }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      .button-projet, .button-github {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        padding: 10px 15px;
+        border-radius: 8px;
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        background: #007FFF;
+        box-shadow: 0 2px 4px $box-shadow-color;
+        &:hover {
+          background: darken(#007FFF, 10%);
+        }
+        .icon {
+          display: block;
+          font-size: 24px;
+        }
+      }
+      .button-github {
+        background:  $primary-color;
+        cursor: pointer;
+        &:hover {
+          background: darken( $primary-color, 10%);
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .demo-acces-code-section{
+      margin: 30px auto 10px;
+      padding: 0px 0px 10px;
+      max-width: 95%;
+    }
+    .demo-acces-code-section .section-title {
+      font-size: 1em;
+      margin-bottom: 0.5rem;
+    }
+    p{
+      font-size: 0.9em;
+    }
+
+    .demo-acces-code-section .buttons {
+      flex-direction: column;
+    }
+  
+    .demo-acces-code-section .buttons .button-projet, 
+    .demo-acces-code-section .buttons .button-github {
+      padding: 5px 10px;
+    }
+    .demo-acces-code-section .buttons .button-projet .icon,
+    .demo-acces-code-section .buttons .button-github .icon {
+      font-size: 18px;
+    }
+    .demo-acces-code-section .button-text {
+      font-size: 11px;
+    }
+  }

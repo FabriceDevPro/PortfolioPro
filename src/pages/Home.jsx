@@ -1,19 +1,66 @@
-import Langage from "../components/Langage";
-import Loader from "../components/Loader";
-import Social from "../components/Social";
-import AboutContainer from "./container/AboutContainer";
-import BannerContainer from "./container/BannerContainer";
+// Home.js
+import { useEffect, useContext } from 'react';
+import { useLocation } from 'react-router-dom';
+import About from "./home/About";
+import { LogoImage } from "../assets/images";
+import { SkillsContext } from '../context/SkillsContext';
+import Skills from "./home/skill/Skills";
+import Projects from './home/Projects';
+import personalProjects from '../data/personalProjects';
+import formationProjects from '../data/formationProjects';
+import TechnicsSkills from './home/skill-technics/TechnicsSkills';
+import Certifications from './home/certifications/Certifications';
+import CvDownloadButton from '../components/CvDownloadButton';
 
 const Home = () => {
-  return (
-    <div className="Container">
-      <Loader />
-      <AboutContainer />
-      <Langage />
-      <BannerContainer />
-      <Social />
-    </div>
-  );
+    const location = useLocation();
+    // Déplacez cette ligne à l'intérieur de la fonction `Home` pour utiliser le contexte correctement
+    const { activeSkill } = useContext(SkillsContext);
+
+    useEffect(() => {
+      if (location.hash) {
+        const element = document.getElementById(location.hash.slice(1));
+        if (element) {
+          element.scrollIntoView();
+        }
+      } else {
+        window.scrollTo(0, 0);
+      }
+    }, [location]);
+    
+    // Filtrez les projets ici, à l'intérieur de la fonction `Home`
+    const filteredProjects = activeSkill
+        ? formationProjects.filter(project => project.languages.some(lang => lang.name === activeSkill))
+        : formationProjects;
+
+    return (
+      <>
+        <section className="about-section" id="about">
+          <div className="about-section__logo-container">
+            <img src={LogoImage} alt="Logo FAB WEB PROJECT" className="about-section__logo" />
+          </div>
+          <About />
+        </section>
+        <section className="skills-section" id="skills">
+          <Skills />
+        </section>
+        <section className="projects-section" id="projects">
+          <Projects 
+            personalProjects={personalProjects} 
+            formationProjects={filteredProjects} 
+          />  
+        </section>
+        <section className="certifications-section" id="certifications">
+          <Certifications />
+        </section>
+        <section className="technics-skills-section" id="technics-skills">
+          <TechnicsSkills />
+        </section>
+        <section className="curriculumvitae-section" id="cv">
+          <CvDownloadButton />
+        </section>
+      </>
+    );
 };
 
 export default Home;

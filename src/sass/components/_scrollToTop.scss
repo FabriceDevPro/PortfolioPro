@@ -1,4 +1,4 @@
-#btnScrollToTop {
+.scroll-to-top {
   display: flex;
   position: fixed;
   bottom: 20px;
@@ -12,7 +12,17 @@
   cursor: pointer;
   transition: background-color 0.3s ease-in-out;
   z-index: 9999; /* Valeur de z-index élevée pour que le bouton soit au-dessus des autres éléments */
+
+  & :hover {
+    background-color: #444444; /* Couleur au survol */
+  }
 }
-#btnScrollToTop:hover {
-  background-color: #444444; /* Couleur au survol */
+
+@media (max-width: 768px) {
+  .scroll-to-top {
+    bottom: 5px;
+    right: 10px;
+    padding: 5px;
+    font-size: 12px;
+  }
 }

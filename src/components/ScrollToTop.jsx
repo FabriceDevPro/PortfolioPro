@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import "../sass/components/_ScrollToTop.scss"; // Assurez-vous que le chemin est correct pour vos styles
 
 const ScrollToTop = () => {
   const [isVisible, setIsVisible] = useState(false);

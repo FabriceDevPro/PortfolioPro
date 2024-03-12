@@ -1,0 +1,104 @@
+// styles/About.scss
+@import "../../abstracts/mixin";
+@import "../../abstracts/keyframes";
+@import "../../abstracts/variables";
+.projects-section{
+  @include section-styles;
+  
+  .projects-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Crée deux colonnes de taille égale */
+    text-align: center;
+    gap: 25px;
+  
+    .personal-projects-container,
+    .formation-projects-container {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      height: 650px;
+  
+      &::after {
+        content: attr(data-tooltip); // Utilise l'attribut data-tooltip pour le contenu
+        position: absolute;
+        bottom: 94%; // Ajustez cette valeur pour positionner l'info-bulle
+        left: 50%;
+        transform: translateX(-50%) translateY(-10px); // Centrer l'info-bulle et ajuster sa position verticale
+        background-color: $primary-color;
+        color: white;
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-size: 0.8rem;
+        white-space: nowrap;
+        z-index: 999;
+        opacity: 0; // Initialement invisible
+        visibility: hidden; // Initialement non visible
+        transition: opacity 0.3s, visibility 0.3s, transform 0.3s ease;
+        pointer-events: none; // Assurez-vous que l'info-bulle n'interfère pas avec d'autres interactions
+      }
+    
+      // Affiche l'info-bulle au survol du titre
+      &:hover::after {
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(-50%) translateY(-20px); // Ajustez pour l'animation de l'info-bulle
+      }
+
+      .section-title-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      
+        .section-title{
+          color: $primary-color;
+          font-size: 2.0em;
+          margin-bottom: 1.5rem;
+        }
+      }
+     
+      .sort-buttons {
+        margin-left: 10px; // Ajoutez une marge entre le titre et le bouton de tri
+      }
+    }
+  }
+}
+@media only screen and (min-width: 900px) and (max-width: 1024px) {
+  .projects-section .projects-container .personal-projects-container .section-title-container .section-title, .projects-section .projects-container .formation-projects-container .section-title-container .section-title{
+    font-size: 1.8em;
+  }
+  .projects-section .projects-container {
+    display:flex;
+    flex-direction: column;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 900px) { 
+  .projects-section .projects-container .personal-projects-container .section-title-container .section-title, .projects-section .projects-container .formation-projects-container .section-title-container .section-title{
+    font-size: 1.5em;
+  }
+  .projects-section .projects-container {
+    display:flex;
+    flex-direction: column;    
+  }
+}
+@media only screen and (max-width: 768px) {
+  .projects-section {
+    margin: 30px auto 10px;
+    padding: 0px 0px 10px;
+    max-width: 95%;
+  }
+
+  .projects-section .projects-container .personal-projects-container .section-title-container .section-title, .projects-section .projects-container .formation-projects-container .section-title-container .section-title{
+    font-size: 1.2em;
+  }
+  .projects-section .projects-container {
+    display:flex;
+    flex-direction: column;
+    width: 95%;
+  }
+  .projects-section .projects-container .personal-projects-container {
+    height: 430px;
+  }
+  .projects-section .projects-container .formation-projects-container{
+    height: 390px;
+  }
+}

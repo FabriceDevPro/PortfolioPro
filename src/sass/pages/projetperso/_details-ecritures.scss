@@ -1,0 +1,103 @@
+// styles/fonctionalite.scss
+@import "../../abstracts/mixin";
+@import "../../abstracts/keyframes";
+@import "../../abstracts/variables";
+.details-ecritures-section {
+  @include section-styles;
+
+  .section-title {
+    color:  $primary-color;
+    font-size: 2em;
+    margin-bottom: 2rem;
+    font-weight: 600;
+  }
+
+  .features-container { // Réutilisez la classe existante pour un style cohérent
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 20px;
+    width: 95%;
+  }
+
+  .feature-card {
+    display: flex;
+    flex-direction: column; // Les éléments s'alignent verticalement
+    justify-content: center; // Centrer verticalement dans la carte
+    align-items: center; // Centrer horizontalement dans la carte
+    text-align: center; // 
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+    
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    }
+    .badge {
+      position: absolute;
+      top: 40px;
+      right: -20px; /* Ajustez cette valeur pour que le badge dépasse correctement */
+      background-color: #007bff; /* Couleur de fond pour le badge */
+      color: white; /* Couleur du texte */
+      padding: 5px 19px; /* Ajustez selon la taille du badge */
+      transform: rotate(45deg);
+      transform-origin: top right;
+      font-size: 14px; /* Ajustez selon la taille du texte */
+      border-radius: 0 0 5px 5px;
+      z-index: 10; /* Assurez que le badge est au-dessus des autres éléments */
+      box-shadow: 0 2px 5px $box-shadow-color; /* Optionnel pour un peu d'ombre */
+    }
+  }
+  .icon {
+    width: 30px;
+    height: 30px;
+    color: #007FFF;
+    margin-bottom: 10px;
+  }
+
+  .feature-text {
+    h3 {
+      color:  $primary-color;
+      font-size: 1.1em;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+    }
+
+    p {
+      color: #333;
+      font-size: 0.9em;
+      margin: 0;
+    }
+  }
+  
+  // Répondre aux mobiles et petits écrans
+  @media (max-width: 768px) {
+    margin: 30px auto 10px;
+    padding: 0px 0px 10px;
+    max-width: 95%;
+    
+    .section-title {
+      font-size: 1em;
+      margin-bottom: 0.5rem;
+    }
+    .features-container {
+      grid-template-columns: 1fr; // Une seule colonne sur les petits écrans
+    }
+    .feature-card{
+      padding: 5px;
+    }
+    .feature-text h3 {
+      font-size: 0.9em;
+      margin-bottom: 0.5rem;
+    }
+    .feature-text p {
+      color: #333;
+      font-size: 0.9em;
+      margin: 0;
+    }
+  }
+}

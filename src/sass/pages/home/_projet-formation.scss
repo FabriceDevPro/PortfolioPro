@@ -1,0 +1,146 @@
+@use "sass:math";
+@import "../../abstracts/mixin";
+@import "../../abstracts/keyframes";
+@import "../../abstracts/variables";
+
+.formation-projects-collection {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr)); // ajustez selon la largeur souhaitée des cartes
+    gap: 40px; // Espace entre les cartes
+    overflow-y: auto; // Active le défilement vertical si nécessaire
+    max-height: 630px;
+
+  .formation-projects-card {
+    display: flex;
+    flex-direction: row;
+    align-items: normal;
+    background: $card-background;
+    border-radius: $spacing-unit;
+    box-shadow: 0 4px 8px $box-shadow-color;
+    height: 555px;
+    width: 100%;
+
+    .project-image-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      border-radius: 10px 0px 0px 10px;
+      width:100%;
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+    }
+
+    .project-content {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: $spacing-unit;
+      text-align: left;
+      width: 80%;
+
+      .project-title {
+        display: flex;
+        justify-content: center;
+        color: $primary-color;
+        font-size: 1.2rem;
+        margin-bottom: math.div($spacing-unit, 2);
+      }
+
+      .project-brief {
+        color: $accent-color;
+        font-size: $font-size-default;
+        margin-bottom: $spacing-unit;
+      }
+
+      .project-languages {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: $spacing-unit;
+        margin-top: $spacing-unit;
+
+        .language-logo {
+          display: inline-block;
+          width: 40px; // Taille des icônes
+          height: 40px;
+          padding: math.div($spacing-unit, 4); // Ajuster la taille du padding si nécessaire
+          margin-bottom: $spacing-unit;
+          background-color: $button-color; // Couleur de fond des icônes
+          border-radius: 25%; // Rend les icônes circulaires
+          box-shadow: 0 4px 8px $box-shadow-color;
+          transition: all 0.3s ease;
+
+          &:hover {
+            background-color: darken($button-color, 10%);
+            box-shadow: 0 6px 12px darken($box-shadow-color, 10%);
+            transform: translateY(-3px);
+            text-align: center;
+          }
+
+          img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease;
+          }
+
+          .language-name {
+            display: none; // Cache le nom du langage par défaut
+            transition: 0.3s ease;
+          }
+
+          &:hover .language-name {
+            display: block; // Affiche le nom au survol
+            margin-top: math.div($spacing-unit, 4);
+          }
+        }
+      }
+      .project-view {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .project-view-button {
+          width: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease; // Appliquez la transition à l'état de base pour une animation fluide à l'entrée et à la sortie du survol
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .formation-projects-collection{
+    display:flex;
+    flex-direction: column;
+    gap: 20px;
+    max-height: 330px;
+  }
+  .formation-projects-collection .formation-projects-card .project-content .project-title{
+    font-size: 1.0rem;
+  }
+  .formation-projects-collection .formation-projects-card .project-content .project-brief{
+    font-size: 0.8rem;
+  }
+  .formation-projects-collection .formation-projects-card .project-content{
+    justify-content: space-around;
+  }
+  .project-view-button {
+    font-size: 13px;
+    padding: 5px 15px;
+  }
+  .formation-projects-collection .project-view-button {
+    display:none;
+  }
+  .formation-projects-collection .formation-projects-card .project-content .project-languages{
+    display:none;
+  }
+}  

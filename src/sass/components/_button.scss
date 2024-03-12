@@ -1,0 +1,82 @@
+@import "../abstracts/mixin";
+@import "../abstracts/keyframes";
+@import "../abstracts/variables";
+$button-color: #ecf3f9;
+$hover-color: #555;
+$font-color: #555;
+
+.project-view-button {
+  display: inline-block;
+  vertical-align: middle;
+  text-decoration: none;
+  cursor: pointer;
+  border: 1px solid #d6bcd6;
+  border-radius: 0.75rem;
+  transition-duration: 0.4s;
+  margin: 5px;
+  box-shadow: 3px 4px 0px 0px #899599;
+  text-shadow: 0px 1px 0px #e1e2ed;
+  color:  $primary-color;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center; /* Changé de justify à center pour centrer le texte dans le bouton */
+  background: $background-gradient-button;
+  padding: 10px 20px;
+  width: auto; /* Ajouté pour permettre au bouton de s'adapter au texte */
+  overflow: hidden; /* Ajouté si le texte est trop long */
+  &:hover,
+  &.nav-active {
+    background-color: darken($button-color, 5%);
+    color: $hover-color;
+    box-shadow: 0 4px $box-shadow-color;
+  }
+  &:active {
+    position: relative;
+    top: 0.063rem;
+  }
+  &:disabled {    
+    @include disabled;
+  }
+}
+
+.button-icon {
+  vertical-align: middle; /* Pour centrer verticalement l'icône avec le texte */
+  margin-right: 5px; /* Pour ajouter un peu d'espace entre l'icône et le texte */
+  font-size: 1.2em; /* Agrandit l'icône relative à la taille de la police du bouton */
+}
+
+.icon-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 1px solid #d6bcd6;
+  transition-duration: 0.4s;
+  box-shadow: 3px 4px 0px 0px #899599;
+  color:  $primary-color;
+  font-size: 20px; /* Taille de l'icône */
+  font-weight: bold;
+  background: $background-gradient-button;
+  padding: 10px; /* Réduire le padding pour centrer l'icône */
+  width: auto;
+  height: auto;
+  overflow: hidden;
+  line-height: 0; /* Ajuster la hauteur de ligne pour centrer l'icône */
+  border-radius: 10px;
+  &:hover {
+    background-color: darken(#ededed, 5%);
+    color:  $primary-color;
+    box-shadow: 0 4px 0px 0px #899599;
+  }
+  &:active {
+    position: relative;
+    top: 0.063rem;
+  }
+  &:disabled {    
+    @include disabled;
+  }
+}
+
+// @media (max-width: 768px) {
+//   .bouton-projet {
+//     margin: 10px 0;

@@ -1,0 +1,21 @@
+// styles/missing.scss
+@import "../abstracts/mixin";
+@import "../abstracts/keyframes";
+@import "../abstracts/variables";
+.missing-section {
+    @include section-styles;
+
+    .error-section {
+        font-size: 10em;
+        color:  $primary-color;
+        margin-bottom: 1.5rem;
+    }
+
+    p {
+        font-size: 3em;
+        color:  $primary-color;
+        margin-bottom: 1.5rem;
+    }
+  
+}
+  

@@ -1,26 +1,45 @@
-.legal-mentions {
-  background: white;
-  margin: 0px auto 10px;
-  background-color: #fff;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.2);
+// styles/About.scss
+@import "../abstracts/mixin";
+@import "../abstracts/keyframes";
+@import "../abstracts/variables";
+.legal-mentions-section {
+  @include section-styles;
   text-align: center;
-  padding: 20px;
-  //   max-width: 800px;
-  //   margin: 40px auto;
+  .legal-section {
+    width: 95%;
+  
+    h2 {
+      color:  $primary-color; // Assurez-vous que cette couleur s'harmonise avec votre design
+      margin-top: 20px;
+      margin-bottom: 1rem;
+      font-size: 1.5em;
+    }
 
-  h1 {
-    margin-bottom: 20px;
+    p {
+      color:  $primary-color; // Assurez-vous que cette couleur s'harmonise avec votre design
+      font-size: 1em; // Adaptez la taille de la police si nécessaire
+      line-height: 1.6;
+      margin-bottom: 1rem;
+      max-width: 1000px; // Une largeur maximale pour contrôler la longueur de la ligne de texte
+      margin-left: auto; // Centrer le paragraphe si la largeur maximale est définie
+      margin-right: auto; // Centrer le paragraphe si la largeur maximale est définie
+    }
   }
+}
 
-  h2 {
-    margin-top: 20px;
-    margin-bottom: 10px;
-  }
+@media (max-width: 768px) {
+  .legal-mentions-section {
+    margin: 30px auto 10px;
+    padding: 0px 0px 10px;
+    max-width: 95%;
+    .legal-section {
+      h2 {
+        font-size: 1em; // Taille ajustée pour les petits écrans
+      }
 
-  p {
-    margin-bottom: 15px;
-    line-height: 1.6;
+      p {
+        font-size: 0.9em; // Taille de police réduite pour les petits écrans
+      }
+    }
   }
 }

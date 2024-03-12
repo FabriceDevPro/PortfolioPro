@@ -1,0 +1,19 @@
+// Importation du fichier typography.scss
+@import "typography";
+@import "../abstracts/variables";
+
+body {
+    @include font-stack;
+    color: $primary-color;
+    background: $background-gradient-primary;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;  
+    // display:flex;
+    width: 100%;
+    // flex-direction: column;
+  }
+main{
+  display:flex;
+  flex-direction: column;
+}

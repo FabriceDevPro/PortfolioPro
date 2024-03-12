@@ -1,22 +1,17 @@
-@use "utils/_Variables" as *;
-@use "utils/_Mixin" as Mixin;
-@use "utils/_Keyframes";
-@use "layout/loader";
-@use "layout/header";
-@use "layout/banner";
-@use "layout/footer";
-@use "pages/index";
-@use "pages/contact";
-@use "pages/about";
-@use "pages/langage";
-@use "pages/_projet";
-@use "pages/legal_mentions";
-@use "components/bouton";
-@use "components/menu";
-@use "components/social";
+@use "components/scrollbar";
 @use "components/scrollToTop";
-
-/* Styles CSS */
-/* $background-principal: #1e3758; */
-/* $background-secondaire: #e0e0e0; */
-/* #606061 */
+@use "components/social";
+@use "components/button";
+@use "components/projectmodal";
+@use "components/image-gallery";
+@use "components/contact";
+@use "components/modal";
+@use "base/base";
+@use "layout/header";
+@use "layout/footer";
+@use 'pages/home' as home;
+@use "pages/personalProject";
+@use "pages/legal_mentions";
+@use "pages/curriculumvitae";
+@use "pages/error";
+@use "pages/certification";

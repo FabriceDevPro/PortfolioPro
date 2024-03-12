@@ -1,0 +1,109 @@
+// styles/technicsskills
+@import "../../abstracts/mixin";
+@import "../../abstracts/keyframes";
+@import "../../abstracts/variables";
+.technics-skills-section {
+  @include section-styles;
+        
+    .technics-skills-section__title-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    
+        .technics-skills-section__section-title {      
+            color: $primary-color;
+            font-size: 2.0em;
+            margin-right: 10px;
+        }
+    }
+        
+    .technics-skills-section__card {
+        display: flex;
+        flex-direction: column;
+        background:  $card-background;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px $box-shadow-color;
+        padding: 20px;
+        transition: all 0.3s ease;
+        line-height: 1.6; // Améliore la lisibilité du texte
+        width: 95%;
+
+        .technics-skills-section__logos-container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+                
+            .technics-skills-section__logo-image {
+                margin-right: 10px;
+                width: auto;
+                height: 175px; // Ajustez en fonction de la taille désirée
+                
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+    }  
+}
+@media only screen and (min-width: 900px) and (max-width: 1024px) {
+    .technics-skills-section .technics-skills-section__title-container .technics-skills-section__section-title{
+        font-size: 1.8em;
+    }
+    .technics-skills-section .technics-skills-section__card {
+        h3{
+            font-size: 1.1em;}
+        p{
+            font-size: 0.9em;
+        }
+    }
+    .technics-skills-section .technics-skills-section__card .technics-skills-section__logos-container{
+        .technics-skills-section__logo-image {
+            height: 130px;
+        }
+    }
+}
+@media only screen and (min-width: 769px) and (max-width: 900px) {  
+    .technics-skills-section .technics-skills-section__title-container .technics-skills-section__section-title{
+        font-size: 1.5em;
+    }
+    .technics-skills-section .technics-skills-section__card {
+        width: 90%;
+        h3{
+            font-size: 1.0em;}
+        p{
+            font-size: 0.9em;
+        }
+    }
+    .technics-skills-section .technics-skills-section__card .technics-skills-section__logos-container{
+        .technics-skills-section__logo-image {
+            height: 80px;
+        }
+    }    
+}
+@media only screen and (max-width: 768px) {
+    .technics-skills-section {
+        margin: 30px auto 10px;
+        padding: 0px 0px 10px;
+        max-width: 95%;
+      }
+    .technics-skills-section .technics-skills-section__title-container .technics-skills-section__section-title{
+        font-size: 1.2em;
+    }  
+    .technics-skills-section .technics-skills-section__card {
+        width: 85%;
+        h3{
+            font-size: 1.0em;
+            margin:0;
+        }
+        p{
+            font-size: 0.9em;
+        }
+    }
+    .technics-skills-section .technics-skills-section__card .technics-skills-section__logos-container{
+        margin-top: 0px;
+        .technics-skills-section__logo-image {
+            height: 50px;
+        }
+    }
+}

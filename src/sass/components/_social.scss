@@ -1,29 +1,60 @@
-.profile-photo {
-  width: 100px; /* Ajustez la taille selon vos préférences */
-  height: 100px; /* Ajustez la taille selon vos préférences */
-  border-radius: 50%; /* Pour arrondir les coins et créer un effet de cercle */
-  margin: 10px; /* Ajustez la marge selon vos préférences */
-}
+// styles/About.scss
+@import "../abstracts/mixin";
+@import "../abstracts/keyframes";
+@import "../abstracts/variables";
+.social-section {
+  @include section-styles;
 
-.Social {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
+  .social-section__title {
+    color: $primary-color;
+    font-size: 2.0em;
+    margin-bottom: 1.5rem;
+    width: 100%;
+  }
 
-  .social-icons {
-    margin-top: 20px;
-    a {
+  .social-section__icons-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    width: 100%;
+
+    .social-section__icon {
       text-decoration: none;
-      color: #1e3758;
+      color: $primary-color;
       font-size: 48px;
       margin: 0 10px;
       transition: transform 0.2s;
+      cursor: pointer;
+      border: none;
+      background: none;
 
       &:hover {
         transform: scale(1.2);
       }
     }
   }
+}
+@media only screen and (min-width: 900px) and (max-width: 1024px) {
+  .social-section .social-section__title {
+    font-size: 1.8em;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 900px) {  
+  .social-section .social-section__title{
+    font-size: 1.5em;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .social-section {
+    margin: 30px auto 10px;
+    padding: 0px 0px 10px;
+    max-width: 95%;
+  }
+  .social-section .social-section__title{
+    font-size: 1.2em;
+    margin-bottom: 0.5rem;
+  }
+  .social-section .social-section__icons-container .social-section__icon{
+    font-size: 30px;}
 }

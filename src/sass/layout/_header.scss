@@ -1,24 +1,85 @@
-/* Styles pour l'en-tête */
+// styles/Header.scss
 .header {
-  display: flex;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-
-  .logo {
     width: 100%;
-    height: auto; // autoMaintient le ratio de l'image
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px; // Bord arrondi
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #35485d; /* Une teinte bleu-gris foncée */
+    color: white;
+    height: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    .burger-menu {
+      display: none; // Par défaut, le bouton burger n'est pas affiché
+      cursor: pointer;
+      font-size: 30px;
+      color: white;
+      background: none;
+      border: none;
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      z-index: 1001; // Assurez-vous qu'il est au-dessus des autres éléments
+    }
+  
+    nav {
+      display: flex;
+      justify-content: center; // Centre les liens de navigation
+      gap: 20px; // Espace entre les liens
+      font-size: large;
+      a {
+        text-decoration: none; // Enlève le soulignement par défaut
+        color: white; // Couleur claire pour le texte pour un bon contraste
+        font-weight: bold; // Rend le texte un peu plus gras
+        transition: color 0.3s ease;
+  
+        &:hover {
+          color: white; // Changement de couleur au survol
+          border-bottom: 2px solid white; // Souligne le lien au survol
+        }
+  
+        &.active {
+          color: white; // Couleur pour le lien actif
+          border-bottom: 2px solid white; // Souligne le lien actif
+        }        
+      }
+      .cv-download{
+        display: none;
+      }
+    }
   }
-}
-// @media (max-width: 768px) {
-//   .header {
-//     max-width: 95%;
-//     margin: 10px 10px 0px 10px;
-//   }
-
-//   .logo {
-//     width: 100%;
-//     height: auto;
-//   }
-// }
+  // Pour les petits écrans, vous pouvez ajouter un menu hamburger ou simplifier la navigation
+  @media (max-width: 768px) {
+    .header{
+      padding: 10px 0px;
+    }
+    .header .burger-menu {
+      display: flex; // Affiche le bouton burger en mode mobile
+    }
+  
+    .header nav {
+      display: none; // Cache la navigation par défaut en mode mobile
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100vh;
+      background-color: #35485d; // Utilisez votre couleur de fond
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      z-index: 1000;
+      
+      .cv-link {
+        display: none;
+      }
+      .cv-download{
+        display: flex;
+      }
+    }
+  
+    .header nav.nav-visible {
+      display: flex !important; // Affiche la navigation lorsque le menu burger est activé
+    }
+  }

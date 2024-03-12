@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-
+import { Config } from '../config';
 const Footer = () => {
   const anneeActuelle = new Date().getFullYear();
   const anneeDebut = 2023;
@@ -8,18 +8,16 @@ const Footer = () => {
   if (anneeActuelle > anneeDebut) {
     copyrightText += ` - ${anneeActuelle}`;
   }
-
-  copyrightText += ` Fabrice Magnan de Bellevue | FabWebProjects.fr | Tous droits réservés | `;
+  copyrightText += ` Fabrice Magnan de Bellevue | FabWebProjects.fr | Tous droits réservés | Version : ${Config.version} | `;
 
   return (
     <footer>
-      <div className="left-section">{/* Autres éléments du footer si nécessaire */}</div>
-      <div className="right-section">
-        {copyrightText}
-        <Link to="/mentions-legales" className="legal-link">
-          Mentions Légales
-        </Link>
-      </div>
+      <p>
+      {copyrightText}
+      <Link to="/mentions-legales#legal-mentions" className="legal-link">
+        Mentions Légales
+      </Link>
+      </p>
     </footer>
   );
 };
