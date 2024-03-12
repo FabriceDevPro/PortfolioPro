@@ -203,7 +203,8 @@
     "complement":[
       "Vous pouvez créer un compte ou vous pouvez utiliser les identifiants de connexion suivant :",
       "Email: `tony@stark.com` - Password: `password123",
-      "Email: `steve@rogers.com` - Password: `password456`"
+      "Email: `steve@rogers.com` - Password: `password456`",
+      "en cas de problème de connexion, cliquez sur ce lien pour relancer api : https://argentbankapi.onrender.com/"
     ],
     "languages": [
       { "name": "HTML", "altText": "HTML5"},

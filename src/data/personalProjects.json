@@ -246,12 +246,12 @@
     "demonstration": "Je peux vous faire une démonstration de l'outil, vous donner les paramètres de connexion pour un compte test ou vous donner accès à mon code via GitHub.",
     "lienProjet": [
       {
-        "titre":"Voir la version (PHP)",
-        "lien":"https://portfolio.fabwebprojects.fr/Mon_Budget_PersoPHP/connexion.php"
+        "titre":"Voir la documentation de API",
+        "lien":"https://fabwebprojects.fr/apidemo/docs/documentation"
       },
       {
         "titre":"Voir la version (Vite.js + Redux + API Laravel)",
-        "lien":"https://portfolio.fabwebprojects.fr/MonBudgetPerso/"
+        "lien":"https://portfolio.fabwebprojects.fr/MonBudgetPersoDemo/"
       }
     ],
     "lienGitHub": [
