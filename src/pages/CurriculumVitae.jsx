@@ -44,7 +44,7 @@ const CurriculumVitae = () => {
                             <div className="cv-contact-text"><IoIosMail size={15}/><span>magnan.fabrice@gmail.com</span></div>
                             <div className="cv-contact-text">
                             <FaFolderOpen size={20}/>
-                                <a href="https://portfolio.fabwebprojects.fr/" target="_blank" rel="noopener noreferrer">Mon Portfolio</a>
+                                <a href="https://portfolio.fabwebprojects.fr/" target="_blank" rel="noopener noreferrer"><span className="no-print">Mon Portfolio :</span> https://portfolio.fabwebprojects.fr/</a>
                             </div>
                             <div className="cv-contact-text">
                             <FaLinkedin size={20}/>
