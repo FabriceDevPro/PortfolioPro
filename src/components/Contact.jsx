@@ -17,7 +17,7 @@ const Contact = ({ closeModal }) => {
 
   const onSubmit = (data) => {
     emailjs
-      .send("service_ekrqbpd", "template_ajt5qpd", data, "AbDAfXz8sfGa2-H6-")
+      .send("service_ekrqbpd", "template_4kibzvk", data, "AbDAfXz8sfGa2-H6-")
       .then((response) => {
         console.log("SUCCESS!", response.status, response.text);
         setConfirmationMessage("Votre message a été envoyé avec succès !");

@@ -155,8 +155,7 @@
               transition: transform 0.3s ease, box-shadow 0.3s ease;
               background-color: $card-background;
               position: relative;
-              overflow: visible;
-              cursor: pointer;
+              overflow: visible;              
             
               .languages-card__logo {
                 max-width: 80%; /* Permet une certaine marge autour du logo */
