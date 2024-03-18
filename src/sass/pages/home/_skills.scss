@@ -19,6 +19,9 @@
 
     .skills-section__filter-reset {
       cursor: pointer;
+      color: $primary-color;
+      height: 25px;
+      width: 25px;
     }
   }
 
@@ -84,7 +87,10 @@
      padding: 0px 0px 10px;
      max-width: 95%;
    }
-
+   .skills-section .skills-section__title-container .skills-section__filter-reset {  
+    height: 15px;
+    width: 15px;
+  }
   .skills-section .skills-section__skill-container{
     width: 95%;
   }

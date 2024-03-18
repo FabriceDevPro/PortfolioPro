@@ -50,14 +50,14 @@ header {
   }
   // Pour les petits écrans, vous pouvez ajouter un menu hamburger ou simplifier la navigation
   @media (max-width: 768px) {
-    .header{
+    header{
       padding: 10px 0px;
     }
-    .header .burger-menu {
+    header .burger-menu {
       display: flex; // Affiche le bouton burger en mode mobile
     }
   
-    .header nav {
+    header nav {
       display: none; // Cache la navigation par défaut en mode mobile
       position: fixed;
       left: 0;
@@ -79,7 +79,7 @@ header {
       }
     }
   
-    .header nav.nav-visible {
+    header nav.nav-visible {
       display: flex !important; // Affiche la navigation lorsque le menu burger est activé
     }
   }

@@ -76,6 +76,9 @@ const Skills = () => {
         <h2 className="skills-section__section-title" id="skills">Mes Compétences</h2>
         <FaFilter className="skills-section__filter-reset" onClick={handleFilterReset} title="Réinitialiser le filtre"/>
       </div>
+      <p className="skills-section__instruction">
+        Cliquez sur une compétence pour filtrer et afficher les projets correspondants.
+      </p>
       <div className="skills-section__skill-container">
         {['Frontend', 'Backend', 'Base de Données', 'Gestion de Projets', 'Versioning'].map(category => (
           <div key={category} className="skills-section__skills-group">

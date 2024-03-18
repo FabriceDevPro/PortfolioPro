@@ -113,17 +113,18 @@ FormationProjectModal.propTypes = {
     brief: PropTypes.string.isRequired, 
     mission: PropTypes.string.isRequired, 
     results: PropTypes.string, 
-    learnings: PropTypes.string.isRequired, 
+    learnings: PropTypes.arrayOf(PropTypes.string).isRequired, 
     challenges: PropTypes.string,
-    complement: PropTypes.string, 
+    complement: PropTypes.arrayOf(PropTypes.string), 
     languages: PropTypes.arrayOf(
       PropTypes.shape({
         name: PropTypes.string.isRequired,
         logo: PropTypes.string.isRequired,
+        altText: PropTypes.string
       })
     ).isRequired, 
-    url: PropTypes.string.isRequired, 
-    url_git: PropTypes.string.isRequired, 
+    url: PropTypes.string,
+    url_git: PropTypes.string, 
   }).isRequired,
 };
 

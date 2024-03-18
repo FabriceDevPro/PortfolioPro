@@ -87,6 +87,10 @@
       "Récupérer les données utilisateurs dans le JavaScript via des formulaires"
     ],
     "challenges": "Ajout de la fonctionnalité Drag & Drop pour le téléchargement des images (non demandée)",
+    "complement":[
+      "Pour tester ce projet, il vous faut récuperer le backend sur le repository. Voici les identifiants de connexion :",
+      "Email: `sophie.bluel@test.tld` - Password: `S0phie"
+    ],
     "languages": [
       { "name": "HTML", "altText": "HTML5"},
       { "name": "CSS", "altText": "CSS3"},
