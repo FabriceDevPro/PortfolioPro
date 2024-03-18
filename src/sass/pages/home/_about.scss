@@ -78,6 +78,32 @@
       color: $primary-color; // La couleur pour le texte
       font-size: 1.5em;
       line-height: 1.8;
+      text-align: left;
+      ul {
+        list-style: none; // Cache les puces par défaut
+        padding-left: 0; // Retire le padding à gauche si nécessaire
+      }
+      li {
+        display: flex;
+        align-items: flex-start; // Aligner l'icône en haut avec la première ligne de texte
+        margin-top: 0.5em; // Ajoute un peu d'espace au-dessus de chaque élément de la liste, si nécessaire
+      }
+      .about-section__item {
+        margin-bottom: 1em; // Ajoute un espace entre les éléments
+    
+        &:last-child {
+          margin-bottom: 0; // Pas d'espace après le dernier élément
+        }
+      }
+      .about-section__icon {
+        margin-right: 0.5em; // Espacement entre l'icône et le texte
+        color: $primary-color; // Utilise la couleur primaire pour les icônes
+        font-size: 2em; // Ajuste la taille de l'icône
+      }
+    }
+    svg{
+      width: 25px;
+      height: 25px;
     }
   } 
 
@@ -152,6 +178,14 @@
       min-width: 20%;
       min-height: 20%;
       border: 2px solid white;
+    }
+    .about-section__content .about-section__description .about-section__icon{
+      font-size: 1em;
+      margin-bottom:-0.4em ;    
+    }
+    svg{
+      width: 20px;
+      height: 20px;
     }
   }
 }

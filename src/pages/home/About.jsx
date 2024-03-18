@@ -2,6 +2,7 @@
 import { ProfilImage } from "../../assets/images";
 import LogoPHP from "../../assets/img/skills-perso/php.webp";
 import LogoReact from "../../assets/img/skills-formation/react.webp";
+import { FaCode } from 'react-icons/fa';
 
 const About = () => (
   <>
@@ -19,21 +20,27 @@ const About = () => (
     <div className="about-section__content">
       <img src={ProfilImage} alt="Fabrice MAGNAN de BELLEVUE" className="about-section__photo" />
       <div className="about-section__description">
-        <p>
-          {`Bonjour, je suis Fabrice MAGNAN de BELLEVUE. Avec 15 ans d'expérience en informatique, ma reconversion professionnelle en Intégrateur Web via OpenClassrooms a consolidé ma passion pour le développement.`}
-        </p>
-        
-        <p>
-          {`Autodidacte, j'ai acquis des compétences en `}<strong>Front-end et Back-end</strong>, {`développé une application de gestion comptable et géré un serveur NAS pour l'hébergement web.`}
-        </p>
-        
-        <p>
-          {`Le projet spécifique que j'ai réalisé pour mon dernier employeur, un éditeur de logiciels pour le secteur de l'immobilier, était un questionnaire en ligne en `}<strong>PHP/JS</strong> {`, aujourd'hui utilisé par ses clients.`}
-        </p>
-        
-        <p>
-          {`Cette réalisation souligne ma capacité à créer des solutions web efficaces et adaptées aux besoins spécifiques des secteurs.`}
-        </p>
+        <p><strong>Fabrice MAGNAN de BELLEVUE</strong></p>
+            <div className="about-section__item">
+              <FaCode className="about-section__icon" />
+              <span><strong>Expérience Professionnelle :</strong> {`Plus de 15 ans dans l'informatique, avec une spécialisation récente en développement web suite à une reconversion professionnelle via OpenClassrooms.`}</span>
+          </div>
+            <div className="about-section__item">
+              <FaCode className="about-section__icon" />
+              <span><strong>Compétences :</strong> {`Expertise en `}<strong>{`Front-end et Back-end`}</strong>{`, avec un parcours autodidacte complété par une formation certifiante.`}</span>
+          </div>
+            <div className="about-section__item">
+              <FaCode className="about-section__icon" />
+              <span><strong>Projets Personnels :</strong> {`Développement d'une application de gestion comptable et gestion d'un serveur NAS pour l'hébergement web, illustrant ma capacité à initier et à réaliser des projets complexes.`}</span>
+          </div>
+            <div className="about-section__item">
+              <FaCode className="about-section__icon" />
+              <span><strong>Projets Marquants :</strong> {`Conception d'un questionnaire en ligne en `}<strong>{`PHP/JS`}</strong> {`pour un éditeur de logiciels immobiliers, aujourd'hui largement utilisé par ses clients, démontrant ma capacité à développer des solutions web sur-mesure.`}</span>
+          </div>
+            <div className="about-section__item">
+              <FaCode className="about-section__icon" />
+              <span><strong>Passion :</strong> {`Une passion renforcée pour le développement web, illustrée par mon engagement constant dans l'apprentissage et l'application pratique des compétences techniques.`}</span>
+          </div>
       </div>
     </div>
   </>
