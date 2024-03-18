@@ -1,7 +1,7 @@
 export const APP_NAME = "FabWebProject";
 export const APP_DEV = "Fabrice MAGNAN DE BELLEVUE";
 // Définition de la variable `basename` en fonction du mode de l'environnement
-const basename = import.meta.env.MODE === "production" ? "" : "";
+const basename = import.meta.env.MODE === "production" ? "/portfoliotest" : "";
 
 // Exportation de la variable `basename` pour l'utiliser dans d'autres fichiers
 export { basename };
