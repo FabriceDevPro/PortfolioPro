@@ -23,6 +23,7 @@
   },    
   "skills": {
     "title": "Mes Compétences",
+    "info":"Cliquez sur une compétence pour filtrer et afficher les projets correspondants.",
     "categories": {
       "Frontend": "Frontend",
       "Backend": "Backend",
@@ -36,8 +37,14 @@
     }
   },
   "projects": {        
-    "personalTitle": "Mes projets personnels",
-    "formationTitle": "Mes projets de formation",
+    "personal": {
+      "title": "Mes projets personnels",
+      "button":"Explorer le Projet"
+    },  
+    "formation": {
+      "title": "Mes projets de formation",
+      "button":"Voir Plus"
+    },
     "countTooltip": "Nombre de projets réalisés : {{count}}"
   },
   "certifications": {

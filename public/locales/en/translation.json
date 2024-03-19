@@ -23,6 +23,7 @@
   },
   "skills": {
     "title": "My Skills",
+    "info": "Click on a skill to filter and display the corresponding projects.",
     "categories": {
       "Frontend": "Frontend",
       "Backend": "Backend",
@@ -35,9 +36,15 @@
       "projectTooltip": "Projects completed : {{projectCount}} of which {{formationCount}} during training"
     }
   },
-  "projects": {    
-    "personalTitle": "My Personal Projects",
-    "formationTitle": "My Formation Projects",
+  "projects": {        
+    "personal": {
+      "title": "My Personal Projects",
+      "button":"Explore the Project"
+    },  
+    "formation": {
+      "title": "My Formation Projects",
+      "button":"See More"
+    },
     "countTooltip": "Projects completed : {{count}}"
   },
   "certifications": {

@@ -1,0 +1,100 @@
+{
+  "attestations": [
+    {
+      "id": 1,
+      "author": {
+        "name": "Hélène",
+        "position": "Développeur, Product Owner",
+        "collaboration": "2016-2023",
+        "company": "SEPTEO-ADB",
+        "location": "Toulouse"
+      },
+      "recipient": {
+        "name": "Fabrice MAGNAN DE BELLEVUE",
+        "position": "Migrateur de données"
+      },
+      "projects": [
+        {
+          "year": "2016-2023",
+          "description": "Développement complet d’un outil de contrôle et comparaison de données",
+          "technologies": ["VBA", "Excel"]
+        },
+        {
+          "year": "2017-2023",
+          "description": "Correction et évolution d’un outils d'extraction de données et d'injection de données en base de données",
+          "technologies": ["VB.Net", "SQLServer"]
+        },
+        {
+          "year": "2021-2023",
+          "description": "Refonte et développement complet d’un site web, questionnaire technique rempli par le client pour préparer la migration de ses données.",
+          "technologies": ["PHP", "HTML", "JavaScript", "CSS"]
+        }
+      ],
+      "verificationAvailable": true
+    },
+    {
+      "id": 2,
+      "author": {
+        "name": "Pascal",
+        "position": "Développeur",
+        "collaboration": "2016-2023",
+        "company": "SEPTEO-ADB",
+        "location": "Toulouse"
+      },
+      "recipient": {
+        "name": "Fabrice MAGNAN DE BELLEVUE",
+        "position": "Migrateur de données"
+      },
+      "projects": [
+        {
+          "year": "2016-2023",
+          "description": "Développement complet d’un outil de contrôle réalisé dans le cadre de sa mission de migrateur de données. Cet outil permet de faciliter et sécuriser son travail quotidien ainsi que de ses collègues.",
+          "technologies": ["VBA", "Excel"]
+        },
+        {
+          "year": "2017-2023",
+          "description": "Prise en charge et réalisation de correctifs et d'évolutions sur un outil de manipulation de données, dans les environnements VB.Net et SQL Server.",
+          "technologies": ["VB.Net", "SQLServer"]
+        },
+        {
+          "year": "2021-2023",
+          "description": "Réalisation d'un site web permettant et facilitant la transmission d'informations de la part des clients. Ces informations sont à destination de l'outil de manipulation de données. Ce site a été très bien accueilli par les clients par son ergonomie et sa simplicité d'utilisation.",
+          "technologies": ["PHP", "HTML", "JavaScript", "CSS"]
+        }
+      ],
+      "verificationAvailable": true
+    },
+    {
+      "id": 3,
+      "author": {
+        "name": "Yves",
+        "position": "Développeur",
+        "collaboration": "2016-2023",
+        "company": "SEPTEO-ADB",
+        "location": "Toulouse"
+      },
+      "recipient": {
+        "name": "Fabrice MAGNAN DE BELLEVUE",
+        "position": "Migrateur de données"
+      },
+      "projects": [
+        {
+          "year": "2016-2023",
+          "description": "Développement complet d’un outil de contrôle et comparaison de données",
+          "technologies": ["VBA", "Excel"]
+        },
+        {
+          "year": "2017-2023",
+          "description": "Correction et évolution de 2 outils d'extraction de données et d'injection de données en base de données",
+          "technologies": ["VB.Net", "SQLServer"]
+        },
+        {
+          "year": "2021-2023",
+          "description": "Refonte et développement complet d’un site web, questionnaire technique rempli par le client pour préparer la migration de ses données.",
+          "technologies": ["PHP", "HTML", "JavaScript", "CSS"]
+        }
+      ],
+      "verificationAvailable": true
+    }
+  ]
+}

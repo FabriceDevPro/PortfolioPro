@@ -1,0 +1,187 @@
+
+@import "../../abstracts/mixin";
+@import "../../abstracts/keyframes";
+@import "../../abstracts/variables";
+
+.attestations-section {
+  @include section-styles;
+  
+  .attestations-cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1em;
+    justify-content: center;
+    align-items: start;
+  }
+
+  .attestation-card {
+    border-left: 4px solid $primary-color;
+    background-color: #fff;
+    padding: 1em;
+    margin-bottom: 1em;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    
+    &:before, &:after {
+      font-size: 2em;
+      position: absolute;
+    }
+    
+    &:before {
+      content: "“"; // Guillemet ouvrant
+      left: 10px;
+      top: -5px;
+      color: $primary-color;
+    }
+    
+    &:after {
+      content: "”"; // Guillemet fermant
+      right: 10px;
+      bottom: -10px;
+      color: $primary-color;
+    }
+
+    .section-divider {
+      height: 1px;
+      background-color: #ccc;
+      margin: 1em 0;
+    }
+
+    .attestation-author, 
+    .attestation-recipient, 
+    .attestation-projects, 
+    .attestation-verification {
+            
+      strong {
+        color: $primary-color;
+        margin-right: 5px;
+      }
+    }
+
+    .attestation-projects {
+      // Increase padding for each project
+      // padding: 0.75em;
+      border-radius: 5px; // Optional: rounded corners for project details
+      // margin-bottom: 1em; // Spacing between each project
+
+      // For the last project, remove the extra bottom margin
+      &:last-child {
+        margin-bottom: 0;
+      }
+      
+      .project-year,
+      .project-description,
+      .project-technologies {
+        margin-bottom: 0.5em; // Spacing between lines within each project
+      }
+    }
+
+  }
+}
+
+
+// .attestations-section{
+// @include section-styles;
+  
+//   .attestations-cards-container {
+//     display: grid;
+//     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+//     gap: 1em;
+//     justify-content: center;
+//     align-items: start;
+//   }
+
+//   .attestation-card {
+//     border-left: 4px solid #1e3758;
+//     background-color: #fff;
+//     padding: 1em;
+//     margin-bottom: 1em;
+//     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+//     position: relative;
+//     display: flex;
+//     flex-direction: column;
+    
+//     &:before, &:after {
+//       font-size: 2em;
+//       position: absolute;
+//     }
+    
+//     &:before {
+//       content: "“"; // Guillemet ouvrant
+//       left: 10px;
+//       top: -5px;
+//       color: #1e3758;
+//     }
+    
+//     &:after {
+//       content: "”"; // Guillemet fermant
+//       right: 10px;
+//       bottom: -10px;
+//       color: #1e3758;
+//     }
+
+//     .attestation-author, 
+//     .attestation-recipient, 
+//     .attestation-projects, 
+//     .attestation-verification {
+//       margin-bottom: 1em;
+      
+//       strong {
+//         color: #1e3758;
+//         margin-right: 5px;
+//       }
+//     }
+
+//     .attestation-project-name {
+//       color: #333;
+//       font-weight: bold;
+//       margin-bottom: 10px;
+//     }
+
+//     .attestation-role, 
+//     .attestation-tasks, 
+//     .attestation-technologies {
+//       color: #666;
+//     }
+//   }
+// }
+//   .attestation-card {
+//     border-left: 4px solid #3498db;
+//     background-color: #fff;
+//     padding: 1em;
+//     margin-bottom: 1em;
+//     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+//     position: relative;
+//   }
+
+//   .attestation-card:before {
+//     content: "“"; /* Caractère Unicode pour guillemet ouvrant */
+//     font-size: 2em;
+//     position: absolute;
+//     left: 5px;
+//     top: -5px;
+//     color: #3498db;
+//   }
+
+//   .attestation-card:after {
+//     content: "”"; /* Caractère Unicode pour guillemet fermant */
+//     font-size: 2em;
+//     position: absolute;
+//     right: 5px;
+//     bottom: -5px;
+//     color: #3498db;
+//   }
+
+//   .attestation-project-name {
+//     color: #333;
+//     font-weight: bold;
+//     margin-bottom: 10px;
+//   }
+
+//   .attestation-role, .attestation-tasks, .attestation-technologies {
+//     color: #666;
+//     margin-bottom: 5px;
+//   }
+// }

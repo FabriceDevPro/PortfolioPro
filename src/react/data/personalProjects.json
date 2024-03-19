@@ -1,0 +1,353 @@
+[
+  {
+    "id": 1,
+    "name": "Mon Budget Perso",
+    "short_description": "De Excel en 2016 à une application web en 2023 : découvrez Mon Budget Perso, le reflet de mon évolution en développement web.",
+    "long_description": "Mon projet personnel, initié en 2016 sous le nom de Gestion des Comptes Personnels avec un outil Excel pour la gestion de mes finances, s'est métamorphosé en juillet 2023 en une application web, désormais baptisée Mon Budget Perso.\n\nCette évolution marque le fruit de mes efforts autodidactes, magnifiés par une formation en développement web axée principalement sur le front-end. Cette transition illustre ma progression et ma capacité à appliquer de façon tangible les compétences acquises.\n\nL'achèvement de la Version Web 1.0.0 pendant ma formation représente une concrétisation de cet apprentissage. J'ai conçu et développé entièrement ce projet, du front-end au back-end, et assure son hébergement sur mon serveur NAS personnel.\n\nCette démarche témoigne de mon engagement total et de ma polyvalence dans tous les aspects du développement. Parcourez cette frise chronologique pour voir l'évolution de Mon Budget Perso et découvrir les diverses compétences que j'ai développées en cours de route.",
+    "languages": [
+      { "name": "HTML"},
+      { "name": "CSS"},
+      { "name": "SASS" },
+      { "name": "JS" },
+      { "name": "REACT" },
+      { "name": "VITE.JS" },
+      { "name": "REDUX" },
+      { "name": "API" },
+      { "name": "SWAGGER"},
+      { "name": "PHP" },
+      { "name": "MYSQL" },
+      { "name": "PHPMYADMIN" }, 
+      { "name": "LARAVEL" },
+      { "name": "GIT"},
+      { "name": "GITHUB"}
+    ],
+    "images": [
+      {
+        "titre": "Vue de l'écran de connexion ",
+        "nomimage": "view-login.webp"
+      },
+      {
+        "titre": "Vue de l'écran Liste Saisie - Tous les comptes",
+        "nomimage": "view-list.webp"
+      },
+      {
+        "titre": "Vue de l'écran Liste Saisie - Compte xxxx",
+        "nomimage": "view-account.webp"
+      },
+      {
+        "titre": "Vue de l'écran Création d'écriture comptable",
+        "nomimage": "view-create.webp"
+      }
+    ],
+    "chronologie": [
+      {
+        "order": 1,
+        "date": "2016",
+        "nomimage": "view-login.webp",
+        "version": "V 1.0.0",
+        "titre":"Fichier Excel avec des formules",        
+        "description":"La version 1.0.0 est un simple fichier Excel doté de formules complexes pour la gestion mensuelle des revenus et dépenses.",
+        "languages": [
+          { "name": "EXCEL" }
+        ],
+        "images": [
+          {
+            "titre": "Vue de l'écran de connexion ",
+            "nomimage": "view-login-excel.webp"
+          }
+        ]
+      },
+      {
+        "order": 2,
+        "date": "2020",
+        "version": "V 1.1.0",
+        "titre":"Utilisation de macros avec userforms et connexion à une base de données Access.",        
+        "description":"La version 1.1.0 marque un tournant majeur, transformant l'application en un projet Excel avancé relié à une base de données Access structurée avec environ 40 tables. Cette mise à jour introduit une collaboration à deux, consolidant toutes les fonctionnalités nécessaires pour une gestion efficace.",
+        "languages": [          
+          { "name": "VBA" },
+          { "name": "ACCESS" }
+        ],
+        "images": [
+          {
+            "titre": "Vue de l'écran de connexion ",
+            "nomimage": "view-login-excel.webp"
+          }
+        ]
+      },
+      {
+        "order": 3,
+        "date": "07/2023",
+        "version": "Version Web 0.1",
+        "titre":"Conversion en format web pour pratiquer mes acquis, utilisation de HTML-SASS-JS pour le Front-End et PHP/MySQL pour le Back-End.",
+        "description":"La version 0.1 initie le passage du projet à une plateforme web, en exploitant HTML, SASS, JS pour le front-end et PHP/MySQL pour le back-end, basée sur la structure originelle de la version Excel. Cette étape marque le début de l'application de mes connaissances en développement web sur un projet concret, avec une mise en œuvre des fonctionnalités essentielles.",
+        "languages": [
+          { "name": "HTML" },
+          { "name": "CSS" },
+          { "name": "PHP" },
+          { "name": "JS" },
+          { "name": "PHPMYADMIN" },
+          { "name": "MYSQL" }
+        ],
+        "images": [
+          {
+            "titre": "Vue de l'écran de connexion ",
+            "nomimage": "view-login.webp"
+          }
+        ]
+      },
+      {
+        "order": 4,
+        "date": "10/2023",
+        "version": "V 0.5",
+        "titre": "Migration vers React avec Vite.js et création d'une API pour le Back-End.",
+        "description":"La version 0.5 transforme l'application grâce à l'adoption de React et Vite.js, optimisant l'interface utilisateur et la performance globale. Les écrans principaux ont été redéveloppés, intégrant uniquement les fonctionnalités essentielles, et une API pour le back-end a été mise en place. Une nouveauté majeure est l'introduction de Redux, choisie après une évaluation approfondie de son impact face à la complexité des données comptables. Ce choix stratégique, résultat de tests comparatifs avec et sans Redux, assure une gestion d'état plus efficace et une meilleure maintenabilité du projet.",
+        "languages": [              
+          { "name": "REACT" },
+          { "name": "VITE" },
+          { "name": "SASS" },
+          { "name": "REDUX" }
+        ],
+        "images": [
+          {
+            "titre": "Vue de l'écran de connexion ",
+            "nomimage": "view-login.webp"
+          }
+        ]         
+      },        
+      {
+        "order": 5,
+        "date": "01/2024",
+        "version": "V 0.8",
+        "titre": "Transformation de API PHP en API avec le framework Laravel.",
+        "description":"La version 0.8 marque le passage de notre API de PHP pur à Laravel, améliorant la sécurité et l'efficacité avec Axios pour les requêtes. Cette évolution a renforcé notre back-end et conservé une gestion d'état cohérente avec Redux. Un défi notable a été le déploiement de l'API sur mon NAS personnel, nécessitant une adaptation technique spécifique pour assurer une intégration fluide et sécurisée.",
+        "languages": [
+          { "name": "API" },
+          { "name": "LARAVEL" }
+        ],
+        "images": [
+          {
+            "titre": "Vue de l'écran de connexion ",
+            "nomimage": "view-login.webp"
+          }
+        ]  
+      },
+      {
+        "order": 6,
+        "date": "03/2024",
+        "version": "Version Web 1.0.0",
+        "titre": "Version de démonstration",
+        "description":"La Version Web 1.0.0 est ma première version de démonstration publique, présentant une interface utilisateur interactive conçue avec React et des performances améliorées grâce à Vite.js. Cette version initie les fonctionnalités essentielles pour une gestion efficace, permettant la création, modification, et suppression de saisies manuelles ou récurrentes. Bien que l'ensemble des fonctionnalités de la version Excel originale ne soient pas encore implémentées, cette itération repose sur une architecture back-end robuste via Laravel, et une gestion d'état optimisée avec Redux. C'est un pas important qui démontre la viabilité et le potentiel de l'application web pour une utilisation concrète. Le travail continue pour enrichir cette plateforme et intégrer progressivement toutes les fonctionnalités envisagées.",
+        "languages": [
+          { "name": "HTML" },
+          { "name": "CSS" },
+          { "name": "PHP" },
+          { "name": "JS" },
+          { "name": "PHPMYADMIN" },
+          { "name": "MYSQL" },
+          { "name": "REACT" },
+          { "name": "VITE" },
+          { "name": "SASS" },
+          { "name": "REDUX" },
+          { "name": "API" },
+          { "name": "LARAVEL" }
+        ],
+        "images": [
+          {
+            "titre": "Vue de l'écran de connexion ",
+            "nomimage": "view-login.webp"
+          }
+        ]  
+      }
+    ],
+    "fonctionnalites": [
+      {
+        "titre": "Gestion de comptes bancaires personnels",
+        "description": "Jusqu'à 5 comptes de types : Courant - Différé - Joint et 5 comptes Épargne.",
+        "badge":""
+      },
+      {
+        "titre": "Compte Joint",
+        "description": "Utilisable par les utilisateurs définis, tandis que les autres comptes sont individuels.",
+        "badge": ""
+      },
+      {
+        "titre": "Saisies d'écritures comptables",
+        "description": "De Revenus ou de Dépenses.",
+        "badge": ""
+      },
+      {
+        "titre": "Pointage des écritures comptables",
+        "description": "Possibilité de pointer les écritures pour réaliser son rapprochement bancaire.",
+        "badge": ""
+      },
+      {
+        "titre": "Partage des écritures",
+        "description": "Entre 2 utilisateurs.",
+        "badge":"A venir"
+      },
+      {
+        "titre": "Validation des écritures",
+        "description": "Validation des écritures sur une période après rapprochement bancaire et réalisation de clôtures d'exercices.",
+        "badge":"A venir"
+      },
+      {
+        "titre": "Clôture de l'Exercice Comptable",
+        "description": "Sur une période après rapprochement bancaire et réalisation de clôtures d'exercices.",
+        "badge":"A venir"
+      }
+    ],
+    "detailsEcritures": [
+      {
+        "titre":"Type de saisie",
+        "description":"Revenus ou Dépenses.",
+        "badge": ""
+      },
+      {
+        "titre":"Catégories",
+        "description":"Groupe, Catégorie (rattachée à un Compte), Sous-Catégorie, Détail.",
+        "badge": ""
+      },
+      {
+        "titre":"Écritures récurrentes",
+        "description":"Possibilité de définir des écritures récurrentes et des prélèvements automatiques.",
+        "badge": ""
+      },
+      {
+        "titre":"Transferts automatiques",
+        "description":"Création d'écritures automatiques entre 2 comptes existants dans le logiciel (même utilisateur ou différent).",
+        "badge":"A venir"
+      },
+      {
+        "titre":"Statut du Partage",
+        "description":"Tableau de suivi et éléments de type Commandes",
+        "badge":"A venir"
+      },
+      {
+        "titre":"Statut du Rapprochement Bancaire",
+        "description":"Tableau de suivi et éléments de type Commandes",
+        "badge":"A venir"
+      },
+      {
+        "titre":"Suivi des dépenses liés à la Santé",
+        "description":"Tableau de suivi et éléments de type Santé pour vérifier les remboursements.",
+        "badge":"A venir"
+      },
+      {
+        "titre":"Suivi des Provisions",
+        "description":"Tableau de suivi et éléments de type Provisions",
+        "badge":"A venir"
+      },
+      {
+        "titre":"Suivi des Commandes",
+        "description":"Tableau de suivi et éléments de type Commandes",
+        "badge":"A venir"
+      }
+    ],
+    "demonstration": "Je peux vous faire une démonstration de l'outil, vous donner les paramètres de connexion pour un compte test ou vous donner accès à mon code via GitHub.",
+    "lienProjet": [
+      {
+        "titre":"Voir la documentation de API",
+        "lien":"https://fabwebprojects.fr/apidemo/docs/documentation"
+      },
+      {
+        "titre":"Voir la version (Vite.js + Redux + API Laravel)",
+        "lien":"https://portfolio.fabwebprojects.fr/MonBudgetPersoDemo/"
+      }
+    ],
+    "lienGitHub": [
+      {
+        "titre":"Code sur GitHub",
+        "estPublic": false
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Optimisation du Processus de Migration de Données",
+    "short_description": "De l'automatisation de processus en VBA à la création d'un outil web en PHP, ce projet incarne mon initiation au développement et ma transition vers une carrière en développement web, soulignant ma capacité à innover et à me réinventer professionnellement.",
+    "long_description": "Démarré comme un moyen d'automatiser et de faciliter mes tâches quotidiennes avec un outil VBA que j'ai conçu et amélioré au fil du temps, ce projet a évolué pour devenir un élément central dans l'optimisation des processus de migration de données chez un éditeur de logiciels immobiliers. Grâce à l'apprentissage autodidacte et au mentorat de développeurs expérimentés, j'ai progressivement étendu mes compétences au développement web, aboutissant à la création d'un questionnaire en ligne en PHP. Cette réalisation a non seulement amélioré l'efficacité opérationnelle de mon équipe mais a également marqué un tournant décisif dans ma carrière, me convaincant de la valeur de ma passion pour le développement et m'incitant à entreprendre une reconversion professionnelle en développement web. Ce parcours illustre mon engagement envers l'apprentissage continu, ma capacité à relever des défis techniques complexes et mon désir de contribuer de manière significative à l'innovation technologique.",
+    "context": "Intégré au service de migration en 2016, ma mission principale consistait à faciliter le passage des clients, utilisant d'anciennes versions de notre logiciel ou celles de concurrents, vers notre nouvelle gamme. Ce travail délicat de migration impliquait la conversion et l'intégration des données clients dans un format spécifique (.txt), prêt à être traité par nos outils internes pour une incorporation finale dans une base de données SQL. À travers ce processus complexe, j'étais chargé d'assurer la fidélité des données grâce à un système de correspondance précis et des contrôles métier rigoureux, garantissant ainsi une transition fluide et sans erreur pour nos clients.",
+    "problem": "Le défi initial résidait dans la nécessité d'automatiser le processus de migration pour nos logiciels de comptabilité immobilière, dans le but de réduire significativement le temps de migration tout en améliorant l'exactitude des contrôles. Face à un processus largement manuel et chronophage, où chaque donnée devait être méticuleusement convertie et vérifiée pour assurer l'intégrité et la précision exigées dans le domaine comptable, l'impératif d'une solution plus efficiente et fiable devenait évident.",
+    "solution": [
+      "Ma quête d'optimisation des processus de migration a débuté en autodidacte avec l'apprentissage du VBA, alimentée par un intérêt préexistant pour Excel. Cette initiative m'a conduit à créer, dès 2016, une interface personnalisée utilisant des UserForms sous Excel VBA. Cet outil innovant a été conçu pour automatiser les contrôles métiers essentiels, notamment dans le domaine de la comptabilité, en permettant la comparaison de deux fichiers .txt selon une structure prédéfinie. Plus qu'un simple outil de comparaison, il intègre des règles métiers spécifiques pour identifier et justifier les écarts, offrant ainsi une vision claire et précise des anomalies.",
+      "L'efficacité de cette solution n'est pas passée inaperçue ; elle a capté l'attention de mes collègues développeurs qui ont reconnu mon potentiel dans le domaine du développement. Encouragé par leur soutien, j'ai commencé à explorer le code des outils internes, principalement développés en VB.NET, élargissant ainsi mes compétences et ma compréhension des applications logicielles.",
+      "Cette exploration m'a finalement mené à entreprendre, en 2022, le projet ambitieux de développer un questionnaire en ligne. Utilisant PHP pour le back-end et HTML, CSS personnalisé, et JavaScript pour le front-end, cette application web visait à remplacer l'approche basée sur les PDF par une solution entièrement numérique et automatisée. Ce système avancé ne simplifie pas seulement le processus de collecte de données mais renforce également l'exactitude et la rapidité des migrations, marquant un point culminant dans ma transition vers le développement web."
+    ],
+    "results": [
+      "L'outil Excel que j'ai conçu a significativement réduit le temps nécessaire aux processus de migration, tout en diminuant le taux d'erreurs rencontrées, optimisant ainsi l'efficience générale de ces opérations. Mais les bénéfices de ce projet ne se sont pas arrêtés là. Grâce à l'accompagnement et au mentorat de développeurs expérimentés, j'ai non seulement élevé mes compétences techniques, mais j'ai également adopté de meilleures pratiques de développement, telles que l'utilisation d'Azure DevOps pour le versioning et l'organisation du travail en sprints, conformément aux méthodologies Scrum et Agile.",
+      "La mise en œuvre du questionnaire en ligne a représenté l'apogée de cette évolution. J'ai géré ce projet de A à Z : depuis la phase de conception jusqu'à la mise en production, incluant la formation des utilisateurs, la rédaction de procédures opérationnelles, et fournissant un support continu. Cette expérience complète, alliant développement, gestion de projet et interaction directe avec les utilisateurs, a renforcé ma décision de me reconvertir dans le développement web. Ce parcours a non seulement prouvé ma capacité à mener à bien des projets complexes et à apporter des solutions innovantes mais a également confirmé ma passion pour le développement et mon désir d'évoluer dans ce domaine dynamique."
+    ], 
+    "chronologie": [
+      {
+        "order": 1,
+        "date": "2016",
+        "titre": "Automatisation avec VBA Excel",
+        "description": "J'ai initié mon parcours dans l'automatisation des processus en développant des outils VBA pour Excel, simplifiant les tâches de contrôle et marquant mes premiers pas dans le développement logiciel.",
+        "version": "",
+        "images": [],
+        "languages": [
+          { "name": "VBA" },
+          { "name": "Excel" }
+        ]
+      },
+      {
+        "order": 2,
+        "date": "2017",
+        "titre": "Transformation en PDF remplissable",
+        "description": "Pour améliorer la précision et l'efficacité de la collecte de données, j'ai converti les formulaires papier en documents PDF remplissables, marquant une étape significative vers la digitalisation des processus.",
+        "version": "",
+        "images": [],
+        "languages": [
+          { "name": "PDF" }
+        ]
+      },
+      {
+        "order": 3,
+        "date": "2016-2023",
+        "titre": "Développement et mentorat",
+        "description": "Sous la guidance de développeurs expérimentés, j'ai élargi mes compétences techniques, explorant le VB.NET et la gestion de bases de données avec MySQL, ce qui a renforcé ma capacité à aborder des solutions plus complexes.",
+        "version": "",
+        "images": [],
+        "languages": [
+          { "name": "VBNET" },
+          { "name": "MySQL" },
+          { "name": "AZUREDEVOPS" }
+        ]
+      },
+      {
+        "order": 4,
+        "date": "2022",
+        "titre": "Lancement du questionnaire web",
+        "description": "J'ai conçu et déployé un questionnaire en ligne, en utilisant HTML, CSS personnalisé, PHP, et JavaScript. Cette initiative a automatisé le processus de migration de données, réduisant significativement le temps de traitement et les erreurs.",
+        "version": "",
+        "images": [],
+        "languages": [
+          { "name": "HTML" },
+          { "name": "CSS" },
+          { "name": "PHP" },
+          { "name": "JS" },
+          { "name": "JSON" },
+          { "name": "AZUREDEVOPS" }
+        ]
+      }
+    ],
+    "languages": [
+      { "name": "HTML" },
+      { "name": "CSS" },
+      { "name": "PHP" },
+      { "name": "JS" },
+      { "name": "JSON" },
+      { "name": "AZUREDEVOPS" },
+      { "name": "VBA" },
+      { "name": "Excel" },
+      { "name": "VBNET" },
+      { "name": "MySQL" }
+    ],
+    "images": [],
+    "fonctionnalites": [],
+    "detailsEcritures": [],
+    "demonstration": "Prêt à discuter des défis rencontrés et des solutions apportées au cours de ce projet lors d'un entretien.",
+    "lienProjet": [],
+    "lienGitHub": []
+  }
+]

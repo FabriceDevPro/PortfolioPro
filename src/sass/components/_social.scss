@@ -2,24 +2,24 @@
 @import "../abstracts/mixin";
 @import "../abstracts/keyframes";
 @import "../abstracts/variables";
-.social-section {
-  @include section-styles;
+.footer-social-links {
 
-  .social-section__title {
+  .footer-social__title {
     color: $primary-color;
     font-size: 2.0em;
-    margin-bottom: 1.5rem;
     width: 100%;
+    margin:0 0 1.5rem;
   }
 
-  .social-section__icons-container {
+  .footer-social__icons-container {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 50px;
     width: 100%;
+    margin:0 0 0.5rem;
 
-    .social-section__icon {
+    .footer-social__icon {
       text-decoration: none;
       color: $primary-color;
       font-size: 48px;
@@ -36,25 +36,20 @@
   }
 }
 @media only screen and (min-width: 900px) and (max-width: 1024px) {
-  .social-section .social-section__title {
+  .footer-social-links .footer-social__title {
     font-size: 1.8em;
   }
 }
 @media only screen and (min-width: 769px) and (max-width: 900px) {  
-  .social-section .social-section__title{
+  .footer-social-links .footer-social__title{
     font-size: 1.5em;
   }
 }
 @media only screen and (max-width: 768px) {
-  .social-section {
-    margin: 30px auto 10px;
-    padding: 0px 0px 10px;
-    max-width: 95%;
-  }
-  .social-section .social-section__title{
+  .footer-social-links .footer-social__title{
     font-size: 1.2em;
     margin-bottom: 0.5rem;
   }
-  .social-section .social-section__icons-container .social-section__icon{
+  .footer-social-links .footer-social__icons-container .footer-social__icon{
     font-size: 30px;}
 }
