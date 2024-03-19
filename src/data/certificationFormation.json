@@ -165,7 +165,7 @@
   "description":"PHP permet de créer des sites dynamiques : blogs, forums, réseaux sociaux, espaces membres... Découvrez PHP associé à MySQL et créez votre premier site web !",
   "img": "viewcertif1.webp",
   "url": "https://openclassrooms.com/fr/course-certificates/6770250279",
-  "groupe":"Compléments"
+  "groupe":"Complémentaires"
   },
   {
   "id": 4,
@@ -173,7 +173,7 @@
   "img": "viewcertif4.webp",
   "description":"MySQL est un système de gestion de base de données (SGBD). Son rôle est d'enregistrer des informations dans de gigantesques tableaux (les tables) que l'on relie entre eux. On y communique en langage SQL, un langage qu'il est recommandé de connaître aujourd'hui.",
   "url": "https://openclassrooms.com/fr/course-certificates/9310339984",
-  "groupe":"Compléments"
+  "groupe":"Complémentaires"
   },  
   {
   "id": 9,
@@ -181,7 +181,7 @@
   "img": "viewcertif9.webp",
   "description":"Prenez en main l'IDE Visual Studio pour créer et manipuler un projet de développement ! Vous découvrirez les avantages d'un IDE par rapport à un simple éditeur de code comme Visual Studio Code.",
   "url": "https://openclassrooms.com/fr/course-certificates/2625235811",
-  "groupe":"Compléments"
+  "groupe":"Complémentaires"
   },
   {
     "id": 24,
@@ -189,6 +189,6 @@
     "img": "viewcertif24.webp",
     "description":"Apprenez à utiliser ChatGPT pour augmenter votre productivité : grâce au prompt engineering découvrez sur quelles tâches de votre métier vous pouvez gagner du temps !",
     "url": "https://openclassrooms.com/fr/course-certificates/6273129227",
-    "groupe":"Compléments"
+    "groupe":"Complémentaires"
     }
 ]

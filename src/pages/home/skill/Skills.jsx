@@ -8,8 +8,10 @@ import { useSkills } from '../../../hooks/useSkills';
 import { FaFilter } from 'react-icons/fa';
 import formationProjects from '../../../data/formationProjects';
 import personalProjects from '../../../data/personalProjects';
+import { useTranslation } from 'react-i18next';
 
 const Skills = () => {
+  const { t } = useTranslation();
   const { setActiveSkill } = useSkills();
   const [selectedSkill, setSelectedSkill] = useState(null);
   useScrollToHash(100);
@@ -57,7 +59,7 @@ const Skills = () => {
     { name: 'MySql', altText: 'MySQL', category: 'Base de Données', source: 'perso' },
     { name: 'Phpmyadmin', altText: 'phpMyAdmin', category: 'Base de Données', source: 'perso' },
     { name: 'KANBAN', altText: 'Kanban', category: 'Gestion de Projets', source: 'formation' },
-    { name: 'AGILE', altText: 'Methode Agile', category: 'Gestion de Projets', source: 'formation' },
+    { name: 'AGILE', altText: 'Agile', category: 'Gestion de Projets', source: 'formation' },
     { name: 'GIT', altText: 'Git', category: 'Versioning', source: 'formation' },
     { name: 'GITHUB', altText: 'GitHub', category: 'Versioning', source: 'formation' },
   ].map(skill => ({
@@ -70,16 +72,18 @@ const Skills = () => {
     setSelectedSkill(skillName);
   };
 
+  const categories = ['Frontend', 'Backend', 'Base de Données', 'Gestion de Projets', 'Versioning'];
+
   return (
     <>
       <div className="skills-section__title-container">
-        <h2 className="skills-section__section-title" id="skills">Mes Compétences</h2>
-        <FaFilter className="skills-section__filter-reset" onClick={handleFilterReset} title="Réinitialiser le filtre"/>
+        <h2 className="skills-section__section-title" id="skills">{t('skills.title')}</h2>
+        <FaFilter className="skills-section__filter-reset" onClick={handleFilterReset} title={t('skills.title')}/>
       </div>
       <div className="skills-section__skill-container">
-        {['Frontend', 'Backend', 'Base de Données', 'Gestion de Projets', 'Versioning'].map(category => (
+        {categories.map(category => (
           <div key={category} className="skills-section__skills-group">
-            <h3>{category}</h3>
+            <h3>{t(`skills.categories.${category}`)}</h3>
             <div className="skills-section__skill-set">
               {allSkills.filter(skill => skill.category === category).map((skill, index) => (
                 <SkillCard

@@ -1,9 +1,10 @@
 import certifications from '../../../data/certificationFormation';
 import CertificationCard from './CertificationCard';
 import useScrollToHash from "../../../hooks/useScrollToHash";
+import { useTranslation } from 'react-i18next';
 
 // Fonction pour regrouper les certifications par groupe
-const groupCertifications = (certifications) => {
+const groupCertifications = (certifications) => {  
   return certifications.reduce((acc, certification) => {
     const { groupe } = certification;
     if (!acc[groupe]) {
@@ -26,6 +27,8 @@ const sortGroupedCertifications = (groupedCertifications) => {
 };
 
 const Certifications = () => {
+  const { t } = useTranslation();
+
   const groupedCertifications = groupCertifications(certifications);
   const sortedGroupedCertifications = sortGroupedCertifications(groupedCertifications);
   const cardsPerRow = 7; // Adaptez cette valeur à votre mise en page
@@ -35,7 +38,7 @@ const Certifications = () => {
     <section className='certifications-collection'>
       {Object.entries(sortedGroupedCertifications).map(([groupName, certs]) => (
         <section key={groupName} className={`certifications-collection-${groupName.toLowerCase()}`} id={groupName.toLowerCase()}>
-          <h2 className="section-title">{`Certifications ${groupName}`}</h2>
+          <h2 className="section-title">{t(`certifications.group.${groupName}`, `Certifications ${groupName}`)}</h2>
           <div className="certifications-container">
             {certs.map((certification, index) => (
               <CertificationCard

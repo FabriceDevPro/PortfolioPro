@@ -13,6 +13,7 @@ import MissingPage from "./pages/MissingPage";
 import CurriculumVitae from "./pages/CurriculumVitae";
 import PersonalProjectView from './pages/home/projet-perso/PersonalProjectView';
 import { ContactModalProvider } from "./context/ContactModal";
+import './i18n';
 
 // Configuration de React Modal
 ReactModal.setAppElement("#root");
@@ -41,7 +42,7 @@ function App() {
   return (
     <SkillsProvider>
     <ContactModalProvider>
-      <Router basename={basename}>        
+      <Router basename={basename}>
       <Header />
         <main>
           <Routes>

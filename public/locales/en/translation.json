@@ -1,0 +1,228 @@
+{
+  "menu": {
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "certifications": "Certifications",
+    "cv": "CV",
+    "download_cv": "Download CV",
+    "contact": "Contact"
+  },
+  "about": {
+    "title": "Full Stack Web Developer",
+    "professionalExperienceTitle": "Professional Experience",
+    "professionalExperience": "Over 15 years in IT with a recent specialization in web development following a professional retraining via OpenClassrooms.",
+    "skillsTitle": "Skills",
+    "skills": "Expertise in <1>Front-end and Back-end</1>, with a self-taught journey complemented by a certified training.",
+    "personalProjectsTitle": "Personal Projects",
+    "personalProjects": "Development of an accounting management application and management of a NAS server for web hosting, illustrating my ability to initiate and realize complex projects.",
+    "notableProjectsTitle": "Notable Projects",
+    "notableProjects": "Design of an online questionnaire in <1>PHP/JS </1> for a real estate software publisher, now widely used by its clients, demonstrating my ability to develop custom web solutions.",
+    "passionTitle": "Passion",
+    "passion": "An enhanced passion for web development, illustrated by my constant engagement in learning and practical application of technical skills."
+  },
+  "skills": {
+    "title": "My Skills",
+    "categories": {
+      "Frontend": "Frontend",
+      "Backend": "Backend",
+      "Base de Données": "Database",
+      "Gestion de Projets": "Project Management",
+      "Versioning": "Versioning"
+    },
+    "resetFilter": "Reset filter",
+    "Card": {
+      "projectTooltip": "Projects completed : {{projectCount}} of which {{formationCount}} during training"
+    }
+  },
+  "projects": {    
+    "personalTitle": "My Personal Projects",
+    "formationTitle": "My Formation Projects",
+    "countTooltip": "Projects completed : {{count}}"
+  },
+  "certifications": {
+    "group": {
+      "Formation": "Training Certifications",
+      "Complémentaires": "Additional Certifications"
+    },
+    "card": {
+      "13": {
+        "name": "Set Up Your Front-End Environment",
+        "description": "Front-end development, like any field, requires more than just know-how; it requires the right tools! In this course, you'll install and discover the tools that will serve you throughout your front-end development career."
+      },
+      "2": {
+        "name": "Create Your Website with HTML5 and CSS3",
+        "description": "Dreaming of learning to create websites? Begin with this course that teaches you everything you need to know about developing websites using HTML5 and CSS3!"
+      },
+      "15": {
+        "name": "Manage Your Code with Git and GitHub",
+        "description": "Install Git and GitHub and learn the basic commands of Git to manage your code and deploy your development projects."
+      },
+      "18": {
+        "name": "Become a Git and GitHub Expert",
+        "description": "Become an expert in Git and GitHub: use methods and commands to manage conflicts, set up workflows, hooks, and use a GUI client."
+      },
+      "26": {
+        "name": "Integrate a Figma Design in HTML-CSS",
+        "description": "Integrate your own Figma design on the web using HTML and CSS."
+      },
+      "10": {
+        "name": "Create Modern CSS Animations",
+        "description": "Want to animate your website with CSS animations? This course is for you! Discover keyframes and transitions to create dynamic and modern websites."
+      },
+      "23": {
+        "name": "Simplify CSS with Sass",
+        "description": "Learn to write clean, maintainable, and modular CSS code in .scss style sheets with Sass."
+      },
+      "11": {
+        "name": "Learn to Use the Command Line in a Terminal",
+        "description": "Learn to write command lines that will allow you to communicate with your computer."
+      },
+      "17": {
+        "name": "Discover How Algorithms Work",
+        "description": "In this course, learn the basics of algorithmics: variables, functions, loops, and conditional structures. Explore the principles of recursion."
+      },
+      "20": {
+        "name": "Learn to Program with JavaScript",
+        "description": "Master the fundamentals of JavaScript programming and its programming logic by developing a dynamic website."
+      },
+      "21": {
+        "name": "Create Dynamic Web Pages with JavaScript",
+        "description": "Manipulate the DOM, make your web page dynamic, use an HTTP API to interact with a web service, and use libraries to enrich your web page."
+      },
+      "14": {
+        "name": "Get Started with React",
+        "description": "Discover React.js, the JavaScript library that allows you to create your application in components. See the fundamentals while building a complete web application with Create React App!"
+      },
+      "25": {
+        "name": "Manage Your React Application with Redux and Redux Toolkit",
+        "description": "In this course, you'll learn how to simplify state management in your React applications with Redux and Redux Toolkit!"
+      },
+      "5": {
+        "name": "Easily Manage Your IT Project",
+        "description": "Professionally manage an IT project using agile methodologies."
+      },
+      "6": {
+        "name": "Get Started with Agile Project Management",
+        "description": "Form your agile team, consider user needs, and develop agile practices like Planning Poker, Kanban, and Lean methods..."
+      },
+      "19": {
+        "name": "Become an Agile Developer",
+        "description": "Become an agile developer: integrate into a Scrum team, carry out a Sprint, and discover agile development techniques like TDD, KISS, and refactoring."
+      },
+      "22": {
+        "name": "Fix Your Bugs and Find Solutions to Your Code Problems",
+        "description": "Learn to debug your code and find solutions to approach your coding issues confidently!"
+      },
+      "7": {
+        "name": "Set Up an Information Monitoring System",
+        "description": "Learn to conduct monitoring to adapt to the evolutions of your profession and use information monitoring tools."
+      },
+      "8": {
+        "name": "Increase Your Traffic with Natural Referencing (SEO)",
+        "description": "Significantly increase your website's traffic through natural referencing. Build an SEO strategy integrated into the marketing strategy."
+      },
+      "16": {
+        "name": "Publish Your Website Online",
+        "description": "Learn how to reserve a domain name, find a hosting provider, and transfer files using an FTP client to get your website online!"
+      },
+      "1": {
+        "name": "Design Your Website with PHP and MySQL",
+        "description": "PHP enables the creation of dynamic websites: blogs, forums, social networks, member spaces... Discover PHP combined with MySQL and create your first website!"
+      },
+      "4": {
+        "name": "Administer Your Databases with MySQL",
+        "description": "MySQL is a database management system (DBMS). Its role is to store information in gigantic tables that are linked together. Communication is done using SQL, a language that is recommended to know today."
+      },
+      "9": {
+        "name": "Embrace Visual Studio as Your Development Environment",
+        "description": "Get to grips with the IDE Visual Studio to create and manage a development project! Discover the advantages of an IDE over a simple code editor like Visual Studio Code."
+      },
+      "24": {
+        "name": "Use ChatGPT to Boost Your Productivity",
+        "description": "Learn to use ChatGPT to enhance your productivity: through prompt engineering, discover which tasks in your profession you can save time on!"
+      }
+    }
+  },
+  "skillsTechnical": {
+    "title": "My Technical Skills",
+    "subtitle":"Self-hosting of My Portfolio",
+    "hostingSection": {
+      "synologyServer": "For hosting my portfolio, I chose a Synology NAS server, widely appreciated for its robustness and accessibility, powered by DiskStation Manager (DSM). DSM, a Linux-based operating system specifically designed for NAS management, offers an intuitive graphical user interface that simplifies server setup, file management, and access to various NAS services. This platform allows me to install and manage packages for additional features, such as database management with phpMyAdmin and web hosting via WebStation, thus enhancing the flexibility and efficiency of my hosting environment.",
+      "ovhDomain": "By choosing OVH for the domain, a renowned provider not only for its reliability but also for its French origin, I emphasized my preference for high-quality local hosting solutions. This decision aligns with my meticulous approach to DNS configuration to point to my public IP address, the installation of SSL certificates to enhance the security of my domain and subdomains, and the implementation of redirection and port opening rules to ensure optimal and secure accessibility.",
+      "separateInfrastructure": "This separate infrastructure for hosting illustrates my commitment to maintaining a secure and high-performing online presence."
+    }
+  },
+  "cv": {
+    "DownloadButton":"Download my resume"
+  },
+  "contact": {    
+    "title": "For collaboration or inquiries, let's stay in touch",
+    "gitHub":"My GitHub Profil",
+    "linkedIn":"My LinkedIn Profil",
+    "contact":"Contact me",
+    "rightsReserved":"All rights reserved",
+    "legalMentionsLink":"Legal Notices",
+    "legalMentions": [
+      {
+        "title": "Legal Notice",
+        "content": [
+          "Website name: FabWebProjects",
+          "Website URL: https://fabwebprojects.fr",
+          "Owner: MAGNAN de BELLEVUE Fabrice",
+          "Contact: magnan.fabrice@gmail.com"
+        ]
+      },
+      {
+        "title": "Hosting",
+        "content": [
+          "Hosted by: Synology NAS Server + Domain at OVH",
+          "Address: 12 rue des Violettes 31570 BOURG SAINT BERNARD",
+          "Contact: magnan.fabrice@gmail.com"
+        ]
+      },
+      {
+        "title": "Intellectual Property",
+        "content": [
+          "The content of this website, including the projects presented, images, logos, and texts, are the property of MAGNAN de BELLEVUE Fabrice unless otherwise stated. Any reproduction, distribution, or publishing without the prior written consent of MAGNAN de BELLEVUE Fabrice is prohibited."
+        ]
+      },
+      {
+        "title": "Credits",
+        "content": [
+          "The images, photographs, and graphic resources used on this site are the property of MAGNAN de BELLEVUE Fabrice or used with permission from the rights holders."
+        ]
+      },
+      {
+        "title": "Liability",
+        "content": [
+          "MAGNAN de BELLEVUE Fabrice cannot be held responsible for any errors or omissions present on the site. MAGNAN de BELLEVUE Fabrice reserves the right to modify, correct, or delete the content of the site at any time without notice."
+        ]
+      },
+      {
+        "title": "Applicable Law",
+        "content": [
+          "This site is governed by French law and French courts will have exclusive jurisdiction for any dispute related to the use of this site."
+        ]
+      }
+    ],
+    "form":{
+      "title":"Contact Form",
+      "name":"Your Name",
+      "placeholdername":"Your Name",
+      "errorname":"Name required",
+      "subject":"Subject",
+      "placeholdersubject":"Subject of your email",
+      "errorsubject":"Subject required",
+      "email":"Your Email",
+      "placeholderemail":"Your Email",
+      "errormail":"Email required",
+      "message":"Your Message",
+      "placeholdermessage":"Your Message",
+      "errormessage":"Message required",
+      "send":"Send",
+      "successMessage": "Your message has been sent successfully!",
+      "errorMessage": "An error occurred while sending your message. Please try again later."
+    }
+  }
+}

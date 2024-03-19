@@ -1,19 +1,22 @@
 import PropTypes from 'prop-types';
 import PersonalProject from './projet-perso/PersonalProject';
 import FormationProject from './projet-formation/FormationProject';
+import { useTranslation } from 'react-i18next';
 
 const Projects = ({ personalProjects, formationProjects }) => {
+  const { t } = useTranslation();
+
   return (
     <div className="projects-container">
-      <div className="personal-projects-container" data-tooltip={`Nombre de projets réalisés : ${personalProjects.length}`}>
+      <div className="personal-projects-container" data-tooltip={t('projects.countTooltip', { count: personalProjects.length })}>
         <PersonalProject 
-          title="Mes projets personnels"
+          title={t('projects.personalTitle')}
           projects={personalProjects}
         />
       </div>
-      <div className="formation-projects-container" data-tooltip={`Nombre de projets réalisés : ${formationProjects.length}`}>
+      <div className="formation-projects-container" data-tooltip={t('projects.countTooltip', { count: formationProjects.length })}>
         <FormationProject 
-          title="Mes projets de formation"
+          title={t('projects.formationTitle')}
           projects={formationProjects}
         />
       </div>            

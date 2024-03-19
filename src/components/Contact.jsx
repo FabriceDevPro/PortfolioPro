@@ -3,8 +3,10 @@ import { useForm } from "react-hook-form";
 import emailjs from "@emailjs/browser";
 import { useState } from "react";
 import useScrollToHash from "../hooks/useScrollToHash";
+import { useTranslation } from 'react-i18next';
 
 const Contact = ({ closeModal }) => {
+  const { t } = useTranslation();
   const {
     register,
     handleSubmit,
@@ -17,55 +19,55 @@ const Contact = ({ closeModal }) => {
 
   const onSubmit = (data) => {
     emailjs
-      .send("service_ekrqbpd", "template_ajt5qpd", data, "AbDAfXz8sfGa2-H6-")
+      .send("service_ekrqbpd", "template_4kibzvk", data, "AbDAfXz8sfGa2-H6-")
       .then((response) => {
         console.log("SUCCESS!", response.status, response.text);
-        setConfirmationMessage("Votre message a été envoyé avec succès !");
+        setConfirmationMessage(t('contact.form.successMessage'));
         setConfirmationMessageType("success");
         reset(); // Réinitialise le formulaire après envoi réussi
       })
       .catch((err) => {
         console.log("FAILED...", err);
-        setConfirmationMessage("Échec de l'envoi du message, veuillez réessayer.");
+        setConfirmationMessage(t('contact.form.errorMessage'));
         setConfirmationMessageType("error");
       });
   };
 
   // Appel du hook avec la hauteur de l'en-tête si nécessaire.
   useScrollToHash(100); // 100px est un exemple, remplacez par la hauteur de votre en-tête fixe
-
+  
   return (
     <>
-      <h2>Formulaire de Contact</h2>
+      <h2>{t('contact.form.title')}</h2>
       <button className="close-modal-button" onClick={closeModal}>
         X
       </button>
       <form onSubmit={handleSubmit(onSubmit)}>
         <label htmlFor="from_name" className="labelform">
-          Votre nom :
+          {t('contact.form.name')} :
         </label>
-        <input type="text" id="from_name" name="from_name" {...register("from_name", { required: true })} placeholder="Votre nom" required />
-        {errors.from_name && <p>Le nom est requis</p>}
+        <input type="text" id="from_name" name="from_name" {...register("from_name", { required: true })} placeholder={t('contact.form.placeholdername')} required />
+        {errors.from_name && <p>{t('contact.form.errorname')}</p>}
 
         <label htmlFor="subject" className="labelform">
-          Sujet :
+        {t('contact.form.subject')} :
         </label>
-        <input type="text" id="subject" name="subject" {...register("subject", { required: true })} placeholder="Sujet de votre mail" required />
-        {errors.subject && <p>Le sujet est requis</p>}
+        <input type="text" id="subject" name="subject" {...register("subject", { required: true })} placeholder={t('contact.form.placeholdersubject')} required />
+        {errors.subject && <p>{t('contact.form.placeholdersubject')}</p>}
 
         <label htmlFor="email" className="labelform">
-          Email :
+        {t('contact.form.email')} :
         </label>
-        <input type="email" id="email" name="email" {...register("email", { required: true })} placeholder="Votre email" required />
-        {errors.email && <p>Email requis</p>}
+        <input type="email" id="email" name="email" {...register("email", { required: true })} placeholder={t('contact.form.placeholderemail')} required />
+        {errors.email && <p>{t('contact.form.placeholderemail')}</p>}
 
         <label htmlFor="message" className="labelform">
-          Message :
+        {t('contact.form.message')} :
         </label>
-        <textarea id="message" name="message" {...register("message", { required: true })} placeholder="Votre message" required />
-        {errors.message && <p>Message requis</p>}
+        <textarea id="message" name="message" {...register("message", { required: true })} placeholder={t('contact.form.placeholdermessage')} required />
+        {errors.message && <p>{t('contact.form.placeholdermessage')}</p>}
 
-        <button type="submit" className="submit-button">Envoyer</button>
+        <button type="submit" className="submit-button">{t('contact.form.send')}</button>
       </form>
       {confirmationMessage && <p className={`confirmation-message ${confirmationMessageType}`}>{confirmationMessage}</p>}
     </>

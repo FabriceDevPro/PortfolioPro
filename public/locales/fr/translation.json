@@ -1,0 +1,87 @@
+{
+  "menu": {
+    "about": "À propos",
+    "skills": "Compétences",
+    "projects": "Mes Projets",
+    "certifications": "Certifications",
+    "cv": "CV",
+    "download_cv": "Télécharger mon CV",
+    "contact": "Contact"
+  },
+  "about": {
+    "title": "Développeur Web Full Stack",
+    "professionalExperienceTitle": "Expérience professionnelle",
+    "professionalExperience": "Plus de 15 ans d'expérience en informatique, avec une spécialisation récente en développement web suite à une reconversion professionnelle via OpenClassrooms.",
+    "skillsTitle": "Compétences",
+    "skills": "Expertise en <1>Front-end et Back-end</1>, avec un parcours autodidacte complété par une formation certifiante.",
+    "personalProjectsTitle": "Projets personnels",
+    "personalProjects": "Développement d'une application de gestion comptable et gestion d'un serveur NAS pour l'hébergement web, illustrant ma capacité à initier et à réaliser des projets complexes.",
+    "notableProjectsTitle": "Projets notables",    
+    "notableProjects": "Conception d'un questionnaire en ligne en <1>PHP/JS </1>pour un éditeur de logiciels immobiliers, aujourd'hui largement utilisé par ses clients, démontrant ma capacité à développer des solutions web sur-mesure.",
+    "passionTitle": "Passion",
+    "passion": "Une passion renforcée pour le développement web, illustrée par mon engagement constant dans l'apprentissage et l'application pratique des compétences techniques."
+  },    
+  "skills": {
+    "title": "Mes Compétences",
+    "categories": {
+      "Frontend": "Frontend",
+      "Backend": "Backend",
+      "Base de Données": "Base de Données",
+      "Gestion de Projets": "Gestion de Projets",
+      "Versioning": "Versioning"
+    },  
+    "resetFilter": "Réinitialiser le filtre",
+    "Card": {
+      "projectTooltip": "Projet(s) réalisé(s) : {{projectCount}} dont {{formationCount}} en formation"
+    }
+  },
+  "projects": {        
+    "personalTitle": "Mes projets personnels",
+    "formationTitle": "Mes projets de formation",
+    "countTooltip": "Nombre de projets réalisés : {{count}}"
+  },
+  "certifications": {
+    "group": {
+      "Formation": "Certifications Formation",
+      "Complémentaires": "Certifications Complémentaires"
+    }
+  },
+  "skillsTechnical": {
+    "title": "Mes Compétences Techniques",
+    "subtitle":"Hébergement Autonome de Mon Portfolio",
+    "hostingSection": {
+      "synologyServer": "Pour l'hébergement de mon portfolio, j'ai choisi un serveur NAS Synology, largement apprécié pour sa robustesse et son accessibilité, propulsé par DiskStation Manager (DSM). DSM, un système d'exploitation basé sur Linux et spécifiquement conçu pour la gestion des NAS, offre une interface utilisateur graphique intuitive qui simplifie la configuration des serveurs, la gestion des fichiers et l'accès aux divers services NAS. Cette plateforme me permet d'installer et de gérer des paquets pour des fonctionnalités supplémentaires, telles que la gestion de base de données avec phpMyAdmin et l'hébergement web via WebStation, renforçant ainsi la flexibilité et l'efficacité de mon environnement d'hébergement.",
+      "ovhDomain": "En choisissant OVH pour le domaine, un fournisseur réputé non seulement pour sa fiabilité mais aussi pour son origine française, j'ai souligné ma préférence pour des solutions d'hébergement locales de haute qualité. Cette décision s'aligne avec mon approche méticuleuse de la configuration du DNS pour pointer vers mon adresse IP publique, l'installation de certificats SSL pour renforcer la sécurité de mon domaine et des sous-domaines, et la mise en œuvre de règles de redirection et d'ouverture de ports pour garantir une accessibilité optimale et sécurisée.",
+      "separateInfrastructure": "Cette infrastructure distincte pour l'hébergement illustre mon engagement à maintenir une présence en ligne sécurisée et performante."
+    }
+  },
+  "cv": {
+    "DownloadButton":"Télécharger mon CV"
+  },
+  "contact": {        
+    "title": "Pour une collaboration ou un échange, restons en contact",
+    "gitHub":"Mon profil GitHub",
+    "linkedIn":"Mon profil LinkedIn",
+    "contact":"Contactez-moi",
+    "rightsReserved":"Tous droits réservés",
+    "legalMentionsLink": "Mentions Légales",  
+    "form":{
+      "title":"Formulaire de Contact",
+      "name":"Votre Nom",
+      "placeholdername":"Votre nom",
+      "errorname":"Le nom est requis",
+      "subject":"Sujet",
+      "placeholdersubject":"Sujet de votre mail",
+      "errorsubject":"Le sujet est requis",
+      "email":"Votre Email",
+      "placeholderemail":"Votre email",
+      "errormail":"Email requis",
+      "message":"Votre Message",
+      "placeholdermessage":"Votre message",
+      "errormessage":"Message requis",
+      "send":"Envoyer",
+      "successMessage": "Votre message a été envoyé avec succès !",
+      "errorMessage": "Une erreur s'est produite lors de l'envoi de votre message. Veuillez réessayer plus tard."
+    }
+  }
+}
