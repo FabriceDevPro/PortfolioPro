@@ -118,7 +118,7 @@ const CurriculumVitae = () => {
                                         <li>{`Développement d'un site web pour la saisie et l'intégration de questionnaires de paramétrage en HTML/PHP/JS lié à une BDD sous MySQL. Mise en production réalisée par moi-même et configuration du fichier.ini.`}</li>
                                         <li>{`Rédacteur de procédures, documents techniques`}</li>
                                     </ul>
-                                    <h4>11/2018 à 09/2016 - Technicien Support</h4>
+                                    <h4>11/2013 à 09/2016 - Technicien Support</h4>
                                     <ul>
                                         <li>Mission de support métiers et techniques aux utilisateurs sur différentes gammes de logiciels immobiliers.</li>
                                     </ul>

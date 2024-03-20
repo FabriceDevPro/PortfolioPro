@@ -265,17 +265,18 @@
     "id": 2,
     "name": "Optimisation du Processus de Migration de Données",
     "short_description": "De l'automatisation de processus en VBA à la création d'un outil web en PHP, ce projet incarne mon initiation au développement et ma transition vers une carrière en développement web, soulignant ma capacité à innover et à me réinventer professionnellement.",
-    "long_description": "Démarré comme un moyen d'automatiser et de faciliter mes tâches quotidiennes avec un outil VBA que j'ai conçu et amélioré au fil du temps, ce projet a évolué pour devenir un élément central dans l'optimisation des processus de migration de données chez un éditeur de logiciels immobiliers. Grâce à l'apprentissage autodidacte et au mentorat de développeurs expérimentés, j'ai progressivement étendu mes compétences au développement web, aboutissant à la création d'un questionnaire en ligne en PHP. Cette réalisation a non seulement amélioré l'efficacité opérationnelle de mon équipe mais a également marqué un tournant décisif dans ma carrière, me convaincant de la valeur de ma passion pour le développement et m'incitant à entreprendre une reconversion professionnelle en développement web. Ce parcours illustre mon engagement envers l'apprentissage continu, ma capacité à relever des défis techniques complexes et mon désir de contribuer de manière significative à l'innovation technologique.",
-    "context": "Intégré au service de migration en 2016, ma mission principale consistait à faciliter le passage des clients, utilisant d'anciennes versions de notre logiciel ou celles de concurrents, vers notre nouvelle gamme. Ce travail délicat de migration impliquait la conversion et l'intégration des données clients dans un format spécifique (.txt), prêt à être traité par nos outils internes pour une incorporation finale dans une base de données SQL. À travers ce processus complexe, j'étais chargé d'assurer la fidélité des données grâce à un système de correspondance précis et des contrôles métier rigoureux, garantissant ainsi une transition fluide et sans erreur pour nos clients.",
-    "problem": "Le défi initial résidait dans la nécessité d'automatiser le processus de migration pour nos logiciels de comptabilité immobilière, dans le but de réduire significativement le temps de migration tout en améliorant l'exactitude des contrôles. Face à un processus largement manuel et chronophage, où chaque donnée devait être méticuleusement convertie et vérifiée pour assurer l'intégrité et la précision exigées dans le domaine comptable, l'impératif d'une solution plus efficiente et fiable devenait évident.",
+    "long_description": "Démarré comme un moyen d'automatiser et de faciliter mes tâches quotidiennes avec un outil VBA que j'ai conçu et amélioré au fil du temps, ce projet a évolué pour devenir un élément central dans l'optimisation des processus de migration de données chez un éditeur de logiciels immobiliers.\n\n Grâce à l'apprentissage autodidacte et au mentorat de développeurs expérimentés, j'ai progressivement étendu mes compétences au développement web, aboutissant à la création d'un questionnaire en ligne en PHP. Cette réalisation a non seulement amélioré l'efficacité opérationnelle de mon équipe mais a également marqué un tournant décisif dans ma carrière, me convaincant de la valeur de ma passion pour le développement et m'incitant à entreprendre une reconversion professionnelle en développement web.\n\n Ce parcours illustre mon engagement envers l'apprentissage continu, ma capacité à relever des défis techniques complexes et mon désir de contribuer de manière significative à l'innovation technologique.",
+    "context": "Intégré au service de migration en 2016, ma mission principale consistait à faciliter le passage des clients, utilisant d'anciennes versions de notre logiciel ou celles de concurrents, vers notre nouvelle gamme.\n\n Ce travail délicat de migration impliquait la conversion et l'intégration des données clients dans un format spécifique (.txt), prêt à être traité par nos outils internes pour une incorporation finale dans une base de données SQLServer.\n\nÀ travers ce processus complexe, j'étais chargé d'assurer la fidélité des données grâce à un système de correspondance précis et des contrôles métier rigoureux, garantissant ainsi une transition fluide et sans erreur pour nos clients.",
+    "problem": "Le défi initial résidait dans la nécessité d'automatiser le processus de migration pour nos logiciels de comptabilité immobilière, dans le but de réduire significativement le temps de migration tout en améliorant l'exactitude des contrôles.\n\nFace à un processus largement manuel et chronophage, où chaque donnée devait être méticuleusement convertie et vérifiée pour assurer l'intégrité et la précision exigées dans le domaine comptable, l'impératif d'une solution plus efficiente et fiable devenait évident.",
     "solution": [
-      "Ma quête d'optimisation des processus de migration a débuté en autodidacte avec l'apprentissage du VBA, alimentée par un intérêt préexistant pour Excel. Cette initiative m'a conduit à créer, dès 2016, une interface personnalisée utilisant des UserForms sous Excel VBA. Cet outil innovant a été conçu pour automatiser les contrôles métiers essentiels, notamment dans le domaine de la comptabilité, en permettant la comparaison de deux fichiers .txt selon une structure prédéfinie. Plus qu'un simple outil de comparaison, il intègre des règles métiers spécifiques pour identifier et justifier les écarts, offrant ainsi une vision claire et précise des anomalies.",
-      "L'efficacité de cette solution n'est pas passée inaperçue ; elle a capté l'attention de mes collègues développeurs qui ont reconnu mon potentiel dans le domaine du développement. Encouragé par leur soutien, j'ai commencé à explorer le code des outils internes, principalement développés en VB.NET, élargissant ainsi mes compétences et ma compréhension des applications logicielles.",
-      "Cette exploration m'a finalement mené à entreprendre, en 2022, le projet ambitieux de développer un questionnaire en ligne. Utilisant PHP pour le back-end et HTML, CSS personnalisé, et JavaScript pour le front-end, cette application web visait à remplacer l'approche basée sur les PDF par une solution entièrement numérique et automatisée. Ce système avancé ne simplifie pas seulement le processus de collecte de données mais renforce également l'exactitude et la rapidité des migrations, marquant un point culminant dans ma transition vers le développement web."
+      "Développé une interface personnalisée en VBA pour l'automatisation des contrôles comptables.",
+      "Approfondi les compétences en VB.NET et SQL sous la guidance de développeurs expérimentés.",
+      "Lancé un questionnaire web en PHP remplaçant les processus basés sur PDF"
     ],
     "results": [
-      "L'outil Excel que j'ai conçu a significativement réduit le temps nécessaire aux processus de migration, tout en diminuant le taux d'erreurs rencontrées, optimisant ainsi l'efficience générale de ces opérations. Mais les bénéfices de ce projet ne se sont pas arrêtés là. Grâce à l'accompagnement et au mentorat de développeurs expérimentés, j'ai non seulement élevé mes compétences techniques, mais j'ai également adopté de meilleures pratiques de développement, telles que l'utilisation d'Azure DevOps pour le versioning et l'organisation du travail en sprints, conformément aux méthodologies Scrum et Agile.",
-      "La mise en œuvre du questionnaire en ligne a représenté l'apogée de cette évolution. J'ai géré ce projet de A à Z : depuis la phase de conception jusqu'à la mise en production, incluant la formation des utilisateurs, la rédaction de procédures opérationnelles, et fournissant un support continu. Cette expérience complète, alliant développement, gestion de projet et interaction directe avec les utilisateurs, a renforcé ma décision de me reconvertir dans le développement web. Ce parcours a non seulement prouvé ma capacité à mener à bien des projets complexes et à apporter des solutions innovantes mais a également confirmé ma passion pour le développement et mon désir d'évoluer dans ce domaine dynamique."
+      "Réduit le temps de migration des données et le taux d'erreurs de façon significative.",
+      "Implémenté des pratiques de développement modernes avec Azure DevOps.",
+      "Géré le projet de questionnaire web de la conception à la mise en production."
     ], 
     "chronologie": [
       {
@@ -310,7 +311,7 @@
         "images": [],
         "languages": [
           { "name": "VBNET" },
-          { "name": "MySQL" },
+          { "name": "SQLSERVER" },
           { "name": "AZUREDEVOPS" }
         ]
       },
@@ -327,21 +328,26 @@
           { "name": "PHP" },
           { "name": "JS" },
           { "name": "JSON" },
-          { "name": "AZUREDEVOPS" }
+          { "name": "AZUREDEVOPS" },
+          { "name": "PHPMYADMIN" },
+          { "name": "MySQL" }
         ]
       }
     ],
+    "technologies": [],
     "languages": [
+      { "name": "VBA" },
+      { "name": "Excel" },
+      { "name": "VBNET" },
+      { "name": "SQLSERVER" },
+      { "name": "AZUREDEVOPS" },
       { "name": "HTML" },
       { "name": "CSS" },
       { "name": "PHP" },
       { "name": "JS" },
       { "name": "JSON" },
-      { "name": "AZUREDEVOPS" },
-      { "name": "VBA" },
-      { "name": "Excel" },
-      { "name": "VBNET" },
-      { "name": "MySQL" }
+      { "name": "MySQL" },
+      { "name": "PHPMYADMIN" }      
     ],
     "images": [],
     "fonctionnalites": [],

@@ -8,6 +8,7 @@ import DetailsEcritures from "./DetailsEcritures";
 import DemoAccesCode from "./DemoAccesCode";
 import Chronologie from "./Chronologie";
 import Description from "./Description";
+import TechnologiesFloating from './TechnologiesFloating';
 
 const PersonalProjectView = () => {
     
@@ -34,7 +35,7 @@ const PersonalProjectView = () => {
       <section className="personalProject-section" id="personalProject">
         {project?.long_description && (
           <section className="description-section">
-            <Description project={project?.name} description={project?.long_description} />
+            <Description project={project?.name} description={project?.long_description} title={"Description"} />
           </section>
         )}
         {project?.chronologie && project.chronologie.length > 0 && (
@@ -42,12 +43,11 @@ const PersonalProjectView = () => {
             <Chronologie chronologie={project?.chronologie} />
           </section>
         )}
-                {/* Section Contexte, si existant */}
-                {project?.context && (
+        {/* Section Contexte, si existant */}
+        {project?.context && (
           <section className="description-section">
           {/* <section className="project-context"> */}
-            <h3>Contexte</h3>
-            <p>{project.context}</p>
+            <Description description={project?.context} title={"Contexte"} />
           </section>
         )}
 
@@ -55,8 +55,7 @@ const PersonalProjectView = () => {
         {project?.problem && (
           <section className="description-section">
           {/* <section className="project-problem"> */}
-            <h3>Problématique</h3>
-            <p>{project.problem}</p>
+            <Description description={project?.problem} title={"Problématique"} />
           </section>
         )}
 
@@ -64,10 +63,7 @@ const PersonalProjectView = () => {
         {project?.solution && (
           <section className="description-section">
            {/* <section className="project-solution"> */}
-            <h3>Solution</h3>
-            {project.solution.map((item, index) => (
-              <p key={index}>{item}</p>
-            ))}
+           <Description description={project?.solution} title={"Solution"} />
           </section>
         )}
 
@@ -75,20 +71,15 @@ const PersonalProjectView = () => {
       {project?.results && (
         <section className="description-section">
         {/* <section className="project-results"> */}
-          <h3>Résultats</h3>
-          <p>{project.results}</p>
+          <Description description={project?.results} title={"Résultats"} />
         </section>
       )}
 
       {/* Section Technologies, si existante */}
-      {project?.technologies && (
+      {project?.languages && (
         <section className="description-section">
-          <h3>Technologies Utilisées</h3>
-          <ul>
-            {project.technologies.map((tech, index) => (
-              <li key={index}>{tech.name}</li>
-            ))}
-          </ul>
+            <h2 className="section-title">Technologies Utilisées :</h2>
+           <TechnologiesFloating technologies={project.languages} />
         </section>
       )}
         {project?.fonctionnalites && project.fonctionnalites.length > 0 && (

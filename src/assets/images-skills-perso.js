@@ -9,6 +9,7 @@ import LogoVbNet from "@img/skills-perso/vbnet.webp";
 import LogoPdf from "@img/skills-perso/pdf.webp";
 import LogoJson from "@img/skills-perso/json.webp";
 import LogoAzureDevops from "@img/skills-perso/azuredevops.webp";
+import LogoSqlServer from "@img/skills-perso/sqlserver.webp";
 
 const imagesSkillsPerso = {
   "mysql.webp": LogoMySql,
@@ -22,6 +23,7 @@ const imagesSkillsPerso = {
   "pdf.webp": LogoPdf,
   "json.webp": LogoJson,
   "azuredevops.webp": LogoAzureDevops,
+  "sqlserver.webp": LogoSqlServer,
 };
 
 export default imagesSkillsPerso;

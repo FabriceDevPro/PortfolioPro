@@ -6,7 +6,7 @@ const AttestationsSection = () => {
 
   return (
     <div className="attestations-container">
-      <h2>Attestations et Recommandations</h2>
+      <h2 className="attestations-section__title">Attestations et Recommandations</h2>
       <div className="attestations-cards-container">
         {attestations.map((attestation) => (
           <AttestationCard

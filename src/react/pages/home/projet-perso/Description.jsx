@@ -1,31 +1,54 @@
 import PropTypes from 'prop-types';
 import React from 'react';
+import { IoMdCheckmarkCircleOutline } from 'react-icons/io'; // Assuming you have this icon
 
-const Description = ({ project,description }) => {
-        // Divise la description par '\n' et utilise 'map' pour créer des paragraphes ou des éléments avec des sauts de ligne        
-        const descriptionWithLineBreaks = description.split('\n').map((line, index, array) => (
-            // Utilise un fragment pour éviter les erreurs de clé et vérifie si c'est la dernière ligne pour éviter un <br /> supplémentaire
-            <React.Fragment key={index}>
-                {line}
-                {index !== array.length - 1 && <br />}
-            </React.Fragment>
-        ));
+const Description = ({ project, description, title }) => {
+    const renderDescription = (desc) => {
+        if (Array.isArray(desc)) {
+            return (
+                <ul>
+                    {desc.map((item, index) => (
+                        <li key={index}>
+                            <IoMdCheckmarkCircleOutline  className="bullet-icon" /> {item}
+                        </li>
+                    ))}
+                </ul>
+            );
+        } else {
+            return desc.split('\n').map((line, index, array) => (
+                <React.Fragment key={index}>
+                    {line}
+                    {index !== array.length - 1 && <br />}
+                </React.Fragment>
+            ));
+        }
+    };
+
     return (
         <>
-            <div className="description-section__title-container">
-                <h1 className="description-section__section-title">{project}</h1>
-            </div>
+            {project?.name && (
+                <div className="description-section__title-container">
+                    <h1 className="description-section__section-title">{project}</h1>
+                </div>
+             )}
             <div className="description-section__card">
-                <h2 className="section-title">Description</h2>
-                <p>{descriptionWithLineBreaks}</p>
+                <h2 className="section-title">{title}</h2>
+                <div>{renderDescription(description)}</div>
             </div>
         </>
     );
 };
 
 Description.propTypes = {
-    project: PropTypes.string.isRequired,
-    description: PropTypes.string.isRequired,
+    project: PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.object // Si `project` est un objet, ajustez selon votre structure de données.
+    ]),
+    description: PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.arrayOf(PropTypes.string)
+    ]).isRequired,
+    title: PropTypes.string.isRequired
 };
 
 export default Description;

@@ -1,0 +1,28 @@
+.technologies-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+  }
+  
+  .technology {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 50%; /* Pour les cercles */
+    transition: transform 0.1s;
+  }
+  
+  .technology:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .languages-card__logo {
+    max-width: 90%; /* Permet une certaine marge autour du logo */
+    max-height: 70px; /* Réduit la hauteur maximale du logo */
+    transition: transform 0.3s ease;
+    border-radius: 5px;
+  }

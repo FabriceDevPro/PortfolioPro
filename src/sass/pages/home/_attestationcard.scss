@@ -5,6 +5,12 @@
 
 .attestations-section {
   @include section-styles;
+
+  .attestations-section__title {
+    color: $primary-color; // La couleur que vous avez choisie
+    font-size: 2.0em; // Une taille plus grande pour le titre
+    margin-bottom: 1.5rem;
+  }
   
   .attestations-cards-container {
     display: grid;
@@ -12,72 +18,72 @@
     gap: 1em;
     justify-content: center;
     align-items: start;
-  }
-
-  .attestation-card {
-    border-left: 4px solid $primary-color;
-    background-color: #fff;
-    padding: 1em;
-    margin-bottom: 1em;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    
-    &:before, &:after {
-      font-size: 2em;
-      position: absolute;
-    }
-    
-    &:before {
-      content: "“"; // Guillemet ouvrant
-      left: 10px;
-      top: -5px;
-      color: $primary-color;
-    }
-    
-    &:after {
-      content: "”"; // Guillemet fermant
-      right: 10px;
-      bottom: -10px;
-      color: $primary-color;
-    }
-
-    .section-divider {
-      height: 1px;
-      background-color: #ccc;
-      margin: 1em 0;
-    }
-
-    .attestation-author, 
-    .attestation-recipient, 
-    .attestation-projects, 
-    .attestation-verification {
-            
-      strong {
-        color: $primary-color;
-        margin-right: 5px;
-      }
-    }
-
-    .attestation-projects {
-      // Increase padding for each project
-      // padding: 0.75em;
-      border-radius: 5px; // Optional: rounded corners for project details
-      // margin-bottom: 1em; // Spacing between each project
-
-      // For the last project, remove the extra bottom margin
-      &:last-child {
-        margin-bottom: 0;
+  
+    .attestation-card {
+      border-radius: 5px;
+      border-left: 4px solid $primary-color;
+      background-color: #fff;
+      padding: 1em;
+      margin-bottom: 1em;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      
+      &:before, &:after {
+        font-size: 2em;
+        position: absolute;
       }
       
-      .project-year,
-      .project-description,
-      .project-technologies {
-        margin-bottom: 0.5em; // Spacing between lines within each project
+      &:before {
+        content: "“"; // Guillemet ouvrant
+        left: 10px;
+        top: -5px;
+        color: $primary-color;
+      }
+      
+      &:after {
+        content: "”"; // Guillemet fermant
+        right: 10px;
+        bottom: -10px;
+        color: $primary-color;
+      }
+
+      .section-divider {
+        height: 1px;
+        background-color: #ccc;
+        margin: 1em 0;
+      }
+
+      .attestation-author, 
+      .attestation-recipient, 
+      .attestation-projects, 
+      .attestation-verification {
+              
+        strong {
+          color: $primary-color;
+          margin-right: 5px;
+        }
+      }
+
+      .attestation-projects {
+        // Increase padding for each project
+        // padding: 0.75em;
+        border-radius: 5px; // Optional: rounded corners for project details
+        // margin-bottom: 1em; // Spacing between each project
+
+        // For the last project, remove the extra bottom margin
+        &:last-child {
+          margin-bottom: 0;
+        }
+        
+        .project-year,
+        .project-description,
+        .project-technologies {
+          margin-bottom: 0.5em; // Spacing between lines within each project
+        }
       }
     }
-
   }
 }
 
