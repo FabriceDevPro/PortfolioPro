@@ -21,6 +21,8 @@ i18n
       // Chemin vers vos fichiers de traduction
       loadPath: `${basePath.endsWith('/') ? basePath : `${basePath}/`}locales/{{lng}}/{{ns}}.json`,
     },
+    ns: ['translation', 'attestations'],
+    defaultNS: 'translation',
     interpolation: {
       escapeValue: false, // Échappe les valeurs pour React déjà par défaut
     },

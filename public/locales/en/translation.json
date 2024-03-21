@@ -160,6 +160,73 @@
       "separateInfrastructure": "This separate infrastructure for hosting illustrates my commitment to maintaining a secure and high-performing online presence."
     }
   },
+    "recommendations": {
+      "title": "Attestations and Recommendations",
+      "issuedBy": "Issued by",
+      "companyPreposition": "at",
+      "assignedTo": "Assigned To",
+      "years": "Year",
+      "description": "Description",
+      "attestations": {
+        "1": {
+          "author": {
+            "position": "Developer, Product Owner"
+          },
+          "recipient": {
+            "position": "Data Migrator"
+          },
+          "projects": [
+            {
+              "description": "Complete development of a data control and comparison tool"
+            },
+            {
+              "description": "Correction and evolution of a data extraction and injection tool in database"
+            },
+            {
+              "description": "Complete redesign and development of a website, a technical questionnaire filled by the client to prepare the data migration."
+            }
+          ]
+        },
+        "2": {
+          "author": {
+            "position": "Developer"
+          },
+          "recipient": {
+            "position": "Data Migrator"
+          },
+          "projects": [
+            {
+              "description": "Complete development of a data control and comparison tool"
+            },
+            {
+              "description": "Correction and evolution of a data extraction and injection tool in database"
+            },
+            {
+              "description": "Complete redesign and development of a website, a technical questionnaire filled by the client to prepare the data migration."
+            }
+          ]
+        },
+        "3": {
+          "author": {
+            "position": "Developer"
+          },
+          "recipient": {
+            "position": "Data Migrator"
+          },
+          "projects": [
+            {
+              "description": "Complete development of a data control and comparison tool"
+            },
+            {
+              "description": "Correction and evolution of a data extraction and injection tool in database"
+            },
+            {
+              "description": "Complete redesign and development of a website, a technical questionnaire filled by the client to prepare the data migration."
+            }
+          ]
+        }
+      }
+    },  
   "cv": {
     "DownloadButton":"Download my resume"
   },

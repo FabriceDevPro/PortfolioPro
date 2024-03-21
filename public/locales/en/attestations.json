@@ -1,0 +1,22 @@
+{
+  "title": "Attestations and Recommendations",
+  "issuedByTitle": "Issued by",
+  "companyPrepositionTitle": "at",
+  "assignedToTitle": "Assigned to",
+  "yearsTitle": "Year",
+  "technologiesTitle": "Technologies",
+  "descriptionTitle": "Description",
+  "developerProductOwner": "Developer, Product Owner",
+  "developer": "Developer",
+  "dataMigrator": "Data Migrator",
+  "projectDescription1-1": "Complete development of a data control and comparison tool.",
+  "projectDescription1-2": "Correction and evolution of a data extraction and injection tool in database.",
+  "projectDescription1-3": "Complete redesign and development of a website, a technical questionnaire filled by the client to prepare the data migration.",
+  "projectDescription2-1": "Complete development of a control tool as part of his data migrator mission. This tool facilitates and secures the daily work of him and his colleagues.",
+  "projectDescription2-2": "Support and implementation of fixes and evolutions on a data manipulation tool, within VB.Net and SQL Server environments.",
+  "projectDescription2-3": "Development of a website enabling and facilitating the transmission of information from clients. This information is intended for the data manipulation tool. This site was very well received by clients for its ergonomics and ease of use.",
+  "projectDescription3-1": "Complete development of a data control and comparison tool.",
+  "projectDescription3-2": "Correction and evolution of 2 data extraction and injection tools in database.",
+  "projectDescription3-3": "Complete redesign and development of a website, a technical questionnaire filled by the client to prepare the data migration.",
+  "verificationAvailable": "A copy of the original certificate can be provided upon request."
+}  

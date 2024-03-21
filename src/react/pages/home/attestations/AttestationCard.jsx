@@ -1,27 +1,30 @@
-import PropTypes from 'prop-types'; 
+import PropTypes from 'prop-types';
+import { useTranslation } from 'react-i18next'; 
 
-const AttestationCard = ({ author, recipient, projects, verificationAvailable }) => {
+const AttestationCard = ({author, recipient, projects, verificationAvailable }) => {
+  const { t } = useTranslation('attestations');
+
   return (
     <div className="attestation-card">
       <div className="attestation-author">
-        <strong>Émis par :</strong> {author.name}, {author.position} chez {author.company}, {author.location}
+        <strong>{t('issuedByTitle')} :</strong> {author.name}, {t(author.position)} {t('companyPreposition')} {author.company}, {author.location}
       </div>
       <div className="section-divider"></div>
       <div className="attestation-recipient">
-        <strong>Attribué à :</strong> {recipient.name}, {recipient.position}
+        <strong>{t('assignedToTitle')} :</strong> {recipient.name}, {t(recipient.position)}        
       </div>
       <div className="section-divider"></div>
       {projects.map((project, index) => (
         <div key={index} className="attestation-projects">
-          <div className="project-year"><strong>Année :</strong> {project.year}</div>
-          <div className="project-description"><strong>Description :</strong> {project.description}</div>
-          <div className="project-technologies"><strong>Technologies :</strong> {project.technologies.join(', ')}</div>
+          <div className="project-year"><strong>{t('yearsTitle')} :</strong> {project.year}</div>
+          <div className="project-description"><strong>{t('descriptionTitle')} :</strong> {t(project.description)}</div>
+          <div className="project-technologies"><strong>{t('technologiesTitle')} :</strong> {project.technologies.join(', ')}</div>
           {index < projects.length - 1 && <div className="section-divider"></div>}
         </div>
       ))}
       {verificationAvailable && (
         <div className="attestation-verification">
-          <p>{`Une copie de l'attestation originale peut être fournie sur demande.`}</p>
+          <p>{t('verificationAvailable')}</p>
         </div>
       )}
     </div>
@@ -29,22 +32,23 @@ const AttestationCard = ({ author, recipient, projects, verificationAvailable })
 };
 
 AttestationCard.propTypes = {
+  id: PropTypes.number.isRequired,
   author: PropTypes.shape({
-    name: PropTypes.string,
-    position: PropTypes.string,
-    company: PropTypes.string,
-    location: PropTypes.string,
+    name: PropTypes.string.isRequired,
+    position: PropTypes.string.isRequired, // Ce sont des clés de traduction maintenant
+    company: PropTypes.string.isRequired,
+    location: PropTypes.string.isRequired,
   }).isRequired,
   recipient: PropTypes.shape({
-    name: PropTypes.string,
-    position: PropTypes.string,
+    name: PropTypes.string.isRequired,
+    position: PropTypes.string.isRequired, // Ce sont des clés de traduction maintenant
   }).isRequired,
   projects: PropTypes.arrayOf(PropTypes.shape({
     year: PropTypes.string.isRequired,
-    description: PropTypes.string.isRequired,
-    technologies: PropTypes.arrayOf(PropTypes.string).isRequired,
+    description: PropTypes.string.isRequired, // Ce sont des clés de traduction maintenant
+    technologies: PropTypes.arrayOf(PropTypes.string).isRequired
   })).isRequired,
-  verificationAvailable: PropTypes.bool,
+  verificationAvailable: PropTypes.string,
 };
 
 export default AttestationCard;
