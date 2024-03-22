@@ -204,9 +204,9 @@
     "2008Degree":"D.U.T. Gestion des Entreprises et des Administrations, Option Finance-Comptabilité, Perpignan",
     "LanguagesTitle":"Langues",
     "MotherLanguageTitle":"Français",
-    "MotherLanguages":"Langue Maternelle",
-    "ProLanguagesTitle":"Anglais",
-    "ProLanguages":"Professionnel",
+    "MotherLanguage":"Langue Maternelle",
+    "ProLanguageTitle":"Anglais",
+    "ProLanguage":"Professionnel",
     "PortfolioTitle":"Mon Portfolio",
     "Hobbies": {
       "Title": "Hobbies et Intérêts",

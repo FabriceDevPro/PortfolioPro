@@ -74,8 +74,8 @@ const CurriculumVitae = () => {
                     <div className="cv-section cv-languages">
                         <h2><FaGlobe size={30}/>{t('cv.LanguagesTitle')}</h2>
                         <ul>
-                            <li><strong>{t('cv.MotherLanguageTitle')} :</strong> {t('cv.MotherLanguages')}</li>
-                            <li><strong>{t('cv.ProLanguagesTitle')} :</strong> {t('cv.ProLanguages')}</li>
+                            <li><strong>{t('cv.MotherLanguageTitle')} :</strong> {t('cv.MotherLanguage')}</li>
+                            <li><strong>{t('cv.ProLanguageTitle')} :</strong> {t('cv.ProLanguage')}</li>
                         </ul>
                     </div>
                     <div className={`cv-section ${hobbiesClass}`}>
