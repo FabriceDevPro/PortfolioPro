@@ -91,6 +91,9 @@
               text-decoration: underline; // Ajoute un soulignement au survol, si désiré
             }
           }
+          .print {
+            display: none;
+          }
         }
         // Spécifique pour l'adresse
         .cv-contact-text.cv-address {
@@ -113,7 +116,25 @@
           // exemple de style, à ajuster selon les besoins
           min-width: 20px; // Assurez-vous que les icônes ont une largeur fixe pour aligner le texte correctement
         }
-      }      
+      }
+      .cv-interests{
+        background: none;
+        height: 50%;
+        justify-content: center;
+        box-shadow: none;
+      
+        .cv-download{
+          display: flex;
+          align-self: center;
+          justify-content: center;
+          width: 100%;
+          .project-view-button{
+            .button-icon{
+              font-size: 2.2em;
+            }
+          }
+        }
+      }
     }
 
     .cv-right-column {
@@ -230,7 +251,7 @@
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
-      justify-content: start; // Alignez les éléments au début du conteneur
+      justify-content: space-around; // Alignez les éléments au début du conteneur
       padding: 5px;
     }
     
@@ -243,8 +264,8 @@
       font-weight: bold; // Rendre le texte de la compétence gras
       
       svg {
-        height: 20px; // Taille des icônes
-        width: 20px; // Taille des icônes
+        height: 25px; // Taille des icônes
+        width: 25px; // Taille des icônes
         margin-right: 5px; // Espace après l'icône avant le texte
       }
     
@@ -274,18 +295,7 @@
         }
       }
     }
-  }
-  .cv-download{
-    display: flex;
-    align-self: center;
-    justify-content: center;
-    width: 100%;
-    .project-view-button{
-      .button-icon{
-        font-size: 2.2em;
-      }
-    }
-  }
+  }  
 }
 /* Écrans moyens */
 //@media (min-width: 500px) {
@@ -294,7 +304,7 @@
     background: white;
     width: 210mm;
     height: 297mm;
-    overflow: hidden;
+    
   }
     header{
       display:none;
@@ -310,7 +320,7 @@
       .cv-container{
         gap: 15px;
         .cv-left-column{
-          gap: 9px;
+          gap: 10px;
           .cv-profile-pic{
             max-width: 100px;
           }
@@ -320,9 +330,13 @@
           .no-print {
             display: none;
           }
+          .cv-interests{
+            display: none;
+                      
+          }
         }
         .cv-right-column{          
-          gap: 5px;
+          gap: 6px;
           h1{
             font-size: 1.2rem;
             margin:0.2em;;
@@ -335,26 +349,28 @@
         }
         .cv-section {
           padding: 10px;
-          font-size: 12px;
+          font-size: 14px;
           box-shadow: none;
           h2{
             font-size: 1rem;
-            margin:0px;
+            margin:5px;
             svg{
               width: 20px;
               height: 20px;
             }
           }
+          p{
+            margin:5px 0px 0px;}
           li{
-            font-size: 12px;
-            margin-bottom: 0px;
+            font-size: 14px;
+            margin-bottom: 14px;
           }
           ul{
             margin: 0;
           }
           .timeline:before{
             top: 10px;
-            bottom: 30px;
+            bottom: 10px;
           }
 
           .timeline-item{
@@ -368,18 +384,18 @@
               h3 {
                 margin-top: 0;
                 margin-bottom: 5px;
-                font-size: 0.8rem;
+                font-size: 0.9rem;
                 }
               h4{
                 margin-top: 0;
                 margin-bottom: 4px;
-                font-size: 0.7rem;
+                font-size: 0.8rem;
                 }
               p{
-                font-size: 0.7rem;
+                font-size: 0.8rem;
               }
               ul li{
-                font-size: 0.7rem;
+                font-size: 0.8rem;
                 margin-bottom: 0px;              
                 &:before {
                   font-size: 1.4rem; // Taille plus grande pour les puces
@@ -389,7 +405,7 @@
           }          
         }
         .skills-container {
-          gap: 6px;
+          gap: 3px;
         }
         .skill-item {
           margin: 5px 0px;
@@ -398,26 +414,42 @@
         .skill-item span{
           font-size: 12px;
         }
-      }
-      .cv-download{
-        display: none;
+        svg{
+          width: 20px;
+          height: 20px;
+          margin-bottom: -5px;
+        }
       }
     }
     .curriculumvitae-section .cv-container .cv-section.cv-soft-skills .soft-skills-list {
-      gap: 5px;
+      gap: 0px;
       li{
-        font-size: 12px;
+         font-size: 0.85em;
+         margin-bottom: 5px;
+
         .bullet-icon{
           margin-right: 5px;
           min-width: 5px;
         }
         svg{
-          width: 5px;
-          height: 5px;
+          width: 10px;
+          height: 10px;
         }
       }
     }
+    .curriculumvitae-section .cv-container .cv-left-column .cv-section.cv-hobbies ul {
+      margin:2px 0 0 ;
+    }    
 
+    .curriculumvitae-section .cv-container .cv-left-column .cv-section.cv-hobbies li {
+      margin-bottom: 14px; /* Valeur par défaut pour le français */
+    }
+    .curriculumvitae-section .cv-container .cv-left-column .cv-hobbies.hobbies-en li {
+      margin-bottom: 8px; /* Valeur spécifique pour l'anglais */
+    }
+    .curriculumvitae-section .cv-container .cv-left-column .cv-contact .cv-contact-text .print {
+      display: block;
+    }
 }
 
 @media only screen and (max-width: 768px) {

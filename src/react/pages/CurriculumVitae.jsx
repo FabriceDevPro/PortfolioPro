@@ -1,18 +1,23 @@
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import useScrollToHash from "@/react/hooks/useScrollToHash";
-import { FaMobileAlt,FaHtml5, FaCss3Alt, FaJsSquare, FaPhp, FaDatabase, FaTerminal,FaGitAlt,FaSass,FaLaravel,FaReact,FaGithub } from 'react-icons/fa';
-import { FaGraduationCap,FaChalkboardTeacher,FaCogs,FaRegLightbulb,FaLaptopCode,FaBriefcase,FaLinkedin,FaCircle } from 'react-icons/fa';
+import { FaMobileAlt,FaHtml5, FaCss3Alt, FaJsSquare, FaPhp, FaDatabase, FaTerminal,FaGitAlt,FaSass,FaLaravel,FaReact,FaGithub, FaGlobe, FaHeart, FaMotorcycle, FaFilm } from 'react-icons/fa';
+import { FaGraduationCap,FaCogs,FaRegLightbulb,FaLaptopCode,FaBriefcase,FaLinkedin,FaCircle } from 'react-icons/fa';
 import { IoIosMail } from 'react-icons/io';
 import { SiMysql } from 'react-icons/si';
 import { TbBrandVscode } from 'react-icons/tb';
-import { DiGitBranch } from 'react-icons/di';
 import { ProfilImage } from "@/assets/images";
 import { FaFolderOpen } from 'react-icons/fa';
 import CvDownloadButton from "@/react/components/CvDownloadButton";
+import { useTranslation,getI18n  } from 'react-i18next';
 
 const CurriculumVitae = () => {
     const location = useLocation();
+    const { t } = useTranslation();
+    const language = getI18n().language; // Obtenez la langue actuelle
+
+    // Classe conditionnelle basée sur la langue
+    const hobbiesClass = `cv-hobbies ${language === 'en' ? 'hobbies-en' : 'hobbies-fr'}`;
 
     useEffect(() => {
       // Si l'URL contient un hash, on tente de faire défiler vers l'élément correspondant.
@@ -40,11 +45,11 @@ const CurriculumVitae = () => {
                             <div className="cv-contact-text cv-address"><span>12 rue des Violettes</span><span>31570 BOURG SAINT BERNARD</span></div>
                             <div className="cv-contact-text"><span>Permis B, Véhiculé</span></div>
                             <div className="cv-contact-text"><span>Né le 26 décembre 1984 </span></div>
-                            <div className="cv-contact-text"><FaMobileAlt size={15}/><span>06 78 61 47 00</span></div>
+                            <div className="cv-contact-text"><FaMobileAlt size={15}/><span>+33 6 78 61 47 00</span></div>
                             <div className="cv-contact-text"><IoIosMail size={15}/><span>magnan.fabrice@gmail.com</span></div>
                             <div className="cv-contact-text">
                             <FaFolderOpen size={20}/>
-                                <a href="https://portfolio.fabwebprojects.fr/" target="_blank" rel="noopener noreferrer"><span className="no-print">Mon Portfolio :</span> https://portfolio.fabwebprojects.fr/</a>
+                                <a href="https://portfolio.fabwebprojects.fr/" target="_blank" rel="noopener noreferrer"><span className="no-print">{t('cv.PortfolioTitle')}</span> <span className="print">https://portfolio.fabwebprojects.fr/</span></a>
                             </div>
                             <div className="cv-contact-text">
                             <FaLinkedin size={20}/>
@@ -54,190 +59,147 @@ const CurriculumVitae = () => {
                                 <FaGithub size={20}/>
                                 <a href="https://github.com/Fabrice-Perso" target="_blank" rel="noopener noreferrer">Fabrice-Perso</a>
                             </div>
-                        </div>                    
+                        </div>
                     </div>
 
                     <div className="cv-section cv-diplome">
-                        <h2><FaGraduationCap size={30} />Diplôme</h2>
+                        <h2><FaGraduationCap size={30} />{t('cv.DiplomesTitle')}</h2>
                         <ul>
-                            <li><strong>2024 :</strong> {`Formation "Intégrateur Web", OpenClassroom (en cours)`}</li>
-                            <li><strong>2008 :</strong> D.U.T Gestion Entreprise Administration, Option Finance-Comptabilité, Perpignan</li>
-                            <li><strong>2004 :</strong> Baccalauréat série STT, Option Informatique de Gestion</li>
+                            <li><strong>2024 :</strong> {t('cv.2024Diploma')}</li>
+                            <li><strong>2018 :</strong> {t('cv.2018SQLTraining')}</li>
+                            <li><strong>2018 :</strong> {t('cv.2018VBATraining')}</li>
+                            <li><strong>2008 :</strong> {t('cv.2008Degree')}</li>
                         </ul>
-                    </div>
-                    <div className="cv-section cv-formation">
-                        <h2><FaChalkboardTeacher size={30} />Formation</h2>
+                    </div>                   
+                    <div className="cv-section cv-languages">
+                        <h2><FaGlobe size={30}/>{t('cv.LanguagesTitle')}</h2>
                         <ul>
-                            <li><strong>2023-2024 :</strong> {`Formation "Intégrateur Web" de 9 mois, OpenClassroom (en cours)`}</li>
-                            <li><strong>2018 :</strong> Formation SQL Server, Programmation SQL, Orsys Formation</li>
-                            <li><strong>2018 :</strong> Formation VBA EXCEL, FortimeLp</li>
+                            <li><strong>{t('cv.MotherLanguageTitle')} :</strong> {t('cv.MotherLanguages')}</li>
+                            <li><strong>{t('cv.ProLanguagesTitle')} :</strong> {t('cv.ProLanguages')}</li>
                         </ul>
                     </div>
-                    <div className="cv-section cv-projects">
-                        <h2><FaLaptopCode size={30}/> Projets de Développement (Autodidacte)</h2>
+                    <div className={`cv-section ${hobbiesClass}`}>
+                        <h2><FaHeart size={30}/> {t('cv.Hobbies.Title')}</h2>
                         <ul>
-                            <li><strong>Comparadis : </strong> Programme en VBA Excel pour automatiser des contrôles comptables.</li>
-                            <li><strong>Gestion des Comptes Personnels : </strong> Application en VBA Excel pour la gestion de comptes bancaires, avec une base de données ACCESS.</li>
-                            <li><strong>Mon Budget Perso : </strong>{`Transformation de l'outil Gestion des Comptes Personnels en format web pour mettre en pratique mes nouvelles compétences web`}</li>
+                            <li><FaLaptopCode size={20}/> {t('cv.Hobbies.WebProjects')}</li>
+                            <li><FaMotorcycle size={20}/> {t('cv.Hobbies.Motorcycling')}</li>
+                            <li><FaFilm size={20}/> {t('cv.Hobbies.Cinema')}</li>
                         </ul>
                     </div>
-                    <div className="cv-section cv-soft-skills">
-                        <h2><FaRegLightbulb size={30} /> Soft Skills</h2>
-                        <ul className="soft-skills-list">
-                            <li><FaCircle className="bullet-icon" />{`Travail en équipe`}</li>
-                            <li><FaCircle className="bullet-icon" />{`Adaptabilité`}</li>
-                            <li><FaCircle className="bullet-icon" />{`Autonomie`}</li>                            
-                            <li><FaCircle className="bullet-icon" />{`Gestion de projet`}</li>
-                            <li><FaCircle className="bullet-icon" />{`Résolution créative de problèmes`}</li>
-                            <li><FaCircle className="bullet-icon" />{`Communication efficace`}</li>
-                            <li><FaCircle className="bullet-icon" />{`Curiosité et passion pour la technologie`}</li>                            
-                        </ul>
+                    <div className="cv-section cv-interests">
+                    <CvDownloadButton />
                     </div>
-                    
                 </div>
                 <div className="cv-right-column">
                     <h1>Fabrice MAGNAN de BELLEVUE</h1>
-                    <h2>Développeur Web Full Stack</h2>
-                    <div className="cv-section cv-introduction">                        
-                        <h2>Introduction</h2>
-                        <p>{`Passionné par le développement web, je me suis engagé dans une reconversion professionnelle enrichissante qui m'a permis de renforcer mes compétences en front-end et en back-end. Autodidacte déterminé, j'ai développé une application comptable complète et participé à divers projets qui témoignent de ma capacité à répondre efficacement aux besoins spécifiques des utilisateurs et des entreprises. Mon expérience chez un éditeur de logiciels pour le secteur immobilier, notamment à travers la création d'un questionnaire en ligne en PHP/JS, souligne mon engagement et ma polyvalence dans le domaine du développement web.`}</p>
+                    <h2>{t('cv.title')}</h2>
+                    <div className="cv-section cv-introduction">
+                        <h2>{t('cv.IntroductionTitle')}</h2>
+                        <p>{t('cv.Introduction')}</p>
                     </div>
 
                     <div className="cv-section cv-experience">
-                        <h2><FaBriefcase size={30} />Expériences Professionnelles</h2>
+                        <h2><FaBriefcase size={30} />{t('cv.ExperienceTitle')}</h2>
                         <div className="timeline">
-                            {/* Septeo ADB Experience */}
-                            <div className="timeline-item">
+                            {t('cv.Experiences', { returnObjects: true }).map((experience, index) => (
+                            <div className="timeline-item" key={index}>
                                 <div className="timeline-dot"></div>
                                 <div className="experience-content">
-                                    <h3>Septeo ADB (Groupe Septeo)</h3>
-                                    <h4>09/2016 à 07/2023 - Technicien Migration, Référent Technique, Rédacteur Procédure, Développeur</h4>
-                                    <ul>
-                                        <li>Développement en VBA Excel pour automatiser des contrôles comptables liés aux tâches de migrateurs.</li>
-                                        <li>{`Création d'outils en VB.NET pour améliorer les processus internes.`}</li>
-                                        <li>{`Développement d'un site web pour la saisie et l'intégration de questionnaires de paramétrage en HTML/PHP/JS lié à une BDD sous MySQL. Mise en production réalisée par moi-même et configuration du fichier.ini.`}</li>
-                                        <li>{`Rédacteur de procédures, documents techniques`}</li>
-                                    </ul>
-                                    <h4>11/2013 à 09/2016 - Technicien Support</h4>
-                                    <ul>
-                                        <li>Mission de support métiers et techniques aux utilisateurs sur différentes gammes de logiciels immobiliers.</li>
-                                    </ul>
+                                <h3>{experience.Company || experience.Title}</h3>
+                                <h4>{experience.Period}</h4>
+                                <ul>
+                                    {experience.Tasks.map((task, taskIndex) => (
+                                    <li key={taskIndex}>{task}</li>
+                                    ))}
+                                </ul>
                                 </div>
                             </div>
-                            {/* ComputaCenter Experience */}
-                            <div className="timeline-item">
-                                <div className="timeline-dot"></div>
-                                <div className="experience-content">
-                                    <h3>ComputaCenter</h3>
-                                    <h4>11/2010 à 09/2016 - Technicien Support</h4>
-                                    <ul>
-                                        <li>Mission de support métiers et techniques aux utilisateurs sur différentes gammes de logiciels immobiliers.</li>                                        
-                                    </ul>
-                                </div>
-                            </div>
-                            {/* SCC Experience */}
-                            <div className="timeline-item">
-                                <div className="timeline-dot"></div>
-                                <div className="experience-content">
-                                    <h3>SCC</h3>
-                                    <h4>08/2010 à 11/2010 - Technicien Support</h4>
-                                    <ul>
-                                        <li>Mission de support métiers et techniques aux utilisateurs sur différentes gammes de logiciels immobiliers.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            {/* Magnus Experience */}
-                            <div className="timeline-item">
-                                <div className="timeline-dot"></div>
-                                <div className="experience-content">
-                                    <h3>Magnus (Groupe Berger Levrault)</h3>
-                                    <h4>10/2008 à 05/2010 - Technicien Support</h4>
-                                    <ul>
-                                        <li>Mission de support métiers et techniques aux utilisateurs sur différentes gammes de logiciels immobiliers.</li>
-                                    </ul>
-                                </div>
-                            </div>
+                            ))}
                         </div>
-                    </div>                   
+                    </div>
 
                     <div className="cv-section cv-skills">
-                        <h2><FaCogs size={30} />Compétences</h2>
+                        <h2><FaCogs size={30} />{t('cv.SkillsTitle')}</h2>
                         <div className="skills-container">
                             <div className="skill-item">
                                 <div className="skill-logo">
-                                    <FaHtml5 size={20} color="#E34F26" /> <span>HTML</span>
+                                    <FaHtml5  color="#E34F26" /> <span>HTML</span>
                                 </div>
                             </div>
                             <div className="skill-item">
                                 <div className="skill-logo">
-                                    <FaCss3Alt size={20} color="#1572B6" /><span>CSS</span> 
+                                    <FaCss3Alt  color="#1572B6" /><span>CSS</span> 
                                 </div>
                             </div>
                             <div className="skill-item">
                                 <div className="skill-logo">
-                                    <FaSass size={20} color="#1e3758" /> <span>SASS</span>
+                                    <FaSass  color="#1e3758" /> <span>SASS</span>
                                 </div>
                             </div>
                             <div className="skill-item">
                                 <div className="skill-logo">
-                                    <FaJsSquare size={20} color="#F0DB4F" /> <span>JavaScript</span>
+                                    <FaJsSquare  color="#F0DB4F" /> <span>JavaScript</span>
                                 </div>
                             </div>
                             <div className="skill-item">
                                 <div className="skill-logo">
-                                    <FaReact size={20} color="#61DAFB" /> <span>React.js</span>
+                                    <FaReact  color="#61DAFB" /> <span>React.js</span>
                                 </div>
                             </div>
                             <div className="skill-item">
                                 <div className="skill-logo">
-                                <DiGitBranch size={20} color="#555" /> <span>Git Branch</span>
+                                    <FaGitAlt  color="#F05032" /> <span>Git</span>
                                 </div>
                             </div>
                             <div className="skill-item">
                                 <div className="skill-logo">
-                                    <FaGitAlt size={20} color="#F05032" /> <span>Git</span>
+                                    <FaGithub  color="#1e3758" /> <span>GitHub</span>
                                 </div>
                             </div>
                             <div className="skill-item">
                                 <div className="skill-logo">
-                                    <FaGithub size={20} color="#1e3758" /> <span>GitHub</span>
+                                    <TbBrandVscode  color="#1e3758" /> <span>VsCode</span>
                                 </div>
                             </div>
                             <div className="skill-item">
                                 <div className="skill-logo">
-                                    <TbBrandVscode size={20} color="#1e3758" /> <span>VsCode</span>
+                                    <FaTerminal  color="#1e3758" /> <span>Terminal</span>
                                 </div>
                             </div>
                             <div className="skill-item">
                                 <div className="skill-logo">
-                                    <FaTerminal size={20} color="#1e3758" /> <span>Terminal</span>
+                                    <FaPhp  color="#8892BF" /> <span>PHP</span>
                                 </div>
                             </div>
                             <div className="skill-item">
                                 <div className="skill-logo">
-                                    <FaPhp size={20} color="#8892BF" /> <span>PHP</span>
+                                    <FaLaravel  color="#1e3758" /> <span>Laravel</span>
                                 </div>
                             </div>
                             <div className="skill-item">
                                 <div className="skill-logo">
-                                    <FaLaravel size={20} color="#1e3758" /> <span>Laravel</span>
+                                    <FaDatabase  color="#4479A1" /> <span>SQL</span>
                                 </div>
                             </div>
                             <div className="skill-item">
                                 <div className="skill-logo">
-                                    <FaDatabase size={20} color="#4479A1" /> <span>SQL</span>
-                                </div>
-                            </div>
-                            <div className="skill-item">
-                                <div className="skill-logo">
-                                    <SiMysql size={20} color="#00758F" /> <span>MySQL</span>
+                                    <SiMysql size={25} color="#00758F" /> <span>MySQL</span>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>                
-            </div>
-            <CvDownloadButton />
+
+                     <div className="cv-section cv-soft-skills">
+                         <h2><FaRegLightbulb size={30} /> {t('cv.SoftSkills.Title')}</h2>
+                        <ul className="soft-skills-list">
+                            <li><FaCircle className="bullet-icon" />{t('cv.SoftSkills.CollaborationAndCommunication')}</li>
+                            <li><FaCircle className="bullet-icon" />{t('cv.SoftSkills.AdaptabilityAndInnovation')}</li>
+                            <li><FaCircle className="bullet-icon" />{t('cv.SoftSkills.CreativeProblemSolving')}</li>
+                            <li><FaCircle className="bullet-icon" />{t('cv.SoftSkills.CuriosityAndPassionForTech')}</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>            
         </section>
     </>
     );

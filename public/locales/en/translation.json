@@ -227,9 +227,60 @@
         }
       }
     },  
-  "cv": {
-    "DownloadButton":"Download my resume"
-  },
+    "cv": {
+      "DownloadButton": "Download my Resume",
+      "title": "Full Stack Web Developer",
+      "IntroductionTitle": "Introduction",
+      "Introduction": "As a web developer specialized in React and PHP, I come from a strong background in computer science that has guided my career transition towards my passion for web development. Agile in problem-solving and innovation, I am committed to creating effective, user-centered web solutions. My journey is marked by constant evolution and a pursuit of technological excellence.",
+      "ExperienceTitle": "Professional Experiences",
+      "Experiences": [
+        {
+          "Company": "Septeo ADB (Septeo Group)",
+          "Period": "11/2013 to 09/2016 - Support Technician\n09/2016 to 07/2023 - Migration Technician, Technical Reference, Procedure Writer, Developer",
+          "Tasks": [
+            "Development in VBA Excel to automate accounting controls related to migrators' tasks.",
+            "Participation in updating and correcting existing tools in VB.NET, with the support of experienced developers.",
+            "Development of a website for the entry and integration of configuration questionnaires in HTML/PHP/JS linked to a MySQL DB. Production deployment carried out by myself and configuration of the .ini file.",
+            "Writer of procedures, technical documents."
+          ]
+        },
+        {
+          "Title": "Previous Support Experiences",
+          "Period": "Between 2008 and 2013 - Business and technical support",
+          "Tasks": [
+            "Provided business and technical support for a variety of accounting-oriented software.",
+            "Employer: ComputaCenter, SCC, and Magnus.",
+            "Ability to simplify and communicate complex solutions to a diverse audience.",
+            "Adaptation to users' needs to provide effective and personalized technical support."
+          ]
+        }
+      ],
+      "SkillsTitle": "Skills",
+      "DiplomesTitle": "Degrees and Certifications",
+      "2024Diploma": "\"Web Integrator\" Diploma, OpenClassroom (Equivalent to 2 years of higher education)",
+      "2018SQLTraining": "SQL Server Training, SQL Programming, Orsys Training",
+      "2018VBATraining": "VBA EXCEL Training, FortimeLp",
+      "2008Degree": "University Technology Diploma in Business and Administration Management, Finance-Accounting Major, Perpignan",
+      "LanguagesTitle": "Languages",
+      "MotherLanguagesTitle":"French",
+      "MotherLanguages":"Mother Languages",
+      "ProLanguagesTitle":"English",
+      "ProLanguages":"Professionnel",
+      "PortfolioTitle":"My Portfolio",
+      "Hobbies": {
+        "Title": "Hobbies",
+        "WebProjects": "Development of personal web projects and technological monitoring.",
+        "Motorcycling": "Enthusiast of American motorcycles, with a marked interest in the culture and history of the United States, enriching my taste for travel.",
+        "Cinema": "Movie and TV series fan, with a particular interest in the culture and history of the United States."
+      },
+      "SoftSkills": {
+        "Title": "Soft Skills",
+        "CollaborationAndCommunication": "Collaboration and Communication",
+        "AdaptabilityAndInnovation": "Adaptability and Innovation",
+        "CreativeProblemSolving": "Creative Problem Solving",
+        "CuriosityAndPassionForTech": "Curiosity and Passion for Technology"
+      }
+    },
   "contact": {    
     "title": "For collaboration or inquiries, let's stay in touch",
     "gitHub":"My GitHub Profil",
