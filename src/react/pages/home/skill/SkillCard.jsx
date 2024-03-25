@@ -35,7 +35,12 @@ const SkillCard = ({ skill, isSelected, onSkillSelect, projectCount, formationCo
     >
       <div className="skill-card-content">
         <img src={skill.logo} alt={skill.name} className="skill-card__logo" />
-        {isSelected && <div className="skill-card__overlay"></div>}      
+        {isSelected && (
+          <>
+            <div className="skill-card__overlay"></div>
+            <div className="badge">Filtrer</div>
+          </>
+        )}      
         
         {isHovered && (
           <>
