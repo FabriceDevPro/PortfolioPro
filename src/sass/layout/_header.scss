@@ -9,6 +9,7 @@ header {
     color: white;
     height: 30px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    
     .burger-menu {
       display: none; // Par défaut, le bouton burger n'est pas affiché
       cursor: pointer;
@@ -17,7 +18,7 @@ header {
       background: none;
       border: none;
       position: absolute;
-      top: 5px;
+      top: 10px;
       left: 5px;
       z-index: 1001; // Assurez-vous qu'il est au-dessus des autres éléments
     }

@@ -1,134 +1,90 @@
-// .lang-toggle {
-//     background-color: #35485d; /* Pour correspondre au fond du header */
-//     border: 1px solid #ADD8E6; /* Bordure blanche */
-//     border-radius: 15px; /* Pour des coins arrondis */
-//     color: #fff; /* Texte en blanc */
-//     cursor: pointer;
-//     font-weight: bold;
-//     position: relative;
-//     overflow: hidden;
-//     width: 10%; /* Largeur fixe pour le toggle */
-//     height: 25px; /* Hauteur fixe pour le toggle */
-
-//     display: flex;
-//     justify-content: space-between; /* Répartit uniformément le contenu */
-//     align-items: center;
-
-//     .lang-text {
-//         width: 50%; /* Chaque texte prend la moitié de la largeur */
-//         display: flex;
-//         justify-content: center;
-//         align-items: center;
-//         transition: transform 0.3s ease-in-out;
-//         padding: 5px 10px;
-//         border-radius: 15px; /* Pour des coins arrondis */
-//     }
-  
-//     // États actifs et inactifs
-//     .active {
-//     background-color: #ADD8E6;
-//     color: #35485d;
-//     }
-
-//     .inactive {
-//     background-color: transparent;
-//     color: #fff;
-//     }
-// }
-  
-// .lang-toggle {
-//     border-radius: 20px; /* Bordures arrondies pour le toggle */
-//     position: relative;
-//     width: 100px; /* Largeur totale du toggle */
-//     height: 30px; /* Hauteur du toggle */
-//     display: flex;
-//     align-items: center;
-//     justify-content: center; /* Pour positionner FR et EN aux extrémités */
-//     cursor: pointer;
-  
-//     .lang-text {
-//         position: absolute;
-//         width: 50%;
-//         height: 100%;
-//         display: flex;
-//         align-items: center;
-//         justify-content: center;
-//         transition: color 0.3s ease-in-out;
-//         user-select: none;
-//         font-weight: bold;
-    
-//         &:first-child { /* FR text */
-//           left: 0;
-//           z-index: 2;
-//         }
-    
-//         &:last-child { /* EN text */
-//           right: -15px;
-//           z-index: 2;
-//         }
-//       }
-  
-//       .slider {
-//         background-color: #ADD8E6; /* Couleur de fond pour l'option sélectionnée */
-//         border-radius: 15px; /* Bordures arrondies pour le slider */
-//         position: absolute;
-//         top: 5px;
-//         bottom: 5px;
-//         width: 25%; /* Le slider couvre un peu moins de la moitié pour laisser de l'espace */
-//         z-index: 1;
-//         transition: transform 0.3s ease-in-out;
-//         /* Position initiale du slider sur FR */
-//         transform: translateX(0);
-    
-//         &.en {
-//           /* Déplacement du slider vers EN */
-//           transform: translateX(60%); /* Le déplacement doit être la différence de la largeur totale et celle du slider */
-//         }
-//       }
-//     }
-  
 .lang-toggle {
-    background-color: #35485d; // Une teinte bleu-gris foncée pour correspondre au header
-    border: 1px solid #ADD8E6;
-    border-radius: 20px; // Bordures arrondies pour le toggle
-    position: relative;
-    width: 75px; // Largeur du toggle
-    height: 30px; // Hauteur du toggle
-    display: flex;
-    justify-content: space-between; // Positionne les textes FR et EN aux extrémités
-    align-items: center;
-    cursor: pointer;
-    // margin-left: auto; // Place le toggle à droite dans le nav
-    // margin-right: 20px; // Espace à droite
-  
-    .lang-text {
-      z-index: 2; // Au-dessus du slider
-      transition: color 0.3s; // Transition pour le changement de couleur
-      padding: 0 5px; // Padding pour les textes FR et EN
-      user-select: none; // Empêche la sélection du texte
-  
-      &.fr-text {
-        color: #fff; // Texte blanc par défaut pour FR
-      }
-  
-      &.en-text {
-        color: #fff; // Texte blanc par défaut pour EN
-      }
-    }
-  
-    .slider {
-      background-color: #ADD8E6; // Couleur de fond pour le slider (couleur bleu clair)
-      border-radius: 15px; // Bordures arrondies pour le slider
-      position: absolute;
-      top: 0px;
-      bottom: 0px;
-      left: -2px; // Position de départ du slider
-      width: 35px; // Largeur du slider pour couvrir la moitié du texte
-      z-index: 1; // Sous le texte pour que les couleurs du texte ne changent pas
-      transition: transform 0.3s ease-in-out; // Animation fluide
-  
-      &.en {
-        transform: translateX(44px); // Déplace le slider vers la droite pour couvrir "EN"
-      }
+  background-color: #35485d; // Gardez la couleur de fond
+  border: 1px solid #ADD8E6; // Gardez la bordure
+  border-radius: 20px; // Gardez les bordures arrondies
+  position: absolute; // Modifié pour positionnement absolu
+  top: 10px; // Ajustez selon l'espace souhaité depuis le haut du header
+  right: 100px; // Ajustez selon l'espace souhaité depuis le droit du header
+  width: 75px; // Largeur conservée
+  height: 30px; // Hauteur conservée
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  // Pas besoin de margin-left et margin-right ici puisque la position est absolue
+
+  .lang-text {
+    z-index: 2;
+    transition: color 0.3s;
+    padding: 0 5px;
+    user-select: none;
+    color: #fff; // Simplifié puisque les couleurs sont identiques
+  }
+
+  .slider {
+    background-color: #ADD8E6;
+    border-radius: 15px;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: -2px;
+    width: 35px;
+    z-index: 1;
+    transition: transform 0.3s ease-in-out;
+
+    &.en {
+      transform: translateX(44px);
     }
   }
+}
+@media (max-width: 768px) {
+  .lang-toggle {
+    top: 10px;
+    right: 25px;
+  }
+}
+// .lang-toggle {
+//     background-color: #35485d; // Une teinte bleu-gris foncée pour correspondre au header
+//     border: 1px solid #ADD8E6;
+//     border-radius: 20px; // Bordures arrondies pour le toggle
+//     position: relative;
+//     width: 75px; // Largeur du toggle
+//     height: 30px; // Hauteur du toggle
+//     display: flex;
+//     justify-content: space-between; // Positionne les textes FR et EN aux extrémités
+//     align-items: center;
+//     cursor: pointer;
+//     // margin-left: auto; // Place le toggle à droite dans le nav
+//     // margin-right: 20px; // Espace à droite
+  
+//     .lang-text {
+//       z-index: 2; // Au-dessus du slider
+//       transition: color 0.3s; // Transition pour le changement de couleur
+//       padding: 0 5px; // Padding pour les textes FR et EN
+//       user-select: none; // Empêche la sélection du texte
+  
+//       &.fr-text {
+//         color: #fff; // Texte blanc par défaut pour FR
+//       }
+  
+//       &.en-text {
+//         color: #fff; // Texte blanc par défaut pour EN
+//       }
+//     }
+  
+//     .slider {
+//       background-color: #ADD8E6; // Couleur de fond pour le slider (couleur bleu clair)
+//       border-radius: 15px; // Bordures arrondies pour le slider
+//       position: absolute;
+//       top: 0px;
+//       bottom: 0px;
+//       left: -2px; // Position de départ du slider
+//       width: 35px; // Largeur du slider pour couvrir la moitié du texte
+//       z-index: 1; // Sous le texte pour que les couleurs du texte ne changent pas
+//       transition: transform 0.3s ease-in-out; // Animation fluide
+  
+//       &.en {
+//         transform: translateX(44px); // Déplace le slider vers la droite pour couvrir "EN"
+//       }
+//     }
+//   }

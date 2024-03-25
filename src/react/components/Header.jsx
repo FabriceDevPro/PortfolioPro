@@ -28,14 +28,14 @@ function Header() {
                 <Link to="/#certifications" onClick={closeNav}>{t('menu.certifications')}</Link>
                 <Link to="/curriculum-vitae#cv" className="cv-link" onClick={closeNav}>{t('menu.cv')}</Link>
                 <Link to="#cv" className="cv-download" onClick={closeNav}>{t('menu.download_cv')}</Link>
-                <Link to="/#contact" onClick={closeNav}>{t('menu.contact')}</Link>
-                {/* Toggle de langue */}
-                <div className="lang-toggle" onClick={handleToggleClick}>
+                <Link to="/#contact" onClick={closeNav}>{t('menu.contact')}</Link>                
+            </nav>
+            {/* Toggle de langue */}
+            <div className="lang-toggle" onClick={handleToggleClick}>
                     <span className="lang-text fr-text">FR</span>
                     <div className={`slider ${isFr ? '' : 'en'}`}></div>
                     <span className="lang-text en-text">EN</span>
                 </div>
-            </nav>
         </header>
     );
 }

@@ -36,7 +36,8 @@
       "projectTooltip": "Projet(s) réalisé(s) : {{projectCount}} dont {{formationCount}} en formation"
     }
   },
-  "projects": {        
+  "projects": {
+    "filterMessage": "Filtrage activé pour la compétence : {{skill}}",
     "personal": {
       "title": "Mes projets personnels",
       "button":"Explorer le Projet"

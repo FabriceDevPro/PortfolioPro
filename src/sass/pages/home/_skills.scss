@@ -2,6 +2,7 @@
 @import "../../abstracts/mixin";
 @import "../../abstracts/keyframes";
 @import "../../abstracts/variables";
+
 .skills-section {
   @include section-styles;
 
@@ -14,7 +15,7 @@
     .skills-section__section-title {      
       color: $primary-color;
       font-size: 2.0em;
-      margin-right: 10px;
+      margin: 0px;
     }
 
     .skills-section__filter-reset {
@@ -22,9 +23,23 @@
       color: $primary-color;
       height: 25px;
       width: 25px;
+      margin-left: 20px;
     }
   }
-
+  .skills-section__instruction{
+    // color:black;font-weight: bold;font-size: 18px;
+    // box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    // background-color: white;
+    // border-radius: 10px;
+    // padding:5px;
+      background-color:$info-color; // ou une couleur qui s'intègre à votre palette
+      color: white;
+      padding: 10px;
+      border-radius: 5px;
+      margin-bottom: 20px; // Pour l'espacement entre le message et les projets
+      text-align: center;
+      font-weight: bold;
+  }
   .skills-section__skill-container {
     display: flex;
     flex-direction: column;
@@ -41,7 +56,7 @@
         text-align: left;
         margin: 0;
         padding-right: 20px;
-        width: 150px;
+        width: 150px;        
       }
       
       .skills-section__filter-icon {

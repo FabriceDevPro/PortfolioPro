@@ -36,7 +36,8 @@
       "projectTooltip": "Projects completed : {{projectCount}} of which {{formationCount}} during training"
     }
   },
-  "projects": {        
+  "projects": {    
+    "filterMessage": "Filtering activated for the skill: {{skill}}.",    
     "personal": {
       "title": "My Personal Projects",
       "button":"Explore the Project"

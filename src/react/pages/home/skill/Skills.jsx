@@ -12,11 +12,18 @@ import { useTranslation } from 'react-i18next';
 
 const Skills = () => {
   const { t } = useTranslation();
-  const { setActiveSkill } = useSkills();
+  const { activeSkill,setActiveSkill } = useSkills();
   const [selectedSkill, setSelectedSkill] = useState(null);
   useScrollToHash(100);
 
   const [projectCounts, setProjectCounts] = useState({});
+
+  useEffect(() => {
+    // Réinitialise selectedSkill si activeSkill est réinitialisé
+    if (!activeSkill) {
+        setSelectedSkill(null);
+    }
+  }, [activeSkill]);
 
   useEffect(() => {
     const initialCounts = formationProjects.reduce((acc, project) => {
