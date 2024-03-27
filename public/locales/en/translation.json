@@ -23,7 +23,7 @@
   },
   "skills": {
     "title": "My Skills",
-    "info": "Click on a skill to filter and display the corresponding projects.",
+    "info": "Click on a skill to filter and display the corresponding projects",
     "categories": {
       "Frontend": "Frontend",
       "Backend": "Backend",
@@ -32,19 +32,47 @@
       "Versioning": "Versioning"
     },
     "resetFilter": "Reset filter",
+    "Filter": "Filter",
+    "FilterAltText": "Click to filter the projects below",
     "Card": {
       "projectTooltip": "Projects completed : {{projectCount}} of which {{formationCount}} during training"
     }
   },
   "projects": {    
-    "filterMessage": "Filtering activated for the skill: {{skill}}.",    
+    "filterMessage": "Filtering activated for the skill: {{skill}}",    
     "personal": {
       "title": "My Personal Projects",
-      "button":"Explore the Project"
+      "button":"Explore the Project",
+      "chronologie" :{
+        "title":"Chronology of the Project",
+        "descriptionTitle":"Description",
+        "languagesTitle": "Languages used at this stage of the project",
+        "readMore": "Read more",
+        "readLess": "Read less"
+      },
+      "usedTechnologies": "Technologies Used",
+      "mainFeatures": "Main Features",
+      "writingDetails": "Entry Details",
+      "demoAndCodeAccess": "Demo and Code Access",
+      "descriptionTitle":"Description",
+      "contextTitle": "Context",
+      "problemTitle": "Problem",
+      "solutionTitle": "Solution",
+      "resultsTitle": "Results"      
     },  
     "formation": {
       "title": "My Formation Projects",
-      "button":"See More"
+      "button":"See More",
+      "theme": "Theme",
+      "mission": "Mission",
+      "achievedResults": "Achieved Results",
+      "evaluatedSkills": "Evaluated Skills",
+      "encounteredChallenges": "Encountered Challenges",
+      "demoInformation": "Demo Information",
+      "usedTechnologies": "Used Technologies",
+      "viewDemoSite": "View Demo Site",
+      "viewGitHub": "View GitHub",
+      "close": "Close"
     },
     "countTooltip": "Projects completed : {{count}}"
   },
@@ -53,6 +81,8 @@
       "Formation": "Training Certifications",
       "Complémentaires": "Additional Certifications"
     },
+    "titlecomment": "See the certification",
+    "comment":"A LinkedIn or OpenClassrooms account is required to access the official document.",
     "card": {
       "13": {
         "name": "Set Up Your Front-End Environment",

@@ -27,19 +27,15 @@
     }
   }
   .skills-section__instruction{
-    // color:black;font-weight: bold;font-size: 18px;
-    // box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    // background-color: white;
-    // border-radius: 10px;
-    // padding:5px;
-      background-color:$info-color; // ou une couleur qui s'intègre à votre palette
-      color: white;
+      background-color:white; // ou une couleur qui s'intègre à votre palette
+      color: black;
       padding: 10px;
       border-radius: 5px;
       margin-bottom: 20px; // Pour l'espacement entre le message et les projets
       text-align: center;
       font-weight: bold;
   }
+
   .skills-section__skill-container {
     display: flex;
     flex-direction: column;
@@ -106,6 +102,11 @@
     height: 15px;
     width: 15px;
   }
+
+  .skills-section .skills-section__instruction{
+    width: 90%;
+  }
+
   .skills-section .skills-section__skill-container{
     width: 95%;
   }

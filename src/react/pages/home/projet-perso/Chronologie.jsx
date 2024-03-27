@@ -4,10 +4,13 @@ import images_projet_perso from '@/assets/images-projet-perso';
 import imagesSkillsFormation from "@/assets/images-skills-formation";
 import imagesSkillsPerso from "@/assets/images-skills-perso";
 import { FaChevronDown, FaChevronUp } from 'react-icons/fa';
+import { useTranslation } from 'react-i18next';
 // Combinaison des deux ensembles d'images
 const imagesSkills = { ...imagesSkillsFormation, ...imagesSkillsPerso };
 
 const Chronologie = ({ chronologie }) => {
+  const { t } = useTranslation();
+
   const [expanded, setExpanded] = useState({});
 
   const toggleExpand = (index) => {
@@ -22,7 +25,7 @@ const Chronologie = ({ chronologie }) => {
 
   return (
     <>
-      <h2 className="section-title">Chronologie du projet</h2>
+      <h2 className="section-title">{t('projects.personal.chronologie.title')}</h2>
       <div className="timeline-wrapper">
         <div className="timeline">
           {sortedChronologie.map((item, index) => (
@@ -34,18 +37,18 @@ const Chronologie = ({ chronologie }) => {
                   </div>
                 ))}
                 <div className="timeline-header">
-                  <h3>{item.version} - {item.titre}</h3>
+                  <h3>{item.version} - {t(`projectpersonal:${item.titre}`)}</h3>
                 </div>
                   <div className={`description ${expanded[index] ? 'expanded' : ''}`}>
                     <div className="description-title">
-                      <h4>Description :</h4>
+                      <h4>{t('projects.personal.chronologie.descriptionTitle')} :</h4>
                     </div>
                     <div className='description-text'>                    
-                      {item.description}
+                      {t(`projectpersonal:${item.description}`)}
                     </div>
                     <div className="languages">
                       <div className="languages-title">
-                        <h4>Langages utilisés à ce niveau du projet :</h4>
+                        <h4>{t('projects.personal.chronologie.languagesTitle')} :</h4>
                       </div>
                       <div className="languages-container">
                         {item.languages.map((lang, langIndex) => (
@@ -58,7 +61,7 @@ const Chronologie = ({ chronologie }) => {
                     </div>
                   </div>
                 <span className="read-more" onClick={() => toggleExpand(index)}>
-                  {expanded[index] ? 'Lire moins' : 'Lire plus'}
+                  {expanded[index] ? t('projects.personal.chronologie.readLess') : t('projects.personal.chronologie.readMore')}
                   {expanded[index] ? <FaChevronUp /> : <FaChevronDown />}
                 </span>
               </div>

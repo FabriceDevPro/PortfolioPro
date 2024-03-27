@@ -38,14 +38,14 @@ const SkillCard = ({ skill, isSelected, onSkillSelect, projectCount, formationCo
         {isSelected && (
           <>
             <div className="skill-card__overlay"></div>
-            <div className="badge">Filtrer</div>
+            <div className="badge">{t('skills.Filter')}</div>
           </>
         )}      
         
         {isHovered && (
           <>
-            <div className="badge">Filtrer</div>
-            <div className="skill-card__alt-text">Cliquez pour filtrer les projets ci-dessous</div>
+            <div className="badge">{t('skills.Filter')}</div>
+            <div className="skill-card__alt-text">{t('skills.FilterAltText')}</div>
             {/* <div className="skill-card__alt-text">Voir les projets avec {skill.altText}</div> */}
           </>  
         )}      

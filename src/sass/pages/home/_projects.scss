@@ -6,16 +6,18 @@
     @include section-styles;
   
     .filter-message {
-      background-color:$info-color; // ou une couleur qui s'intègre à votre palette
-      color: white;
+      margin-top: 5px;
+      background-color:white; // ou une couleur qui s'intègre à votre palette
+      color: black;
       padding: 10px;
       border-radius: 5px;
       text-align: center;
       font-weight: bold;
       display:flex;
+
       .projects-section__filter-reset {
         cursor: pointer;
-        color: white;
+        color: black;
         height: 25px;
         width: 25px;
         margin-left: 20px;
@@ -103,7 +105,20 @@
     padding: 0px 0px 10px;
     max-width: 95%;
   }
+  .projects-section .filter-message {
+    width: 90%;
+    font-size:0.9rem;
+    justify-content: center;
+    align-items: center;
+  
+    .projects-section__filter-reset {
+      height: 15px;
+      width: 15px;
+      margin-left: 10px;
+    }
+  }
 
+  
   .projects-section .projects-container .personal-projects-container .section-title-container .section-title, .projects-section .projects-container .formation-projects-container .section-title-container .section-title{
     font-size: 1.2em;
   }

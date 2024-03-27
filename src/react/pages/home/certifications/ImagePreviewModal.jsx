@@ -1,7 +1,9 @@
 import PropTypes from "prop-types";
 import Modal from "react-modal";
+import { useTranslation } from 'react-i18next';
 
 const ImagePreviewModal = ({ isOpen, onClose, imageSrc, altText, documentUrl }) => {
+  const { t } = useTranslation();
   return (
     <Modal
       isOpen={isOpen}
@@ -16,9 +18,9 @@ const ImagePreviewModal = ({ isOpen, onClose, imageSrc, altText, documentUrl }) 
         <img src={imageSrc} alt={altText} className="modal-image" />
         {/* Ajouter la phrase et le lien en bas */}
         <div className="modal-footer">
-          <p>Compte LinkedIn ou OpenClassrooms nécessaire pour accéder au document officiel.</p>
+          <p>{t('certifications.comment')}</p>
           {documentUrl && (
-            <a href={documentUrl} target="_blank" rel="noopener noreferrer" className="certification-link">Voir la certification</a>
+            <a href={documentUrl} target="_blank" rel="noopener noreferrer" className="certification-link">{t('certifications.titlecomment')}</a>
           )}
         </div>
       </div>

@@ -7,8 +7,11 @@ import imagesSkillsFormation from "@/assets/images-skills-formation";
 import imagesProjetFormation from "@/assets/images-projet-formation";
 import { useSkills } from '@/react/hooks/useSkills';
 import { TbArrowsDownUp } from "react-icons/tb";
+import { useTranslation } from 'react-i18next';
 
 const FormationProject = ({ projects, title }) => {
+  const { t } = useTranslation();
+
   const { activeSkill } = useSkills();
   const [isAscOrder, setIsAscOrder] = useState(true);
 

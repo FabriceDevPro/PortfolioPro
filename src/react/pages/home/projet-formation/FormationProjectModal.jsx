@@ -3,7 +3,11 @@ import Modal from "react-modal";
 import { FaGithub } from 'react-icons/fa6';
 import { TbWorldWww } from "react-icons/tb";
 import { HiLightBulb } from "react-icons/hi";
+import { useTranslation } from 'react-i18next';
+
 const FormationProjectModal = ({ isOpen, onClose, project }) => {
+  const { t } = useTranslation();
+
   return (
     <Modal
       isOpen={isOpen}
@@ -15,7 +19,7 @@ const FormationProjectModal = ({ isOpen, onClose, project }) => {
     >
       <div className="modal-content">
         <div className="modal-header">
-          <h2>{project.name}</h2>
+          <h2>{t(`projectformation:${project.name}`)}</h2>
           <button className="close-button" onClick={onClose}>
             X
           </button>
@@ -26,45 +30,45 @@ const FormationProjectModal = ({ isOpen, onClose, project }) => {
           </div>
           <div className="modal-project-details">
             <div className="modal-project-brief">
-              <h3 className="modal-project-details-title">Thème :</h3>
-              <p>{project.theme}</p>
+              <h3 className="modal-project-details-title">{t('projects.formation.theme')} :</h3>
+              <p>{t(`projectformation:${project.theme}`)}</p>
             </div>
             <div className="modal-project-brief">
-              <h3 className="modal-project-details-title">Mission :</h3>
-              <p>{project.mission}</p>
+              <h3 className="modal-project-details-title">{t('projects.formation.mission')} :</h3>
+              <p>{t(`projectformation:${project.mission}`)}</p>
             </div>            
             {project.results && (
               <div className="modal-project-brief">
-                <h3 className="modal-project-details-title">Résultats atteints :</h3>
-                <p>{project.results}</p>
+                <h3 className="modal-project-details-title">{t('projects.formation.achievedResults')} :</h3>
+                <p>{t(`projectformation:${project.results}`)}</p>
                 </div>
             )}            
             <div className="modal-project-brief">
-              <h3 className="modal-project-details-title">Compétences évaluées :</h3>
+              <h3 className="modal-project-details-title">{t('projects.formation.evaluatedSkills')} :</h3>
               <ul>
                 {project.learnings.map((learning, index) => (
-                  <li key={index}><HiLightBulb /> {learning}</li>
+                  <li key={index}><HiLightBulb /> {t(`projectformation:${learning}`)}</li>
                 ))}
               </ul>
-            </div>            
+            </div>
             {project.challenges && (
               <div className="modal-project-brief">
-              <h3 className="modal-project-details-title">Défis rencontrés :</h3>
-              <p>{project.challenges}</p>
+              <h3 className="modal-project-details-title">{t('projects.formation.encounteredChallenges')} :</h3>
+              <p>{t(`projectformation:${project.challenges}`)}</p>
               </div>
             )}
             {project.complement && (
               <div className="modal-project-brief">
-              <h3 className="modal-project-details-title">Information pour la démo :</h3>
+              <h3 className="modal-project-details-title">{t('projects.formation.demoInformation')} :</h3>
               <ul>
                 {project.complement.map((complement, index) => (
-                  <li key={index}>{complement}</li>
+                  <li key={index}>{t(`projectformation:${complement}`)}</li>
                 ))}
               </ul>
               </div>
             )}              
             <div className="modal-project-brief">
-              <h3 className="modal-project-details-title">Technologie(s) utilisée(s) :</h3>
+              <h3 className="modal-project-details-title">{t('projects.formation.usedTechnologies')} :</h3>
               <div className="modal-project-languages">
                 {project.languages.map((lang) => (
                   <div key={lang.name} className="modal-language-logo">
@@ -81,7 +85,7 @@ const FormationProjectModal = ({ isOpen, onClose, project }) => {
             <a href={project.url} target="_blank" rel="noopener noreferrer">
               <button className="project-view-button">
                 <TbWorldWww className="icon button-icon" />
-                Voir le site démo
+                {t('projects.formation.viewDemoSite')}
               </button>
             </a>
           )}
@@ -89,12 +93,12 @@ const FormationProjectModal = ({ isOpen, onClose, project }) => {
             <a href={project.url_git} target="_blank" rel="noopener noreferrer">
               <button className="project-view-button">
                 <FaGithub className="icon button-icon" />
-                Voir GitHub
+                {t('projects.formation.viewGitHub')}
               </button>
             </a>
           )}
           <button onClick={onClose} className="project-view-button">
-            Fermer
+          {t('projects.formation.close')}
           </button>
         </div>
       </div>

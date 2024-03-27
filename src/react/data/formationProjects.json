@@ -1,12 +1,12 @@
 [
   {
     "id": 2,
-    "name": "Projet 2 - Riding Cities",
-    "theme": "Premiers pas sur le langage HTML",
-    "brief": "Ce projet a pour but de faire découvrir le langage HTML.",
-    "mission": "Stage chez Webonzaï en tant que développeur junior, avec pour première mission la mise à jour du site de Riding Cities, une association de skate. En absence du CTO, j'ai réalisé de manière autonome l'ajout d'une section pour les membres fondateurs et la mise à jour des plannings de cours pour enfants et adultes, améliorant significativement l'accessibilité et l'esthétique du site.",
+    "name": "project2Name",
+    "theme": "project2Theme",
+    "brief": "project2Brief",
+    "mission": "project2Mission",
     "learnings": [
-      "Intégrer des éléments sur une page web en utilisant les fondamentaux de HTML"
+      "project2Learning1"
     ],
     "languages": [
       { "name": "HTML", "altText": "HTML5"},
@@ -18,14 +18,14 @@
   },
   {
     "id": 3,
-    "name": "Projet 3 - Booki",
-    "theme": "Créez la page d'accueil d'une agence de voyage avec HTML & CSS",
-    "brief": "Ce projet a pour but de développer les compétences sur le HTML et de découvrir le CSS avec l'utilisation de flexbox et le Responsive.",
-    "mission": "Intégrer l'interface du site Booki en collaboration étroite avec Sarah, la CTO, et Loïc, l’UI designer, en respectant les maquettes fournies pour les versions desktop, tablette, et mobile.",
+    "name": "project3Name",
+    "theme": "project3Theme",
+    "brief": "project3Brief",
+    "mission": "project3Mission",
     "learnings": [
-      "Implémenter une interface responsive avec HTML et CSS",
-      "Installer un environnement de développement front-end",
-      "Intégrer du contenu conformément à une maquette avec HTML et CSS"
+      "project3Learning1",
+      "project3Learning2",
+      "project3Learning3"
     ],
     "languages": [      
       { "name": "HTML", "altText": "HTML5"},
@@ -38,14 +38,14 @@
   },
   {
     "id": 4,
-    "name": "Projet 4 - OhMyFood",
-    "theme": "Améliorez l'interface d'un site mobile avec des animations CSS",
-    "brief": "Ce projet vise à développer les compétences en HTML, CSS et à apprendre l'utilisation de SASS ainsi que les animations CSS pour une interface de site mobile first.",
-    "mission": "Développer un site mobile first qui répertorie les menus de restaurants gastronomiques, permettant aux clients de composer leur menu à l'avance pour une expérience utilisateur sans attente.",
+    "name": "project4Name",
+    "theme": "project4Theme",
+    "brief": "project4Brief",
+    "mission": "project4Mission",
     "learnings": [
-      "Intégrer une maquette en mobile-first",
-      "Mettre en œuvre des animations CSS",
-      "Versionner son projet avec Git et Github"
+      "project4Learning1",
+      "project4Learning2",
+      "project4Learning3"
     ],
     "languages": [
       { "name": "HTML", "altText": "HTML5"},
@@ -59,14 +59,14 @@
   },
   {
     "id": 5,
-    "name": "Projet 5 - Print It",
-    "theme": "Premiers pas sur le langage JavaScript",
-    "brief": "Le but de ce projet était d'initier à JavaScript en développant un carrousel dynamique pour un site statique.",
-    "mission": "Transformer un site statique d'une imprimerie en ajoutant un carrousel interactif pour afficher divers produits et services.",
+    "name": "project5Name",
+    "theme": "project5Theme",
+    "brief": "project5Brief",
+    "mission": "project5Mission",
     "learnings": [
-      "Programmer en utilisant les fondamentaux de JavaScript"
+      "project5Learning1"
     ],
-    "challenges":"Mise en place d'un défilement automatique des images (non demandés)",
+    "challenges":"project5challenges",
     "languages": [
       { "name": "JS", "altText": "JavaScript"},
       { "name": "GIT_SMALL", "altText": "Git"}
@@ -77,19 +77,19 @@
   },
   {
     "id": 6,
-    "name": "Projet 6 - Portfolio Architecte - Sophie Bluel",
-    "theme": "Créez une page web dynamique avec JavaScript",
-    "brief": "Réalisation d'un portfolio pour une architecte d'intérieur, avec une interface dynamique grâce à une API Rest.",
-    "mission": "Développement d'un site web dynamique pour présenter les travaux de l'architecte Sophie Bluel, incluant une page de gestion pour l'ajout et la suppression de projets via une interface administrateur.",
+    "name": "project6Name",
+    "theme": "project6Theme",
+    "brief": "project6Brief",
+    "mission": "project6Mission",
     "learnings": [
-      "Gérer les événements utilisateurs avec JavaScript",
-      "Manipuler les éléments du DOM avec JavaScript",
-      "Récupérer les données utilisateurs dans le JavaScript via des formulaires"
+      "project6Learning1",
+      "project6Learning2",
+      "project6Learning3"
     ],
-    "challenges": "Ajout de la fonctionnalité Drag & Drop pour le téléchargement des images (non demandée)",
+    "challenges": "project6challenges",
     "complement":[
-      "Pour tester ce projet, il vous faut récuperer le backend sur le repository. Voici les identifiants de connexion :",
-      "Email: `sophie.bluel@test.tld` - Password: `S0phie"
+      "project6complement1",
+      "project6complement2"
     ],
     "languages": [
       { "name": "HTML", "altText": "HTML5"},
@@ -105,16 +105,16 @@
   },
   {
     "id": 7,
-    "name": "Projet 7 - Menu Maker by Qwenta",
-    "theme": "Planifiez le développement du site de votre client",
-    "brief": "Ce projet consiste à planifier et préparer le développement d'un outil 'Menu Maker' pour les restaurateurs, en mettant en place une méthodologie de travail agile.",
-    "mission": "Collaboration avec l'équipe produit pour définir les spécifications techniques, organiser la gestion du projet et développer un système de veille pour le projet 'Menu Maker by Qwenta'.",
+    "name": "project7Name",
+    "theme": "project7Theme",
+    "brief": "project7Brief",
+    "mission": "project7Mission",
     "learnings": [
-      "Présenter la solution technique",
-      "Rédiger les spécifications techniques d'un projet web à partir de besoins fonctionnels",
-      "Découper une fonctionnalités en tâches pour préparer le développement",
-      "Mettre en place une méthode de veille technologique",
-      "Suivre le déroulement du projet grâce à un outil de gestion de projet"
+      "project7Learning1",
+      "project7Learning2",
+      "project7Learning3",
+      "project7Learning4",
+      "project7Learning5"
     ],
     "languages": [
       { "name": "KANBAN", "altText": "Kanban"},
@@ -128,16 +128,16 @@
   },
   {
     "id": 8,
-    "name": "Projet 8 - Kasa",
-    "theme": "Créez une application web de location immobilière avec React",
-    "brief": "Ce projet vise à refondre totalement l'application web de Kasa pour une stack moderne en JavaScript, en utilisant React pour le front-end et NodeJS pour le back-end.",
-    "mission": "Développer l'application React en respectant les maquettes Figma fournies, en intégrant des composants React, des routes avec React Router et en gérant l'état global sans back-end initial.",
+    "name": "project8Name",
+    "theme": "project8Theme",
+    "brief": "project8Brief",
+    "mission": "project8Mission",
     "learnings": [
-      "Configurer la navigation entre les pages de l'application avec React Router",
-      "Développer des éléments de l'interface d'un site web grâce à des composants React",
-      "Mettre en œuvre des animations CSS",
-      "Développer une interface web avec Sass",
-      "Initialiser une application avec Create React App/Vite.js"
+      "project8Learning1",
+      "project8Learning2",
+      "project8Learning3",
+      "project8Learning4",
+      "project8Learning5"
     ],
     "languages": [
       { "name": "HTML", "altText": "HTML5"},
@@ -154,12 +154,12 @@
   },
   {
     "id": 9,
-    "name": "Projet 9 - Nina Carducci",
-    "theme": "Optimisez le référencement d'un site de photographe",
-    "brief": "Optimisation du référencement et des performances du site de la photographe Nina Carducci, déjà en production.",
-    "mission": "Réaliser une optimisation globale du site pour améliorer les performances et le SEO, mettre en place le référencement local avec Schema.org, ajouter des meta tags pour les réseaux sociaux, améliorer l’accessibilité du site et produire un rapport d’optimisation.",
+    "name": "project9Name",
+    "theme": "project9Theme",
+    "brief": "project9Brief",
+    "mission": "project9Mission",
     "learnings": [
-      "Optimiser la performance d'un site web"
+      "project9Learning1"
     ],
     "languages": [
       { "name": "HTML", "altText": "HTML5"},
@@ -174,13 +174,13 @@
   },
   {
     "id": 10,
-    "name": "Projet 10 - 724 Events",
-    "theme": "Débuggez le site d'une agence d'événementiel",
-    "brief": "Finalisez le développement du site web pour l'agence d'événementiel 724 Events, en corrigeant les bugs existants et en assurant le bon fonctionnement de toutes les fonctionnalités.",
-    "mission": "Votre mission consiste à identifier et corriger les bugs signalés par l'agence 724 Events. Vous devez également compléter les fonctionnalités manquantes selon les spécifications fournies, tout en veillant à l'optimisation des performances et à l'accessibilité du site.",
+    "name": "project10Name",
+    "theme": "project10Theme",
+    "brief": "project10Brief",
+    "mission": "project10Mission",
     "learnings": [
-      "Débugger un site web grâce aux Chrome DevTools",
-      "Rédiger un cahier de recette pour tester un site"
+      "project10Learning1",
+      "project10Learning2"
     ],
     "languages": [
       { "name": "HTML", "altText": "HTML5"},
@@ -194,21 +194,21 @@
   },
   {
     "id": 11,
-    "name": "Projet 11 - ArgentBank",
-    "theme": "Implémentez le front-end d'une application bancaire avec React + Redux",
-    "brief": "Mise en place d'un dashboard et restriction d'accès avec une authentification utilisateur",
-    "mission": "Votre tâche consiste à créer le dashboard de l'application bancaire en utilisant React + Redux. Ce projet implique le développement d'une interface utilisateur complexe, l'intégration avec une API pour l'authentification et la gestion des profils utilisateurs, et l'utilisation de Redux pour la gestion de l'état global de l'application.",
+    "name": "project11Name",
+    "theme": "project11Theme",
+    "brief": "project11Brief",
+    "mission": "project11Mission",
     "learnings": [
-      "Afficher les données du back end sur l'interface via des appels API",
-      "Configurer des routes API pour la communication client / serveur",
-      "Implémenter la gestion des données avec Redux pour assurer le fonctionnement du front"
+      "project11Learning1",
+      "project11Learning2",
+      "project11Learning3"
     ],
-    "challenges": "Mise en ligne de API sur Mongodb cloud + utilisation de render (non demandée)",
+    "challenges": "project11challenges",
     "complement":[
-      "Vous pouvez créer un compte ou vous pouvez utiliser les identifiants de connexion suivant :",
-      "Email: `tony@stark.com` - Password: `password123",
-      "Email: `steve@rogers.com` - Password: `password456`",
-      "en cas de problème de connexion, cliquez sur ce lien pour relancer api : https://argentbankapi.onrender.com/"
+      "project11complement1",
+      "project11complement2",
+      "project11complement3",
+      "project11complement4"
     ],
     "languages": [
       { "name": "HTML", "altText": "HTML5"},

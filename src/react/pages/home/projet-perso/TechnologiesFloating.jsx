@@ -3,7 +3,10 @@ import PropTypes from 'prop-types';
 import imagesSkillsFormation from "@/assets/images-skills-formation";
 import imagesSkillsPerso from "@/assets/images-skills-perso";
 const imagesSkills = { ...imagesSkillsFormation, ...imagesSkillsPerso };
+import { useTranslation } from 'react-i18next';
+
 const TechnologiesFloating = ({ technologies }) => {
+  const { t } = useTranslation();
   // Supprimez l'état de hoverEffect car nous allons l'appliquer individuellement par technologie.
   const [hoveredId, setHoveredId] = useState(null);
 
@@ -18,23 +21,26 @@ const TechnologiesFloating = ({ technologies }) => {
   };
 
   return (
-    <div className="technologies-container">
-      {technologies.map((tech, index) => (
-        <div
-          key={index}
-          className="technology"
-          onMouseEnter={() => handleMouseMove(index)} // Utilisez onMouseEnter au lieu de onMouseMove
-          onMouseLeave={handleMouseLeave}
-          style={{
-            // Appliquez l'effet de survol uniquement à l'élément survolé
-            transform: hoveredId === index ? 'scale(1.1)' : 'scale(1.0)',
-            transition: 'transform 0.3s ease', // Assurez-vous d'avoir une transition lisse
-          }}
-        >
-          <img src={imagesSkills[`${tech.name.toLowerCase()}.webp`]} alt={tech.name} className="languages-card__logo" />
-        </div>
-      ))}
-    </div>
+    <>
+      <h2 className="section-title">{t('projects.personal.usedTechnologies')}  :</h2>    
+      <div className="technologies-container">
+        {technologies.map((tech, index) => (
+          <div
+            key={index}
+            className="technology"
+            onMouseEnter={() => handleMouseMove(index)} // Utilisez onMouseEnter au lieu de onMouseMove
+            onMouseLeave={handleMouseLeave}
+            style={{
+              // Appliquez l'effet de survol uniquement à l'élément survolé
+              transform: hoveredId === index ? 'scale(1.1)' : 'scale(1.0)',
+              transition: 'transform 0.3s ease', // Assurez-vous d'avoir une transition lisse
+            }}
+          >
+            <img src={imagesSkills[`${tech.name.toLowerCase()}.webp`]} alt={tech.name} className="languages-card__logo" />
+          </div>
+        ))}
+      </div>
+    </>
   );
 };
 

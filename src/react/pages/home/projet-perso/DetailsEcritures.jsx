@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import { FiFileText, FiList, FiCalendar } from 'react-icons/fi';
+import { useTranslation } from 'react-i18next';
 
 const iconMapping = {
   "Type de saisie": <FiFileText className="icon" />,
@@ -20,19 +21,21 @@ const getIconForDetail = (titre) => {
 };
 
 const DetailsEcritures = ({ detailsEcritures }) => {
+  const { t,i18n } = useTranslation();
+  const badgeClass = i18n.language === 'en' ? 'badge-en' : 'badge-fr';
   return (
     <>
-      <h2 className="section-title">Détails des Ecritures :</h2>
+      <h2 className="section-title">{t('projects.personal.writingDetails')} :</h2>
       <div className="features-container">
         {detailsEcritures.map((detail, index) => (
           <div key={index} className="feature-card">
             {detail.badge && (
-              <div className="badge">{detail.badge}</div>
+              <div className={`badge ${badgeClass}`}>{t(`projectpersonal:${detail.badge}`)}</div>
             )}
             {getIconForDetail(detail.titre)}
             <div className="feature-text">
-              <h3>{detail.titre}</h3>
-              <p>{detail.description}</p>
+              <h3>{t(`projectpersonal:${detail.titre}`)}</h3>
+              <p>{t(`projectpersonal:${detail.description}`)}</p>
             </div>
           </div>
         ))}

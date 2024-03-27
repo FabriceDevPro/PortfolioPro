@@ -23,7 +23,7 @@
   },    
   "skills": {
     "title": "Mes Compétences",
-    "info":"Cliquez sur une compétence pour filtrer et afficher les projets correspondants.",
+    "info":"Cliquez sur une compétence pour filtrer et afficher les projets correspondants",
     "categories": {
       "Frontend": "Frontend",
       "Backend": "Backend",
@@ -32,6 +32,8 @@
       "Versioning": "Versioning"
     },  
     "resetFilter": "Réinitialiser le filtre",
+    "Filter": "Filtrer",
+    "FilterAltText": "Cliquez pour filtrer les projets ci-dessous",
     "Card": {
       "projectTooltip": "Projet(s) réalisé(s) : {{projectCount}} dont {{formationCount}} en formation"
     }
@@ -40,11 +42,37 @@
     "filterMessage": "Filtrage activé pour la compétence : {{skill}}",
     "personal": {
       "title": "Mes projets personnels",
-      "button":"Explorer le Projet"
+      "button":"Explorer le Projet",
+      "chronologie" :{
+        "title":"Chronologie du projet",
+        "descriptionTitle":"Description",
+        "languagesTitle": "Langages utilisés à ce niveau du projet",
+        "readMore": "Lire plus",
+        "readLess": "Lire moins"
+      },
+      "usedTechnologies": "Technologies Utilisées",
+      "mainFeatures": "Fonctionnalités Principales",
+      "writingDetails": "Détails des Écritures",
+      "demoAndCodeAccess": "Démonstration et accès au code",
+      "descriptionTitle":"Description",
+      "contextTitle": "Contexte",
+      "problemTitle": "Problématique",
+      "solutionTitle": "Solution",
+      "resultsTitle": "Résultats"
     },  
     "formation": {
       "title": "Mes projets de formation",
-      "button":"Voir Plus"
+      "button":"Voir Plus",
+      "theme": "Thème",
+      "mission": "Mission",
+      "achievedResults": "Résultats atteints",
+      "evaluatedSkills": "Compétences évaluées",
+      "encounteredChallenges":"Défis rencontrés",
+      "demoInformation": "Information pour la démo",
+      "usedTechnologies": "Technologie(s) utilisée(s)",
+      "viewDemoSite": "Voir le site démo",
+      "viewGitHub": "Voir GitHub",
+      "close": "Fermer"
     },
     "countTooltip": "Nombre de projets réalisés : {{count}}"
   },
@@ -52,7 +80,9 @@
     "group": {
       "Formation": "Certifications Formation",
       "Complémentaires": "Certifications Complémentaires"
-    }
+    },
+    "titlecomment":"Voir la certification",
+    "comment":"Compte LinkedIn ou OpenClassrooms nécessaire pour accéder au document officiel."    
   },
   "skillsTechnical": {
     "title": "Mes Compétences Techniques",

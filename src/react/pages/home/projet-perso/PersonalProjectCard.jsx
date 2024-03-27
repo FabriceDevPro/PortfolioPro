@@ -20,17 +20,17 @@ const PersonalProjectCard = ({ project }) => {
     const imageNameWithoutExtension = image.nomimage.split('.').slice(0, -1).join('.');
     return {
       original: images_projet_perso[image.nomimage],
-      description: image.titre,
+      description: t(`projectpersonal:${image.titre}`),
       originalAlt: imageNameWithoutExtension
     };
   }) : [];
 
   return (
     <div className="personal-project-card">
-      <h2 className="personal-project-title">{project.name}</h2>
+      <h2 className="personal-project-title">{t(`projectpersonal:${project.name}`)}</h2>
       {hasImages && <Gallery items={galleryImages} />}
       <div className="personal-project-content">
-        <p className="personal-project-brief">{project.short_description}</p>
+        <p className="personal-project-brief">{t(`projectpersonal:${project.short_description}`)}</p>
         <button className="project-view-button" onClick={redirectToDetails}>
           <FaWpexplorer className="icon button-icon" />
           {t('projects.personal.button')}

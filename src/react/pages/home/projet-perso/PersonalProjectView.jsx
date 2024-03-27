@@ -9,6 +9,10 @@ import DemoAccesCode from "./DemoAccesCode";
 import Chronologie from "./Chronologie";
 import Description from "./Description";
 import TechnologiesFloating from './TechnologiesFloating';
+import Context from './Context';
+import Problem from './Problem';
+import Solution from './Solution';
+import Results from './Results';
 
 const PersonalProjectView = () => {
     
@@ -47,7 +51,7 @@ const PersonalProjectView = () => {
         {project?.context && (
           <section className="description-section">
           {/* <section className="project-context"> */}
-            <Description description={project?.context} title={"Contexte"} />
+            <Context context={project?.context}/>
           </section>
         )}
 
@@ -55,7 +59,7 @@ const PersonalProjectView = () => {
         {project?.problem && (
           <section className="description-section">
           {/* <section className="project-problem"> */}
-            <Description description={project?.problem} title={"Problématique"} />
+            <Problem problem={project?.problem}/>
           </section>
         )}
 
@@ -63,7 +67,7 @@ const PersonalProjectView = () => {
         {project?.solution && (
           <section className="description-section">
            {/* <section className="project-solution"> */}
-           <Description description={project?.solution} title={"Solution"} />
+           <Solution solution={project?.solution}/>
           </section>
         )}
 
@@ -71,14 +75,13 @@ const PersonalProjectView = () => {
       {project?.results && (
         <section className="description-section">
         {/* <section className="project-results"> */}
-          <Description description={project?.results} title={"Résultats"} />
+          <Results results={project?.results}/>
         </section>
       )}
 
       {/* Section Technologies, si existante */}
       {project?.languages && (
-        <section className="description-section">
-            <h2 className="section-title">Technologies Utilisées :</h2>
+        <section className="description-section">            
            <TechnologiesFloating technologies={project.languages} />
         </section>
       )}

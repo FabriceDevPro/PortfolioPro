@@ -4,6 +4,7 @@ import { TbLockShare } from 'react-icons/tb';
 import { FiBookOpen } from 'react-icons/fi';
 import { GrValidate } from 'react-icons/gr';
 import { FaLock } from 'react-icons/fa6';
+import { useTranslation } from 'react-i18next';
 
 const iconMapping = {
   "Gestion de comptes bancaires personnels": <CiBank className="icon" />,
@@ -15,19 +16,21 @@ const iconMapping = {
 };
 
 const Fonctionalite = ({ fonctionnalites }) => {
+  const { t,i18n } = useTranslation();
+  const badgeClass = i18n.language === 'en' ? 'badge-en' : 'badge-fr';
   return (    
     <>
-      <h2 className="section-title">Fonctionnalités Principales :</h2>
+      <h2 className="section-title">{t('projects.personal.mainFeatures')} :</h2>
       <div className="features-container">
         {fonctionnalites.map((fonctionnalite, index) => (
           <div key={index} className="feature-card">
             {fonctionnalite.badge && (
-              <div className="badge">{fonctionnalite.badge}</div>
+              <div className={`badge ${badgeClass}`}>{t(`projectpersonal:${fonctionnalite.badge}`)}</div>
             )}
             {iconMapping[fonctionnalite.titre] || <CiBank className="icon" />} {/* Fallback Icon */}
             <div className="feature-text">
-              <h3>{fonctionnalite.titre}</h3>
-              <p>{fonctionnalite.description}</p>
+              <h3>{t(`projectpersonal:${fonctionnalite.titre}`)}</h3>
+              <p>{t(`projectpersonal:${fonctionnalite.description}`)}</p>
             </div>
           </div>
         ))}
