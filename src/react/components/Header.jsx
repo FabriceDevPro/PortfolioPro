@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { FaBars } from 'react-icons/fa'; // Import de l'icône FaBars pour le menu burger
+import { FaBars,FaTimes } from 'react-icons/fa'; // Import de l'icône FaBars pour le menu burger
 import { useTranslation } from 'react-i18next';
 import Modal from 'react-modal';
 import ContactForm from './Contact';
@@ -27,10 +27,37 @@ function Header() {
         openModal(); // Ouvrir le modal de contact
     };
 
+    // Fonction pour ajouter l'effet ripple
+    const createRipple = (event) => {
+        const button = event.currentTarget;
+        const circle = document.createElement("span");
+        const diameter = Math.max(button.clientWidth, button.clientHeight);
+        const radius = diameter / 2;
+        circle.style.width = circle.style.height = `${diameter}px`;
+        circle.style.left = `${event.clientX - button.offsetLeft - radius}px`;
+        circle.style.top = `${event.clientY - button.offsetTop - radius}px`;
+        circle.classList.add("ripple");
+
+        // Supprime l'élément après l'animation
+        const ripple = button.getElementsByClassName("ripple")[0];
+        if (ripple) {
+            ripple.remove();
+        }
+
+        button.appendChild(circle);
+    };
     return (
         <header>
-            <button className="burger-menu" onClick={() => setIsNavVisible(!isNavVisible)} aria-label="Menu">
-                <FaBars /> {/* Utilisation de l'icône FaBars ici */}
+            <button 
+                className="burger-menu" 
+                onClick={(e) => {
+                    setIsNavVisible(!isNavVisible)
+                    createRipple(e);
+                }}
+                aria-label="Menu"
+                style={{ transform: isNavVisible ? 'rotate(180deg)' : 'rotate(0deg)' }}
+            >
+                {isNavVisible ? <FaTimes /> : <FaBars />}
             </button>
             <nav className={isNavVisible ? 'nav-visible' : ''}>
                 <Link to="/#about" onClick={closeNav}>{t('menu.about')}</Link>

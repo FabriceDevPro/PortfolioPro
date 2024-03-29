@@ -84,13 +84,7 @@ const Home = () => {
         <CvDownloadButton />
       </section>
       <section className="attestations-section">
-        <AttestationsSection 
-          projectName="Développement d'outil de contrôle et comparaison de données"
-          role="Développeur"
-          tasks="Développement complet de l'outil, automatisation des processus de migration."
-          languages={["VBA", "Excel"]}
-        />
-      {/* Autres attestations si nécessaire */}
+        <AttestationsSection/>
       </section>
     </>
   );
