@@ -1,6 +1,5 @@
 // styles/Header.scss
 header {
-header {
     width: 100%;
     padding: 10px 20px;
     position: sticky;
@@ -65,11 +64,9 @@ header {
       padding: 10px 0px;
     }
     header .burger-menu {
-    header .burger-menu {
       display: flex; // Affiche le bouton burger en mode mobile
     }
   
-    header nav {
     header nav {
       display: none; // Cache la navigation par défaut en mode mobile
       position: fixed;
@@ -92,7 +89,6 @@ header {
       }
     }
   
-    header nav.nav-visible {
     header nav.nav-visible {
       display: flex !important; // Affiche la navigation lorsque le menu burger est activé
     }

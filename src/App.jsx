@@ -13,8 +13,7 @@ import '@/i18n';
 ReactModal.setAppElement("#root");
 
 function AppWrapper() {
-    const [showFooter, setShowFooter] = useState(true);
-    const [showFooter, setShowFooter] = useState(true);
+  const [showFooter, setShowFooter] = useState(true);
   let location = useLocation();
 
   useEffect(() => {
@@ -35,7 +34,6 @@ function App() {
     <SkillsProvider>
     <ContactModalProvider>
       <Router basename={basename}>
-      <Router basename={basename}>
       <Header />
         <main>
           <Routes>
@@ -45,8 +43,7 @@ function App() {
             <Route path="/mentions-legales" element={<LegalMentions />} />
             <Route path="/error404" element={<MissingPage />} />
             <Route path="*" element={<MissingPage />} />
-          </Routes>          
-          </Routes>          
+          </Routes>
         </main>
         <AppWrapper />
         <ScrollToTop/>
