@@ -8,18 +8,18 @@ const Social = () => {
   // Utilisez le contexte pour contrôler l'ouverture et la fermeture du modal
   const { isModalOpen, openModal, closeModal } = useContactModal();
 
-  return (
-    <section className="social-section" id="contact">
-      <h2 className="social-section__title">Pour une collaboration ou un échange, restons en contact :</h2>
-      <div className="social-section__icons-container">
-        <a href="https://github.com/Fabrice-Perso/" title="Mon profil GitHub" target="_blank" rel="noopener noreferrer" className="social-section__icon">
+  return (    
+    <>
+      <h2 className="footer-social__title">Pour une collaboration ou un échange, restons en contact :</h2>
+      <div className="footer-social__icons-container">
+        <a href="https://github.com/Fabrice-Perso/" title="Mon profil GitHub" target="_blank" rel="noopener noreferrer" className="footer-social__icon">
           <FaGithub />
         </a>
-        <a href="https://www.linkedin.com/in/fabrice-magnan-de-bellevue" title="Mon profil LinkedIn" target="_blank" rel="noopener noreferrer" className="social-section__icon">
+        <a href="https://www.linkedin.com/in/fabrice-magnan-de-bellevue" title="Mon profil LinkedIn" target="_blank" rel="noopener noreferrer" className="footer-social__icon">
           <FaLinkedin />
         </a>
         {/* Utilisez directement openModal du contexte */}
-        <button onClick={openModal} title="Contactez-moi" className="social-section__icon">
+        <button onClick={openModal} title="Contactez-moi" className="footer-social__icon">
           <FaEnvelope />
         </button>
       </div>
@@ -32,7 +32,7 @@ const Social = () => {
       >
         <ContactForm closeModal={closeModal} />
       </Modal>
-    </section>
+    </>
   );
 };
 

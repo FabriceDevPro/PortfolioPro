@@ -9,7 +9,7 @@ function Header() {
     const closeNav = () => setIsNavVisible(false);
 
     return (
-        <header className="header">
+        <header>
             <button className="burger-menu" onClick={() => setIsNavVisible(!isNavVisible)} aria-label="Menu">
                 <FaBars /> {/* Utilisation de l'icône FaBars ici */}
             </button>
