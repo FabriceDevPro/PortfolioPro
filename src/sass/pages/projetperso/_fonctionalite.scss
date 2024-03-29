@@ -39,17 +39,26 @@
     }
     .badge {
       position: absolute;
-      top: 40px;
-      right: -20px; /* Ajustez cette valeur pour que le badge dépasse correctement */
-      background-color: #007bff; /* Couleur de fond pour le badge */
-      color: white; /* Couleur du texte */
-      padding: 5px 19px; /* Ajustez selon la taille du badge */
+      right: -20px;
+      background-color: #007bff; // Couleur de fond bleue par défaut
+      color: white; // Texte blanc par défaut
+      padding: 5px 19px; // Padding par défaut
       transform: rotate(45deg);
       transform-origin: top right;
-      font-size: 14px; /* Ajustez selon la taille du texte */
+      font-size: 14px;
       border-radius: 0 0 5px 5px;
-      z-index: 10; /* Assurez que le badge est au-dessus des autres éléments */
-      box-shadow: 0 2px 5px $box-shadow-color; /* Optionnel pour un peu d'ombre */
+      z-index: 10;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); // Ombre par défaut
+    }
+    // Modifications spécifiques pour le français
+    .badge-fr {
+      @extend .badge; // Étend les styles de .badge
+      top: 40px; // Position spécifique pour le français
+    }
+    // Modifications spécifiques pour l'anglais
+    .badge-en {
+      @extend .badge; // Étend les styles de .badge
+      top: 70px; // Position spécifique pour l'anglais
     }
   }
 

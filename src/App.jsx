@@ -1,22 +1,19 @@
 import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
-import { basename } from "./config";
+import { basename } from "@config";
 import { useEffect, useState } from 'react';
-import { SkillsProvider } from "./context/SkillsContext";
+import { SkillsProvider } from "@/react/context/SkillsContext";
 import ReactModal from "react-modal";
-import Home from "./pages/Home";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import ScrollToTop from "./components/ScrollToTop";
-import LegalMentions from "./pages/LegalMentions";
-import MissingPage from "./pages/MissingPage";
-import CurriculumVitae from "./pages/CurriculumVitae";
-import PersonalProjectView from './pages/home/projet-perso/PersonalProjectView';
-import { ContactModalProvider } from "./context/ContactModal";
+import {Header,Footer,ScrollToTop} from "@/react/components";
+import { ContactModalProvider } from "@/react/context/ContactModal";
+import {Home,LegalMentions,MissingPage,CurriculumVitae} from "@/react/pages";
+import PersonalProjectView from '@/react/pages/home/projet-perso/PersonalProjectView';
+import '@/i18n';
 
 // Configuration de React Modal
 ReactModal.setAppElement("#root");
 
 function AppWrapper() {
+    const [showFooter, setShowFooter] = useState(true);
     const [showFooter, setShowFooter] = useState(true);
   let location = useLocation();
 
@@ -38,6 +35,7 @@ function App() {
     <SkillsProvider>
     <ContactModalProvider>
       <Router basename={basename}>
+      <Router basename={basename}>
       <Header />
         <main>
           <Routes>
@@ -47,6 +45,7 @@ function App() {
             <Route path="/mentions-legales" element={<LegalMentions />} />
             <Route path="/error404" element={<MissingPage />} />
             <Route path="*" element={<MissingPage />} />
+          </Routes>          
           </Routes>          
         </main>
         <AppWrapper />
