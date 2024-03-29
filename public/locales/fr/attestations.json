@@ -1,0 +1,22 @@
+{
+  "title":"Attestations et Recommandations",
+  "issuedByTitle": "Émis par",
+  "companyPreposition": "chez",
+  "assignedToTitle": "Attribué à",
+  "yearsTitle": "Année",
+  "technologiesTitle": "Technologies",
+  "descriptionTitle": "Description",
+  "developerProductOwner": "Développeur, Product Owner",
+  "developer": "Développeur",
+  "dataMigrator": "Migrateur de données",
+  "projectDescription1-1": "Développement complet d’un outil de contrôle et comparaison de données",
+  "projectDescription1-2": "Correction et évolution d’un outils d'extraction de données et d'injection de données en base de données",
+  "projectDescription1-3": "Refonte et développement complet d’un site web, questionnaire technique rempli par le client pour préparer la migration de ses données.",
+  "projectDescription2-1": "Développement complet d’un outil de contrôle réalisé dans le cadre de sa mission de migrateur de données. Cet outil permet de faciliter et sécuriser son travail quotidien ainsi que de ses collègues.",
+  "projectDescription2-2": "Prise en charge et réalisation de correctifs et d'évolutions sur un outil de manipulation de données, dans les environnements VB.Net et SQL Server.",
+  "projectDescription2-3": "Réalisation d'un site web permettant et facilitant la transmission d'informations de la part des clients. Ces informations sont à destination de l'outil de manipulation de données. Ce site a été très bien accueilli par les clients par son ergonomie et sa simplicité d'utilisation.",
+  "projectDescription3-1": "Développement complet d’un outil de contrôle et comparaison de données.",
+  "projectDescription3-2": "Correction et évolution de 2 outils d'extraction de données et d'injection de données en base de données.",
+  "projectDescription3-3": "Refonte et développement complet d’un site web, questionnaire technique rempli par le client pour préparer la migration de ses données.",
+  "verificationAvailable": "Une copie de l'attestation originale peut être fournie sur demande."
+}  

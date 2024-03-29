@@ -1,0 +1,282 @@
+{
+  "menu": {
+    "about": "À propos",
+    "skills": "Compétences",
+    "projects": "Mes Projets",
+    "certifications": "Certifications",
+    "cv": "CV",
+    "download_cv": "Télécharger mon CV",
+    "contact": "Contact"
+  },
+  "about": {
+    "title": "Développeur Web Full Stack",
+    "professionalExperienceTitle": "Expérience professionnelle",
+    "professionalExperience": "Plus de 15 ans d'expérience en informatique, avec une spécialisation récente en développement web suite à une reconversion professionnelle via OpenClassrooms.",
+    "skillsTitle": "Compétences",
+    "skills": "Expertise en <1>Front-end et Back-end</1>, avec un parcours autodidacte complété par une formation certifiante.",
+    "personalProjectsTitle": "Projets personnels",
+    "personalProjects": "Développement d'une application de gestion comptable et gestion d'un serveur NAS pour l'hébergement web, illustrant ma capacité à initier et à réaliser des projets complexes.",
+    "notableProjectsTitle": "Projets notables",    
+    "notableProjects": "Conception d'un questionnaire en ligne en <1>PHP/JS </1>pour un éditeur de logiciels immobiliers, aujourd'hui largement utilisé par ses clients, démontrant ma capacité à développer des solutions web sur-mesure.",
+    "passionTitle": "Passion",
+    "passion": "Une passion renforcée pour le développement web, illustrée par mon engagement constant dans l'apprentissage et l'application pratique des compétences techniques."
+  },    
+  "skills": {
+    "title": "Mes Compétences",
+    "info":"Cliquez sur une compétence pour filtrer et afficher les projets correspondants",
+    "categories": {
+      "Frontend": "Frontend",
+      "Backend": "Backend",
+      "Base de Données": "Base de Données",
+      "Gestion de Projets": "Gestion de Projets",
+      "Versioning": "Versioning"
+    },  
+    "resetFilter": "Réinitialiser le filtre",
+    "Filter": "Filtrer",
+    "FilterAltText": "Cliquez pour filtrer les projets ci-dessous",
+    "Card": {
+      "projectTooltip": "Projet(s) réalisé(s) : {{projectCount}} dont {{formationCount}} en formation"
+    }
+  },
+  "projects": {
+    "filterMessage": "Filtrage activé pour la compétence : {{skill}}",
+    "personal": {
+      "title": "Mes projets personnels",
+      "button":"Explorer le Projet",
+      "chronologie" :{
+        "title":"Chronologie du projet",
+        "descriptionTitle":"Description",
+        "languagesTitle": "Langages utilisés à ce niveau du projet",
+        "readMore": "Lire plus",
+        "readLess": "Lire moins"
+      },
+      "usedTechnologies": "Technologies Utilisées",
+      "mainFeatures": "Fonctionnalités Principales",
+      "writingDetails": "Détails des Écritures",
+      "demoAndCodeAccess": "Démonstration et accès au code",
+      "descriptionTitle":"Description",
+      "contextTitle": "Contexte",
+      "problemTitle": "Problématique",
+      "solutionTitle": "Solution",
+      "resultsTitle": "Résultats"
+    },  
+    "formation": {
+      "title": "Mes projets de formation",
+      "button":"Voir Plus",
+      "theme": "Thème",
+      "mission": "Mission",
+      "achievedResults": "Résultats atteints",
+      "evaluatedSkills": "Compétences évaluées",
+      "encounteredChallenges":"Défis rencontrés",
+      "demoInformation": "Information pour la démo",
+      "usedTechnologies": "Technologie(s) utilisée(s)",
+      "viewDemoSite": "Voir le site démo",
+      "viewGitHub": "Voir GitHub",
+      "close": "Fermer"
+    },
+    "countTooltip": "Nombre de projets réalisés : {{count}}"
+  },
+  "certifications": {
+    "group": {
+      "Formation": "Certifications Formation",
+      "Complémentaires": "Certifications Complémentaires"
+    },
+    "titlecomment":"Voir la certification",
+    "comment":"Compte LinkedIn ou OpenClassrooms nécessaire pour accéder au document officiel."    
+  },
+  "skillsTechnical": {
+    "title": "Mes Compétences Techniques",
+    "subtitle":"Hébergement Autonome de Mon Portfolio",
+    "hostingSection": {
+      "synologyServer": "Pour l'hébergement de mon portfolio, j'ai choisi un serveur NAS Synology, largement apprécié pour sa robustesse et son accessibilité, propulsé par DiskStation Manager (DSM). DSM, un système d'exploitation basé sur Linux et spécifiquement conçu pour la gestion des NAS, offre une interface utilisateur graphique intuitive qui simplifie la configuration des serveurs, la gestion des fichiers et l'accès aux divers services NAS. Cette plateforme me permet d'installer et de gérer des paquets pour des fonctionnalités supplémentaires, telles que la gestion de base de données avec phpMyAdmin et l'hébergement web via WebStation, renforçant ainsi la flexibilité et l'efficacité de mon environnement d'hébergement.",
+      "ovhDomain": "En choisissant OVH pour le domaine, un fournisseur réputé non seulement pour sa fiabilité mais aussi pour son origine française, j'ai souligné ma préférence pour des solutions d'hébergement locales de haute qualité. Cette décision s'aligne avec mon approche méticuleuse de la configuration du DNS pour pointer vers mon adresse IP publique, l'installation de certificats SSL pour renforcer la sécurité de mon domaine et des sous-domaines, et la mise en œuvre de règles de redirection et d'ouverture de ports pour garantir une accessibilité optimale et sécurisée.",
+      "separateInfrastructure": "Cette infrastructure distincte pour l'hébergement illustre mon engagement à maintenir une présence en ligne sécurisée et performante."
+    }
+  },
+  "recommendations":{
+    "title":"Attestations et Recommandations",
+    "issuedBy": "Émis par",
+    "companyPreposition": "chez",
+    "assignedTo": "Attribué à",
+    "years": "Année",
+    "description": "Description",
+    "attestations": [
+      {
+        "id": 1,
+        "author": {
+          "name": "Hélène De Noyers",
+          "position": "Développeur, Product Owner",
+          "collaboration": "2016-2023",
+          "company": "SEPTEO-ADB",
+          "location": "Toulouse"
+        },
+        "recipient": {
+          "name": "Fabrice MAGNAN DE BELLEVUE",
+          "position": "Migrateur de données"
+        },
+        "projects": [
+          {
+            "year": "2016-2023",
+            "description": "Développement complet d’un outil de contrôle et comparaison de données",
+            "technologies": ["VBA", "Excel"]
+          },
+          {
+            "year": "2017-2023",
+            "description": "Correction et évolution d’un outils d'extraction de données et d'injection de données en base de données",
+            "technologies": ["VB.Net", "SQLServer"]
+          },
+          {
+            "year": "2021-2023",
+            "description": "Refonte et développement complet d’un site web, questionnaire technique rempli par le client pour préparer la migration de ses données.",
+            "technologies": ["PHP", "HTML", "JavaScript", "CSS"]
+          }
+        ],
+        "verificationAvailable": true
+      },
+      {
+        "id": 2,
+        "author": {
+          "name": "Pascal",
+          "position": "Développeur",
+          "collaboration": "2016-2023",
+          "company": "SEPTEO-ADB",
+          "location": "Toulouse"
+        },
+        "recipient": {
+          "name": "Fabrice MAGNAN DE BELLEVUE",
+          "position": "Migrateur de données"
+        },
+        "projects": [
+          {
+            "year": "2016-2023",
+            "description": "Développement complet d’un outil de contrôle réalisé dans le cadre de sa mission de migrateur de données. Cet outil permet de faciliter et sécuriser son travail quotidien ainsi que de ses collègues.",
+            "technologies": ["VBA", "Excel"]
+          },
+          {
+            "year": "2017-2023",
+            "description": "Prise en charge et réalisation de correctifs et d'évolutions sur un outil de manipulation de données, dans les environnements VB.Net et SQL Server.",
+            "technologies": ["VB.Net", "SQLServer"]
+          },
+          {
+            "year": "2021-2023",
+            "description": "Réalisation d'un site web permettant et facilitant la transmission d'informations de la part des clients. Ces informations sont à destination de l'outil de manipulation de données. Ce site a été très bien accueilli par les clients par son ergonomie et sa simplicité d'utilisation.",
+            "technologies": ["PHP", "HTML", "JavaScript", "CSS"]
+          }
+        ],
+        "verificationAvailable": true
+      },
+      {
+        "id": 3,
+        "author": {
+          "name": "Yves",
+          "position": "Développeur",
+          "collaboration": "2016-2023",
+          "company": "SEPTEO-ADB",
+          "location": "Toulouse"
+        },
+        "recipient": {
+          "name": "Fabrice MAGNAN DE BELLEVUE",
+          "position": "Migrateur de données"
+        },
+        "projects": [
+          {
+            "year": "2016-2023",
+            "description": "Développement complet d’un outil de contrôle et comparaison de données",
+            "technologies": ["VBA", "Excel"]
+          },
+          {
+            "year": "2017-2023",
+            "description": "Correction et évolution de 2 outils d'extraction de données et d'injection de données en base de données",
+            "technologies": ["VB.Net", "SQLServer"]
+          },
+          {
+            "year": "2021-2023",
+            "description": "Refonte et développement complet d’un site web, questionnaire technique rempli par le client pour préparer la migration de ses données.",
+            "technologies": ["PHP", "HTML", "JavaScript", "CSS"]
+          }
+        ],
+        "verificationAvailable": true
+      }
+    ]
+  },
+  "cv": {
+    "DownloadButton":"Télécharger mon CV",
+    "title":"Développeur Web Full Stack",
+    "IntroductionTitle":"Introduction",
+    "Introduction":"Développeur web spécialisé en React et PHP, je suis issu d'une solide expérience en informatique qui a orienté ma reconversion vers ma passion pour le développement web. Agile dans la résolution de problèmes et l'innovation, je m'engage à créer des solutions web efficaces et centrées sur l'utilisateur. Mon parcours est marqué par une évolution constante et une quête d'excellence technologique.",
+    "ExperienceTitle":"Expériences Professionnelles",
+    "Experiences": [
+      {
+        "Company": "Septeo ADB (Groupe Septeo)",
+        "Period": "11/2013 à 09/2016 - Technicien Support\n09/2016 à 07/2023 - Technicien Migration, Référent Technique, Rédacteur Procédure, Développeur",
+        "Tasks": [
+          "Développement en VBA Excel pour automatiser des contrôles comptables liés aux tâches de migrateurs.",
+          "Participation à la mise à jour et à la correction d'outils existants en VB.NET, avec l'appui de développeurs expérimentés.",
+          "Développement d'un site web pour la saisie et l'intégration de questionnaires de paramétrage en HTML/PHP/JS lié à une BDD sous MySQL. Mise en production réalisée par moi-même et configuration du fichier.ini.",
+          "Rédacteur de procédures, documents techniques."
+        ]
+      },
+      {
+        "Title": "Expériences Antérieures en Support",
+        "Period": "Entre 2008 et 2013 - Support métiers et techniques",
+        "Tasks": [
+          "Assurance du support métiers et techniques pour une variété de logiciels orientés comptabilité.",
+          "Employeur : ComputaCenter, SCC, et Magnus.",
+          "Capacité à simplifier et communiquer des solutions complexes à un public varié.",
+          "Adaptation aux besoins des utilisateurs pour fournir un support technique efficace et personnalisé."
+        ]
+      }
+    ],
+    "SkillsTitle":"Compétences",
+    "DiplomesTitle":"Diplômes et Formations",
+    "2024Diploma":"\"Intégrateur Web\", OpenClassroom Bac+2",
+    "2018SQLTraining":"Formation SQL Server, Programmation SQL, Orsys Formation",
+    "2018VBATraining":"Formation VBA EXCEL, FortimeLp",
+    "2008Degree":"D.U.T. Gestion des Entreprises et des Administrations, Option Finance-Comptabilité, Perpignan",
+    "LanguagesTitle":"Langues",
+    "MotherLanguageTitle":"Français",
+    "MotherLanguage":"Langue Maternelle",
+    "ProLanguageTitle":"Anglais",
+    "ProLanguage":"Professionnel",
+    "PortfolioTitle":"Mon Portfolio",
+    "Hobbies": {
+      "Title": "Hobbies et Intérêts",
+      "WebProjects": "Développement de projets personnels web et veille technologique.",
+      "Motorcycling": "Amateur de moto Américaine, avec un intérêt marqué pour la culture et l'histoire des États-Unis, enrichissant mon goût pour les voyages.",
+      "Cinema": "Cinéphile et amateur de séries TV, avec un intérêt particulier pour la culture et l'histoire des États-Unis."
+    },
+    "SoftSkills": {
+      "Title": "Compétences relationnelles",
+      "CollaborationAndCommunication": "Collaboration et Communication",
+      "AdaptabilityAndInnovation": "Adaptabilité et Innovation",
+      "CreativeProblemSolving": "Résolution créative de problèmes",
+      "CuriosityAndPassionForTech": "Curiosité et passion pour la technologie"
+    }
+  },
+  "contact": {        
+    "title": "Pour une collaboration ou un échange, restons en contact",
+    "gitHub":"Mon profil GitHub",
+    "linkedIn":"Mon profil LinkedIn",
+    "contact":"Contactez-moi",
+    "rightsReserved":"Tous droits réservés",
+    "legalMentionsLink": "Mentions Légales",  
+    "form":{
+      "title":"Formulaire de Contact",
+      "name":"Votre Nom",
+      "placeholdername":"Votre nom",
+      "errorname":"Le nom est requis",
+      "subject":"Sujet",
+      "placeholdersubject":"Sujet de votre mail",
+      "errorsubject":"Le sujet est requis",
+      "email":"Votre Email",
+      "placeholderemail":"Votre email",
+      "errormail":"Email requis",
+      "message":"Votre Message",
+      "placeholdermessage":"Votre message",
+      "errormessage":"Message requis",
+      "send":"Envoyer",
+      "successMessage": "Votre message a été envoyé avec succès !",
+      "errorMessage": "Une erreur s'est produite lors de l'envoi de votre message. Veuillez réessayer plus tard."
+    }
+  }
+}

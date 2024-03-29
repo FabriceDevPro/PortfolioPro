@@ -1,0 +1,360 @@
+[
+  {
+    "id": 1,
+    "name": "project1Name",
+    "short_description": "project1ShortDescription",
+    "long_description": "project1LongDescription",
+    "languages": [
+      { "name": "HTML"},
+      { "name": "CSS"},
+      { "name": "SASS" },
+      { "name": "JS" },
+      { "name": "REACT" },
+      { "name": "VITE" },
+      { "name": "REDUX" },
+      { "name": "API" },
+      { "name": "SWAGGER"},
+      { "name": "PHP" },
+      { "name": "MYSQL" },
+      { "name": "PHPMYADMIN" }, 
+      { "name": "LARAVEL" },
+      { "name": "GIT"},
+      { "name": "GITHUB"}
+    ],
+    "images": [
+      {
+        "titre": "project1Image1Title",
+        "nomimage": "view-login.webp"
+      },
+      {
+        "titre": "project1Image2Title",
+        "nomimage": "view-list.webp"
+      },
+      {
+        "titre": "project1Image3Title",
+        "nomimage": "view-account.webp"
+      },
+      {
+        "titre": "project1Image4Title",
+        "nomimage": "view-create.webp"
+      }
+    ],
+    "chronologie": [
+      {
+        "order": 1,
+        "date": "2016",
+        "nomimage": "view-login.webp",
+        "version": "V 1.0.0",
+        "titre":"project1Chrono1Title",        
+        "description":"project1Chrono1Description",
+        "languages": [
+          { "name": "EXCEL" }
+        ],
+        "images": [
+          {
+            "titre": "project1Chrono1Image1Title",
+            "nomimage": "view-login-excel.webp"
+          }
+        ]
+      },
+      {
+        "order": 2,
+        "date": "2020",
+        "version": "V 1.1.0",
+        "titre":"project1Chrono2Title",
+        "description":"project1Chrono2Description",
+        "languages": [          
+          { "name": "VBA" },
+          { "name": "ACCESS" }
+        ],
+        "images": [
+          {
+            "titre": "Vue de l'écran de connexion",
+            "nomimage": "view-login-excel.webp"
+          }
+        ]
+      },
+      {
+        "order": 3,
+        "date": "07/2023",
+        "version": "Version Web 0.1",
+        "titre":"project1Chrono3Title",
+        "description":"project1Chrono3Description",
+        "languages": [
+          { "name": "HTML" },
+          { "name": "CSS" },
+          { "name": "PHP" },
+          { "name": "JS" },
+          { "name": "PHPMYADMIN" },
+          { "name": "MYSQL" }
+        ],
+        "images": [
+          {
+            "titre": "project1Chrono3Image1Title",
+            "nomimage": "view-login.webp"
+          }
+        ]
+      },
+      {
+        "order": 4,
+        "date": "10/2023",
+        "version": "V 0.5",
+        "titre": "project1Chrono4Title",
+        "description":"project1Chrono4Description",
+        "languages": [              
+          { "name": "REACT" },
+          { "name": "VITE" },
+          { "name": "SASS" },
+          { "name": "REDUX" }
+        ],
+        "images": [
+          {
+            "titre": "project1Chrono4Image1Title",
+            "nomimage": "view-login.webp"
+          }
+        ]         
+      },        
+      {
+        "order": 5,
+        "date": "01/2024",
+        "version": "V 0.8",
+        "titre": "project1Chrono5Title",
+        "description":"project1Chrono5Description",
+        "languages": [
+          { "name": "API" },
+          { "name": "LARAVEL" }
+        ],
+        "images": [
+          {
+            "titre": "project1Chrono5Image1Title",
+            "nomimage": "view-login.webp"
+          }
+        ]  
+      },
+      {
+        "order": 6,
+        "date": "03/2024",
+        "version": "Version Web 1.0.0",
+        "titre": "project1Chrono6Title",
+        "description":"project1Chrono6Description",
+        "languages": [
+          { "name": "HTML" },
+          { "name": "CSS" },
+          { "name": "PHP" },
+          { "name": "JS" },
+          { "name": "PHPMYADMIN" },
+          { "name": "MYSQL" },
+          { "name": "REACT" },
+          { "name": "VITE" },
+          { "name": "SASS" },
+          { "name": "REDUX" },
+          { "name": "API" },
+          { "name": "LARAVEL" }
+        ],
+        "images": [
+          {
+            "titre": "project1Chrono6Image1Title",
+            "nomimage": "view-login.webp"
+          }
+        ]  
+      }
+    ],
+    "fonctionnalites": [
+      {
+        "titre": "featureBankAccountManagementTitle",
+        "description": "featureBankAccountManagementDescription",
+        "badge": ""
+      },
+      {
+        "titre": "featureJointAccountTitle",
+        "description": "featureJointAccountDescription",
+        "badge": ""
+      },
+      {
+        "titre": "featureAccountingEntriesTitle",
+        "description": "featureAccountingEntriesDescription",
+        "badge": ""
+      },
+      {
+        "titre": "featureAccountReconciliationTitle",
+        "description": "featureAccountReconciliationDescription",
+        "badge": ""
+      },
+      {
+        "titre": "featureEntriesSharingTitle",
+        "description": "featureEntriesSharingDescription",
+        "badge": "comingSoon"
+      },
+      {
+        "titre": "featureEntriesValidationTitle",
+        "description": "featureEntriesValidationDescription",
+        "badge": "comingSoon"
+      },
+      {
+        "titre": "featureAccountClosureTitle",
+        "description": "featureAccountClosureDescription",
+        "badge": "comingSoon"
+      }
+    ],
+    "detailsEcritures": [
+      {
+        "titre": "entryTypeTitle",
+        "description": "entryTypeDescription",
+        "badge": ""
+      },
+      {
+        "titre": "categoriesTitle",
+        "description": "categoriesDescription",
+        "badge": ""
+      },
+      {
+        "titre": "recurringEntriesTitle",
+        "description": "recurringEntriesDescription",
+        "badge": ""
+      },
+      {
+        "titre": "automaticTransfersTitle",
+        "description": "automaticTransfersDescription",
+        "badge": "comingSoon"
+      },
+      {
+        "titre": "sharingStatusTitle",
+        "description": "sharingStatusDescription",
+        "badge": "comingSoon"
+      },
+      {
+        "titre": "reconciliationStatusTitle",
+        "description": "reconciliationStatusDescription",
+        "badge": "comingSoon"
+      },
+      {
+        "titre": "healthSpendingTrackingTitle",
+        "description": "healthSpendingTrackingDescription",
+        "badge": "comingSoon"
+      },
+      {
+        "titre": "provisionsTrackingTitle",
+        "description": "provisionsTrackingDescription",
+        "badge": "comingSoon"
+      },
+      {
+        "titre": "ordersTrackingTitle",
+        "description": "ordersTrackingDescription",
+        "badge": "comingSoon"
+      }
+    ],
+    "demonstration": "project1demonstrationText",
+    "lienProjet": [
+      {
+        "titre": "apiDocumentationTitle",
+        "lien": "https://fabwebprojects.fr/apidemo/docs/documentation"
+      },
+      {
+        "titre": "projectVersionTitle",
+        "lien": "https://portfolio.fabwebprojects.fr/MonBudgetPersoDemo/"
+      }
+    ],
+    "lienGitHub": [
+      {
+        "titre": "githubCodeTitle",
+        "estPublic": false
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "project2Name",
+    "short_description": "project2ShortDescription",
+    "long_description": "project2LongDescription",
+    "chronologie": [
+      {
+        "order": 1,
+        "date": "2016",
+        "titre": "project2Chrono1Title",
+        "description": "project2Chrono1Description",
+        "version": "",
+        "images": [],
+        "languages": [
+          { "name": "VBA" },
+          { "name": "Excel" }
+        ]
+      },
+      {
+        "order": 2,
+        "date": "2017",
+        "titre": "project2Chrono2Title",
+        "description": "project2Chrono2Description",
+        "version": "",
+        "images": [],
+        "languages": [
+          { "name": "PDF" }
+        ]
+      },
+      {
+        "order": 3,
+        "date": "2016-2023",
+        "titre": "project2Chrono3Title",
+        "description": "project2Chrono3Description",
+        "version": "",
+        "images": [],
+        "languages": [
+          { "name": "VBNET" },
+          { "name": "SQLSERVER" },
+          { "name": "AZUREDEVOPS" }
+        ]
+      },
+      {
+        "order": 4,
+        "date": "2022",
+        "titre": "project2Chrono4Title",
+        "description": "project2Chrono4Description",
+        "version": "",
+        "images": [],
+        "languages": [
+          { "name": "HTML" },
+          { "name": "CSS" },
+          { "name": "PHP" },
+          { "name": "JS" },
+          { "name": "JSON" },
+          { "name": "AZUREDEVOPS" },
+          { "name": "PHPMYADMIN" },
+          { "name": "MySQL" }
+        ]
+      }
+    ],
+    "context": "project2Context",
+    "problem": "project2Problem",
+    "solution": [
+      "project2Solution1",
+      "project2Solution2",
+      "project2Solution3"
+    ],
+    "results": [
+      "project2Results1",
+      "project2Results2",
+      "project2Results3"
+    ], 
+
+    "technologies": [],
+    "languages": [
+      { "name": "VBA" },
+      { "name": "Excel" },
+      { "name": "VBNET" },
+      { "name": "SQLSERVER" },
+      { "name": "AZUREDEVOPS" },
+      { "name": "HTML" },
+      { "name": "CSS" },
+      { "name": "PHP" },
+      { "name": "JS" },
+      { "name": "JSON" },
+      { "name": "MySQL" },
+      { "name": "PHPMYADMIN" }      
+    ],
+    "images": [],
+    "fonctionnalites": [],
+    "detailsEcritures": [],
+    "demonstration": "project2demonstrationText",
+    "lienProjet": [],
+    "lienGitHub": []
+  }
+]

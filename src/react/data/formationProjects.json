@@ -1,0 +1,229 @@
+[
+  {
+    "id": 2,
+    "name": "project2Name",
+    "theme": "project2Theme",
+    "brief": "project2Brief",
+    "mission": "project2Mission",
+    "learnings": [
+      "project2Learning1"
+    ],
+    "languages": [
+      { "name": "HTML", "altText": "HTML5"},
+      { "name": "GIT_SMALL", "altText": "Git"}
+    ],
+    "img": "view-p2.webp",
+    "url": "https://portfolio.fabwebprojects.fr/Riding_Cities/index.html",
+    "url_git": "https://github.com/Fabrice-Perso/Riding_Cities"
+  },
+  {
+    "id": 3,
+    "name": "project3Name",
+    "theme": "project3Theme",
+    "brief": "project3Brief",
+    "mission": "project3Mission",
+    "learnings": [
+      "project3Learning1",
+      "project3Learning2",
+      "project3Learning3"
+    ],
+    "languages": [      
+      { "name": "HTML", "altText": "HTML5"},
+      { "name": "CSS", "altText": "CSS3"},
+      { "name": "GIT_SMALL", "altText": "Git"}
+    ],
+    "img": "view-p3.webp",
+    "url": "https://portfolio.fabwebprojects.fr/Booki/index.html",
+    "url_git": "https://github.com/Fabrice-Perso/Booki"
+  },
+  {
+    "id": 4,
+    "name": "project4Name",
+    "theme": "project4Theme",
+    "brief": "project4Brief",
+    "mission": "project4Mission",
+    "learnings": [
+      "project4Learning1",
+      "project4Learning2",
+      "project4Learning3"
+    ],
+    "languages": [
+      { "name": "HTML", "altText": "HTML5"},
+      { "name": "CSS", "altText": "CSS3"},
+      { "name": "SASS", "altText": "Sass"},
+      { "name": "GIT_SMALL", "altText": "Git"}
+    ],
+    "img": "view-p4.webp",
+    "url": "https://portfolio.fabwebprojects.fr/OhMyFood/index.html",
+    "url_git": "https://github.com/Fabrice-Perso/OhMyFood"
+  },
+  {
+    "id": 5,
+    "name": "project5Name",
+    "theme": "project5Theme",
+    "brief": "project5Brief",
+    "mission": "project5Mission",
+    "learnings": [
+      "project5Learning1"
+    ],
+    "challenges":"project5challenges",
+    "languages": [
+      { "name": "JS", "altText": "JavaScript"},
+      { "name": "GIT_SMALL", "altText": "Git"}
+    ],
+    "img": "view-p5.webp",
+    "url": "https://portfolio.fabwebprojects.fr/Print_It/index.html",
+    "url_git": "https://github.com/Fabrice-Perso/Print-it-JS"
+  },
+  {
+    "id": 6,
+    "name": "project6Name",
+    "theme": "project6Theme",
+    "brief": "project6Brief",
+    "mission": "project6Mission",
+    "learnings": [
+      "project6Learning1",
+      "project6Learning2",
+      "project6Learning3"
+    ],
+    "challenges": "project6challenges",
+    "complement":[
+      "project6complement1",
+      "project6complement2"
+    ],
+    "languages": [
+      { "name": "HTML", "altText": "HTML5"},
+      { "name": "CSS", "altText": "CSS3"},
+      { "name": "SASS", "altText": "Sass"},
+      { "name": "JS", "altText": "JavaScript"},
+      { "name": "API", "altText": "API REST"},
+      { "name": "GIT_SMALL", "altText": "Git"}
+    ],
+    "img": "view-p6.webp",
+    "url": "https://portfolio.fabwebprojects.fr/Sophie-bluel/index.html",
+    "url_git": "https://github.com/Fabrice-Perso/Portfolio_architecte_sophie_bluel"
+  },
+  {
+    "id": 7,
+    "name": "project7Name",
+    "theme": "project7Theme",
+    "brief": "project7Brief",
+    "mission": "project7Mission",
+    "learnings": [
+      "project7Learning1",
+      "project7Learning2",
+      "project7Learning3",
+      "project7Learning4",
+      "project7Learning5"
+    ],
+    "languages": [
+      { "name": "KANBAN", "altText": "Kanban"},
+      { "name": "AGILE", "altText": "Méthode Agile"},
+      { "name": "GIT_SMALL", "altText": "Git"},
+      { "name": "GITHUB_SMALL", "altText": "GitHub"}     
+    ],
+    "img": "view-p7.webp",
+    "url": "",
+    "url_git": "https://github.com/users/Fabrice-Perso/projects/23"
+  },
+  {
+    "id": 8,
+    "name": "project8Name",
+    "theme": "project8Theme",
+    "brief": "project8Brief",
+    "mission": "project8Mission",
+    "learnings": [
+      "project8Learning1",
+      "project8Learning2",
+      "project8Learning3",
+      "project8Learning4",
+      "project8Learning5"
+    ],
+    "languages": [
+      { "name": "HTML", "altText": "HTML5"},
+      { "name": "CSS", "altText": "CSS3"},
+      { "name": "SASS", "altText": "Sass"},
+      { "name": "JS", "altText": "JavaScript"},
+      { "name": "REACT", "altText": "React.js"},
+      { "name": "VITE", "altText": "Vite.js"},
+      { "name": "GIT_SMALL", "altText": "Git"}
+    ],
+    "img": "view-p8.webp",
+    "url": "https://portfolio.fabwebprojects.fr/Kasa",
+    "url_git": "https://github.com/Fabrice-Perso/Kasa"
+  },
+  {
+    "id": 9,
+    "name": "project9Name",
+    "theme": "project9Theme",
+    "brief": "project9Brief",
+    "mission": "project9Mission",
+    "learnings": [
+      "project9Learning1"
+    ],
+    "languages": [
+      { "name": "HTML", "altText": "HTML5"},
+      { "name": "CSS", "altText": "CSS3"},
+      { "name": "JS", "altText": "JavaScript"},
+      { "name": "SEO", "altText": "SEO"},
+      { "name": "GIT_SMALL", "altText": "Git"}
+    ],
+    "img": "view-p9.webp",
+    "url": "https://portfolio.fabwebprojects.fr/NinaCarducci/",
+    "url_git": "https://github.com/Fabrice-Perso/NinaCarducci"
+  },
+  {
+    "id": 10,
+    "name": "project10Name",
+    "theme": "project10Theme",
+    "brief": "project10Brief",
+    "mission": "project10Mission",
+    "learnings": [
+      "project10Learning1",
+      "project10Learning2"
+    ],
+    "languages": [
+      { "name": "HTML", "altText": "HTML5"},
+      { "name": "CSS", "altText": "CSS3"},
+      { "name": "JEST", "altText": "JEST"},
+      { "name": "GIT_SMALL", "altText": "Git"}
+    ],
+    "img": "view-p10.webp",
+    "url": "https://portfolio.fabwebprojects.fr/724events/",
+    "url_git": "https://github.com/Fabrice-Perso/724events"
+  },
+  {
+    "id": 11,
+    "name": "project11Name",
+    "theme": "project11Theme",
+    "brief": "project11Brief",
+    "mission": "project11Mission",
+    "learnings": [
+      "project11Learning1",
+      "project11Learning2",
+      "project11Learning3"
+    ],
+    "challenges": "project11challenges",
+    "complement":[
+      "project11complement1",
+      "project11complement2",
+      "project11complement3",
+      "project11complement4"
+    ],
+    "languages": [
+      { "name": "HTML", "altText": "HTML5"},
+      { "name": "CSS", "altText": "CSS3"},
+      { "name": "SASS", "altText": "Sass"},
+      { "name": "JS", "altText": "JavaScript"},
+      { "name": "REACT", "altText": "React.js"},
+      { "name": "VITE", "altText": "Vite.js"},
+      { "name": "REDUX", "altText": "Redux"},
+      { "name": "API", "altText": "API REST"},
+      { "name": "SWAGGER", "altText": "Swagger"},
+      { "name": "GIT_SMALL", "altText": "Git"}
+    ],
+    "img": "view-p11.webp",
+    "url": "https://portfolio.fabwebprojects.fr/ArgentBank/",
+    "url_git": "https://github.com/Fabrice-Perso/ArgentBank-website"
+  }
+]
