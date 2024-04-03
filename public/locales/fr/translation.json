@@ -11,7 +11,7 @@
   "about": {
     "title": "Développeur Web Full Stack",
     "professionalExperienceTitle": "Expérience professionnelle",
-    "professionalExperience": "Plus de 15 ans d'expérience en informatique, avec une spécialisation récente en développement web suite à une reconversion professionnelle via OpenClassrooms.",
+    "professionalExperience": "Avec deux ans d'expérience en PHP, HTML, et JavaScript, j'ai consolidé mes compétences par une reconversion professionnelle chez OpenClassrooms, obtenue avec un diplôme BAC+2.",
     "skillsTitle": "Compétences",
     "skills": "Expertise en <1>Front-end et Back-end</1>, avec un parcours autodidacte complété par une formation certifiante.",
     "personalProjectsTitle": "Projets personnels",
@@ -201,18 +201,26 @@
   },
   "cv": {
     "DownloadButton":"Télécharger mon CV",
+    "PrintButton":"Imprimer mon CV",
     "title":"Développeur Web Full Stack",
     "IntroductionTitle":"Introduction",
-    "Introduction":"Développeur web spécialisé en React et PHP, je suis issu d'une solide expérience en informatique qui a orienté ma reconversion vers ma passion pour le développement web. Agile dans la résolution de problèmes et l'innovation, je m'engage à créer des solutions web efficaces et centrées sur l'utilisateur. Mon parcours est marqué par une évolution constante et une quête d'excellence technologique.",
+    "Introduction":"Développeur web spécialisé en <1>React</1> et <1>PHP</1> avec 3 ans expériences, je suis issu d'une solide expérience en informatique qui a orienté ma reconversion vers ma passion pour le développement web. Agile dans la résolution de problèmes et l'innovation, je m'engage à créer des solutions web efficaces et centrées sur l'utilisateur. Mon parcours est marqué par une évolution constante et une quête d'excellence technologique.",
     "ExperienceTitle":"Expériences Professionnelles",
     "Experiences": [
       {
         "Company": "Septeo ADB (Groupe Septeo)",
-        "Period": "11/2013 à 09/2016 - Technicien Support\n09/2016 à 07/2023 - Technicien Migration, Référent Technique, Rédacteur Procédure, Développeur",
+        "Period": "2021 à 07/2023 - Développeur ",
+        "Tasks": [
+          "Développement et Maintenance d'un site web pour la saisie et l'intégration de questionnaires de paramétrage en HTML/PHP/JS lié à une BDD sous MySQL.",
+          "Mise en relation du questionnaire avec un outil de migration de données en VB.NET/SQL Server.",
+          "Participation à la mise à jour et à la correction d'outils existants en VB.NET, avec l'appui de développeurs expérimentés.",
+          "Participation au sprint de la méthode Agile"
+        ]
+      },
+      {
+        "Period": "09/2016 à 07/2023 - Référent Technique, Technicien Migration, Rédacteur de Procédures\n11/2013 à 09/2016 - Technicien Support\n",
         "Tasks": [
           "Développement en VBA Excel pour automatiser des contrôles comptables liés aux tâches de migrateurs.",
-          "Participation à la mise à jour et à la correction d'outils existants en VB.NET, avec l'appui de développeurs expérimentés.",
-          "Développement d'un site web pour la saisie et l'intégration de questionnaires de paramétrage en HTML/PHP/JS lié à une BDD sous MySQL. Mise en production réalisée par moi-même et configuration du fichier.ini.",
           "Rédacteur de procédures, documents techniques."
         ]
       },
@@ -221,7 +229,6 @@
         "Period": "Entre 2008 et 2013 - Support métiers et techniques",
         "Tasks": [
           "Assurance du support métiers et techniques pour une variété de logiciels orientés comptabilité.",
-          "Employeur : ComputaCenter, SCC, et Magnus.",
           "Capacité à simplifier et communiquer des solutions complexes à un public varié.",
           "Adaptation aux besoins des utilisateurs pour fournir un support technique efficace et personnalisé."
         ]

@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect,useRef } from 'react';
 import { useLocation } from 'react-router-dom';
 import useScrollToHash from "@/react/hooks/useScrollToHash";
 import { FaMobileAlt,FaHtml5, FaCss3Alt, FaJsSquare, FaPhp, FaDatabase, FaTerminal,FaGitAlt,FaSass,FaLaravel,FaReact,FaGithub, FaGlobe, FaHeart, FaMotorcycle, FaFilm } from 'react-icons/fa';
@@ -9,9 +9,11 @@ import { TbBrandVscode } from 'react-icons/tb';
 import { ProfilImage } from "@/assets/images";
 import { FaFolderOpen } from 'react-icons/fa';
 import CvDownloadButton from "@/react/components/CvDownloadButton";
-import { useTranslation,getI18n  } from 'react-i18next';
+import { Trans,useTranslation,getI18n  } from 'react-i18next';
+import CVPrintButton from '../components/CVPrintButton';
 
 const CurriculumVitae = () => {
+    const componentRef = useRef();
     const location = useLocation();
     const { t } = useTranslation();
     const language = getI18n().language; // Obtenez la langue actuelle
@@ -34,7 +36,7 @@ const CurriculumVitae = () => {
       useScrollToHash(100); // 100px est un exemple, remplacez par la hauteur de votre en-tête fixe
     return (
     <>                
-        <section className="curriculumvitae-section" id="cv">
+        <section className="curriculumvitae-section" id="cv" ref={componentRef}>
             <div className="cv-container">
                 <div className="cv-left-column">
                     <div className="cv-profile-pic">
@@ -87,7 +89,8 @@ const CurriculumVitae = () => {
                         </ul>
                     </div>
                     <div className="cv-section cv-interests">
-                    <CvDownloadButton />
+                        <CvDownloadButton />
+                        <CVPrintButton contentRef={componentRef}/>
                     </div>
                 </div>
                 <div className="cv-right-column">
@@ -95,7 +98,7 @@ const CurriculumVitae = () => {
                     <h2>{t('cv.title')}</h2>
                     <div className="cv-section cv-introduction">
                         <h2>{t('cv.IntroductionTitle')}</h2>
-                        <p>{t('cv.Introduction')}</p>
+                        <p><Trans i18nKey="cv.Introduction" components={[<span key="0" />, <strong key="1" />]} /></p>
                     </div>
 
                     <div className="cv-section cv-experience">
@@ -110,6 +113,7 @@ const CurriculumVitae = () => {
                                 <ul>
                                     {experience.Tasks.map((task, taskIndex) => (
                                     <li key={taskIndex}>{task}</li>
+                                    // <li key={taskIndex}><Trans i18nKey="task" components={[<span key="0" />, <strong key="1" />]} /></li>
                                     ))}
                                 </ul>
                                 </div>

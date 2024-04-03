@@ -6,6 +6,17 @@
 .attestations-section {
   @include section-styles;
 
+  .attestations-container{
+    display: flex;
+    flex-direction: column;
+    // background: white;
+    border-radius: 10px;
+    // box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    transition: all 0.3s ease;
+    line-height: 1.6;
+    width: 95%;
+  }
   .attestations-section__title {
     color: $primary-color; // La couleur que vous avez choisie
     font-size: 2.0em; // Une taille plus grande pour le titre

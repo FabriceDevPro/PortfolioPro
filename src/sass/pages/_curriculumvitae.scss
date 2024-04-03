@@ -394,11 +394,14 @@
               p{
                 font-size: 0.8rem;
               }
+              ul {
+                margin: 5px 0;
+              }
               ul li{
                 font-size: 0.8rem;
                 margin-bottom: 0px;              
                 &:before {
-                  font-size: 1.4rem; // Taille plus grande pour les puces
+                  font-size: 1.2rem; // Taille plus grande pour les puces
                 }
               }
             }                      

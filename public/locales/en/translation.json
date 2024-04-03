@@ -11,7 +11,7 @@
   "about": {
     "title": "Full Stack Web Developer",
     "professionalExperienceTitle": "Professional Experience",
-    "professionalExperience": "Over 15 years in IT with a recent specialization in web development following a professional retraining via OpenClassrooms.",
+    "professionalExperience": "With two years of experience in PHP, HTML, and JavaScript, I consolidated my skills through a professional retraining at OpenClassrooms, achieving a 2-year degree.",
     "skillsTitle": "Skills",
     "skills": "Expertise in <1>Front-end and Back-end</1>, with a self-taught journey complemented by a certified training.",
     "personalProjectsTitle": "Personal Projects",
@@ -260,18 +260,26 @@
     },  
     "cv": {
       "DownloadButton": "Download my Resume",
+      "PrintButton":"Print my Resume",
       "title": "Full Stack Web Developer",
       "IntroductionTitle": "Introduction",
-      "Introduction": "As a web developer specialized in React and PHP, I come from a strong background in computer science that has guided my career transition towards my passion for web development. Agile in problem-solving and innovation, I am committed to creating effective, user-centered web solutions. My journey is marked by constant evolution and a pursuit of technological excellence.",
+      "Introduction": "As a web developer specialized in <1>React</1> and <1>PHP</1> with 3 years of experience, I come from a strong background in computer science that has guided my career transition towards my passion for web development. Agile in problem-solving and innovation, I am committed to creating effective, user-centered web solutions. My journey is marked by constant evolution and a pursuit of technological excellence.",
       "ExperienceTitle": "Professional Experiences",
       "Experiences": [
         {
-          "Company": "Septeo ADB (Septeo Group)",
-          "Period": "11/2013 to 09/2016 - Support Technician\n09/2016 to 07/2023 - Migration Technician, Technical Reference, Procedure Writer, Developer",
+          "Company": "Septeo ADB (Groupe Septeo)",
+          "Period": "2021 to 07/2023 - Developer",
           "Tasks": [
-            "Development in VBA Excel to automate accounting controls related to migrators' tasks.",
-            "Participation in updating and correcting existing tools in VB.NET, with the support of experienced developers.",
-            "Development of a website for the entry and integration of configuration questionnaires in HTML/PHP/JS linked to a MySQL DB. Production deployment carried out by myself and configuration of the .ini file.",
+            "Development and maintenance of a website for entering and integrating configuration questionnaires in HTML/PHP/JS linked to a MySQL database.",
+            "Linking the questionnaire to a data migration tool in VB.NET/SQL Server.",
+            "Participating in the update and correction of existing tools in VB.NET, with the support of experienced developers.",
+            "Participation in Agile method sprints"
+          ]
+        },
+        {
+          "Period": "09/2016 to 07/2023 - Technical Referent, Migration Technician, Procedure Writer\n11/2013 to 09/2016 - Support Technician",
+          "Tasks": [
+            "Development in VBA Excel to automate accounting checks related to migration tasks.",
             "Writer of procedures, technical documents."
           ]
         },
