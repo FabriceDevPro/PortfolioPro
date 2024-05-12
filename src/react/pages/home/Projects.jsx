@@ -4,7 +4,7 @@ import FormationProject from './projet-formation/FormationProject';
 import { useTranslation } from 'react-i18next';
 import { FaFilter } from 'react-icons/fa';
 
-const Projects = ({ personalProjects, formationProjects,isFiltered,activeSkill,onFilterReset  }) => {
+const Projects = ({ personalProjects, formationProjects,  isFiltered = false,activeSkill = '',onFilterReset = () => {}  }) => {
   const { t } = useTranslation();
 
 return (
@@ -12,7 +12,7 @@ return (
      {isFiltered && (
         <>
           <div className="filter-message">
-            {t('projects.filterMessage', { skill: activeSkill })}          
+            {t('projects.filterMessage', { skill: activeSkill })}
           <FaFilter 
             className="projects-section__filter-reset" 
             onClick={onFilterReset} 
@@ -46,9 +46,5 @@ Projects.propTypes = {
   activeSkill: PropTypes.string,
   onFilterReset: PropTypes.func,
 };
-Projects.defaultProps = {
-  isFiltered: false,
-  activeSkill: '',
-  onFilterReset: () => {},
-};
+
 export default Projects;
