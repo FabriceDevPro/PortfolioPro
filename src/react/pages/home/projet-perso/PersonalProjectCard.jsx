@@ -27,6 +27,7 @@ const PersonalProjectCard = ({ project }) => {
 
   return (
     <div className="personal-project-card">
+      {project.badgedev && <div className="badge">{t(`projectpersonal:${project.badgedev}`)}</div>}
       <h2 className="personal-project-title">{t(`projectpersonal:${project.name}`)}</h2>
       {hasImages && <Gallery items={galleryImages} />}
       <div className="personal-project-content">
@@ -51,6 +52,7 @@ PersonalProjectCard.propTypes = {
       })
     ).isRequired,
     short_description: PropTypes.string.isRequired,
+    badgedev: PropTypes.string, // Ajout de la propriété badge
   }).isRequired,
 };
 

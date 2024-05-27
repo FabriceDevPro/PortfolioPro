@@ -3,6 +3,7 @@
     "id": 1,
     "name": "project1Name",
     "short_description": "project1ShortDescription",
+    "badgedev": "developementInProgress",
     "long_description": "project1LongDescription",
     "languages": [
       { "name": "HTML"},
@@ -157,6 +158,33 @@
             "nomimage": "view-login.webp"
           }
         ]  
+      },
+      {
+        "order": 7,
+        "date": "05/2024",
+        "version": "Version Web 1.1.0",
+        "titre": "project1Chrono7Title",
+        "description":"project1Chrono7Description",
+        "languages": [
+          { "name": "HTML" },
+          { "name": "CSS" },
+          { "name": "PHP" },
+          { "name": "JS" },
+          { "name": "PHPMYADMIN" },
+          { "name": "MYSQL" },
+          { "name": "REACT" },
+          { "name": "VITE" },
+          { "name": "SASS" },
+          { "name": "REDUX" },
+          { "name": "API" },
+          { "name": "LARAVEL" }
+        ],
+        "images": [
+          {
+            "titre": "project1Chrono7Image1Title",
+            "nomimage": "view-login.webp"
+          }
+        ]  
       }
     ],
     "fonctionnalites": [
@@ -178,6 +206,11 @@
       {
         "titre": "featureAccountReconciliationTitle",
         "description": "featureAccountReconciliationDescription",
+        "badge": ""
+      },
+      {
+        "titre": "featureSettingsScreensTitle",
+        "description": "featureSettingsScreensDescription",
         "badge": ""
       },
       {
@@ -247,11 +280,11 @@
     "lienProjet": [
       {
         "titre": "apiDocumentationTitle",
-        "lien": "https://fabwebprojects.fr/apidemo/docs/documentation"
+        "lien": "https://apibudgetpersodemo.fabwebprojects.fr/api/documentation"
       },
       {
         "titre": "projectVersionTitle",
-        "lien": "https://portfolio.fabwebprojects.fr/MonBudgetPersoDemo/"
+        "lien": "https://portfolio.fabwebprojects.fr/monbudgetpersodemo/"
       }
     ],
     "lienGitHub": [
@@ -265,13 +298,220 @@
     "id": 2,
     "name": "project2Name",
     "short_description": "project2ShortDescription",
+    "badgedev": "developementInProgress",
     "long_description": "project2LongDescription",
+    "languages": [
+      { "name": "HTML"},
+      { "name": "CSS"},
+      { "name": "SASS" },
+      { "name": "JS" },
+      { "name": "REACT" },
+      { "name": "VITE" },
+      { "name": "REDUX" },
+      { "name": "API" },
+      { "name": "SWAGGER"},
+      { "name": "PHP" },
+      { "name": "MYSQL" },
+      { "name": "PHPMYADMIN" }, 
+      { "name": "LARAVEL" },
+      { "name": "GIT"},
+      { "name": "GITHUB"}
+    ],
+    "images": [
+      {
+        "titre": "project2Image1Title",
+        "nomimage": "view-freelance.webp"
+      },
+      {
+        "titre": "project2Image2Title",
+        "nomimage": "view-freelance-login.webp"
+      }
+    ],
+    "chronologie": [
+      {
+        "order": 1,
+        "date": "05/2024",
+        "version": "Version Web 1.0.0",
+        "titre": "project2Chrono1Title",
+        "description":"project2Chrono1Description",
+        "languages": [
+          { "name": "HTML" },
+          { "name": "CSS" },
+          { "name": "PHP" },
+          { "name": "JS" },
+          { "name": "PHPMYADMIN" },
+          { "name": "MYSQL" },
+          { "name": "REACT" },
+          { "name": "VITE" },
+          { "name": "SASS" },
+          { "name": "REDUX" },
+          { "name": "API" },
+          { "name": "LARAVEL" }
+        ],
+        "images": [
+          {
+            "titre": "project2Chrono1Image1Title",
+            "nomimage": "view-freelance.webp"
+          }
+        ]  
+      }
+    ],
+    "fonctionnalites": [
+      {
+        "titre": "feature2Title1",
+        "description": "feature2Description1",
+        "badge": ""
+      },
+      {
+        "titre": "feature2Title2",
+        "description": "feature2Description2",
+        "badge": ""
+      },
+      {
+        "titre": "feature2Title3",
+        "description": "feature2Description3",
+        "badge": ""
+      },
+      {
+        "titre": "feature2Title4",
+        "description": "feature2Description4",
+        "badge": "comingSoon"
+      }
+    ],
+    "detailsEcritures": [],
+    "demonstration": "project2demonstrationText",
+    "lienProjet": [
+      {
+        "titre": "apiDocumentationTitle",
+        "lien": "https://fabwebprojects.fr/api/docs/documentation"
+      },
+      {
+        "titre": "projectVersionTitle",
+        "lien": "https://fabwebprojects.fr"
+      }
+    ],
+    "lienGitHub": [
+      {
+        "titre": "githubCodeTitle",
+        "estPublic": false
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "project3Name",
+    "short_description": "project3ShortDescription",
+    "badgedev": "developementInProgress",
+    "long_description": "project3LongDescription",
+    "languages": [
+      { "name": "HTML"},
+      { "name": "CSS"},
+      { "name": "SASS" },
+      { "name": "JS" },
+      { "name": "REACT" },
+      { "name": "VITE" },
+      { "name": "REDUX" },
+      { "name": "API" },
+      { "name": "SWAGGER"},
+      { "name": "PHP" },
+      { "name": "MYSQL" },
+      { "name": "PHPMYADMIN" }, 
+      { "name": "LARAVEL" },
+      { "name": "GIT"},
+      { "name": "GITHUB"}
+    ],
+    "images": [
+      {
+        "titre": "project3Image1Title",
+        "nomimage": "view-autostreet.webp"
+      },
+      {
+        "titre": "project3Image2Title",
+        "nomimage": "view-autostreet-login.webp"
+      }
+    ],
+    "chronologie": [
+      {
+        "order": 1,        
+        "date": "05/2024",
+        "version": "Version Web 1.0.0",
+        "titre": "project3Chrono1Title",
+        "description":"project3Chrono1Description",
+        "languages": [
+          { "name": "HTML" },
+          { "name": "CSS" },
+          { "name": "PHP" },
+          { "name": "JS" },
+          { "name": "PHPMYADMIN" },
+          { "name": "MYSQL" },
+          { "name": "REACT" },
+          { "name": "VITE" },
+          { "name": "SASS" },
+          { "name": "REDUX" },
+          { "name": "API" },
+          { "name": "LARAVEL" }
+        ],
+        "images": [
+          {
+            "titre": "project3Chrono1Image1Title",
+            "nomimage": "view-autostreet.webp"
+          }
+        ]  
+      }
+    ],
+    "fonctionnalites": [
+      {
+        "titre": "feature3Title1",
+        "description": "feature3Description1",
+        "badge": ""
+      },
+      {
+        "titre": "feature3Title2",
+        "description": "feature3Description2",
+        "badge": "comingSoon"
+      },
+      {
+        "titre": "feature3Title3",
+        "description": "feature3Description3",
+        "badge": "comingSoon"
+      },
+      {
+        "titre": "feature3Title4",
+        "description": "feature3Description4",
+        "badge": ""
+      }
+    ],
+    "detailsEcritures": [],
+    "demonstration": "project3demonstrationText",
+    "lienProjet": [
+      {
+        "titre": "apiDocumentationTitle",
+        "lien": "https://apiautostreet.fabwebprojects.fr/api/docs/documentation"
+      },
+      {
+        "titre": "projectVersionTitle",
+        "lien": "https://portfolio.fabwebprojects.fr/autostreet/"
+      }
+    ],
+    "lienGitHub": [
+      {
+        "titre": "githubCodeTitle",
+        "estPublic": false
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "project4Name",
+    "short_description": "project4ShortDescription",
+    "badgedev": "developpementCompleted",
+    "long_description": "project4LongDescription",
     "chronologie": [
       {
         "order": 1,
         "date": "2016",
-        "titre": "project2Chrono1Title",
-        "description": "project2Chrono1Description",
+        "titre": "project4Chrono1Title",
+        "description": "project4Chrono1Description",
         "version": "",
         "images": [],
         "languages": [
@@ -282,8 +522,8 @@
       {
         "order": 2,
         "date": "2017",
-        "titre": "project2Chrono2Title",
-        "description": "project2Chrono2Description",
+        "titre": "project4Chrono2Title",
+        "description": "project4Chrono2Description",
         "version": "",
         "images": [],
         "languages": [
@@ -293,8 +533,8 @@
       {
         "order": 3,
         "date": "2016-2023",
-        "titre": "project2Chrono3Title",
-        "description": "project2Chrono3Description",
+        "titre": "project4Chrono3Title",
+        "description": "project4Chrono3Description",
         "version": "",
         "images": [],
         "languages": [
@@ -306,8 +546,8 @@
       {
         "order": 4,
         "date": "2022",
-        "titre": "project2Chrono4Title",
-        "description": "project2Chrono4Description",
+        "titre": "project4Chrono4Title",
+        "description": "project4Chrono4Description",
         "version": "",
         "images": [],
         "languages": [
@@ -322,17 +562,17 @@
         ]
       }
     ],
-    "context": "project2Context",
-    "problem": "project2Problem",
+    "context": "project4Context",
+    "problem": "project4Problem",
     "solution": [
-      "project2Solution1",
-      "project2Solution2",
-      "project2Solution3"
+      "project4Solution1",
+      "project4Solution2",
+      "project4Solution3"
     ],
     "results": [
-      "project2Results1",
-      "project2Results2",
-      "project2Results3"
+      "project4Results1",
+      "project4Results2",
+      "project4Results3"
     ], 
 
     "technologies": [],
@@ -353,7 +593,7 @@
     "images": [],
     "fonctionnalites": [],
     "detailsEcritures": [],
-    "demonstration": "project2demonstrationText",
+    "demonstration": "project4demonstrationText",
     "lienProjet": [],
     "lienGitHub": []
   }

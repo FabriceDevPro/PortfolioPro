@@ -72,7 +72,7 @@
   "project11Learning3": "Implémenter la gestion des données avec Redux pour assurer le fonctionnement du front",
   "project11challenges": "Mise en ligne de API sur Mongodb cloud + utilisation de render (non demandée)",
   "project11complement1": "Vous pouvez créer un compte ou vous pouvez utiliser les identifiants de connexion suivant :",
-  "project11complement2": "Email: `tony@stark.com` - Password: `password123",
-  "project11complement3": "Email: `steve@rogers.com` - Password: `password456`",
+  "project11complement2": "Email: ` tony@stark.com ` - Password: ` password123 `",
+  "project11complement3": "Email: ` steve@rogers.com ` - Password: ` password456 `",
   "project11complement4": "en cas de problème de connexion, cliquez sur ce lien pour relancer api : https://argentbankapi.onrender.com/"
 }

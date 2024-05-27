@@ -2,10 +2,23 @@
     {
       "title": "Mentions Légales",
       "content": [
-        "Nom du site web : FabWebProjects",
-        "URL du site : https://fabwebprojects.fr",
-        "Propriétaire : MAGNAN de BELLEVUE Fabrice",
-        "Contact : magnan.fabrice@gmail.com"
+        "Nom commercial : FabWebProjects",
+        "Propriétaire : MAGNAN de BELLEVUE Fabrice, micro-entrepreneur",
+        "Numéro SIRET : 92776987700014",
+        "Adresse : 12 rue des Violettes, 31570 BOURG SAINT BERNARD",
+        "Email de Contact : contact@fabwebprojects.fr"
+      ]
+    },
+    {
+      "title": "URL du Portfolio",
+      "content": [
+        "https://portfolio.fabwebprojects.fr"
+      ]
+    },
+    {
+      "title": "Description du site",
+      "content": [
+        "Ce site est un portfolio en ligne qui présente les travaux et projets de MAGNAN de BELLEVUE Fabrice dans le domaine du développement web et de la conception graphique."
       ]
     },
     {
@@ -13,7 +26,7 @@
       "content": [
         "Hébergé par : Serveur NAS Synology + Domaine chez OVH",
         "Adresse : 12 rue des Violettes 31570 BOURG SAINT BERNARD",
-        "Contact : magnan.fabrice@gmail.com"
+        "Contact : contact@fabwebprojects.fr"
       ]
     },
     {
