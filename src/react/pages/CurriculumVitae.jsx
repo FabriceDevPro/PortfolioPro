@@ -46,7 +46,6 @@ const CurriculumVitae = () => {
                         <div className="cv-contact-info">
                             <div className="cv-contact-text cv-address"><span>12 rue des Violettes</span><span>31570 BOURG SAINT BERNARD</span></div>
                             <div className="cv-contact-text"><span>Permis B, Véhiculé</span></div>
-                            <div className="cv-contact-text"><span>Né le 26 décembre 1984 </span></div>
                             <div className="cv-contact-text"><FaMobileAlt size={15}/><span>+33 6 78 61 47 00</span></div>
                             <div className="cv-contact-text"><IoIosMail size={15}/><span>magnan.fabrice@gmail.com</span></div>
                             <div className="cv-contact-text">

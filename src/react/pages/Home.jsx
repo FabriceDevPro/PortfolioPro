@@ -4,6 +4,7 @@ import { useLocation } from 'react-router-dom';
 import { LogoImage } from "@/assets/images";
 import { SkillsContext } from '@/react/context/SkillsContext';
 import CvDownloadButton from '@/react/components/CvDownloadButton';
+import CvRedirectButton from '@/react/components/CvRedirectButton';
 import Skills from "./home/skill/Skills";
 import About from "./home/About";
 import Projects from './home/Projects';
@@ -81,7 +82,8 @@ const Home = () => {
         <TechnicsSkills />
       </section>        
       <section className="curriculumvitae-section" id="cv">
-        <CvDownloadButton />
+        {/* <CvDownloadButton /> */}
+        <CvRedirectButton />
       </section>
       <section className="attestations-section">
         <AttestationsSection/>

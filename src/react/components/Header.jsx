@@ -64,7 +64,15 @@ function Header() {
                 <Link to="/#skills" onClick={closeNav}>{t('menu.skills')}</Link>
                 <Link to="/#projects" onClick={closeNav}>{t('menu.projects')}</Link>
                 <Link to="/#certifications" onClick={closeNav}>{t('menu.certifications')}</Link>
-                <Link to="/curriculum-vitae#cv" className="cv-link" onClick={closeNav}>{t('menu.cv')}</Link>
+                <a 
+                    href="https://my-resume.fabwebprojects.fr/" 
+                    className="cv-link" 
+                    onClick={closeNav} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    >
+                    {t('menu.cv')}
+                </a>
                 <Link to="#cv" className="cv-download" onClick={closeNav}>{t('menu.download_cv')}</Link>
                 <Link to="/#contact" onClick={handleContactClick}>{t('menu.contact')}</Link>
                 {/* onClick={closeNav} */}
@@ -76,7 +84,7 @@ function Header() {
                 <span className="lang-text en-text">EN</span>
             </div>
             <Modal
-                isOpen={isModalOpen} // Assurez-vous que cette variable correspond à l'état du modal
+                isOpen={isModalOpen}
                 onRequestClose={closeModal}
                 contentLabel="Contact Form Modal"
                 className="contact-modal"
