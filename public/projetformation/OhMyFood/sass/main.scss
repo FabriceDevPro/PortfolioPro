@@ -1,0 +1,337 @@
+@use "_Variables" as *;
+@use "_Mixin" as Mixin;
+@use "_keyframes";
+@import "../sass/modules/loader";
+@import "../sass/modules/header";
+@import "../sass/modules/footer";
+// Global styles and variables
+
+body {
+  font-family: $font-family;
+  color: $color-principal;
+  background-color: $background-principal;
+  margin: 0;
+}
+
+// Commun
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.section__bouton {
+  display: flex;
+  @include Mixin.flex-alignement-center;
+  padding: 1.69rem 4.69rem;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.125rem;
+  width: 11.625rem;
+  padding: 0.81rem 1.17rem;
+  border: none;
+  border-radius: $button-border-radius;
+  color: $color-button;
+  background: $background-gradient;
+  background-color: $color-primary;
+  @include Mixin.font-button;
+  box-shadow: 0.3rem 0.3rem 0.5rem rgba(0, 0, 0, 0.493);
+  transition-duration: 0.4s;
+  cursor: pointer;
+
+  &:hover {
+    //     background: $background-gradient-hover;
+    background-color: $color-secondary;
+    box-shadow: 0.2rem 0.2rem 1rem rgba(0, 0, 0, 0.623);
+    filter: brightness(115%);
+  }
+}
+
+// Main content styles
+// *//////////////////////// section-location
+.section__location {
+  display: flex;
+  height: 3.125rem;
+  width: 100%;
+  flex-direction: row;
+  @include Mixin.flex-alignement-center;
+  @include Mixin.font-button;
+  background-color: $background-location;
+
+  .icon__location {
+    display: flex;
+    height: 1rem;
+    width: 0.75rem;
+    padding-right: 1.06rem;
+    @include Mixin.flex-alignement-center;
+    color: $color-icon;
+  }
+}
+
+// *//////////////////////// section__reservation
+.section__reservation {
+  display: flex;
+  padding-top: 2.44rem;
+  flex-direction: column;
+  background-color: $background-restaurant;
+
+  h1 {
+    display: flex;
+    height: 4.25rem;
+    padding: 0 2.62rem 0 3.63rem;
+    text-align: center;
+    @include Mixin.flex-alignement-center;
+    @include Mixin.font-title-choixmenu;
+  }
+
+  p {
+    display: flex;
+    padding: 0 2.12rem 0 1.63rem;
+    text-align: center;
+    @include Mixin.flex-alignement-center;
+    @include Mixin.font-subtitle-choixmenu;
+  }
+}
+// *//////////////////////// section-fonctionnement
+.section__fonctionnement {
+  // display: flex;
+  // height: 27.5rem;
+  // flex-direction: column;
+  // padding:0rem 1.25rem 0rem 1.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0rem 1.25rem 0rem 1.25rem;
+
+  .title {
+    @include Mixin.font-title-choixmenu;
+  }
+
+  .section__fonctionnement__etape {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 0rem 4.12rem 0rem;
+    gap: 1.32rem;
+    width: 100%;
+
+    .fonctionnement__etape {
+      display: flex;
+      height: 4.52369rem;
+
+      border-radius: 1.25rem;
+      align-items: center;
+      background: $background-restaurant;
+      box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+      width: 100%;
+
+      span {
+        display: flex;
+        height: 1.5rem;
+        width: 1.5rem;
+        margin-left: -0.625rem;
+        border-radius: 50%;
+        @include Mixin.flex-alignement-center;
+        color: $color-button;
+        background-color: $color-primary;
+        @include Mixin.font-span;
+      }
+      .container__icon__etape {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 20px;
+        width: 15px;
+        margin-left: 30px;
+      }
+
+      .icon-etape {
+        color: $color-icon2;
+      }
+
+      .resto {
+        color: $color-primary;
+      }
+
+      h2 {
+        @include Mixin.font-etape;
+      }
+    }
+  }
+}
+// *//////////////////////// section-restaurants
+.section__restaurants {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 1.25rem 4.12rem 1.25rem;
+  background: $background-restaurant;
+  gap: 1.12rem;
+
+  .title {
+    @include Mixin.font-title-choixmenu;
+  }
+
+  .restaurant__card {
+    position: relative;
+    height: 15.6875rem;
+    border-radius: 0.9375rem;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
+
+    &:hover {
+      transform: scale(1);
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.45);
+      opacity: 70%;
+    }
+
+    .badge__new {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 1.8125rem;
+      width: 5rem;
+      margin: 0.75rem 0.94rem 0 0;
+      border-radius: 0.125rem;
+      background: $background-badge;
+      text-align: center;
+      @include Mixin.font-size-badge;
+    }
+
+    .restaurant__picture {
+      height: 70%;
+      width: 100%;
+      object-fit: cover;
+      border-top-left-radius: 0.9375rem;
+      border-top-right-radius: 0.9375rem;
+    }
+
+    .restaurant__card__detail {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 10px;
+      h1 {
+        height: 1.25rem;
+        @include Mixin.font-title-choixrestaurant;
+      }
+
+      h2 {
+        height: 1.5rem;
+        @include Mixin.font-subtitle-choixrestaurant;
+      }
+    }
+    .restaurant__favorite {
+      position: absolute;
+      bottom: 0px; /* Ajustez la valeur pour la position verticale */
+      right: 0rem; /* Ajustez la valeur pour la position horizontale */
+      font-size: 1.5rem;
+      margin: 0 3.125rem 3.125rem 0;
+
+      i {
+        position: absolute; /* Position absolue pour les balises <i> */
+        font-size: 1.5rem;
+      }
+
+      .fa-solid {
+        opacity: 0;
+        color: transparent;
+        background-clip: text;
+        -webkit-background-clip: text;
+        background-image: $background-gradient;
+        transition: all 0.4s ease-in-out;
+
+        &:hover {
+          opacity: 1;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+/* Styles pour les écrans de bureau (1024px et plus) */
+@media screen and (min-width: 768px) {
+  body {
+    margin: 0 auto;
+    max-width: 1440px;
+  }
+  .section__reservation {
+    h1 {
+      font-size: 2.5rem;
+    }
+  }
+  .section__fonctionnement {
+    .section__fonctionnement__etape {
+      width: 90%;
+    }
+  }
+  .section__restaurants {
+    display: grid;
+    grid-template-columns: repeat(2, 40%);
+    grid-template-rows: auto;
+    gap: 3.12rem 3.25rem;
+    justify-content: center;
+    grid-template-areas:
+      "title title"
+      "card1 card2"
+      "card3 card4";
+
+    .title {
+      grid-area: title;
+    }
+
+    .card1 {
+      grid-area: card1;
+    }
+
+    .card2 {
+      grid-area: card2;
+    }
+
+    .card3 {
+      grid-area: card3;
+    }
+
+    .card4 {
+      grid-area: card4;
+    }
+  }
+}
+@media screen and (min-width: 1024px) {
+  .section__fonctionnement {
+    margin: 0;
+    .section__fonctionnement__etape {
+      width: 80%;
+      display: grid;
+      grid-template-columns: repeat(3, 32%);
+      grid-template-rows: auto;
+      gap: 3.12rem;
+      justify-content: center;
+      grid-template-areas:
+        "title  title  title"
+        "etape1 etape2 etape3 ";
+
+      .title {
+        grid-area: title;
+      }
+
+      .etape1 {
+        grid-area: etape1;
+      }
+
+      .etape2 {
+        grid-area: etape2;
+      }
+
+      .etape3 {
+        grid-area: etape3;
+      }
+    }
+  }
+  .section__restaurants {
+    gap: 3.12rem 6.25rem;
+  }
+}

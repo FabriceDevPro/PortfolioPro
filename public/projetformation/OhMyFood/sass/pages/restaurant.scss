@@ -1,0 +1,272 @@
+@use "../_Variables.scss" as *;
+@use "../_Mixin.scss" as Mixin;
+
+// *////////////////////////  Logo Menu  ///////////////////////////////////
+.image__menu {
+  width: 100%;
+  height: 17.18rem;
+  object-fit: cover;
+}
+
+// *////////////////////////  Section Menu  ///////////////////////////////////
+.menu__restaurant {
+  position: relative;
+  display: flex;
+  padding: 0.313rem 0.625rem;
+  margin: -1.563rem 0 0 0;
+  border-radius: 2rem 2rem 0 0;
+  gap: 2.5rem;
+  flex-direction: column;
+  background-color: $background-restaurant;
+
+  .menu__title {
+    display: flex;
+    height: 1.6875rem;
+    padding-top: 1.25rem;
+    margin-bottom: 1.5rem;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+
+    h1 {
+      @include Mixin.font-title-menu;
+    }
+
+    .restaurant__favorite {
+      position: relative;
+      display: flex;
+      height: 100%;
+      flex-direction: row;
+      @include Mixin.flex-alignement-center;
+
+      i {
+        position: absolute; /* Position absolue pour les balises <i> */
+        top: 0;
+        left: 2.44rem;
+        font-size: 1.5rem;
+      }
+
+      .fa-solid {
+        color: transparent;
+        background-image: $background-gradient;
+        background-clip: text;
+        -webkit-background-clip: text;
+        opacity: 0;
+        transition: $transition-menu;
+
+        // action au survol de l'icone
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  // *////////////////////////  Animation pour laffichage du menu  ///////////////////////////////////
+  //Animation pour laffichage du menu entrée
+  .menu__contenu__entree {
+    @include Mixin.animation-menu;
+
+    // Définir l'animation-delay pour tous les enfants
+    > * {
+      @include Mixin.animation-menu;
+    }
+
+    // Spécifier les délais individuels pour les enfants
+    > :nth-child(2) {
+      animation-delay: 0.1s;
+    }
+    > :nth-child(3) {
+      animation-delay: 0.3s;
+    }
+    > :nth-child(4) {
+      animation-delay: 0.5s;
+    }
+    > :nth-child(5) {
+      animation-delay: 0.7s;
+    }
+  }
+
+  //Animation pour laffichage du menu plat
+  .menu__contenu__plat {
+    @include Mixin.animation-menu;
+    animation-delay: 0.7s;
+
+    // Définir l'animation-delay pour tous les enfants
+    > * {
+      @include Mixin.animation-menu;
+    }
+
+    // Spécifier les délais individuels pour les enfants
+    > :nth-child(2) {
+      animation-delay: 0.1s;
+    }
+    > :nth-child(3) {
+      animation-delay: 0.3s;
+    }
+    > :nth-child(4) {
+      animation-delay: 0.5s;
+    }
+    > :nth-child(5) {
+      animation-delay: 0.7s;
+    }
+  }
+
+  //Animation pour laffichage du menu dessert
+  .menu__contenu__dessert {
+    @include Mixin.animation-menu;
+    animation-delay: 1.4s;
+
+    // Définir l'animation-delay pour tous les enfants
+    > * {
+      @include Mixin.animation-menu;
+    }
+
+    // Spécifier les délais individuels pour les enfants
+    > :nth-child(2) {
+      animation-delay: 0.1s;
+    }
+    > :nth-child(3) {
+      animation-delay: 0.3s;
+    }
+    > :nth-child(4) {
+      animation-delay: 0.5s;
+    }
+    > :nth-child(5) {
+      animation-delay: 0.7s;
+    }
+  }
+
+  .section__bouton {
+    @include Mixin.animation-menu;
+    animation-delay: 1s;
+  }
+
+  // *////////////////////////  Section Menu Contenu  ///////////////////////////////////
+  .menu__contenu__entree,
+  .menu__contenu__plat,
+  .menu__contenu__dessert {
+    display: flex;
+    width: 100%;
+    gap: 0.75rem;
+    flex-direction: column;
+
+    h2 {
+      @include Mixin.font-subtitle-menu;
+      text-transform: uppercase;
+      margin: 0;
+
+      .bordered__title {
+        border-bottom: 0.125rem solid $background-badge;
+      }
+    }
+
+    .button__choixcontenu {
+      display: flex;
+      height: 4.063rem;
+      width: 100%;
+      border-radius: $button-border-radius;
+      @include Mixin.flex-alignement-center;
+      background-color: $background-principal;
+      transition: $transition-menu;
+
+      &:hover {
+        span {
+          margin-right: 0; // Au survol, le margin-right de la balise span passe à 0px
+          transform: translateX(-100%); // Au survol, la balise span est déplacée vers la gauche (hors de la vue)
+        }
+      }
+
+      //au chargement de la class
+      .button__choixcontenu_anime {
+        display: flex;
+        height: 100%;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: $button-border-radius;
+        overflow: hidden;
+        transition: $transition-menu;
+
+        // Action lorsqu'on survol
+        &:hover {
+          .button__choixcontenu__info {
+            transform: translateX(0);
+
+            h3,
+            p {
+              @include Mixin.hover-ellispsis;
+            }
+          }
+
+          .button__choixcontenu__check {
+            .check {
+              transform: translateX(0);
+              opacity: 1;
+            }
+
+            span {
+              margin-right: 0px; // Au survol, le margin-right de la balise span passe à 0px
+              transform: translateX(0%); // Au survol, la balise span est déplacée vers la gauche (hors de la vue)
+            }
+          }
+        }
+        //au chargement de la class
+        .button__choixcontenu__info {
+          display: flex;
+          height: 100%;
+          width: 70%;
+          padding: 0.625rem;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-start;
+          overflow: hidden;
+          h3 {
+            @include Mixin.hover-ellispsis;
+            @include Mixin.font-title-plat;
+          }
+          h4 {
+            @include Mixin.hover-ellispsis;
+            @include Mixin.font-subtitle-plat;
+          }
+        }
+      }
+
+      .button__choixcontenu__check {
+        display: flex;
+        height: 100%;
+        border-radius: $button-border-radius;
+        justify-content: space-between;
+        align-items: flex-end;
+        overflow: hidden;
+
+        span {
+          padding: 0.313rem;
+          margin-right: -2.5rem; // Par défaut, la balise span a un margin-right
+          font-weight: bold;
+          white-space: nowrap; // Empêche le texte de passer à la ligne
+          transition: $transition-menu;
+        }
+
+        // anime
+        .check {
+          height: 100%;
+          transition: $transition-menu;
+          transform: translateX(100%); // Par défaut, la balise check est déplacée vers la droite (hors de la vue)
+          opacity: 0; // Par défaut, la balise check est invisible
+        }
+      }
+    }
+  }
+}
+/* Styles pour les écrans de bureau (1024px et plus) */
+@media screen and (min-width: 1024px) {
+  .menu__restaurant {
+    margin: -1.563rem 10rem 0 10rem;
+    padding: 0.313rem 12.625rem;
+
+    .menu__title {
+      justify-content: center;
+    }
+  }
+}

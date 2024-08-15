@@ -1,0 +1,275 @@
+@charset "UTF-8";
+.image__menu {
+  width: 100%;
+  height: 17.18rem;
+  object-fit: cover;
+}
+
+.menu__restaurant {
+  position: relative;
+  display: flex;
+  padding: 0.313rem 0.625rem;
+  margin: -1.563rem 0 0 0;
+  border-radius: 2rem 2rem 0 0;
+  gap: 2.5rem;
+  flex-direction: column;
+  background-color: #f6f6f6;
+}
+.menu__restaurant .menu__title {
+  display: flex;
+  height: 1.6875rem;
+  padding-top: 1.25rem;
+  margin-bottom: 1.5rem;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.menu__restaurant .menu__title h1 {
+  font-family: "Shrikhand", cursive;
+  font-size: 1.75rem;
+  font-weight: 400;
+}
+.menu__restaurant .menu__title .restaurant__favorite {
+  position: relative;
+  display: flex;
+  height: 100%;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.menu__restaurant .menu__title .restaurant__favorite i {
+  position: absolute; /* Position absolue pour les balises <i> */
+  top: 0;
+  left: 2.44rem;
+  font-size: 1.5rem;
+}
+.menu__restaurant .menu__title .restaurant__favorite .fa-solid {
+  color: transparent;
+  background-image: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 0;
+  transition: all 0.4s ease-in-out;
+}
+.menu__restaurant .menu__title .restaurant__favorite .fa-solid:hover {
+  opacity: 1;
+}
+.menu__restaurant .menu__contenu__entree {
+  animation: slideInFromLeft 2s ease-in-out;
+  animation-fill-mode: both;
+}
+.menu__restaurant .menu__contenu__entree > * {
+  animation: slideInFromLeft 2s ease-in-out;
+  animation-fill-mode: both;
+}
+.menu__restaurant .menu__contenu__entree > :nth-child(2) {
+  animation-delay: 0.1s;
+}
+.menu__restaurant .menu__contenu__entree > :nth-child(3) {
+  animation-delay: 0.3s;
+}
+.menu__restaurant .menu__contenu__entree > :nth-child(4) {
+  animation-delay: 0.5s;
+}
+.menu__restaurant .menu__contenu__entree > :nth-child(5) {
+  animation-delay: 0.7s;
+}
+.menu__restaurant .menu__contenu__plat {
+  animation: slideInFromLeft 2s ease-in-out;
+  animation-fill-mode: both;
+  animation-delay: 0.7s;
+}
+.menu__restaurant .menu__contenu__plat > * {
+  animation: slideInFromLeft 2s ease-in-out;
+  animation-fill-mode: both;
+}
+.menu__restaurant .menu__contenu__plat > :nth-child(2) {
+  animation-delay: 0.1s;
+}
+.menu__restaurant .menu__contenu__plat > :nth-child(3) {
+  animation-delay: 0.3s;
+}
+.menu__restaurant .menu__contenu__plat > :nth-child(4) {
+  animation-delay: 0.5s;
+}
+.menu__restaurant .menu__contenu__plat > :nth-child(5) {
+  animation-delay: 0.7s;
+}
+.menu__restaurant .menu__contenu__dessert {
+  animation: slideInFromLeft 2s ease-in-out;
+  animation-fill-mode: both;
+  animation-delay: 1.4s;
+}
+.menu__restaurant .menu__contenu__dessert > * {
+  animation: slideInFromLeft 2s ease-in-out;
+  animation-fill-mode: both;
+}
+.menu__restaurant .menu__contenu__dessert > :nth-child(2) {
+  animation-delay: 0.1s;
+}
+.menu__restaurant .menu__contenu__dessert > :nth-child(3) {
+  animation-delay: 0.3s;
+}
+.menu__restaurant .menu__contenu__dessert > :nth-child(4) {
+  animation-delay: 0.5s;
+}
+.menu__restaurant .menu__contenu__dessert > :nth-child(5) {
+  animation-delay: 0.7s;
+}
+.menu__restaurant .section__bouton {
+  animation: slideInFromLeft 2s ease-in-out;
+  animation-fill-mode: both;
+  animation-delay: 1s;
+}
+.menu__restaurant .menu__contenu__entree,
+.menu__restaurant .menu__contenu__plat,
+.menu__restaurant .menu__contenu__dessert {
+  display: flex;
+  width: 100%;
+  gap: 0.75rem;
+  flex-direction: column;
+}
+.menu__restaurant .menu__contenu__entree h2,
+.menu__restaurant .menu__contenu__plat h2,
+.menu__restaurant .menu__contenu__dessert h2 {
+  font-size: 1rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin: 0;
+}
+.menu__restaurant .menu__contenu__entree h2 .bordered__title,
+.menu__restaurant .menu__contenu__plat h2 .bordered__title,
+.menu__restaurant .menu__contenu__dessert h2 .bordered__title {
+  border-bottom: 0.125rem solid #99e2d0;
+}
+.menu__restaurant .menu__contenu__entree .button__choixcontenu,
+.menu__restaurant .menu__contenu__plat .button__choixcontenu,
+.menu__restaurant .menu__contenu__dessert .button__choixcontenu {
+  display: flex;
+  height: 4.063rem;
+  width: 100%;
+  border-radius: 1.5625rem;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  transition: all 0.4s ease-in-out;
+}
+.menu__restaurant .menu__contenu__entree .button__choixcontenu:hover span,
+.menu__restaurant .menu__contenu__plat .button__choixcontenu:hover span,
+.menu__restaurant .menu__contenu__dessert .button__choixcontenu:hover span {
+  margin-right: 0;
+  transform: translateX(-100%);
+}
+.menu__restaurant .menu__contenu__entree .button__choixcontenu .button__choixcontenu_anime,
+.menu__restaurant .menu__contenu__plat .button__choixcontenu .button__choixcontenu_anime,
+.menu__restaurant .menu__contenu__dessert .button__choixcontenu .button__choixcontenu_anime {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 1.5625rem;
+  overflow: hidden;
+  transition: all 0.4s ease-in-out;
+}
+.menu__restaurant .menu__contenu__entree .button__choixcontenu .button__choixcontenu_anime:hover .button__choixcontenu__info,
+.menu__restaurant .menu__contenu__plat .button__choixcontenu .button__choixcontenu_anime:hover .button__choixcontenu__info,
+.menu__restaurant .menu__contenu__dessert .button__choixcontenu .button__choixcontenu_anime:hover .button__choixcontenu__info {
+  transform: translateX(0);
+}
+.menu__restaurant .menu__contenu__entree .button__choixcontenu .button__choixcontenu_anime:hover .button__choixcontenu__info h3,
+.menu__restaurant .menu__contenu__entree .button__choixcontenu .button__choixcontenu_anime:hover .button__choixcontenu__info p,
+.menu__restaurant .menu__contenu__plat .button__choixcontenu .button__choixcontenu_anime:hover .button__choixcontenu__info h3,
+.menu__restaurant .menu__contenu__plat .button__choixcontenu .button__choixcontenu_anime:hover .button__choixcontenu__info p,
+.menu__restaurant .menu__contenu__dessert .button__choixcontenu .button__choixcontenu_anime:hover .button__choixcontenu__info h3,
+.menu__restaurant .menu__contenu__dessert .button__choixcontenu .button__choixcontenu_anime:hover .button__choixcontenu__info p {
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.menu__restaurant .menu__contenu__entree .button__choixcontenu .button__choixcontenu_anime:hover .button__choixcontenu__check .check,
+.menu__restaurant .menu__contenu__plat .button__choixcontenu .button__choixcontenu_anime:hover .button__choixcontenu__check .check,
+.menu__restaurant .menu__contenu__dessert .button__choixcontenu .button__choixcontenu_anime:hover .button__choixcontenu__check .check {
+  transform: translateX(0);
+  opacity: 1;
+}
+.menu__restaurant .menu__contenu__entree .button__choixcontenu .button__choixcontenu_anime:hover .button__choixcontenu__check span,
+.menu__restaurant .menu__contenu__plat .button__choixcontenu .button__choixcontenu_anime:hover .button__choixcontenu__check span,
+.menu__restaurant .menu__contenu__dessert .button__choixcontenu .button__choixcontenu_anime:hover .button__choixcontenu__check span {
+  margin-right: 0px;
+  transform: translateX(0%);
+}
+.menu__restaurant .menu__contenu__entree .button__choixcontenu .button__choixcontenu_anime .button__choixcontenu__info,
+.menu__restaurant .menu__contenu__plat .button__choixcontenu .button__choixcontenu_anime .button__choixcontenu__info,
+.menu__restaurant .menu__contenu__dessert .button__choixcontenu .button__choixcontenu_anime .button__choixcontenu__info {
+  display: flex;
+  height: 100%;
+  width: 70%;
+  padding: 0.625rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  overflow: hidden;
+}
+.menu__restaurant .menu__contenu__entree .button__choixcontenu .button__choixcontenu_anime .button__choixcontenu__info h3,
+.menu__restaurant .menu__contenu__plat .button__choixcontenu .button__choixcontenu_anime .button__choixcontenu__info h3,
+.menu__restaurant .menu__contenu__dessert .button__choixcontenu .button__choixcontenu_anime .button__choixcontenu__info h3 {
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 0.98rem;
+  font-weight: 700;
+}
+.menu__restaurant .menu__contenu__entree .button__choixcontenu .button__choixcontenu_anime .button__choixcontenu__info h4,
+.menu__restaurant .menu__contenu__plat .button__choixcontenu .button__choixcontenu_anime .button__choixcontenu__info h4,
+.menu__restaurant .menu__contenu__dessert .button__choixcontenu .button__choixcontenu_anime .button__choixcontenu__info h4 {
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 0.75rem;
+  font-weight: 300;
+}
+.menu__restaurant .menu__contenu__entree .button__choixcontenu .button__choixcontenu__check,
+.menu__restaurant .menu__contenu__plat .button__choixcontenu .button__choixcontenu__check,
+.menu__restaurant .menu__contenu__dessert .button__choixcontenu .button__choixcontenu__check {
+  display: flex;
+  height: 100%;
+  border-radius: 1.5625rem;
+  justify-content: space-between;
+  align-items: flex-end;
+  overflow: hidden;
+}
+.menu__restaurant .menu__contenu__entree .button__choixcontenu .button__choixcontenu__check span,
+.menu__restaurant .menu__contenu__plat .button__choixcontenu .button__choixcontenu__check span,
+.menu__restaurant .menu__contenu__dessert .button__choixcontenu .button__choixcontenu__check span {
+  padding: 0.313rem;
+  margin-right: -2.5rem;
+  font-weight: bold;
+  white-space: nowrap;
+  transition: all 0.4s ease-in-out;
+}
+.menu__restaurant .menu__contenu__entree .button__choixcontenu .button__choixcontenu__check .check,
+.menu__restaurant .menu__contenu__plat .button__choixcontenu .button__choixcontenu__check .check,
+.menu__restaurant .menu__contenu__dessert .button__choixcontenu .button__choixcontenu__check .check {
+  height: 100%;
+  transition: all 0.4s ease-in-out;
+  transform: translateX(100%);
+  opacity: 0;
+}
+
+/* Styles pour les écrans de bureau (1024px et plus) */
+@media screen and (min-width: 1024px) {
+  .menu__restaurant {
+    margin: -1.563rem 10rem 0 10rem;
+    padding: 0.313rem 12.625rem;
+  }
+  .menu__restaurant .menu__title {
+    justify-content: center;
+  }
+}

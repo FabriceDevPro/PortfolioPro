@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://portfolio.fabwebprojects.fr/Sophie-bluel/sitemap.xml

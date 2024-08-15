@@ -1,0 +1,53 @@
+@use "_Variables" as *;
+/* Animation pour faire disparaître le background */
+@keyframes fadeInOut {
+  0% {
+    background-color: $background-transparent;
+    z-index: 9999;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+    z-index: -1;
+    background-color: transparent;
+  }
+}
+
+/* Animation de rotation du loader */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Animation de disparition du loader */
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Animation d'apparition du menu par la gauche */
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+/* Animation d'apparition du menu par la droite*/
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

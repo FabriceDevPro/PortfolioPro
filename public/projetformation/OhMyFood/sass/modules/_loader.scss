@@ -1,0 +1,28 @@
+@use "../_Variables.scss" as *;
+@use "../_Mixin" as Mixin;
+@use "../_keyframes";
+
+// Loader
+.loader__container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  @include Mixin.flex-alignement-center;
+  background-color: $background-transparent;
+  z-index: 9999;
+  opacity: 1;
+  animation: fadeInOut 3s linear forwards;
+}
+
+/* Style du loader */
+.loader {
+  border: 1rem solid $color-primary;
+  border-top: 1rem solid transparent;
+  border-radius: 50%;
+  height: 7.5rem;
+  width: 7.5rem;
+  animation: spin 2s linear infinite, fadeOut 1s ease-in-out 3s forwards; /* Animation de rotation et de disparition */
+}

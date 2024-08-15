@@ -1,0 +1,29 @@
+@use "../_Variables.scss" as *;
+@use "../_Mixin" as Mixin;
+// Header styles
+header {
+	display: flex;
+	height: 3.9375rem;
+	flex-direction: row;
+	@include Mixin.flex-alignement-center;
+	box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+	position: relative;
+
+	i {
+		position: absolute;
+		top: 1.25rem;
+		left: 5%;
+		font-size: 1.5em;
+	}
+	.header__logo {
+		display: flex;
+		height: 100%;
+		@include Mixin.flex-alignement-center;
+
+		.logo__header {
+			height: 2.75rem;
+			width: 10.125rem;
+			padding: 0 1.19rem 0 1rem;
+		}
+	}
+}

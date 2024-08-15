@@ -1,0 +1,17 @@
+RewriteEngine On
+RewriteBase /portfolio/projetperso/autostreet/
+
+# Redirection de HTTP vers HTTPS
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Redirection des requêtes vers apiAutoStreet/public/index.php
+RewriteCond %{REQUEST_URI} ^/portfolio/projetperso/autostreet/api/
+RewriteRule ^api/(.*)$ /portfolio/projetperso/autostreet/apiAutoStreet/public/index.php?/$1 [L,NC,QSA]
+
+# Réécriture pour React Router - rediriger toutes les requêtes vers index.html
+RewriteCond %{REQUEST_URI} !^/portfolio/projetperso/autostreet/api/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ /portfolio/projetperso/autostreet/index.html [L]
+
