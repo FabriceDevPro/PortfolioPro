@@ -11,7 +11,7 @@ const Footer = () => {
   if (anneeActuelle > anneeDebut) {
     copyrightText += ` - ${anneeActuelle}`;
   }
-  copyrightText += ` Fabrice Magnan de Bellevue | FabWebProjects.fr | ${t('contact.rightsReserved')} | Version : ${Config.version} | `;
+  copyrightText += ` Fabrice Magnan de Bellevue | FabWebProjects.fr | ${t('contact.rightsReserved')} | Version : ${Config.version} du 15/08/2024 | `;
 
   return (
     <footer id="contact">

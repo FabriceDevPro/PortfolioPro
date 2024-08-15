@@ -1,0 +1,23 @@
+RewriteEngine On
+RewriteBase /
+
+# Redirection de HTTP vers HTTPS (si nécessaire)
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Si le fichier ou le répertoire existe, ne pas réécrire l'URL
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Redirection générique pour masquer le sous-dossier projetformation
+RewriteCond %{REQUEST_URI} !^/projetformation/
+RewriteRule ^(Booki|ArgentBank|Kasa|NinaCarducci|OhMyFood|Print_It|Riding_Cities|Sophie-bluel|724events)/(.*)$ projetformation/$1/$2 [L,NC]
+
+# Redirection générique pour masquer le sous-dossier projetperso
+RewriteCond %{REQUEST_URI} !^/projetperso/
+RewriteRule ^(autostreet|monbudgetpersodemo)/(.*)$ projetperso/$1/$2 [L,NC]
+
+# Réécriture pour React Router - rediriger toutes les requêtes vers index.html
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ index.html [L]

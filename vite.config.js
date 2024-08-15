@@ -9,7 +9,12 @@ export default defineConfig({
   plugins: [
     react(),
     generateSitemap({
-      hostname: 'https://portfolio.fabwebprojects.fr',       
+      hostname: 'https://portfolio.fabwebprojects.fr',
+      routes: [
+        '/',
+        '/about',
+        '/contact',
+      ],
     }),
   ],
   base: process.env.NODE_ENV === "production" ? "/" : "/",
