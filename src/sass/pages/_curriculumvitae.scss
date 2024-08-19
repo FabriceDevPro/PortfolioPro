@@ -1,55 +1,24 @@
-// styles/curriculumvitae.scss
 @import "../abstracts/mixin";
 @import "../abstracts/keyframes";
 @import "../abstracts/variables";
+
 .curriculumvitae-section {
   @include section-styles;
-
+  text-align: left;
   .cv-container {
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 50px;
     width: 100%;
 
-    .cv-section {
-      display:flex;
-      flex-direction: column;
-      width: 95%;
-      text-align: left;
-      padding: 15px;
-      background-color: white;
-      border-radius: 5px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-
-      h2 {
-        display: flex;
-        align-items: center;
-        font-size: 1.5rem;
-        margin-bottom: 10px;
-        padding-bottom: 5px;
-        border-bottom: 2px solid  $primary-color;
-        svg {
-          margin-right: 10px;
-        }
-      }
-
-      ul {
-        list-style: none;
-        padding: 0;
-      }
-
-      li {
-        margin-bottom: 10px;
-      }
-    }
-
     .cv-left-column {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
       gap: 20px;
-      width:100%;
-    
+      width: 100%;
+      background-color: transparent; // Pas de fond blanc
+
       .cv-profile-pic {
         width: 100%;
         max-width: 150px;
@@ -58,81 +27,73 @@
         img {
           width: 100%;
           border-radius: 50%;
-          border: 3px solid white;
+          border: 2px solid #1e3758;
           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
       }
-    
+
       .cv-contact {
         width: 100%;
-
         .cv-contact-info {
           display: flex;
           flex-direction: column;
-          align-items: center;
+          align-items: left;
           gap: 5px;
         }
+
         .cv-contact-text {
           display: flex;
           align-items: center;
-          justify-content: center; // Centrage horizontal du texte avec les icônes
-          gap: 5px; // Espacement ajusté entre l'icône et le texte
+          justify-content: left;
+          gap: 5px;
+          font-size: 0.9rem;
+
           svg {
-              // Icônes plus petites pour correspondre à la taille du texte
-              height: 15px;
-              width: 15px;
+            height: 15px;
+            width: 15px;
           }
+
           a {
-            display: inline-block;
-            margin-left: 5px; // Espacement après l'icône
-            color:  $primary-color; // Couleur du texte des liens
-            text-decoration: none; // Retire le soulignement des liens
+            margin-left: 5px;
+            color: $primary-color;
+            text-decoration: none;
+
             &:hover {
-              text-decoration: underline; // Ajoute un soulignement au survol, si désiré
+              text-decoration: underline;
             }
           }
+
           .print {
             display: none;
           }
         }
-        // Spécifique pour l'adresse
+
         .cv-contact-text.cv-address {
-        flex-direction: column; // Cela force le contenu à s'aligner verticalement
-        }
-        h1, h2, p {
-          margin: 0;
-        }
-        h1 {
-          font-size: 1.8rem;
-        }
-        p, li {
-          font-size: 1rem;
-        }
-        h2 {
-          margin-top: 20px;
-        }
-        // Ici, ajoutez le style pour les icônes si nécessaire
-        svg {
-          // exemple de style, à ajuster selon les besoins
-          min-width: 20px; // Assurez-vous que les icônes ont une largeur fixe pour aligner le texte correctement
+          flex-direction: column;
         }
       }
-      .cv-interests{
+
+      .cv-section {
         background: none;
-        height: 50%;
-        justify-content: center;
         box-shadow: none;
-      
-        .cv-download{
-          display: flex;
-          align-self: center;
-          justify-content: center;
-          width: 100%;
-          .project-view-button{
-            .button-icon{
-              font-size: 2.2em;
-            }
-          }
+
+        h2 {
+          font-size: 0.9rem;
+          // margin-bottom: 15px;
+          // margin-top: 20px; // Ajout pour descendre le titre
+          // padding-bottom: 5px;
+          // border-bottom: 2px solid $primary-color;
+        }
+
+        ul {
+          padding-left: 15px; // Réduction de la distance à gauche
+          list-style: disc;
+          margin-left: 15px; // Réduction de la distance à gauche
+          font-size: 0.9rem;
+        }
+
+        li {
+          margin-bottom: 10px;
         }
       }
     }
@@ -140,163 +101,64 @@
     .cv-right-column {
       display: flex;
       flex-direction: column;
-      align-items: center;
-      gap: 20px;
-      width:100%;
-      h2 {
-        display: flex;
-        align-items: center;
-        font-size: 1.5rem;
-        margin:0.5em;
-      }
-    }    
+      width: 100%;
 
-    .cv-section {
-      display: flex;
-      flex-direction: column;
-      width: 95%;
-      
-    
-      h2 {
-        display: flex;
-        align-items: center;
-        font-size: 1.5rem;
-        margin-bottom: 10px;
-        padding-bottom: 5px;
-        border-bottom: 2px solid  $primary-color;
-        svg {
-          margin-right: 10px;
+      .cv-header {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+
+        h1 {
+          font-size: 2rem;
+          margin-bottom: 0;
+        }
+
+        h2 {
+          font-size: 1.5rem;
+          margin-top: 0;
+          margin-bottom: 20px;
         }
       }
-    
-      .timeline {
-        position: relative;
-        padding-left: 25px; // Espace pour la barre de timeline et les points
-    
-        &:before {
-          content: '';
-          position: absolute;
-          top: 25px; // Ajuster en fonction de la position de votre premier titre h3
-          bottom: 10px; // Ajuster si nécessaire
-          left: 1px; // Centrer par rapport aux points
-          width: 2px;
-          background:  $primary-color; // Couleur de la barre
-        }
-      }
-    
-      .timeline-item {
-        position: relative;
-        margin-bottom: 20px;
-    
-        .timeline-dot {
-          position: absolute;
-          left: -28px;
-          top: 25px; // Ajuster pour centrer verticalement avec le titre h3
-          height: 10px;
-          width: 10px;
-          border-radius: 50%;
-          background:  $primary-color; // Couleur des points
-        }
-    
-        .experience-content {
-          background-color: white;
-          padding: 15px;
-          border-radius: 5px;
-          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    
-          h3 {
-            margin-top: 0;
-            margin-bottom: 5px;
-            font-size: 1.2rem;
+
+      .cv-content {
+        width: 90%;
+        background-color: white;
+        padding: 50px 20px;
+        border-radius: 130px 0px 130px 0px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border: 2px solid $primary-color;
+
+        .cv-section {
+          // margin-bottom: 20px;
+          // padding-bottom: 15px;
+
+          &:last-child {
+            border-bottom: none;
           }
-          h4 {
-            margin-top: 0;
-            margin-bottom: 5px;
-            font-size: 0.9rem;
+
+          h2 {
+            font-size: 1rem;
+            margin-bottom: 10px;
+            padding-bottom: 5px;
+            text-align: left;
           }
-          p, ul {
-            margin: 10px 0; // Uniformise l'espacement autour des paragraphes et listes            
-          }
-          p {
-            margin: 0 0 10px 0;
-            font-size: 0.8rem;
-            
-            strong {
-              font-weight: bold;
-            }
-          }
-   
+
           ul {
-            list-style: none;
-            padding: 0;
-            
-            li {
-              font-size: 0.9rem;
-              margin-bottom: 10px;
-              
-              &:before {
-                content: '• ';
-                color:  $primary-color; // Couleur des puces
-                font-size: 1.5rem; // Taille plus grande pour les puces
-                margin-right: 0.5rem; // Ajouter un peu d'espace entre la puce et le texte
-                vertical-align: middle;
-              }
-            }
+            list-style: disc;
+            padding-left: 20px;
+            font-size: 0.9rem;
+            text-align: left;
           }
-        }
-      }
-    }
-    
-    .skills-container {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      justify-content: space-around; // Alignez les éléments au début du conteneur
-      padding: 5px;
-    }
-    
-    .skill-item {
-      display: flex;
-      align-items: center; // Centre verticalement les icônes avec le texte
-      gap: 10px; // Réduisez l'espace entre l'icône et le texte
-      margin-bottom: 10px; // Espace au bas de chaque élément de compétence
-      font-size: 1rem; // Taille de la police pour le texte des compétences
-      font-weight: bold; // Rendre le texte de la compétence gras
-      
-      svg {
-        height: 25px; // Taille des icônes
-        width: 25px; // Taille des icônes
-        margin-right: 5px; // Espace après l'icône avant le texte
-      }
-    
-      .skill-logo {
-        display: flex;
-        align-items: center; // Alignement vertical des icônes et du texte
-      }
-    }
 
-    .cv-section.cv-soft-skills {
-      .soft-skills-list {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
-        padding: 0;
-    
-        li {
-          display: flex;
-          align-items: center;
-          font-size: 0.8rem;
-          list-style: none;
-    
-          .bullet-icon {
-            margin-right: 10px; /* Espacement entre l'icône et le texte */
-            min-width: 15px;
-          }
+          // li {
+            // margin-bottom: 10px;
+          // }
         }
       }
     }
-  }  
+  }
 }
+
 /* Écrans moyens */
 //@media (min-width: 500px) {
 @media print {  
@@ -309,14 +171,14 @@
     header{
       display:none;
     }
-    .curriculumvitae-section{
+    .curriculumvitae-section {
       width: 97%;
       max-width: 100%;
       margin: 0px 0px;
       border-radius: 0px;
       border: none;
       box-shadow: none;
-      background:#ADD8E6;//#F2F2F2;
+      background:#ADD8E6;
       .cv-container{
         gap: 15px;
         .cv-left-column{
@@ -325,135 +187,134 @@
             max-width: 100px;
           }
           .cv-contact{
+            margin-top: 50px;
             font-size: 12px;
+          }
+          .cv-section {            
+            h2{
+              font-size: 0.9rem;
+              margin:1px;
+            }
+            p{
+              font-size: 0.8rem;
+            }
+            ul li{
+              font-size: 0.8rem;
+              margin-bottom: 0px;
+              &:before {
+                font-size: 0.9rem;
+              }
+            }
           }
           .no-print {
             display: none;
           }
           .cv-interests{
             display: none;
-                      
           }
         }
-        .cv-right-column{          
+        .cv-right-column{
           gap: 6px;
-          h1{
-            font-size: 1.2rem;
-            margin:0.2em;;
-          }
-          h2{
-            font-size: 1rem;
-            margin:0.2em;;
-          }
-          
-        }
-        .cv-section {
-          padding: 10px;
-          font-size: 14px;
-          box-shadow: none;
-          h2{
-            font-size: 1rem;
-            margin:1px;
-            svg{
-              width: 20px;
-              height: 20px;
+          .cv-header {  
+            h1 {
+              font-size: 1.3rem;
+              margin:0.2em;
+            }
+    
+            h2 {
+              font-size: 1.2rem;
+              margin:0.2em;
             }
           }
-          p{
-            margin:5px 0px 0px;}
-          li{
-            font-size: 14px;
-            margin-bottom: 14px;
-          }
-          ul{
-            margin: 0;
-          }
-          .timeline:before{
-            top: 10px;
-            bottom: 10px;
-          }
-
-          .timeline-item{
-            margin-bottom: 10px;
-            .timeline-dot{
-              top: 10px;
-            }
-            .experience-content{   
-              padding: 0px;
+          .cv-content {
+            .cv-section {
+              // padding: 10px;
+              font-size: 12px;
               box-shadow: none;
-              h3 {
-                margin-top: 0;
-                margin-bottom: 5px;
-                font-size: 0.9rem;
+              margin-top: 10px;
+              h2{
+                font-size: 1rem;
+                margin:5px;
+                svg{
+                  width: 20px;
+                  height: 20px;
                 }
-              h4{
-                margin-top: 0;
-                margin-bottom: 4px;
-                font-size: 0.8rem;
-                }
+              }
               p{
-                font-size: 0.8rem;
+                margin:5px 0px 0px;
               }
-              ul {
-                margin: 5px 0;
+              li{
+                font-size: 12px;
+                // margin-bottom: 14px;
               }
-              ul li{
-                font-size: 0.8rem;
-                margin-bottom: 0px;              
-                &:before {
-                  font-size: 1.2rem; // Taille plus grande pour les puces
-                }
+              ul{
+                margin: 0;
               }
-            }                      
-          }          
-        }
-        .skills-container {
-          gap: 3px;
-        }
-        .skill-item {
-          margin: 5px 0px;
-        }
+              .experience-content{   
+                display:flex;
+                flex-direction: column;
+                padding: 0px;
+                box-shadow: none;
+                gap: 5px;
 
-        .skill-item span{
-          font-size: 12px;
+                .experience-item{   
+                  h3 {
+                    margin-top: 5px;
+                    margin-bottom: 5px;
+                    font-size: 0.8rem;
+                  }
+                  h4{
+                    margin-top: 0;
+                    margin-bottom: 4px;
+                    font-size: 0.8rem;
+                  }
+                  p{
+                    font-size: 0.7rem;
+                  }
+                  ul {
+                    margin: 5px 0;
+                  }
+                  ul li{
+                    font-size: 0.7rem;
+                    margin-bottom: 0px;
+                    &:before {
+                      font-size: 0.9rem;
+                    }
+                  }
+                }  
+              }
+              .timeline:before{
+                top: 10px;
+                bottom: 10px;
+              }
+      
+              .timeline-item{
+                margin-bottom: 10px;
+                .timeline-dot{
+                  top: 10px;
+                }                
+              }          
+            }
+          }
         }
-        svg{
-          width: 20px;
-          height: 20px;
-          margin-bottom: -5px;
-        }
+        // .skills-container {
+        //   gap: 3px;
+        // }
+        // .skill-item {
+        //   margin: 5px 0px;
+        // }
+  
+        // .skill-item span{
+        //   font-size: 12px;
+        // }
+        // svg{
+        //   width: 20px;
+        //   height: 20px;
+        //   margin-bottom: -5px;
+        // }
       }
     }
-    .curriculumvitae-section .cv-container .cv-section.cv-soft-skills .soft-skills-list {
-      gap: 0px;
-      li{
-         font-size: 0.85em;
-         margin-bottom: 5px;
-
-        .bullet-icon{
-          margin-right: 5px;
-          min-width: 5px;
-        }
-        svg{
-          width: 10px;
-          height: 10px;
-        }
-      }
-    }
-    .curriculumvitae-section .cv-container .cv-left-column .cv-section.cv-hobbies ul {
-      margin:2px 0 0 ;
-    }    
-
-    .curriculumvitae-section .cv-container .cv-left-column .cv-section.cv-hobbies li {
-      margin-bottom: 14px; /* Valeur par défaut pour le français */
-    }
-    .curriculumvitae-section .cv-container .cv-left-column .cv-hobbies.hobbies-en li {
-      margin-bottom: 8px; /* Valeur spécifique pour l'anglais */
-    }
-    .curriculumvitae-section .cv-container .cv-left-column .cv-contact .cv-contact-text .print {
-      display: block;
-    }
-}
+  }
 
 @media only screen and (max-width: 768px) {
   .curriculumvitae-section {

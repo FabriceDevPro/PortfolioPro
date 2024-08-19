@@ -203,64 +203,125 @@
     "DownloadButton":"Télécharger mon CV",
     "PrintButton":"Imprimer mon CV",
     "title":"Développeur Web Full Stack",
-    "IntroductionTitle":"Introduction",
-    "Introduction":"Développeur web spécialisé en <1>React</1> et <1>PHP</1> avec 3 ans expériences, je suis issu d'une solide expérience en informatique qui a orienté ma reconversion vers ma passion pour le développement web. Agile dans la résolution de problèmes et l'innovation, je m'engage à créer des solutions web efficaces et centrées sur l'utilisateur. Mon parcours est marqué par une évolution constante et une quête d'excellence technologique.",
-    "ExperienceTitle":"Expériences Professionnelles",
+    "IntroductionTitle":"Objectif/profil",
+    "Introduction":"Passionné par l'innovation technologique, avec une solide expertise en développement web. J'ai su me réinventer en tant que développeur Full Stack, créant des solutions robustes et centrées sur l'utilisateur. Reconnu pour ma capacité à résoudre des problèmes complexes, je m'épanouis dans des environnements dynamiques et collaboratifs, avec une quête de perfectionnement continu.",
+    "ExperienceTitle": "Expériences et projet personnels",
     "Experiences": [
       {
-        "Company": "Septeo ADB (Groupe Septeo)",
-        "Period": "2021 à 07/2023 - Développeur ",
+        "Company": "Septeo ADB",
+        "Title": "Développeur Web et VBA",
+        "Period": "2013 - 2023",
         "Tasks": [
-          "Développement et Maintenance d'un site web pour la saisie et l'intégration de questionnaires de paramétrage en HTML/PHP/JS lié à une BDD sous MySQL.",
-          "Mise en relation du questionnaire avec un outil de migration de données en VB.NET/SQL Server.",
-          "Participation à la mise à jour et à la correction d'outils existants en VB.NET, avec l'appui de développeurs expérimentés.",
-          "Participation au sprint de la méthode Agile"
+          "Développement et maintenance de sites web dynamiques (HTML, PHP, JavaScript), avec automatisation des processus de saisie manuelle",
+          "Développement en VBA Excel pour automatiser les contrôles comptables. ",
+          "Participation active aux sprints Agile et gestion des tickets dans Azure DevOps, avec un suivi rigoureux des versions via Git.",
+          {
+            "Impact": "Réduction de la durée des projets de migration de données d'une demi-journée à une journée grâce à l'automatisation de l'intégration du questionnaire et des contrôles métiers."
+          }
         ]
       },
       {
-        "Period": "09/2016 à 07/2023 - Référent Technique, Technicien Migration, Rédacteur de Procédures\n11/2013 à 09/2016 - Technicien Support\n",
+        "Title": "Migrateur, Référent Technique, Rédacteur de Procédures",
+        "Period": "2016 - 2023",
         "Tasks": [
-          "Développement en VBA Excel pour automatiser des contrôles comptables liés aux tâches de migrateurs.",
-          "Rédacteur de procédures, documents techniques."
+          "Migration de bases de données dans le cadre d'un changement de logiciel, avec une attention particulière à la continuité des opérations.",
+          "Rédaction de procédures et de documents techniques pour améliorer la qualité et la cohérence des processus.",
+          {
+            "Impact": "Réduction du temps de blocage coté client et amélioration du processus."
+          }
         ]
       },
       {
-        "Title": "Expériences Antérieures en Support",
-        "Period": "Entre 2008 et 2013 - Support métiers et techniques",
+        "Title": "Technicien Support",
+        "Period": "2013 - 2016",
         "Tasks": [
-          "Assurance du support métiers et techniques pour une variété de logiciels orientés comptabilité.",
-          "Capacité à simplifier et communiquer des solutions complexes à un public varié.",
-          "Adaptation aux besoins des utilisateurs pour fournir un support technique efficace et personnalisé."
+          "Support utilisateurs pour postes de travail, gestion des comptes Active Directory (AD), et rédaction de documentations techniques.",
+          "Assistance avancée sur le pack Office et gestion d'équipe en tant que Backup du Teamleader."
+        ]
+      },
+      {
+        "Company": "Computacenter",
+        "Title": "Technicien Support N1 et N2",
+        "Period": "2010 - 2013",
+        "Tasks": [
+          "Support utilisateurs pour postes de travail, gestion des comptes Active Directory (AD), et rédaction de documentations techniques.",
+          "Assistance avancée sur le pack Office et gestion d'équipe en tant que Backup du Teamleader."
+        ]
+      },
+      {
+        "Title": "Mon Budget Perso (Application Web)",
+        "Period": "2023",
+        "Tasks": [
+          "Transformation d'un outil Excel VBA en une application web pour la gestion des finances personnelles.",
+          "Développement en React (front-end) avec Redux pour la gestion d'état, et Laravel pour le back-end, avec une API sécurisée.",
+          "Hébergement sur un NAS Synology, et création d’un serveur de mail personnel.",
+          {
+            "Impact": "L'application offre une interface utilisateur améliorée et une flexibilité accrue par rapport à la version Excel."
+          }
+        ]
+      },
+      {
+        "Title": "Gestion des Comptes Personnels (Excel VBA)",
+        "Period": "2019",
+        "Tasks": [
+          "Développement d'un outil sous Excel VBA pour la gestion quotidienne des comptes bancaires, incluant une base de données Access.",
+          {
+            "Impact": "Simplification de la gestion financière avec des rapports d'analyse automatiques et des fonctionnalités multi-utilisateurs."
+          }
         ]
       }
+    ],    
+    "SkillsTitle": "Compétences Clés",
+    "Skills": [
+        {
+            "Category": "Langages et Frameworks",
+            "Details": "HTML, CSS, JavaScript, TypeScript, PHP, React, Redux, Next.js, Laravel, VBA, MySQL, PhpMyAdmin"
+        },
+        {
+            "Category": "Outils et Technologies",
+            "Details": "Git, GitHub, Azure DevOps, Synology NAS, API REST, SEO, Serveurs de mail"
+        },
+        {
+            "Category": "Méthodologies",
+            "Details": "Agile (Scrum), Gestion de projets, Versioning, Automatisation des processus"
+        },
+        {
+            "Category": "Gestion de Bases de Données",
+            "Details": "MySQL, Access"
+        }
     ],
-    "SkillsTitle":"Compétences",
     "DiplomesTitle":"Diplômes et Formations",
-    "2024Diploma":"\"Intégrateur Web\", OpenClassroom Bac+2",
-    "2018SQLTraining":"Formation SQL Server, Programmation SQL, Orsys Formation",
-    "2018VBATraining":"Formation VBA EXCEL, FortimeLp",
-    "2008Degree":"D.U.T. Gestion des Entreprises et des Administrations, Option Finance-Comptabilité, Perpignan",
+    "2024DiplomaTitle":" Intégrateur Web - ",
+    "2024DiplomaOrganism":"OpenClassroom (Bac+2)",
+    "2018SQLTrainingTitle":" SQL Server avancé - ",
+    "2018SQLTrainingOrganism":"Orsys",
+    "2018VBATrainingTitle":" VBA EXCEL - ",
+    "2018VBATrainingOrganism":"FortimeLp",
+    "2008DegreeTitle":" D.U.T. GEA",
+    "2008DegreeOrganism":" Option Finance-Comptabilité - Université de Perpignan",
     "LanguagesTitle":"Langues",
-    "MotherLanguageTitle":"Français",
-    "MotherLanguage":"Langue Maternelle",
     "ProLanguageTitle":"Anglais",
     "ProLanguage":"Professionnel",
     "PortfolioTitle":"Mon Portfolio",
-    "Hobbies": {
-      "Title": "Hobbies et Intérêts",
-      "WebProjects": "Développement de projets personnels web et veille technologique.",
-      "Motorcycling": "Amateur de moto Américaine, avec un intérêt marqué pour la culture et l'histoire des États-Unis, enrichissant mon goût pour les voyages.",
-      "Cinema": "Cinéphile et amateur de séries TV, avec un intérêt particulier pour la culture et l'histoire des États-Unis."
-    },
-    "SoftSkills": {
-      "Title": "Compétences relationnelles",
-      "CollaborationAndCommunication": "Collaboration et Communication",
-      "AdaptabilityAndInnovation": "Adaptabilité et Innovation",
-      "CreativeProblemSolving": "Résolution créative de problèmes",
-      "CuriosityAndPassionForTech": "Curiosité et passion pour la technologie"
-    }
+    "SoftSkillsTitle": "Soft Skills",
+    "SoftSkillsDetails": " Esprit d'équipe, Adaptabilité, Résolution de problèmes complexes,Communication claire et efficace",
+    "CertificationsTitle": "Certifications OpenClassrooms",
+    "Certifications": [
+      {
+        "Year": "2023",
+        "Certification": "Git et GitHub"
+      },
+      {
+        "Year": "2024",
+        "Certification": "MySQL"
+      },
+      {
+        "Year": "2024",
+        "Certification": "Augmentez votre trafic grâce au référencement (SEO)"
+      }
+    ]
   },
-  "contact": {        
+  "contact": {
     "title": "Pour une collaboration ou un échange, restons en contact",
     "gitHub":"Mon profil GitHub",
     "linkedIn":"Mon profil LinkedIn",

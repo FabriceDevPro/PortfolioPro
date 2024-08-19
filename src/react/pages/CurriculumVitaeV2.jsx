@@ -36,7 +36,7 @@ const CurriculumVitaeV2 = () => {
       useScrollToHash(100); // 100px est un exemple, remplacez par la hauteur de votre en-tête fixe
     return (
     <>                
-        <section className="curriculumvitae-section" id="cv" ref={componentRef}>
+        <section className="curriculumvitae-section" id="" ref={componentRef}>
             <div className="cv-container">
                 <div className="cv-left-column">
                     <div className="cv-profile-pic">
