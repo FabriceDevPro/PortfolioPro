@@ -58,7 +58,7 @@ const CurriculumVitaeV2 = () => {
                             </div>
                             <div className="cv-contact-text">
                                 <FaGithub size={20}/>
-                                <a href="https://github.com/Fabrice-Perso" target="_blank" rel="noopener noreferrer">Fabrice-Perso</a>
+                                <a href="https://github.com/FabriceDevPro" target="_blank" rel="noopener noreferrer">FabriceDevPro</a>
                             </div>
                         </div>
                     </div>
