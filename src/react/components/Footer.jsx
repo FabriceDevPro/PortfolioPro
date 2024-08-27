@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Config } from '@config';
+import { Config,APP_DEV } from '@config';
 import Social from "./Social";
 import { useTranslation } from 'react-i18next';
 const Footer = () => {
@@ -11,7 +11,7 @@ const Footer = () => {
   if (anneeActuelle > anneeDebut) {
     copyrightText += ` - ${anneeActuelle}`;
   }
-  copyrightText += ` Fabrice Magnan de Bellevue | FabWebProjects.fr | ${t('contact.rightsReserved')} | Version : ${Config.version} du 15/08/2024 | `;
+  copyrightText += ` ${APP_DEV} | FabWebProjects.fr | ${t('contact.rightsReserved')} | Version : ${Config.version} du ${Config.releaseDate} | `;
 
   return (
     <footer id="contact">
