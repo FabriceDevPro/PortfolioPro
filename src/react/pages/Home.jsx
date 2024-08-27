@@ -82,8 +82,8 @@ const Home = () => {
         <TechnicsSkills />
       </section>        
       <section className="curriculumvitae-section" id="cv">
-        {/* <CvDownloadButton /> */}
-        <CvRedirectButton />
+        <CvDownloadButton />
+        {/* <CvRedirectButton /> */}
       </section>
       <section className="attestations-section">
         <AttestationsSection/>

@@ -36,7 +36,7 @@ const CurriculumVitaeV2 = () => {
       useScrollToHash(100); // 100px est un exemple, remplacez par la hauteur de votre en-tête fixe
     return (
     <>                
-        <section className="curriculumvitae-section" id="cv" ref={componentRef}>
+        <section className="curriculumvitae-section" id="" ref={componentRef}>
             <div className="cv-container">
                 <div className="cv-left-column">
                     <div className="cv-profile-pic">
@@ -58,7 +58,7 @@ const CurriculumVitaeV2 = () => {
                             </div>
                             <div className="cv-contact-text">
                                 <FaGithub size={20}/>
-                                <a href="https://github.com/Fabrice-Perso" target="_blank" rel="noopener noreferrer">Fabrice-Perso</a>
+                                <a href="https://github.com/FabriceDevPro" target="_blank" rel="noopener noreferrer">FabriceDevPro</a>
                             </div>
                         </div>
                     </div>

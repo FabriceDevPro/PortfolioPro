@@ -13,7 +13,7 @@ const Social = () => {
     <>
       <h2 className="footer-social__title">{t('contact.title')} : </h2>
       <div className="footer-social__icons-container">
-        <a href="https://github.com/Fabrice-Perso/" title={t('contact.gitHub')} target="_blank" rel="noopener noreferrer" className="footer-social__icon">
+        <a href="https://github.com/FabriceDevPro/" title={t('contact.gitHub')} target="_blank" rel="noopener noreferrer" className="footer-social__icon">
           <FaGithub />
         </a>
         <a href="https://www.linkedin.com/in/fabrice-magnan-de-bellevue" title={t('contact.linkedIn')} target="_blank" rel="noopener noreferrer" className="footer-social__icon">
