@@ -22,7 +22,7 @@ const Contact = ({ closeModal }) => {
   const [messageLength, setMessageLength] = useState(0);
 
   const onSubmit = async (data) => {
-    const formDataWithSite = { ...data, site: "https://portfolio.fabwebprojects.fr" };
+    const formDataWithSite = { ...data, namewebsite: "https://portfolio.fabwebprojects.fr" };
 
     try {
       const result = await sendContactForm(formDataWithSite);
